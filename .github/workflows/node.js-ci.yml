@@ -12,23 +12,31 @@ jobs:
 
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
-        node: [14.x, 16.x]
+        os: [ubuntu-latest]
+        node: [14.x]
 
     steps:
-    - name: Check out Hyas project
+    - name: Check out 🛎️
       uses: actions/checkout@v2
 
-    - name: Set up Node.js ${{ matrix.node }}
+    - name: Set up Node.js ${{ matrix.node }} 🔧
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node }}
 
-    - name: Install dependencies
+    - name: Install dependencies 🔧
       run: npm ci
 
-    - name: Run Hyas test script
-      run: npm test
-
-    - name: Build production website
+    - name: Build production website 🔧
       run: npm run build
+
+    - name: Build Hugo website 🔧
+      uses: jakejarvis/hugo-build-action@master
+      with:
+        args: --minify
+
+    - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: public # The folder the action should deploy.     

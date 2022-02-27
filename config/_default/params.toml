@@ -12,7 +12,7 @@ description = "Doks is a Hugo theme for building secure, fast, and SEO-ready doc
 ## Open Graph
 images = ["doks.png"]
 ogLocale = "en_US"
-domainTLD = "pts-project.org"
+domainTLD = "piroguetoolsuite.github.io"
 titleHome = "PiRogue tool suite"
 
 ## Twitter Cards

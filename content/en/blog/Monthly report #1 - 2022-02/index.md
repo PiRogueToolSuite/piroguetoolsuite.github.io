@@ -11,10 +11,9 @@ contributors: ["Esther Onfroy"]
 ---
 
 # Context of the project
-
 PiRogue Tool Suite is a reboot of PiRanhaLysis project. Today, PiRanhaLysis is used by a lot of people ranging from universities (the University of Yale as an example), activists, NGOs and gets a lot of traction. Too much traction in fact to be maintained in our spare time as we have done until now. That's why we are looking for funding for PTS. Currently, the project is at the proof-of-concept stage. To get to wider adoption by the general public, we need to streamline the build process and smooth the interface. Our goal is to make the project accessible to anyone.
 
-Here is the beginning the reboot.
+Here is the beginning of the reboot.
 
 # The project
 The problem: the lack of open-source means (hardware + software) to assess both privacy and security of mobile devices. Depending on HRD goals, they should want to educate, conduct emergency assessment or off-the-field investigations.
@@ -64,23 +63,23 @@ A Raspberry Pi hat has been designed. The hat ensures the following functions:
 - ensure temperature regulation via a PWM fan control circuit
 
 ### Manufacturing
-We bought another hot air soldering station and milled an aluminum fixture plate in order to improve the manufacturing process of the PiRogue hats. A badly edited video showing the milling process is available on Youtube at [https://youtu.be/tSgLxqu3reU](https://youtu.be/tSgLxqu3reU).
+We bought another hot air soldering station and milled an aluminum fixture plate in order to improve the manufacturing process of the PiRogue hats. A poorly edited video showing the milling process is available on Youtube at [https://youtu.be/tSgLxqu3reU](https://youtu.be/tSgLxqu3reU).
 
 ## Software
-For the moment, we focused only on the software running directly on the PiRogue. 
+For the moment, we only focused on the software running directly on the PiRogue. 
 
 ![Dashboard](img/dashboard.png "Example of the PiRogue dashboard")
 
 ### PiRogue OS
 PiRogue OS is the operating system designed for the PiRogue, it is based on [Raspberry Pi OS](https://www.raspberrypi.com/software/). The [version 1.0.0 beta.7](https://github.com/PiRogueToolSuite/pirogue-os/releases/tag/v1.0.0_beta.7) has been released. The OS image can be downloaded directly from GitHub, unzipped and flashed on a SD-card. 
 
-### Network analysis
-In its current version, the PiRogue creates a wi-fi network allowing the user to connect their mobile to it. Once connected, the PiRogue intercept and analyze the network traffic in real time. Traffic inspection is ensured by [NFStream](https://www.nfstream.org/) and [Suricata](https://suricata.io/). All the different information extracted from the network traffic is stored in [InfluxDB](https://www.influxdata.com/).
-
-Suricata is configured to use [Proofpoint Emerging Threat rules](https://www.proofpoint.com) and [PTS rules](https://github.com/PiRogueToolSuite/suricata-rules). The rules are automatically updated on a daily basis. The PiRogue stores 5 days of analysis history.
-
 ### Debian packages
 In order to update the PiRogue software without having to flash a new image (and losing all your data), we have packaged different parts of the PiRogue software for Debian. Those Debian packages are delivered to the PiRogue via [a PPA hosted on GitHub](https://github.com/PiRogueToolSuite/ppa).
+
+### Network analysis
+In its current version, the PiRogue creates a wi-fi access point allowing the user to connect their mobile to it. Once connected, the PiRogue intercept and analyze the network traffic in real time. Traffic inspection is ensured by [NFStream](https://www.nfstream.org/) and [Suricata](https://suricata.io/). All the different information extracted from the network traffic is stored in [InfluxDB](https://www.influxdata.com/).
+
+Suricata is configured to use [Proofpoint Emerging Threat rules](https://www.proofpoint.com) and [PTS rules](https://github.com/PiRogueToolSuite/suricata-rules). The rules are automatically updated on a daily basis. The PiRogue stores 5 days of analysis history.
 
 ### Stalkerware detection rules
 We have released the first version of a Suricata [rule-set focusing on the stalkerware](https://github.com/PiRogueToolSuite/suricata-rules). Those rules are based on the [IOC list](https://github.com/Te-k/stalkerware-indicators) maintained by [Echap](https://echap.eu.org).

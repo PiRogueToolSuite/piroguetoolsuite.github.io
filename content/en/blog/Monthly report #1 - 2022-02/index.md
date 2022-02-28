@@ -99,23 +99,31 @@ and allows you to pivot on IP addresses and alerts. Users can also create their 
 We started working with [_lila*](https://lila.ink/) on the project's logo and graphical design.
 
 ### Website
-The project's website is now online. It based on [Hugo](https://gohugo.io/) and is directly hosted by GitHub.
+The project's website is now online. It based on [Hugo](https://gohugo.io/) and is directly hosted on GitHub.
 
 ### Demos
-Since our work is driven by HDRs and NGOs, we started to organize demo session in order to present them the project and get their feedback. A first demo session has been done with some people working at [OTF](https://www.opentech.fund/).
+Since our work is driven by HRDs and NGOs, we started to organize demo session in order to present them the project and get their feedback. A first demo session has been done with some people working at [OTF](https://www.opentech.fund/).
 
 ### Outreach
 This project is community driven, to build a community around it, we started working with Misfit on communication strategy. We also started working on a video presenting the project.
 
-# What we plan to do next
+# What we plan to do next month
 - Publish hardware design and manufacturing documents.
+- Document how to build a PiRogue.
+- Document how to use a PiRogue.
+- Document how we designed the PiRogue software stack.
+- Finalize the graphical design and logo.
+- Release the presentation video.
+- Work on a communication strategy.
+- Organize one or two demo sessions.
 
 # What we failed at
-- Cross-compile nfstream
+PiRogue relies on [NFStream](https://www.nfstream.org/) and because we are bad at cross-compilation, NFStream is compiled during the PiRogue OS build. It is a quick and dirty way to get NFStream working on ARM. We will ask around us if someone could help us in packaging NFStream for `armhf` and `arm64` architecture.
 
 # People we want to thank
 * Ramy Raoof - [@RamyRaoof](https://twitter.com/RamyRaoof)
-* EntropyQueen - [@entropyqueen_](https://twitter.com/entropyqueen_/)
+* EntropyQueen - [@entropyqueen_](https://twitter.com/entropyqueen_)
 * Christopher Talib
-* Herdir
+* Herdir - [@Herdir](https://twitter.com/Herdir)
 * _lila* - [@lila_bliblu](https://twitter.com/lila_bliblu)
+* Tek - [@tenacioustek](https://twitter.com/tenacioustek)

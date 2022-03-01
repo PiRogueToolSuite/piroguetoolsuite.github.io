@@ -25,7 +25,7 @@ We have three functioning modes for PTS:
 - a kiosk mode for anyone who wants to know which servers a mobile device is communicating with
   - useful for non-profit that want to know if a victim is targeted by stalkerware
   - useful for educational purposes to highlight surveillance capitalism
-  - more generally assess if a mobile device is spied/compromised by utilizing detection rules such as Suricata and others.
+  - more generally assess if a mobile device is spied/compromised by utilizing detection rules such as Suricata and others
 
 - an on-the-field mode
   - for emergency response (active spying, device tampering, ...) useful for responders in repressive environment

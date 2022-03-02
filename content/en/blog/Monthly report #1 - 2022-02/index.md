@@ -116,7 +116,7 @@ This project is community driven, to build a community around it, we started wor
 - Work on a communication strategy.
 - Organize one or two demo sessions.
 
-# What we failed at
+# Challenges
 PiRogue relies on [NFStream](https://www.nfstream.org/) and because we are bad at cross-compilation, NFStream is compiled during the PiRogue OS build. It is a quick and dirty way to get NFStream working on ARM. We will ask around us if someone could help us in packaging NFStream for `armhf` and `arm64` architecture.
 
 # People we want to thank

@@ -6,7 +6,6 @@ date: 2022-02-28
 lastmod: 2022-02-28
 draft: false
 weight: 50
-images: []
 contributors: ["Esther Onfroy"]
 ---
 

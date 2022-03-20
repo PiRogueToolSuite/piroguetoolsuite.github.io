@@ -3,6 +3,7 @@ defaultMarkdownHandler = "goldmark"
 [goldmark]
   [goldmark.extensions]
     linkify = false
+    typographer = true
   [goldmark.parser]
     autoHeadingID = true
     autoHeadingIDType = "github"
@@ -26,4 +27,4 @@ defaultMarkdownHandler = "goldmark"
 [tableOfContents]
   endLevel = 3
   ordered = false
-  startLevel = 2
+  startLevel = 1

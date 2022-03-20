@@ -1,9 +1,10 @@
 ---
 title : "Prologue"
-description: "Prologue Doks."
+description: "Prologue"
 lead: ""
-date: 2020-10-06T08:48:45+00:00
-lastmod: 2020-10-06T08:48:45+00:00
+date: 2022-03-07
+lastmod: 2022-03-07
 draft: false
 images: []
+weight: 999
 ---

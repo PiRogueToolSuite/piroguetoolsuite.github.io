@@ -50,7 +50,7 @@ bgColor = "#fff"
 landscapePhotoWidths = [900, 800, 700, 600, 500]
 portraitPhotoWidths = [800, 700, 600, 500]
 lqipWidth = "20x"
-smallLimit = "300"
+smallLimit = "600"
 
 # Footer
 footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
@@ -59,9 +59,10 @@ footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"http
 copyRight = "Copyright (c) 2022 Defensive Lab Agency"
 
 # Alert
-alert = false
+alert = true
 alertDismissable = true
-# alertText = ""
+alertText = "If you need help or just want to chat, feel free to join <a class=\"alert-link stretched-link\" href=\"https://discord.gg/Tve3SP26QS\" target=\"_blank\" rel=\"noopener\">our Discord server</a>."
+
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster

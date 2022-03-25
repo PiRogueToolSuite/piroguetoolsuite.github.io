@@ -34,7 +34,7 @@ The entire printing lasts around 3 hours for a complete case.
 
 ## Assemble the PiRogue case
 To assemble your PiRogue case, you will need:
-* the PiRogue case part obviously
+* the PiRogue case parts obviously
 * 1 x M2.5 allen key
 * 12 x M2.5 12mm hex socket bolts - [see an example on McMaster](https://www.mcmaster.com/bolts/18-8-stainless-steel-socket-head-screws-11/length~12-mm/)
 * 4 x M2.5 25mm female threaded hex standoffs - [see an example on McMaster](https://www.mcmaster.com/female-threaded-hex-standoffs/thread-size~m2-5/length~25mm/system-of-measurement~metric/)

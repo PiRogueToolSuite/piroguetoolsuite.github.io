@@ -77,7 +77,7 @@ The documentation is available at [https://piroguetoolsuite.github.io/docs/prolo
 - Organize future demo sessions.
 
 # Challenges
-Will writing the documentation, we struggled at finding the appropriate level of details. To address this challenge, we will ask few people to test the documentation and then improve it based on testers' feedback.
+While writing the documentation, we struggled at finding the appropriate level of details. To address this challenge, we will ask few people to test the documentation and then improve it based on testers' feedback.
 
 # People we want to thank
 * Cyril Brulebois - [@CyrilBrulebois](https://twitter.com/CyrilBrulebois)

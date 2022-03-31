@@ -94,6 +94,10 @@ To operate properly, your PiRogue needs to have Internet access.
 
 First, check that the SD card is correctly inserted into the appropriate slot of your PiRogue and the ethernet cable is properly connected. Then, plug the power supply. Wait few minutes before trying to access your PiRogue.
 
+After few minutes, we will be able to connect a wi-fi device and use the PiRogue's dashboard. 
+
+First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` with your Web browser.
+
 {{< alert icon="⚠️" context="warning" >}}
 The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "useful-commands/#check-if-your-pirogue-is-running-properly">}}).
 {{< /alert >}}

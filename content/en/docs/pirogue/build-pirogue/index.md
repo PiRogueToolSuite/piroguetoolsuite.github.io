@@ -62,7 +62,7 @@ If you don't feel comfortable with building the case or the hat, feel free to bu
 ## Install PiRogue OS
 
 ### Get PiRogue OS
-PiRogue OS is released on GitHub and can be found in the *release* section of the [PiRogue OS repository](https://github.com/PiRogueToolSuite/pirogue-os/). The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema `image_<year>-<month>-<day>-PiRogueOS-lite.zip`.
+PiRogue OS is released on GitHub and can be found in the *release* section of the [PiRogue OS repository](https://github.com/PiRogueToolSuite/pirogue-os/). The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema `image_<year>-<month>-<day>-PiRogueOS-lite.img.xz`.
 
 [Download the latest version of PiRogue OS →](https://github.com/PiRogueToolSuite/pirogue-os/releases/latest)
 

@@ -101,3 +101,7 @@ First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi net
 {{< alert icon="⚠️" context="warning" >}}
 The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "useful-commands/#check-if-your-pirogue-is-running-properly">}}).
 {{< /alert >}}
+
+[Connect to your PiRogue with SSH →]({{< relref "useful-commands/#connect-to-your-pirogue-with-ssh">}})
+
+[Connect to your PiRogue's dashboard →]({{< relref "cheatsheet/#default-configuration">}})

@@ -105,3 +105,5 @@ The first time your PiRogue starts, some services would fail to start. See [how 
 [Connect to your PiRogue with SSH →]({{< relref "useful-commands/#connect-to-your-pirogue-with-ssh">}})
 
 [Connect to your PiRogue's dashboard →]({{< relref "cheatsheet/#default-configuration">}})
+
+It would take around 4 minutes to network flows appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard. 

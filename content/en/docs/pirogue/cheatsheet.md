@@ -22,6 +22,7 @@ toc: true
 | Dashboard password | `PiRogue`      |                                      |
 | Wi-Fi SSID         | `PiRogue1`     |                                      |
 | Wi-Fi password     | `superlongkey` |                                      |
+| Chronograph port   | `8888`         | `http://<PiRogue IP address>:8888`   |
 
 ## Important files
 | Name                   | Location                                 |

@@ -18,10 +18,10 @@ On your computer connected to the same network as your PiRogue, run the followin
 ping -c1 raspberrypi.local
 ```
 
-Example of output, in this example, the IP address of the PiRogue is `192.168.0.11`:
+Example of output, in this example, the IP address of the PiRogue is `192.168.0.16`:
 ```text
-PING raspberrypi.local (192.168.0.11) 56(84) bytes of data.
-64 bytes from raspberrypi.home (192.168.0.11): icmp_seq=1 ttl=64 time=0.319 ms
+PING raspberrypi.local (192.168.0.16) 56(84) bytes of data.
+64 bytes from raspberrypi.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms
 
 --- raspberrypi.local ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
@@ -64,6 +64,38 @@ On your PiRogue, run the following command and answer the different questions:
 ```bash
 passwd
 ```
+
+## Change locale and/or timezone
+On your PiRogue, run the following command:
+
+```bash
+sudo raspi-config
+```
+
+You should now see something like
+```text
+ 1 System Options         Configure system settings
+ 2 Display Options        Configure display settings
+ 3 Interface Options      Configure connections to peripherals
+ 4 Performance Options    Configure performance settings
+ 5 Localisation Options   Configure language and regional settings
+ 6 Advanced Options       Configure advanced settings
+ 8 Update                 Update this tool to the latest version
+ 9 About raspi-config     Information about this configuration tool
+```
+
+Use the arrows of your keyboard to navigate through the different options and menus.
+Select **5 Localisation options** by hitting the down arrow of your keyboard. Press `Enter` to enter the menu. You should now see the following options
+
+```text
+ L1 Locale         Configure language and regional settings
+ L2 Timezone       Configure time zone
+ L3 Keyboard       Set keyboard layout to match your keyboard
+ L4 WLAN Country   Set legal wireless channels for your country
+```
+Then select either **L1** or **L2** depending on what you want to change. Press `Enter` to enter the menu and follow the instructions.
+
+
 
 ## Check if your PiRogue is running properly
 On your PiRogue, run the following command:

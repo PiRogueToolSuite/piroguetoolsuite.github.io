@@ -47,6 +47,11 @@ rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms
 
 ## The dashboard
 By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet]({{< relref "cheatsheet" >}}) to get default user and password of the dashboard. 
+
+[Open your dashboard →](http://raspberrypi.local:3000) 
+
+Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
+
 The default dashboard is composed of different panels, we will go through the main ones.
 
 ### General statistics

@@ -15,7 +15,7 @@ Your PiRogue comes with a set a pre-installed and pre-configured tools covering 
 
 ## Network traffic capture
 * `tcpdump` to capture network traffic into PCAP files - [documentation](https://www.tcpdump.org/manpages/tcpdump.1.html)
-* `mitm-proxy` to intercept and captures HTTPS traffic - [documentation](https://docs.mitmproxy.org/stable/)
+* `mitm-proxy` to intercept and capture HTTPS traffic - [documentation](https://docs.mitmproxy.org/stable/)
 
 ## Network traffic analysis
 * `suricata` to detect malicious traffic based on rules - [documentation](https://suricata.readthedocs.io/en/suricata-6.0.5/)

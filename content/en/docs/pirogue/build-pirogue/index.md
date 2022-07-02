@@ -96,7 +96,13 @@ First, check that the SD card is correctly inserted into the appropriate slot of
 
 After few minutes, we will be able to connect a wi-fi device and use the PiRogue's dashboard. 
 
-First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` with your Web browser.
+[Learn how to operate your PiRogue →]({{< relref "operate">}})
+
+First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` with your Web browser or directly with this link:
+
+[Open your dashboard →](http://raspberrypi.local:3000) 
+
+It would take around 4 minutes to network flows appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard.
 
 {{< alert icon="⚠️" context="warning" >}}
 The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "useful-commands/#check-if-your-pirogue-is-running-properly">}}).
@@ -104,8 +110,4 @@ The first time your PiRogue starts, some services would fail to start. See [how 
 
 [Connect to your PiRogue with SSH →]({{< relref "useful-commands/#connect-to-your-pirogue-with-ssh">}})
 
-[Connect to your PiRogue's dashboard →]({{< relref "cheatsheet/#default-configuration">}})
-
-[See how to use your PiRogue →]({{< relref "operate">}})
-
-It would take around 4 minutes to network flows appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard. 
+[Get the default configuration →]({{< relref "cheatsheet/#default-configuration">}})

@@ -42,12 +42,5 @@ To assemble your PiRogue case, you will need:
 
 4 M2.5 12mm bolts and 4 M2.5 nuts are used to secure the fan in place. The 4 standoffs are placed between the Raspberry Pi and the hat.
 
-Next, follow the steps illustrated by the pictures below.
 
-{{< img src="case-1" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-2" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-3" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-4" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-5" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-6" alt="The PiRogue case" class="d-block mx-auto" >}}
-{{< img src="case-7" alt="The PiRogue case" class="d-block mx-auto" >}}
+{{< youtube id="WDbZ6ZYWYD4" title="Pirogue's case assembly tutorial" >}}

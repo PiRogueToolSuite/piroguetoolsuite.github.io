@@ -45,6 +45,7 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 
 ### Outreach
 We dedicated the month of June to the announcement of the first stable release of PTS. We reached out to several NGOs:
+
 * Human Rights Watch
 * Amnesty International
 * Freedom of Press

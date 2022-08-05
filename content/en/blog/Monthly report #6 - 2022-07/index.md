@@ -1,9 +1,9 @@
 ---
-title: Monthly report n⁰5- 2022-06
+title: Monthly report n⁰6- 2022-07
 description: "Third monthly report of a 2-year journey on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform."
-date: 2022-06-30
-lastmod: 2022-06-30
+date: 2022-07-31
+lastmod: 2022-07-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
@@ -44,31 +44,29 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 ## Communication
 
 ### Outreach
-We dedicated the month of June to the announcement of the first stable release of PTS. We reached out to several NGOs:
+We organized numerous other demo sessions and got feedback from some NGOs.
 
-* Human Rights Watch
-* Amnesty International
-* Freedom of Press
-* Nothing2Hide
-* AccessNow
-* Article19
-* Guardian Project
-* The Markup
-* Frontline Defenders
-* Digital Defenders Partnership
-* Tibet Action Institute
-* Threat Intel Coalition
-* NOYB
+We have created a private mailing list dedicated to PTS for NGOs. Feel free to contact me if you want to take part of this ML.
 
-We organized numerous demo sessions and started getting feedback from some NGOs listed above. Among other things discussed, we got the chance to get a better understanding of NGOs' needs. 
+## Software
+### PiRogue Debian packages
+Based on the needs expressed during the demo sessions, we compiled architecture-dependent packages for `amd64`. It is now possible to install PiRogue related packages on regular PCs with Debian already installed.
 
-Two main needs were expressed. The first one is supporting other platform than Raspberry Pi, the chip shortage makes it really hard to buy Raspberry Pi. The second is related to security hardening of PiRogue OS.
+We now support the following architectures:
+* `armhf`
+* `arm64`
+* `amd64`
 
+### PiRogue configuration
+Since we now offer a way to turn almost any computer having both ethernet and Wi-Fi capabilities into a PiRogue, we started working on an easy way for the user to configure it. Due to the number of different hardware setups that can be used as a PiRogue, we have to create a tool allowing the user to configure their PiRogue while minimizing the risk of errors.
 
 # What we plan to do next month
-- Support cheap/mini PCs such as Intel NUC or Lenovo ThinkCentre. 
+- Write a guide "How to turn a PC into a PiRogue".
+- Upgrade 3rd-party we package such as MVT.
+- Continue working on PiRogue configuration tool.
 - Continue working on TLS traffic interception and decryption.
-- Organize future demo sessions in August and September.
+- Organize more demo sessions in August and September.
+- Bootstrap the *Tool Suite* boilerplate. 
 
 # Challenges
-We are struggling to find an equilibrium between security of PiRogue OS and usability.
+Our English is not very good, we need to improve it. We also need to improve the way we present the project.

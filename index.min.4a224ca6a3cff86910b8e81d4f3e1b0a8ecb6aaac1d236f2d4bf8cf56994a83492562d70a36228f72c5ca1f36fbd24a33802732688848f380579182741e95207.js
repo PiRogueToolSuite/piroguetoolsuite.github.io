@@ -26,10 +26,10 @@ Once the flashing is complete, unplug the SD-card from your computer.
 Set up the PiRogue # If you have the hat for your PiRogue, it is the good time for you to plug it in and put everything into the case. Insert your freshly flashed micro SD-card into the PiRogue, plug the ethernet cable to the PiRogue. Remember, this cable connects your PiRogue directly (or through network switch) to your ISP router.
 👉 To operate properly, your PiRogue needs to have Internet access. Fire it up! # First, check that the SD card is correctly inserted into the appropriate slot of your PiRogue and the ethernet cable is properly connected. Then, plug the power supply. Wait few minutes before trying to access your PiRogue.
 After few minutes, we will be able to connect a wi-fi device and use the PiRogue\u0026rsquo;s dashboard.
-Learn how to operate your PiRogue →
 First, connect a wi-fi device such as your smartphone to the PiRogue\u0026rsquo;s wi-fi network PiRogue1 (default password: superlongkey). Next, open the PiRogue\u0026rsquo;s dashboard by going at http://\u0026lt;PiRogue IP address\u0026gt;:3000 with your Web browser or directly with this link:
+Learn how to operate your PiRogue →
+It would take around 4 minutes to network flows appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don\u0026rsquo;t worry, connect a device to the PiRogue\u0026rsquo;s WiFi network, wait 5 minutes and refresh the dashboard by pressing F5 key on your keyboard.
 Open your dashboard →
-It would take around 4 minutes to network flows appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don\u0026rsquo;t worry, connect a device to the PiRogue\u0026rsquo;s WiFi network, wait 5 minutes and refresh the dashboard.
 ⚠️ The first time your PiRogue starts, some services would fail to start. See how to check if your PiRogue is running properly. Connect to your PiRogue with SSH →
 Get the default configuration →
 `}).add({id:2,href:"/docs/pirogue/build-a-pirogue-hat/",title:"Build a PiRogue hat",description:`The current PiRogue case version is v1.0_beta.

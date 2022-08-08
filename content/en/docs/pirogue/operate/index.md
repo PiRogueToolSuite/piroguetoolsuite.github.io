@@ -54,6 +54,10 @@ Depending on your network configuration, this link above may not work. If so, ch
 
 The default dashboard is composed of different panels, we will go through the main ones.
 
+{{< alert icon="⚠️" context="warning" >}}
+The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted. 
+{{< /alert >}}
+
 ### General statistics
 {{< img src="general_statistics" alt="The general statistics panel of the PiRogue's dashboard" class="d-block mx-auto shadow" >}}
 

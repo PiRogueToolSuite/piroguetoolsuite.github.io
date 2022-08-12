@@ -18,7 +18,7 @@ toc: true
 You need:
 * SSH access to your PiRogue
 * Github knowledge
-* Optional: if you want access to ET PRO you would need your Oink code
+* Optional: if you want access to [ET PRO](https://www.proofpoint.com/us/threat-insight/et-pro-ruleset) you would need your Oink code
 
 The easiest way to manage your Suricata rules is to have them on a Github repository or on a Web directory that can be checked out by `suricata-update`. Manually adding rules directly to the PiRogue is not recommended as it might get overwritten by an update.
 
@@ -40,6 +40,14 @@ and then
 sudo suricata-update
 ```
 and your rules must be updated 🙂
+
+### Example with Abuse.ch SSL blocklist
+If you want to add the [Abuse.ch SSL blocklist](https://sslbl.abuse.ch/blacklist/sslblacklist.rules), run the following commands:
+```
+sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules
+sudo suricata-update update-sources
+sudo suricata-update
+```
 
 ## Add an already published rule set such as ET Pro
 

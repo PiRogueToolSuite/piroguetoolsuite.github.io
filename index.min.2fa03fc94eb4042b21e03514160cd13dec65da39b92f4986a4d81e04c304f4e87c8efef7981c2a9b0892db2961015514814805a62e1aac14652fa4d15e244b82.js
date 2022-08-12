@@ -58,7 +58,8 @@ Add your new source in this fashion:
 sudo suricata-update add-source YOUR_NAME URL_TO_THE_DOT_RULES Run
 sudo suricata-update update-sources and then
 sudo suricata-update and your rules must be updated 🙂
-Add an already published rule set such as ET Pro # While connected to your PiRogue: Run
+Example with Abuse.ch SSL blocklist # If you want to add the Abuse.ch SSL blocklist, run the following commands:
+sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules sudo suricata-update update-sources sudo suricata-update Add an already published rule set such as ET Pro # While connected to your PiRogue: Run
 sudo suricata-update enable-source et/pro insert your oink-code when prompted and finally run
 sudo suricata-update update-sources sudo suricata-update In both cases, the PiRogue will grab the new version of your rules on a daily basis.
 `}).add({id:5,href:"/docs/recipes/device-forensic-with-mvt/",title:"Device forensic with MVT",description:`Disclaimer # Mobile Verification Toolkit (MVT) is a tool to facilitate the consensual forensic analysis of Android and iOS devices, for the purpose of identifying traces of compromise.

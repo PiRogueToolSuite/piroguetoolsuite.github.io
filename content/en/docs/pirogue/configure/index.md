@@ -68,13 +68,13 @@ If you have never applied any valid configuration, the command should display
 {{< img src="no_configuration" alt="No configuration currently applied" class="d-block mx-auto shadow" >}}
 
 ## Create or modify my own PiRogue configuration
-Once you have installed the `priogue-cli` package and run `sudo pirogue-ctl config show` at least once, you can start reconfiguring your PiRogue. To do so, you first have to edit the appropriate configuration file:
+Once you have installed the `pirogue-cli` package and run `sudo pirogue-ctl config show` at least once, you can start reconfiguring your PiRogue. To do so, you first have to edit the appropriate configuration file:
 
 ```bash
 sudo nano /var/lib/pirogue/config/pirogue.env
 ```
 
-it will open a text editor showing your own configuration file. In this file you can safely change the following options:
+it will open a text editor (nano) showing your own configuration file. In this file you can safely change the following options:
 
 * `WIFI_NETWORK_NAME` the name of the wi-fi network managed by your PiRogue, by default `PiRogue1`
 * `WIFI_NETWORK_KEY` the passphrase required to connect to the wi-fi network, by default `superlongkey`. 
@@ -97,7 +97,7 @@ ETH_IFACE=eth0
 DASHBOARD_PASSWORD=PiRogue
 ```
 
-Press `ctrl`+`x` on your keyboard to exit nano, answer `y` or `n` when nano asks you if you want to save your modifications. 
+Press `ctrl`+`x` on your keyboard to exit nano, press y to save your modifications, press `n` otherwise. 
 
 ## Apply my configuration
 Once you have edited the PiRogues's configuration file, run the following command to apply this new configuration:
@@ -106,7 +106,7 @@ Once you have edited the PiRogues's configuration file, run the following comman
 sudo pirogue-ctl config apply
 ```
 
-press `y` to apply your configuration or `n` to exit
+press `y` to apply your configuration, `n` otherwise.
 
 {{< img src="apply_configuration" alt="Apply new configuration" class="d-block mx-auto shadow" >}}
 

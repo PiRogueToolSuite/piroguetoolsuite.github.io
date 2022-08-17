@@ -22,8 +22,6 @@ toc: true
 #   src: img/general_statistics.png
 ---
 
-## Upgrade your PiRogue
-
 All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which the only supported operating system) you are also upgrading your PiRogue.
 
 To upgrade both the OS and the PiRogue features, run the following two commands: 
@@ -40,7 +38,7 @@ This operation could take some time and would require a reboot to make your PiRo
 We advice you to upgrade your PiRogue **weekly**.
 
 
-### Note regarding heavily customized PiRogue
+### ⚠️ Note regarding heavily customized PiRogue
 Some users would want to customize their PiRogue by playing with the different configuration files of the system. If so, be sure to backup your changes BEFORE upgrading your PiRogue. The upgrade will override your custimzation.
 
 The following configuration files are managed by the PiRogue packages:

@@ -62,4 +62,4 @@ pirogue-ctl status
 
 {{< img src="img/status.png" alt="Output of pirogue-ctl status" class="d-block mx-auto shadow" >}}
 
-If you see everything in a mix of purple and green, congrats! Now you have what some hilarious people call a *PiRogue GTI*. 
+If you see everything in a mix of purple and green, congrats! 

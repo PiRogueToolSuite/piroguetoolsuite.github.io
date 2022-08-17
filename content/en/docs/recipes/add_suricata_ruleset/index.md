@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 50
+weight: 530
 toc: true
 ---
 

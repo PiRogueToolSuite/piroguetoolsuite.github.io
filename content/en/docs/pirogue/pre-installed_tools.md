@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pirogue"
-weight: 70
+weight: 170
 toc: true
 ---
 

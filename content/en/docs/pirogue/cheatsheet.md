@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pirogue"
-weight: 50
+weight: 150
 toc: true
 ---
 
@@ -24,10 +24,15 @@ toc: true
 | Wi-Fi password     | `superlongkey` |                                      |
 | Chronograph port   | `8888`         | `http://<PiRogue IP address>:8888`   |
 
+Get see your configuration, run
+```bash
+sudo pirogue-ctl config show
+```
+
 ## Important files
 | Name                   | Location                                 |
 |------------------------|------------------------------------------|
 | SSH configuration      | `/etc/ssh/sshd_config`                   |
-| Suricata configuration | `/etc/suricata/suricata.yaml`            |
+| PiRogue configuration  | `/var/lib/pirogue/config/pirogue.env`    |
 | Suricata rules         | `/var/lib/suricata/rules/suricata.rules` |
 | PiRogue screen         | `/etc/pirogue/pirogue_infos_screen.py`   |

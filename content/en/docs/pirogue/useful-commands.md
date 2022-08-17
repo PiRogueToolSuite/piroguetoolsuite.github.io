@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "pirogue"
-weight: 60
+weight: 160
 toc: true
 ---
 
@@ -94,8 +94,6 @@ Select **5 Localisation options** by hitting the down arrow of your keyboard. Pr
  L4 WLAN Country   Set legal wireless channels for your country
 ```
 Then select either **L1** or **L2** depending on what you want to change. Press `Enter` to enter the menu and follow the instructions.
-
-
 
 ## Check if your PiRogue is running properly
 On your PiRogue, run the following command:

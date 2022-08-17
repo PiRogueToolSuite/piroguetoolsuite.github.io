@@ -120,3 +120,14 @@ sudo pirogue-ctl config restore
 ```
 
 {{< img src="restore_configuration" alt="Restore a previous configuration" class="d-block mx-auto shadow" >}}
+
+## Check if everything runs properly
+To check how healthy your PiRogue is, run
+
+```bash
+pirogue-ctl status 
+```
+
+{{< img src="img/status.png" alt="Output of pirogue-ctl status" class="d-block mx-auto shadow" >}}
+
+If you see everything in a mix of purple and green, congrats!

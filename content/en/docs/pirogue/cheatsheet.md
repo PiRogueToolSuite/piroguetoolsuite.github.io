@@ -24,7 +24,7 @@ toc: true
 | Wi-Fi password     | `superlongkey` |                                      |
 | Chronograph port   | `8888`         | `http://<PiRogue IP address>:8888`   |
 
-Get see your configuration, run
+To see your configuration, run
 ```bash
 sudo pirogue-ctl config show
 ```

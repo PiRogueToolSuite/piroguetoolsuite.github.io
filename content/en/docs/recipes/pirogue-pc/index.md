@@ -53,7 +53,7 @@ Finally install the PiRogue features:
 sudo apt install pirogue-base-pc
 ```
 
-## Check if everything work properly
+## Check if everything runs properly
 To check how healthy your PiRogue is, run
 
 ```bash

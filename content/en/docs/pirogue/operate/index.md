@@ -80,7 +80,7 @@ This panel displays the location of the different servers the connected devices 
 This panel displays the different network flows that have occurred during the selected period of time:
 
 1. the time at which the flow as started
-2. the category of traffic that has been identified by [NFStream](nfstream.org/)
+2. the category of traffic that has been identified by [NFStream](https://www.nfstream.org/)
 3. the type of application that has generating this flow
 4. the domain name of the contacted server
 5. the IP address of the source of the flow

@@ -15,7 +15,7 @@ This recipe is dedicated to intrepid users 😎
 
 ## Requirements
 To follow this recipe we need:
-* a PC with one Ethernet interface, one wireless interface a Debian 11 freshly installed
+* a PC with one Ethernet interface, one wireless interface and Debian 11 freshly installed
 * the wireless interface has to support the AP mode (access-point mode)
 * the PC is connected to your local network via its Ethernet adapter
 * the PC has an Internet connection

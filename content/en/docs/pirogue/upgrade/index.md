@@ -39,7 +39,7 @@ We advice you to upgrade your PiRogue **weekly**.
 
 
 ### ⚠️ Note regarding heavily customized PiRogue
-Some users would want to customize their PiRogue by playing with the different configuration files of the system. If so, be sure to backup your changes BEFORE upgrading your PiRogue. The upgrade will override your custimzation.
+Some users would want to customize their PiRogue by playing with the different configuration files of the system. If so, be sure to backup your changes BEFORE upgrading your PiRogue. The upgrade will override your customization.
 
 The following configuration files are managed by the PiRogue packages:
 * `/etc/hostapd/hostapd.conf`

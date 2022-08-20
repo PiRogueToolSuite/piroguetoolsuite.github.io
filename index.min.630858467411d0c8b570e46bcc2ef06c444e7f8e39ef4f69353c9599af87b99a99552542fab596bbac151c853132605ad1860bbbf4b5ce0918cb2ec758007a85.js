@@ -68,10 +68,10 @@ By default, your configuration and all the different configuration files modifie
 At any time you can restore a previous configuration by running the command:
 sudo pirogue-ctl config restore Check if everything runs properly # To check how healthy your PiRogue is, run
 pirogue-ctl status If you see everything in a mix of purple and green, congrats!
-`}).add({id:5,href:"/docs/pirogue/upgrade-a-pirogue/",title:"Upgrade a PiRogue",description:`All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which the only supported operating system) you are also upgrading your PiRogue.
+`}).add({id:5,href:"/docs/pirogue/upgrade-a-pirogue/",title:"Upgrade a PiRogue",description:`All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which is the only supported operating system) you are also upgrading your PiRogue.
 To upgrade both the OS and the PiRogue features, run the following two commands:
 sudo apt update sudo apt dist-upgrade This operation could take some time and would require a reboot to make your PiRogue operates properly.
-How often should I upgrade my PiRogue # We advice you to upgrade your PiRogue weekly.`,content:`All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which the only supported operating system) you are also upgrading your PiRogue.
+How often should I upgrade my PiRogue # We advice you to upgrade your PiRogue weekly.`,content:`All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which is the only supported operating system) you are also upgrading your PiRogue.
 To upgrade both the OS and the PiRogue features, run the following two commands:
 sudo apt update sudo apt dist-upgrade This operation could take some time and would require a reboot to make your PiRogue operates properly.
 How often should I upgrade my PiRogue # We advice you to upgrade your PiRogue weekly.

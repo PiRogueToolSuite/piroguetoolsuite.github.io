@@ -22,7 +22,7 @@ toc: true
 #   src: img/general_statistics.png
 ---
 
-All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which the only supported operating system) you are also upgrading your PiRogue.
+All PiRogue features are bundled in Debian packages. So, by upgrading Debian (which is the only supported operating system) you are also upgrading your PiRogue.
 
 To upgrade both the OS and the PiRogue features, run the following two commands: 
 

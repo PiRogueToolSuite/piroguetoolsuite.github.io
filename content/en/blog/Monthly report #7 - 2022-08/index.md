@@ -1,6 +1,6 @@
 ---
 title: Monthly report n⁰7- 2022-08
-description: "Third monthly report of a 2-year journey on the PiRogue Tool Suite project"
+description: "Monthly report of a 2-year journey on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform."
 date: 2022-08-31
 lastmod: 2022-08-31
@@ -71,6 +71,8 @@ We also released a tool displaying the PiRogue status in a more human friendly w
 {{< img src="img/status.png" alt="Command displaying PiRogue status" class="d-block mx-auto shadow" >}}
 
 # Note
+{{< figure src="img/echap.png" width="220px" >}}
+
 Thanks to the great work of [Echap](https://echap.eu.org) and [Amnesty International](https://www.amnesty.org/en/) the PiRogue can detect stalkerware in two ways:
 
 * by [inspecting the network traffic with Suricata](https://pts-project.org/docs/pirogue/operate-a-pirogue/)

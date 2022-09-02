@@ -84,7 +84,7 @@ You can browse [IOCs provided by Echap on GitHub](https://github.com/AssoEchap/s
 
 # What we plan to do next month
 - Continue working on TLS traffic interception and decryption.
-- Continue working on the *Tool Suite* part opf the project. 
+- Continue working on the *Tool Suite* part of the project. 
 
 # Challenges
 Our English is not very good, we need to improve it. We also need to improve the way we present the project.

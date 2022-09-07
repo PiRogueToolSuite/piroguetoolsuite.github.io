@@ -37,5 +37,5 @@ $ editcap --inject-secrets tls,sslkeylog.txt traffic.pcap decrypted.pcap
 You can now manipulate the resulting `decrypted.pcap` file with any tool of your choice, such as tshark:
 
 ```bash
-$ tshak -2 -T ek --enable-protocol communityid -R "http or http2 or dns" -Ndmn -r decrypted.pcap > out.ek.json
+$ tshark -2 -T ek --enable-protocol communityid -R "http or http2 or dns" -Ndmn -r decrypted.pcap > out.ek.json
 ```

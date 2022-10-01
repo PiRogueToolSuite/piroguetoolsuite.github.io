@@ -79,9 +79,13 @@ tshark -2 -T ek --enable-protocol communityid -Ndmn -r decrypted.pcapng > traffi
 
 Finally, to view the decrypted traffic, run: 
 ```bash
-pirogue-view-tls -i traffic.json
+pirogue-view-tls -i traffic.json -t socket_trace.json
 ```
 
-{{< img src="img/view.png" alt="Command displaying TLS traffic" class="d-block mx-auto shadow" >}}
+{{< img src="img/view+.png" alt="Command displaying TLS traffic" class="d-block mx-auto shadow" >}}
+
+{{< alert icon="⚠️" context="warning" >}}
+The display of the stack trace has been added to `pirogue-cli` in version `1.0.5`. Be sure to upgrade your PiRogue.
+{{< /alert >}}
 
 If you face any issue, [join the Discord channel](https://discord.gg/faBuCEUR) to get help.

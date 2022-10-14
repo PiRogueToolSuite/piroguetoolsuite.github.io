@@ -10,22 +10,22 @@ contributors: ["Esther Onfroy"]
 ---
 
 # Context of the project
-PiRogue Tool Suite is a reboot of PiRanhaLysis project. Today, PiRanhaLysis is used by a lot of people ranging from universities (the University of Yale as an example), activists, NGOs and gets a lot of traction. Too much traction in fact to be maintained in our spare time as we have done until now. Currently, the project is at the proof-of-concept stage. To get to wider adoption by the general public, we need to streamline the build process and smooth the interface. Our goal is to make the project accessible to anyone.
+PiRogue Tool Suite (PTS) is a reboot of [PiRanhaLysis project](https://github.com/PiRanhaLysis). PiRanhaLysis serves different use-cases, ranging from universities (the University of Yale as an example), activists, NGOs and although archived, still gets a lot of traction. In fact, too much traction for it to be maintained as a hobby project as it has been done until now. Currently, PiRogue Tool Suite is at the proof-of-concept stage. To get to wider adoption by the general public, the build process must be streamlined and the interface smoothened. Our goal is to make PiRogue Tool Suite accessible to anyone.
 
 # The project
-The problem: the lack of open-source means (hardware + software) to assess both privacy and security of mobile devices. Depending on HRD goals, they should want to educate, conduct emergency assessment or off-the-field investigations.
+The problem: the lack of open-source tooling (hardware + software) to assess both the privacy and the security of mobile devices. Depending on Human Right Defenders' goals, the tooling should enable them to educate, conduct emergency assessment or off-the-field investigations.
 
 The plan: As with all the other projects we do, we are the first users of the technologies we develop and we aim to provide open-source, low-cost, well maintained, easy to use and easy to build hardware and software. 
 
-We have three functioning modes for PTS:
+We have three modes for PTS:
 
 - a kiosk mode for anyone who wants to know which servers a mobile device is communicating with
-  - useful for non-profit that want to know if a victim is targeted by stalkerware
-  - useful for educational purposes to highlight surveillance capitalism
-  - more generally assess if a mobile device is spied on/compromised by utilizing detection rules such as Suricata and others
+  - for non-profits who want to know if a victim is targeted by stalkerware
+  - for educational purposes to highlight surveillance capitalism
+  - more generally, assessing if a mobile device is spied on/compromised by utilizing detection rules such as Suricata
 
 - an on-the-field mode
-  - for emergency response (active spying, device tampering, ...) useful for responders in repressive environment
+  - for emergency response (active spying, device tampering, ...) useful for responders in repressive environments
   - conduct forensics analysis and network detection using a pre-installed set of tools
 
 - an expert mode for technical people to:
@@ -55,7 +55,7 @@ Once dumped, user can use another command line tool to see each different networ
 
 * the source and destination of each payload
 * the stack trace of each payload
-* the decrypted payloads (obviously)
+* the decrypted payloads 
 
 The documentation of this feature is available at [https://pts-project.org/docs/recipes/how-to-intercept-and-decrypt-tls-traffic/](https://pts-project.org/docs/recipes/how-to-intercept-and-decrypt-tls-traffic/).
 

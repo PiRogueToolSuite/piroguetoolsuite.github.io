@@ -114,7 +114,7 @@ ssh -p22 pi@\u0026lt;PiRogue IP address\u0026gt; When the connection works you w
 👉 If you receive a connection timed out error it is likely that you have entered the wrong IP address for the PiRogue. Next you will be prompted for the password for the pi login: the default password on PiRogue OS is raspberry.
 For security reasons it is highly recommended to change the default password on the PiRogue (also, you can not login through ssh if the password is blank). You should now be able to see the PiRogue prompt, which will be identical to the one found on the PiRogue itself.
 If you have set up another user on the PiRogue, you can connect to it in the same way, replacing the username with your own, e.g. eben@192.168.1.5
-pi@raspberrypi ~ \$ You are now connected to the PiRogue remotely, and can execute commands.
+pi@raspberrypi ~ $ You are now connected to the PiRogue remotely, and can execute commands.
 Change the password of user pi # On your PiRogue, run the following command and answer the different questions:
 passwd Change locale and/or timezone # On your PiRogue, run the following command:
 sudo raspi-config You should now see something like

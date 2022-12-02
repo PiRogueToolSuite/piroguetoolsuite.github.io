@@ -65,7 +65,7 @@ Finally, we also have defined the UI structure which is split in 4 workspaces:
 # What we plan to do next month
 - Continue working on Colander observable enrichment. 
 - Continue working on Colander artifact analysis. 
-- Start working on interfacing the PiRogue with Colander
+- Start working on interfacing the PiRogue with Colander.
 
 # Challenges
 We are facing issues on the packaging of the latest version of Frida. Find more details at [https://github.com/PiRogueToolSuite/pirogue-os/issues/18](https://github.com/PiRogueToolSuite/pirogue-os/issues/18).

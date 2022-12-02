@@ -51,7 +51,7 @@ We have almost finished the implementation of the different entities managed by 
 Colander-analyzers exposes a unified REST API allowing any other tool to request observable enrichment such has whois, VirusTotal report, etc and artifact analysis such as PCAP analysis (based on [NFStream](https://www.nfstream.org/) and [Suricata](https://suricata.io/)), APK analysis (based on [Pithus](https://beta.pithus.org/)) and more.
 
 Finally, we also have defined the UI structure which is split in 4 workspaces:
-* Live view: live view of the fleet of PiRogues (network flows, alerts, etc.)
+* Live view: live view on the fleet of PiRogues (network flows, alerts, etc.)
 * Collect: collect information and knowledge
 * Analyze: analyze artifacts
 * Investigate: document findings

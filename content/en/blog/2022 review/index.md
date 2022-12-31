@@ -4,7 +4,7 @@ description: ""
 lead: "2022 was a very intense year since it was the resumption of the PTS project thanks to the funding by OTF. Mechanical design, software development, electronic design, packaging for Debian are the activities that kept us busy this year!"
 date: 2022-12-31
 lastmod: 2022-12-31
-draft: true
+draft: false
 weight: 50
 toc: true
 contributors: ["Esther Onfroy"]
@@ -79,16 +79,17 @@ We have chosen to retrieve the TLS encryption keys directly from the phone's mem
 Even if we do our best, the tools we provided are not silver bullets against advanced obfuscation.
 
 ## Colander
-Colander is an incident response and knowledge management platform delivered as a cloud-agnostic Docker stack organizations can deploy. It takes events (such as network flows, Suricata alerts), artifacts (such as PCAPs, APKs), observables extracted from artifacts or from 3rd-party providers, and turns them into browsable knowledge. Organized in cases, knowledge can then be used for generating reports, detection rules and intelligence feeds.
+Colander is an incident response and knowledge management platform delivered as a cloud-agnostic Docker stack organizations can deploy. It takes events (such as network flows, Suricata alerts), artifacts (such as PCAPs, APKs), observable extracted from artifacts or from 3rd-party providers, and turns them into browsable knowledge. Organized in cases, knowledge can then be used for generating reports, detection rules and intelligence feeds.
 
-Note that we are still at the early stage of development.
+The goal of Colander is to provide a platform combining knowledge management, incident response management and artifact management allowing NGOs with limited resources to equip themselves at lower cost.
+
+Note that we are still at the early stage of development. More details will come later.
 
 ### Case management
-
-### Artifacts management
+Colander's entry point is a case. Each case, which can correspond to an incident or an investigation, contains only the information (observable, artifacts…) that relate to it. Several people can collaborate on the same case.
 
 ### Automatic analysis and enrichment
-Colander comes with a set of modules for AV analysis, type-specific artifact analysis and observable enrichment. These analyzers are reusable are implemented in a separate service that can be deployed and used without Colander. The goal is to provide a generic REST API for quick an easy integration into other projects. Since 3rd-party services such as VirusTotal, Censys are often too expensive for NGOs, we try to provide analyzers that are not dependent on those external services.
+Colander comes with a set of modules for AV analysis, type-specific artifact analysis and observable enrichment. These analyzers are reusable are implemented in a separate service that can be deployed and used without Colander. The goal is to provide a generic REST API for quick an easy integration into other projects. Since 3rd-party services such as VirusTotal are often too expensive for NGOs, we try to provide analyzers that are not dependent on those external services.
 
 We plan to deliver modules for:
 * PCAP, PCAPNG analysis with NFStream and Suricata
@@ -100,7 +101,7 @@ We plan to deliver modules for:
 * IP address enrichment such as geoip and reputation
 * Domain enrichment such as whois and DNS records
 
-## Community and Adoption
+## Project community and Adoption
 At the time of writing this report, we have provided 18 PiRogues to:
 * the French ministry of education
 * the French ministry of finance
@@ -116,6 +117,7 @@ We have presented the project to the following organizations:
 * Nothing2Hide
 * AccessNow
 * Article19
+* Citizen Lab
 * Guardian Project
 * The Markup
 * Frontline Defenders
@@ -123,8 +125,10 @@ We have presented the project to the following organizations:
 * Tibet Action Institute
 * First's Threat Intel Coalition
 * NOYB
-* CNIL
+* CNIL (French DPA)
 
 PiRogue is the tool used to analyze data collection by the mobile applications studied in the HRW report [“How Dare They Peep into My Private Life?”](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments).
+
+35 people have subscribed to our private mailing list dedicated to NGOs.
 
 Finally, 100+ people have already subscribed to our Discord channel.

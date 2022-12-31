@@ -28,6 +28,8 @@ The PiRogue depends on various 3rd-party software, if most of them are already a
 
 Frida being the most challenging one.
 
+If you want to read more about how we do the packaging for Debian, we invite you to check out [how Debamax is helping us](https://debamax.com/blog/2022/06/21/helping-with-pirogue-tool-suite/).
+
 ### Implemented features
 By the time we are writing this report, most of the initially planned features have been implemented. Since Android represents around 80% of the mobile OS market share, we firstly focused our efforts on this OS. Network flows inspection (DPI), threat detection and device forensic are already available for both iOS and Android devices, application analysis only supports Android.
 

@@ -15,7 +15,7 @@ images: []
 The PiRogue is an open hardware device based on a Raspberry Pi operating as a network router analyzing network traffic in real time. The PiRogue helps analysts to detect the potential compromise of a mobile device and to have more information allowing them to detect more easily the potential threats represented by a mobile application. In no case the PiRogue and all the tools we develop will replace the expertise and interpretation performed by a human. 
 
 ### Feature delivery
-The PiRogue runs Debian operating system and all PiRogue-specific features are delivered as Debian packages for `armhf`, `arm64` and `amd64` architectures. These packages are delivered by the [PTS PPA](https://github.com/PiRogueToolSuite/ppa). In 2021, the pandemic caused an important electronic ship shortage which has a huge impact on Raspberry Pi availability. This had a limited impact on the project for 2 reasons:
+The PiRogue runs Debian operating system and all PiRogue-specific features are delivered as Debian packages for `armhf`, `arm64` and `amd64` architectures. These packages are delivered by the [PTS PPA](https://github.com/PiRogueToolSuite/ppa). In 2021, the pandemic caused an important electronic chip shortage which has a huge impact on Raspberry Pi availability. This had a limited impact on the project for 2 reasons:
 * we managed to source 20 Raspberry Pi before it was almost impossible to buy a single one at a reasonable price;
 * by packaging all features as Debian packages, almost any old laptop or tiny PC having both Ethernet and Wi-Fi connectivity can be turned into a PiRogue by installing the PiRogue packages on it.
 

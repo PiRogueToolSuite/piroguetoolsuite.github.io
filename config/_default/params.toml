@@ -45,12 +45,20 @@ siteLinksSearchBox = false
 themeColor = "#fff"
 
 # Images
-quality = 85
+quality = 100
 bgColor = "#fff"
-landscapePhotoWidths = [900, 800, 700, 600, 500]
-portraitPhotoWidths = [800, 700, 600, 500]
-lqipWidth = "20x"
+#landscapePhotoWidths = [900, 800, 700]
+#portraitPhotoWidths = [800, 700]
+lqipWidth = "1280x"
+#lqipWidth = "600x"
 smallLimit = "600"
+
+
+[imaging]
+  anchor = 'Smart'
+  quality = 100
+  resampleFilter = 'Box'
+
 
 # Footer
 footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"

@@ -19,5 +19,5 @@
 <figure>
   <img class="img-fluid lazyload blur-up{{ with .Get "class" }} {{ . | safeHTML }}{{ end }}" data-sizes="auto" src="{{ $lqip.RelPermalink }}" data-srcset="{{ $imgSrcSet }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ with .Get "alt" }}alt="{{.}}"{{ end }}>
   <noscript><img class="img-fluid{{ with .Get "class" }} {{ . | safeHTML }}{{ end }}" sizes="100vw" srcset="{{ $imgSrcSet }}" src="{{ $image.RelPermalink }}" width="{{ $image.Width }}" height="{{ $image.Height }}" {{ with .Get "alt" }}alt="{{.}}"{{ end }}></noscript>
-  {{ with .Get "caption" }}<figcaption class="figure-caption">{{ . | safeHTML }}</figcaption>{{ end }}
+  {{ with .Get "caption" }}<figcaption class="figure-caption"><i>{{ . | safeHTML }}</i></figcaption>{{ end }}
 </figure>

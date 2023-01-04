@@ -2,9 +2,9 @@
 title: Monthly report n⁰11- 2022-12
 description: "Monthly report of a 2-year journey on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform."
-date: 2022-12-25
-lastmod: 2022-12-25
-draft: true
+date: 2022-12-31
+lastmod: 2022-12-31
+draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
 ---
@@ -41,13 +41,37 @@ The PiRogue is an open hardware device based on a Raspberry Pi operating as a ne
 # What we have done so far
 You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](https://github.com/PiRogueToolSuite/) or on our website at [https://pts-project.org/](https://pts-project.org/).
 
-**Here follows a detailed overview of what has been done during the first year of the project.**
+## PiRogue
 
+We have been working on another command for TLS encryption keys interception. This command `pirogue-intercept-gated` automatically instruments all spawned processes. It is useful when it comes to dynamically instrument an application that spawns processes. This command also retrieve both socket and AES operations too. 
 
+Side note: on Android, when an app wants to spawn a new process, it delegates it to Zigote. Most app processes running on Android are spawned by Zygote. 
 
+## Colander
+
+We continue working on different aspects of Colander such as UI and analyzers. 
+
+### Case management
+
+Colander’s entry point is a case. Each case, which can correspond to an incident or an investigation, contains only the information (observable, artifacts…) that relate to it. Several people can collaborate on the same case. We have almost completely implemented the features related to the case management.
+
+### Automatic analysis and enrichment
+
+Colander comes with a set of modules for AV analysis, type-specific artifact analysis and observable enrichment. These analyzers are reusable are implemented in a separate service that can be deployed and used without Colander. The goal is to provide a generic REST API for quick an easy integration into other projects. Since 3rd-party services such as VirusTotal are often too expensive for NGOs, we try to provide analyzers that are not dependent on those external services.
+
+For the moment, we have implemented the TLS traffic decryption. The UI is largely perfectible but here is an overview:
+
+{{< img src="img/colander-tls-decryption.png" caption="TLS traffic decryption and stacktrace correlation with Colander" >}}
+
+## Communication
+
+We have published an overview of the different activities done this year, feel free to check out [our review of 2022](https://pts-project.org/blog/year-2022-in-review/).
 
 # What we plan to do next month
 
+* finish the implementation of the case management
+* continue working on Colander's UI
+* continue working on Colander's analyzers
 
 # Challenges
 We are facing issues on the packaging of the latest version of Frida. Find more details at [https://github.com/PiRogueToolSuite/pirogue-os/issues/18](https://github.com/PiRogueToolSuite/pirogue-os/issues/18).

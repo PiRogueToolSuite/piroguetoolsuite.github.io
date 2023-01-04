@@ -137,7 +137,7 @@ We have presented the project to the following organizations:
 * Tibet Action Institute
 * First's Threat Intel Coalition
 * NOYB
-* CNIL (French DPA)
+* CNIL (French DPC)
 
 PiRogue is the tool used to analyze data collection by the mobile applications studied in the HRW report [“How Dare They Peep into My Private Life?”](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments).
 

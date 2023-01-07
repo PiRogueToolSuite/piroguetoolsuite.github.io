@@ -60,6 +60,7 @@
 {{ $js := $slice | resources.Concat "main.js" -}}
 
 {{ if eq (hugo.Environment) "development" -}}
+  <script defer data-domain="pts-project.org" src="https://plausible.io/js/script.js"></script>
   {{ if .Site.Params.options.bootStrapJs -}}
     <script src="{{ $bs.RelPermalink }}" defer></script>
   {{ end -}}
@@ -78,6 +79,7 @@
     <script src="{{ $index.RelPermalink }}" defer></script>
   {{ end -}}
 {{ else -}}
+  <script defer data-domain="pts-project.org" src="https://plausible.io/js/script.js"></script>
   {{ $js := $js | minify | fingerprint "sha512" -}}
   {{ $index := $index | minify | fingerprint "sha512" -}}
   {{ $bs := $bs | minify | fingerprint "sha512" -}}

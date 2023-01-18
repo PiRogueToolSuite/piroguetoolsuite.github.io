@@ -2,22 +2,96 @@
 <section class="section container-fluid mt-n3 pb-3">
   <div class="row justify-content-center">
     <div class="col-lg-12 text-center">
-      <h1 class="mt-0">{{ .Title }}</h1>
-    </div>
-    <div class="col-lg-7 text-center">
-      <p>
-        <img width="120px" src="android-chrome-512x512.png">
-      </p>
-      <p class="lead">{{ .Params.lead | safeHTML }}</p>
-      <!-- <a class="btn btn-primary btn-lg px-4 mb-2" href="/docs/{{ if .Site.Params.options.docsVersioning }}{{ .Site.Params.docsVersion }}/{{ end }}prologue/introduction/" role="button">Get Started</a> -->
-      
+      <img width="80px" class="mb-2" src="android-chrome-512x512.png">
+      <h1 class="">{{ .Title }}</h1>
     </div>
   </div>
-  <div class="row justify-content-center">
-    <div class="col-lg-7 text-center">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-6 text-center">
       <img class="img-fluid" src="images/pts_dashboard.png">
-      <p class="meta">Open-source AGPL v3 Licensed. <a href="https://github.com/PiRogueToolSuite/">GitHub</a></p>
-      <a href="/docs/prologue/introduction/" class="btn btn-primary btn-lg">Getting started >></a>
+    </div>
+    <div class="col-lg-6 text-center">
+      <p class="lead">{{ .Params.lead | safeHTML }}</p>
+      <div class="text-center mt-3">
+        <p class="meta">Open-source AGPL v3 Licensed. <a href="https://github.com/PiRogueToolSuite/">GitHub</a></p>
+        <a href="/docs/prologue/introduction/" class="btn btn-primary btn-lg">Getting started >></a>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-12">
+      <h2>Main PiRogue capabilities</h2>
+      <p>
+        The PiRogue is an open hardware device based on a Raspberry Pi operating as a network router analyzing network traffic in real time. The PiRogue helps analysts to detect the potential compromise of a mobile device and to have more information allowing them to detect more easily the potential threats represented by a mobile application.
+      </p>
+    </div>
+    <div class="col-lg-6 text-center">
+      <div class="table-responsive">
+        <table class="table mt-2 table-borderless">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Android</th>
+              <th>iOS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-end">Network traffic capture</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Network traffic analysis</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Deep packet inspection</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Threat detection</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Stalkerware detection</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">TLS traffic decryption</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-dark">not yet</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Socket activity tracing</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-dark">not yet</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">AES operations tracing</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-dark">not yet</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Device backup</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+            <tr>
+              <td class="text-end">Device forensic analysis</td>
+              <td><span class="badge bg-primary">supported</span></td>
+              <td><span class="badge bg-primary">supported</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="col-lg-6 mt-5 text-center">
+        <img class="img-fluid" style="rotate: -90deg ;" class="mt-5" src="images/pirogue_3d.png">
     </div>
   </div>
 </section>

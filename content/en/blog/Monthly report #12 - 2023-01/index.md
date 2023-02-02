@@ -52,11 +52,11 @@ We have manufactured 5 more PiRogues. They will be shipped next month.
 
 ## Colander
 
-We have finished the basic implementation of the case management and quick search. Since Colander handles artifacts/evidences, we have implemented the automatic signature of all of them with a RSA key that belongs to the case (each case has its own signing key). A user can then easily verify the origin and the integrity of a given artifact/evidence. We have improved the traffic decryption UI. Finally, we have implemented a really basic graph representation of a case. This graph represents the semantic link between the different entities that belong to a given case.
+We have finished the basic implementation of the case management and quick search. Since Colander handles artifacts/evidences, we have implemented the automatic signature of all of them with an RSA key that belongs to the case (each case has its own signing key). A user can then easily verify the origin and the integrity of a given artifact/evidence. We have improved the traffic decryption UI. Finally, we have implemented a really basic graph representation of a case. This graph represents the semantic link between the different entities that belong to a given case.
 
 {{< img src="img/artifact_integrity_check.png" caption="Screenshot showing how to check artifact integrity" >}}
 {{< img src="img/traffic_decryption.png" caption="Screenshot showing how observable are enriched in the traffic decryption panel" >}}
-{{< img src="img/stack_trace.png" caption="Screenshot showing how the raw stacktrace is displayed" >}}
+{{< img src="img/stack_trace.png" caption="Screenshot showing how the raw stack trace is displayed" >}}
 {{< img src="img/quick_search.png" caption="Screenshot showing an example of search in a given case" >}}
 {{< img src="img/case_graph.png" caption="Screenshot showing an example of case graph" >}}
 

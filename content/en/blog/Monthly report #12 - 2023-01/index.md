@@ -4,7 +4,7 @@ description: "Monthly report of a 2-year journey on the PiRogue Tool Suite proje
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform."
 date: 2023-01-31
 lastmod: 2023-01-31
-draft: true
+draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
 ---
@@ -43,15 +43,34 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 
 ## PiRogue
 
-* new release of pirogue-cli introducing `pirogue-intercept-gated` to instrument any spawned process
-* new release of pirogue-cli introducing `pirogue-intercept-single` equivalent to `pirogue-intercept-tls` which will be deprecated
-* new release of pirogue-dashboard fixing the list of devices used for filtering flows and alerts 
+We have published:
+* a new release of pirogue-cli introducing `pirogue-intercept-gated` to instrument any spawned process
+* a new release of pirogue-cli introducing `pirogue-intercept-single` equivalent to `pirogue-intercept-tls` which will be deprecated
+* a new release of pirogue-dashboard fixing the list of devices used for filtering flows and alerts in the dashboard
+
+We have manufactured 5 more PiRogues. They will be shipped next month.
+
+## Colander
+
+We have finished the basic implementation of the case management and quick search. Since Colander handles artifacts/evidences, we have implemented the automatic signature of all of them with a RSA key that belongs to the case (each case has its own signing key). A user can then easily verify the origin and the integrity of a given artifact/evidence. We have improved the traffic decryption UI. Finally, we have implemented a really basic graph representation of a case. This graph represents the semantic link between the different entities that belong to a given case.
+
+{{< img src="img/artifact_integrity_check.png" caption="Screenshot showing how to check artifact integrity" >}}
+{{< img src="img/traffic_decryption.png" caption="Screenshot showing how observable are enriched in the traffic decryption panel" >}}
+{{< img src="img/stack_trace.png" caption="Screenshot showing how the raw stacktrace is displayed" >}}
+{{< img src="img/quick_search.png" caption="Screenshot showing an example of search in a given case" >}}
+{{< img src="img/case_graph.png" caption="Screenshot showing an example of case graph" >}}
+
+## Communication & Outreach
+We have slightly improved the website landing page by adding the list of the main capabilities of PiRogue and a 3D view of a PiRogue. We have also added privacy-preserving analytics on the project's website based on [Plausible.io](https://plausible.io).
+
+{{< img src="img/landing_page.png" caption="Screenshot of the landing page" >}}
+
 
 # What we plan to do next month
 
-* finish the implementation of the case management
 * continue working on Colander's UI
 * continue working on Colander's analyzers
+* start working on documentation management and generation
 
 # Challenges
-We are facing issues on the packaging of the latest version of Frida. Find more details at [https://github.com/PiRogueToolSuite/pirogue-os/issues/18](https://github.com/PiRogueToolSuite/pirogue-os/issues/18).
+Raspberry Pi 4 model B shortage has a negative impact on project adoption. Even if it is possible to turn an old PC or laptop into a PiRogue, it is less convenient than having a tiny device that's easy to carry.

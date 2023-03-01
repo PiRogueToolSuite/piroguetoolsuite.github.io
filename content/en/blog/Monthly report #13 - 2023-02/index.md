@@ -83,8 +83,11 @@ Finally, we have integrated CyberChef directly into Colander. User can either op
 {{< img src="img/cyberchef-1.png" caption="Send raw network payload to CyberChef." >}}
 {{< img src="img/cyberchef-2.png" caption="Example of CyberCyber decoding network payload." >}}
 
-## Community and outreach
+## Hardware
 We were able to buy 10 Raspberry Pi 3 model B for an almost reasonable price. We will have 10 PiRogues for sale as soon as the design of a proper case is completed. Due to the fact that the prices of electronic parts are constantly increasing, we have to reflect this increase on the final price of the PiRogue. PiRogues are sold at cost price to NGOs.
+
+## Community and outreach
+We will be giving a talk about PTS at [JDLL](https://jdll.org/) in April 2023 at Lyon (France).
 
 # What we plan to do next month
 

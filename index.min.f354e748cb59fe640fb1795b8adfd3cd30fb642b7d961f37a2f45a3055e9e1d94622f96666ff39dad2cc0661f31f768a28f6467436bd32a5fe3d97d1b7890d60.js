@@ -20,8 +20,8 @@ Build the PiRogue hat →
 Build the PiRogue case →
 👉 If you don\u0026rsquo;t feel comfortable with building the case or the hat, feel free to buy one by reaching out to us. Install PiRogue OS # Get PiRogue OS # PiRogue OS is periodically released. The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema PiRogue-OS-\u0026lt;year\u0026gt;-\u0026lt;month\u0026gt;-\u0026lt;day\u0026gt;.img.xz.
 Download the latest version of PiRogue OS →
-Set up your SD card # Before flashing the image, you have to unzip the image on your computer. It can be done either by right-clicking on the ZIP file and choosing Decompress or with command line using the unzip command. Once unzipped, you should have a new file named PiRogue-OS-\u0026lt;year\u0026gt;-\u0026lt;month\u0026gt;-\u0026lt;day\u0026gt;.img.xz. This file is the image file you will have to flash on a micro SD-card. Linux users used to use command line can then use the dd command to flash their SD-card.
-We advice you to download Balena Etcher and install it on your computer. Run Balena Etcher as administrator and follow the steps illustrated by the screenshots below.
+Set up your SD card # Advanced Linux users can use a combination of xz and dd commands to flash their SD-card.
+We recommend to download Balena Etcher and install it on your computer. Run Balena Etcher as administrator and follow the steps illustrated by the screenshots below.
 Download Balena Etcher →
 Once the flashing is complete, eject the SD-card from your computer.
 Set up the PiRogue # If you have the hat for your PiRogue, it is the good time for you to plug it in and put everything into the case. Insert your freshly flashed micro SD-card into the PiRogue, plug the ethernet cable to the PiRogue. Remember, this cable connects your PiRogue directly (or through network switch) to your ISP router.

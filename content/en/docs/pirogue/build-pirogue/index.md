@@ -21,9 +21,15 @@ In addition to a computer and an Internet connection, you will need, at least, a
 
 First, you need a Raspberry Pi. We support the following versions of Raspberry Pi:
 
+
+* Raspberry Pi 3 Model B
+* Raspberry Pi 3 Model B+
+* Raspberry Pi 4 Model B - 1GB
 * Raspberry Pi 4 Model B - 2GB
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
+
+**Important note**: Suricata is disabled on devices having less then 1.5GB of RAM.
 
 {{< alert icon="👉" >}}
 Be sure to have an appropriate power supply for your PiRogue. If you don't know what to choose, pick the official USB-C Raspberry Pi power supply.
@@ -58,16 +64,17 @@ If you don't feel comfortable with building the case or the hat, feel free to bu
 {{< /alert >}}
 
 
-
 ## Install PiRogue OS
 
 ### Get PiRogue OS
-PiRogue OS is released on GitHub and can be found in the *release* section of the [PiRogue OS repository](https://github.com/PiRogueToolSuite/pirogue-os/). The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema `image_<year>-<month>-<day>-PiRogueOS-lite.img.xz`.
+PiRogue OS is periodically released. The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema 
+`PiRogue-OS-<year>-<month>-<day>.img.xz`.
 
 [Download the latest version of PiRogue OS →](https://github.com/PiRogueToolSuite/pirogue-os/releases/latest)
 
+
 ### Set up your SD card
-Before flashing the image, you have to unzip the image on your computer. It can be done either by right-clicking on the ZIP file and choosing *Decompress* or with command line using the *unzip* command. Once unzipped, you should have a new file named `<year>-<month>-<day>-PiRogueOS-lite.img`. This file is the image file you will have to flash on a micro SD-card. Linux users used to use command line can then use the `dd` command to flash their SD-card.
+Before flashing the image, you have to unzip the image on your computer. It can be done either by right-clicking on the ZIP file and choosing *Decompress* or with command line using the *unzip* command. Once unzipped, you should have a new file named `PiRogue-OS-<year>-<month>-<day>.img.xz`. This file is the image file you will have to flash on a micro SD-card. Linux users used to use command line can then use the `dd` command to flash their SD-card.
 
 We advice you to [download Balena Etcher](https://www.balena.io/etcher/) and install it on your computer. Run *Balena Etcher* as administrator and follow the steps illustrated by the screenshots below.
 
@@ -80,7 +87,7 @@ We advice you to [download Balena Etcher](https://www.balena.io/etcher/) and ins
 {{< img src="etcher-5" alt="The PiRogue" class="d-block mx-auto shadow" >}}
 {{< img src="etcher-6" alt="The PiRogue" class="d-block mx-auto shadow" >}}
 
-Once the flashing is complete, unplug the SD-card from your computer.
+Once the flashing is complete, eject the SD-card from your computer.
 
 ### Set up the PiRogue
 If you have [the hat for your PiRogue]({{< relref "build-hat" >}}), it is the good time for you to plug it in and put everything into [the case]({{< relref "build-case" >}}). Insert your freshly flashed micro SD-card into the PiRogue, plug the ethernet cable to the PiRogue. Remember, this cable connects your PiRogue directly (or through network switch) to your ISP router.
@@ -89,10 +96,38 @@ If you have [the hat for your PiRogue]({{< relref "build-hat" >}}), it is the go
 To operate properly, your PiRogue needs to have Internet access.
 {{< /alert >}}
 
+If you plan to use the PiRogue in a production environment (office, lab), we suggest you follow the [securing your Raspberry Pi guide](https://www.raspberrypi.com/documentation/computers/configuration.html#securing-your-raspberry-pi).
 
-## Fire it up!
+## First boot
 
 First, check that the SD card is correctly inserted into the appropriate slot of your PiRogue and the ethernet cable is properly connected. Then, plug the power supply. Wait few minutes before trying to access your PiRogue.
+
+Now, connect to your PiRogue using SSH.
+
+```
+ssh pi@pirogue.local
+```
+
+Type `raspberry` which is the default password and press `Entrer`.
+
+Once connected, you have to finalize the installation of your PiRogue by running the following commands:
+
+```
+sudo apt update
+sudo apt install pirogue-base -y
+sudo apt dist-upgrade -y
+sudo reboot
+```
+
+During the installation, when prompted, you will have to answer:
+* `No` to save iptables rules for IP v4
+* `No` to save iptables rules for IP v6
+* `Yes` to allow non-root users to capture network traffic 
+
+{{< img src="img/install-1.png" alt="Allow non-root users to capture network traffic" class="d-block mx-auto shadow" >}}
+
+
+## Fire it up!
 
 After few minutes, we will be able to connect a wi-fi device and use the PiRogue's dashboard. 
 
@@ -104,8 +139,8 @@ It will take around 4 minutes before network flows start appearing in the dashbo
 
 [Open your dashboard →](http://raspberrypi.local:3000) 
 
-{{< alert icon="⚠️" context="warning" >}}
-The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "useful-commands/#check-if-your-pirogue-is-running-properly">}}).
+{{< alert icon="⚠️" >}}
+The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "configure/#check-if-everything-runs-properly">}}).
 {{< /alert >}}
 
 [Connect to your PiRogue with SSH →]({{< relref "useful-commands/#connect-to-your-pirogue-with-ssh">}})

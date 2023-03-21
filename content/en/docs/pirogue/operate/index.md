@@ -32,15 +32,15 @@ Once your PiRogue is running, it will be accessible to you from the network. The
 **The second way** is to use the `ping` command. To do so, on your computer connected to the same network as your PiRogue, run the following command:
 
 ```bash
-ping -c1 raspberrypi.local
+ping -c1 pirogue.local
 ```
 
 Example of output, in this example, the IP address of the PiRogue is `192.168.0.16`:
 ```text
-PING raspberrypi.local (192.168.0.16) 56(84) bytes of data.
-64 bytes from raspberrypi.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms
+PING pirogue.local (192.168.0.16) 56(84) bytes of data.
+64 bytes from pirogue.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms
 
---- raspberrypi.local ping statistics ---
+--- pirogue.local ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms
 ```
@@ -48,7 +48,7 @@ rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms
 ## The dashboard
 By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet]({{< relref "cheatsheet" >}}) to get default user and password of the dashboard. 
 
-[Open your dashboard →](http://raspberrypi.local:3000) 
+[Open your dashboard →](http://pirogue.local:3000) 
 
 Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
 

@@ -15,15 +15,15 @@ toc: true
 On your computer connected to the same network as your PiRogue, run the following command:
 
 ```bash
-ping -c1 raspberrypi.local
+ping -c1 pirogue.local
 ```
 
 Example of output, in this example, the IP address of the PiRogue is `192.168.0.16`:
 ```text
-PING raspberrypi.local (192.168.0.16) 56(84) bytes of data.
-64 bytes from raspberrypi.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms
+PING pirogue.local (192.168.0.16) 56(84) bytes of data.
+64 bytes from pirogue.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms
 
---- raspberrypi.local ping statistics ---
+--- pirogue.local ping statistics ---
 1 packets transmitted, 1 received, 0% packet loss, time 0ms
 rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms
 ```
@@ -52,7 +52,7 @@ For security reasons it is highly recommended to change the default password on 
 If you have set up another user on the PiRogue, you can connect to it in the same way, replacing the username with your own, e.g. `eben@192.168.1.5`
 
 ```
-pi@raspberrypi ~ $
+pi@pirogue ~ $
 ```
 
 You are now connected to the PiRogue remotely, and can execute commands.
@@ -94,37 +94,6 @@ Select **5 Localisation options** by hitting the down arrow of your keyboard. Pr
  L4 WLAN Country   Set legal wireless channels for your country
 ```
 Then select either **L1** or **L2** depending on what you want to change. Press `Enter` to enter the menu and follow the instructions.
-
-## Check if your PiRogue is running properly
-On your PiRogue, run the following command:
-
-```bash
-sudo systemctl list-units pirogue* grafana* suricata* influxdb*
-```
-
-Example of output, in this example, everything is `running` properly:
-```
-  UNIT                            LOAD   ACTIVE SUB     DESCRIPTION
-  grafana-server.service          loaded active running Grafana instance
-  influxdb.service                loaded active running InfluxDB is an open-source, distributed, time series database
-  pirogue_eve_collector.service   loaded active running PiRogue collector for Suricata alerts
-  pirogue_infos_screen.service    loaded active running PiRogue screen
-  pirogue_inspect_flows.service   loaded active running PiRogue DPI flow inspection
-  suricata.service                loaded active running Suricata IDS/IDP daemon                                      
-  pirogue_daily_maintenance.timer loaded active waiting Run PiRogue maintenance daily
-
-LOAD   = Reflects whether the unit definition was properly loaded.
-ACTIVE = The high-level unit activation state, i.e. generalization of SUB.
-SUB    = The low-level unit activation state, values depend on unit type.
-7 loaded units listed. Pass --all to see loaded but inactive units, too.
-To show all installed unit files use 'systemctl list-unit-files'.
-```
-
-If one or several services are not running, restart them with the following command:
-
-```bash
-sudo systemctl restart <service name>.service
-```
 
 ## Restart PiRogue services
 On your PiRogue, run the following command:

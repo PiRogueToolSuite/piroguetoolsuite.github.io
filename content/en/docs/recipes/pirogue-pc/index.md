@@ -20,6 +20,10 @@ To follow this recipe we need:
 * the PC is connected to our local network via its Ethernet adapter
 * the PC has an Internet connection
 
+{{< alert icon="⚠️" >}}
+Don't install any desktop environment.
+{{< /alert >}}
+
 ## Prepare the system
 We will do everything by command line so, we connect to our PC and run the following command to upgrade it:
 

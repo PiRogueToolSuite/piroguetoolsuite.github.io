@@ -74,9 +74,9 @@ PiRogue OS is periodically released. The OS is pre-configured so you just need t
 
 
 ### Set up your SD card
-Before flashing the image, you have to unzip the image on your computer. It can be done either by right-clicking on the ZIP file and choosing *Decompress* or with command line using the *unzip* command. Once unzipped, you should have a new file named `PiRogue-OS-<year>-<month>-<day>.img.xz`. This file is the image file you will have to flash on a micro SD-card. Linux users used to use command line can then use the `dd` command to flash their SD-card.
+Advanced Linux users can use a combination of `xz` and `dd` commands to flash their SD-card.
 
-We advice you to [download Balena Etcher](https://www.balena.io/etcher/) and install it on your computer. Run *Balena Etcher* as administrator and follow the steps illustrated by the screenshots below.
+We recommend to [download Balena Etcher](https://www.balena.io/etcher/) and install it on your computer. Run *Balena Etcher* as administrator and follow the steps illustrated by the screenshots below.
 
 [Download Balena Etcher →](https://www.balena.io/etcher/)
 

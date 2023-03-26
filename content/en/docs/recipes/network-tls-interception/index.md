@@ -44,16 +44,16 @@ Don't launch the application.
 ### Instrument and intercept
 Once the application to be analyzed is installed on your Android device, connect your device to the PiRogue Wi-Fi network and run the following command:
 ```bash
-sudo pirogue-intercept-tls -U -f <application package name> -o <path to the output directory>
+sudo pirogue-intercept-gated -o <path to the output directory>
 ```
-Adapt the command according to the application you want to analyze. It will launch the application for you and all collected data will be saved in the output directory you specified.
+Adapt the command according to your output directory of choice. Once started and showing `Waiting for data`, manually launch the application you want to analyze.
 
 {{< img src="img/launch.png" alt="Command capturing TLS traffic" class="d-block mx-auto shadow" >}}
 
 Now, interact with the application freely. When you are done interacting with the app, hit `Ctrl`+`C` on your keyboard to stop interception.
 
 ### Decrypt and view
-Since we run the previous command with `sudo`, we have to fix the permissions of generated files by running:
+If we run the previous command with `sudo`, we have to fix the permissions of generated files by running:
 ```bash
 chown -R pi:pi <path to the output directory>
 ```

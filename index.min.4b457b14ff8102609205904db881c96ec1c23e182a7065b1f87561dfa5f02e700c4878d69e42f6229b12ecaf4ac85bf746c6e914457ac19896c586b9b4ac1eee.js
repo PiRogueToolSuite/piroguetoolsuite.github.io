@@ -213,9 +213,9 @@ Once you have identified the application you want to analyze, you have to downlo
 Finally, to install the application, run the following command:
 adb install \u0026lt;APK file\u0026gt; Don\u0026rsquo;t launch the application.
 Instrument and intercept # Once the application to be analyzed is installed on your Android device, connect your device to the PiRogue Wi-Fi network and run the following command:
-sudo pirogue-intercept-tls -U -f \u0026lt;application package name\u0026gt; -o \u0026lt;path to the output directory\u0026gt; Adapt the command according to the application you want to analyze. It will launch the application for you and all collected data will be saved in the output directory you specified.
+sudo pirogue-intercept-gated -o \u0026lt;path to the output directory\u0026gt; Adapt the command according to your output directory of choice. Once started and showing Waiting for data, manually launch the application you want to analyze.
 Now, interact with the application freely. When you are done interacting with the app, hit Ctrl+C on your keyboard to stop interception.
-Decrypt and view # Since we run the previous command with sudo, we have to fix the permissions of generated files by running:
+Decrypt and view # If we run the previous command with sudo, we have to fix the permissions of generated files by running:
 chown -R pi:pi \u0026lt;path to the output directory\u0026gt; Then enter the output directory with:
 cd \u0026lt;path to the output directory\u0026gt; Next, we generate a PCAPNG file containing both the TLS keys and the captured traffic:
 editcap --inject-secrets tls,sslkeylog.txt traffic.pcap decrypted.pcapng Next, we export the decrypted traffic in JSON:

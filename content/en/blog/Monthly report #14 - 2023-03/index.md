@@ -61,7 +61,7 @@ Threatr (previously known as Colander's analyzers) now supports retrieving intel
 {{< img src="img/threatr-3.png" caption="Example of intelligence provided by Threatr." >}}
 
 ## Community and outreach
-We will be giving a talk about PTS at [JDLL](https://jdll.org/) in April 2023 at Lyon (France). 
+We will be giving a talk about PTS at [JDLL](https://jdll.org/) in April 2023 (Lyon - France). 
 
 We gifted our key contributors with a homemade framed cyanotype of the PiRogue HAT schematic.
 

@@ -2,9 +2,9 @@
 title: Monthly report n⁰14 - 2023-03
 description: "Monthly report of a 2-year journey on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform."
-date: 2023-03-25
+date: 2023-03-31
 lastmod: 2023-03-31
-draft: true
+draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
 ---
@@ -42,17 +42,17 @@ The PiRogue is an open hardware device based on a Raspberry Pi operating as a ne
 You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](https://github.com/PiRogueToolSuite/) or on our website at [https://pts-project.org/](https://pts-project.org/).
 
 ## PiRogue
+We have published a new release (v1.11) of `pirogue-cli` improving the way we retrieve TLS keys from the device memory. 
 
-We have published a new release (v1.11) of `pirogue-cli` improving the way we retrieve TLS keys from the device memory. We have changed to way we deliver the OS image for the PiRogue and updated the documentation accordingly. The new procedure is described [here](https://pts-project.org/docs/pirogue/build-a-pirogue/).
+We have changed the way we deliver the OS image for the PiRogue and updated the documentation accordingly. The new procedure is described [here](https://pts-project.org/docs/pirogue/build-a-pirogue/).
 
 ## Colander
-
 Colander is able to recovers data that has been encrypted before being transmitted by looking at the different cryptographic operations that occurred during the execution of the target app. 
 {{< img src="img/encrypted-data.png" caption="Example of data decryption." >}}
 
 ## Threatr
-
 Threatr (previously known as Colander's analyzers) now supports retrieving intelligence from:
+
 * Virus Total
 * Alien Vault OTX
 
@@ -61,12 +61,13 @@ Threatr (previously known as Colander's analyzers) now supports retrieving intel
 {{< img src="img/threatr-3.png" caption="Example of intelligence provided by Threatr." >}}
 
 ## Community and outreach
-We will be giving a talk about PTS at [JDLL](https://jdll.org/) in April 2023 at Lyon (France). We gifted our key contributors with a homemade framed cyanotype of the PiRogue hat schematic.
+We will be giving a talk about PTS at [JDLL](https://jdll.org/) in April 2023 at Lyon (France). 
 
-{{< img src="img/cyanotype.jpg" caption="Framed cyanotype of the PiRogue hat schematic." >}}
+We gifted our key contributors with a homemade framed cyanotype of the PiRogue HAT schematic.
+
+{{< img src="img/cyanotype.jpg" caption="Framed cyanotype of the PiRogue HAT schematic." >}}
 
 # What we plan to do next month
-
 * continue working on Colander's UI
 * continue working on Threatr
 * continue working on documentation generation

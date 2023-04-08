@@ -29,6 +29,16 @@ To follow this recipe, you need:
 ## Procedure
 First, SSH onto your PiRogue. Attach your smartphone to the PiRogue through USB and make sure "USB debugging" is on and working.
 
+Make sure to enable ADB *Transfer files* by clicking on the *Android System* notification.
+
+<center>
+  <video height="480" controls>
+    <source src="img/adb_config_out.mp4" type="video/mp4">
+    <source src="img/adb_config_out.webm" type="video/webm">
+  Your browser does not support the video tag.
+  </video> 
+</center>
+
 ### Identify and install the application
 Android applications are identified by their *package name*. As an example, the French weather forecast application is `fr.meteo`. You can get the package name either from Google Play URL or from any tool analyzing Android apps such as [Pithus](https://beta.pithus.org), [Virus Total](https://www.virustotal.com/gui/home/upload), etc. In our example, the Google Play URL looks like `https://play.google.com/store/apps/details?id=fr.meteo`, the package name of the application is specified after `id=`. 
 
@@ -38,6 +48,8 @@ Finally, to install the application, run the following command:
 ```bash
 adb install <APK file>
 ```
+
+If your application contains multiple APKs (like in XAPK), use the command `adb install-multiple <list all apks>`.
 
 Don't launch the application.
 
@@ -52,7 +64,12 @@ Adapt the command according to your output directory of choice. Once started and
 
 Now, interact with the application freely. When you are done interacting with the app, hit `Ctrl`+`C` on your keyboard to stop interception.
 
-### Decrypt and view
+
+{{< alert icon="⚠️" >}}
+Make sure that the application you want to be analyzed is not running in background. You can, for example, force stop it in *Settings > Apps*, select the application and click on *Stop*.
+{{< /alert >}}
+
+### Decrypt the traffic
 If we run the previous command with `sudo`, we have to fix the permissions of generated files by running:
 ```bash
 chown -R pi:pi <path to the output directory>
@@ -84,8 +101,21 @@ pirogue-view-tls -i traffic.json -t socket_trace.json
 
 {{< img src="img/view+.png" alt="Command displaying TLS traffic" class="d-block mx-auto shadow" >}}
 
-{{< alert icon="⚠️" context="warning" >}}
+{{< alert icon="⚠️" >}}
 The display of the stack trace has been added to `pirogue-cli` in version `1.0.5`. Be sure to upgrade your PiRogue.
 {{< /alert >}}
 
 If you face any issue, [join the Discord channel](https://discord.gg/faBuCEUR) to get help.
+
+## Generated files
+The commands `pirogue-intercept-single` and `pirogue-intercept-gated` generate the following files:
+
+* `aes_info.json` contains all AES and RSA encryption/decryption operation with both cleartext and cyphertext
+* `device.json` contains various information about the device such as IMEI, Android version
+* `experiment.json` contains timing information such as the start and end date of the experiment
+* `screen.mp4` contains the video recording of the device's screen
+* `socket_trace.json` contains the stack trace of all operations on sockets (open, close, read, write...)
+* `sslkeylog.txt` contains the TLS encryption keys in the [NSS key log format](https://firefox-source-docs.mozilla.org/security/nss/legacy/key_log_format/index.html)
+* `traffic.pcap` contains the entire network traffic captured during the experiment
+
+**NB**: you can open the PCAP file with Wireshark and specify the key log file in *Settings > Protocols > TLS*. This way, Wireshark will automatically decrypt TLS traffic.

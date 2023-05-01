@@ -44,7 +44,11 @@ We onboarded [Christophe Andral](https://github.com/TontonSancho) as a senior so
 
 We revamped the UI and UX of Colander to make it easier to use. We implemented on a new way to handle artifacts upload so that users experiencing Internet connection issues can upload very large files (up to 50GB). We also added a feature allowing the users to automatically take a screenshot of a given URL and dump in a HAR file the corresponding HTTP traffic. The service in charge of capturing a URL is open source and can used without Colander, anyone can deploy it locally or on a server by pulling the provided Docker image available at https://github.com/PiRogueToolSuite/playwright-rest-api/packages.
 
+{{< img src="img/screenshot.png" caption="Example of screenshot and HAR automatically captured for a given ULR." >}}
+
 We have added the support of Yara rules in Colander. These user-defined rules can be automatically applied on the decrypted network traffic.
+
+{{< img src="img/detections.png" caption="Example of detection summary." >}}
 
 We started working on the implementation of the REST API allowing 3rd-party tools such as the PiRogue to interact with Colander (upload artifacts, retrieve entities...). We will provide a Python client for Colander in the next few weeks.
 

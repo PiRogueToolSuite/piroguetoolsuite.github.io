@@ -64,7 +64,7 @@ smallLimit = "600"
 footer = "Powered by <a href=\"https://gohugo.io/\">Hugo</a>, and <a href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2022 Defensive Lab Agency"
+copyRight = "Copyright (c) 2022-2023 Defensive Lab Agency"
 
 # Alert
 alert = true
@@ -97,4 +97,4 @@ lastMod = false
   [menu.section]
     auto = true
     collapsibleSidebar = true
-    mainSections = ["docs"]
+    mainSections = ["docs", "guides"]

@@ -17,6 +17,11 @@
 #  url = "/docs/lorem/"
 #
 [[main]]
+  name = "Guides"
+  url = "/guides/"
+  weight = 5
+
+[[main]]
   name = "Docs"
   url = "/docs/prologue/introduction/"
   weight = 10

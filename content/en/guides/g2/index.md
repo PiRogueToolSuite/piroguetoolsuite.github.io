@@ -70,7 +70,7 @@ Let it run for a few days (3 days) while keeping using the device.
 **Why a few days?** This is because malware and spyware often employ evasive tactics and strive to conceal their activities. Some of them communicate with remote servers only once or twice a day. By extending the duration of the capture, you enhance the likelihood of capturing relevant information.
 
 ## Stop the capture and get the PCAP file
-To stop the capture, press `Ctrl + C` on your keyboard. Then, retrieve the PCAP file from the PiRogue and save it on my computer by running the following command: 
+To stop the capture, press `Ctrl + C` on your keyboard. Then, retrieve the PCAP file from the PiRogue and save it on your computer by running the following command: 
 
 ```
 scp pi@<PiRogue IP address>:~/example.pcap .

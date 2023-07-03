@@ -12,5 +12,5 @@ In this guide, we will explore how to deal with applications, primarily focusing
 Some Android malware masquerades as a normal application. Those files are called APKs (Android Application Package), and the very large majority of your Android applications are APKs.
 
 {{< alert icon="👉" >}}
-Because Google Play adds some information to most of the APKs when they are uploaded to the Play Store, it is possible to check for applications that come from it. This modification is called frosting. When you find an APK that is not frosted, you'd need to be extra careful with it. There are chances it is malicious.
+Because Google Play adds some information to most of the APKs when they are uploaded to the Play Store, it is possible to check for applications that come from it. This modification is called *frosting*. When you find an APK that is not frosted, you'd need to be extra careful with it. There are chances it is malicious.
 {{< /alert >}}

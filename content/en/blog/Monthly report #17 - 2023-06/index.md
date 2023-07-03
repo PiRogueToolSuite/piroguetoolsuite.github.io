@@ -96,4 +96,4 @@ We are hosting a beta version of Colander which is open to community members. Fe
 * continue the migration to Debian 12 mainline
 
 # Challenges
-Porting the HAT drivers to Debian 12 was a big deal, we want to warmly thank Cyril Brulebois for his help and support.
+Porting the HAT drivers to Debian 12 was a big deal, we want to warmly thank [Cyril Brulebois](https://debamax.com/) for his help and support.

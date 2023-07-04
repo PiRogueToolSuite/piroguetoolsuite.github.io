@@ -177,3 +177,10 @@ In contrast, **dynamic analysis** involves executing the application on a device
 If the case you are working on is not too sensitive and if your internal guidelines allow it, you can upload your sample on [VirusTotal](https://www.virustotal.com/) to get basic static and dynamic analyses.
 
 Static and dynamic analysis are vital for investigating potentially malicious apps; however, they can be tricky, frustrating, and, in some cases, risky for beginner readers to conduct. So, if you have conducted static analysis and feel that a deeper investigation needs to be done, or if you want to conduct dynamic analysis but feel under-skilled and inexperienced for it, you can always ask for help and consult experts in analyzing and investigating potentially malicious apps. This will ensure thorough and trusted results.
+
+## Going further
+To learn more about Pithus, you can train yourself on [TryHackMe](https://tryhackme.com/room/androidmalwareanalysis).
+
+You can also learn from:
+* [https://www.ragingrock.com/AndroidAppRE/app_fundamentals.html](https://www.ragingrock.com/AndroidAppRE/app_fundamentals.html)
+* [https://mobile-security.gitbook.io/mobile-security-testing-guide/overview/0x03-overview](https://mobile-security.gitbook.io/mobile-security-testing-guide/overview/0x03-overview)

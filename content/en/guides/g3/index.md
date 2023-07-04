@@ -1,5 +1,5 @@
 ---
-title: ⌛ Beginner guide - How to handle a potentially malicious mobile app
+title: Beginner guide - How to handle a potentially malicious mobile app
 weight: 30
 toc: true
 draft: false
@@ -89,9 +89,9 @@ Use tools to extract information that will help you identify the binary and its 
 
 For this guide we will use two main tools to retrieve basic information for the example sample, Pithus and Jadx for exercising both options of analysis with online third party service and static offline analysis.
 
-### With Pithus
+### With Pithus (online)
 
-#### Application name and package name
+#### Application and package names
 The application name is the name that will be displayed under the application icon on your phone. The package name is the technical name (identifier) of this application, the information that Android will be using to uniquely identify the application.
 
 {{< img src="img/pithus_app_name.png" alt="Get both application and package names from Pithus" caption="Get both application and package names from Pithus" class="d-block mx-auto shadow md-5" >}}
@@ -111,9 +111,69 @@ To check if the sample was *frosted* by Google Play Store (Android only), refers
 
 {{< img src="img/pithus_genuine_frosting.png" alt="Frosting flag of the genuine Wire application" caption="Frosting flag of the <b>genuine Wire application</b>" class="d-block mx-auto shadow md-5" >}}
 
-#### Requested app permissions
+#### Requested permissions
 
-Permissions can serve as an important indicator to determine whether an app is malicious or not. By reviewing the permissions requested, we can evaluate if they align with the legitimate purpose and functionality of the app. Take the example of the fake Wire app, which requests excessive permissions unrelated to its intended use as a communication app. This discrepancy raises suspicions about the app's integrity.
+Permissions can serve as an important indicator to determine whether an application is malicious or not. By reviewing the permissions requested, we can evaluate if they align with the legitimate purpose and functionality of the application. Take the example of the fake Wire application, which requests excessive permissions unrelated to its intended use as a communication application. This discrepancy raises suspicions about the application's integrity. If our assessment (and gut feeling) says that these are not legitimate permissions and there's something shady with them, then it's worth investigating.
 
 {{< img src="img/pithus_permissions.png" alt="Requested permissions by the malicious sample" caption="Requested permissions by the malicious sample" class="d-block mx-auto shadow md-5" >}}
 
+### With jadx (offline)
+
+First, you have to install jadx on your computer.To do so, follow the [documentation available on GitHub](https://github.com/skylot/jadx#download). If you are using Windows, we suggest to download the file named `jadx-gui-[version]-with-jre-win.zip` from the [releases page](https://github.com/skylot/jadx/releases/latest), decompress the downloaded ZIP archive and double-click on the `.bat` file to launch jadx.
+
+{{< img src="img/jadx.png" alt="Jadx main view" caption="Jadx main view" class="d-block mx-auto shadow md-5" >}}
+
+Once launched, select and open your sample file. After a few seconds or minutes depending on the size of the APK, jadx will display the content of the Android application as a tree on the left part of the screen.
+
+{{< img src="img/jadx_open.png" alt="Our sample opened with jadx" caption="Our sample opened with jadx" class="d-block mx-auto shadow md-5" >}}
+
+#### Application and package names
+
+To get both application name and package name, double-click open the `AndroidManifest.xml` file listed in the tree. It will open it and show you its content in a human-readable way. To get the package name, look at the field `package` in the `AndroidManifest.xml` file.
+
+{{< img src="img/jadx_package.jpeg" alt="Package name in jadx" caption="Package name in jadx" class="d-block mx-auto shadow md-5" >}}
+
+To get the application name, look at the field `android:label` of the element `application` in the `AndroidManifest.xml` file.
+
+{{< img src="img/jadx_app_name.jpeg" alt="Application name in jadx" caption="Application name in jadx" class="d-block mx-auto shadow md-5" >}}
+
+#### Signing certificate information
+
+To get the signing certificate information, double-click on `APK signature` listed at the bottom of the tree and look at the entry `SHA-256 Fingerprint`.
+
+{{< img src="img/jadx_cert.jpeg" alt="Signing certificate information in jadx" caption="Signing certificate information in jadx" class="d-block mx-auto shadow md-5" >}}
+
+#### Requested permissions
+
+To get the list of requested permissions, open the `AndroidManifest.xml` file and look at `uses-permissions` elements in it.
+
+{{< img src="img/jadx_permissions.jpeg" alt="Requested permissions in jadx" caption="Requested permissions in jadx" class="d-block mx-auto shadow md-5" >}}
+
+The same thing we did with Pithus, here we can also review the permissions and assess if these are legitimate permissions for the app's purpose. If our assessment (and gut feeling) says that these are not legitimate permissions and there's something shady with them, then it's worth investigating.
+
+## Check if the sample is malicious
+
+If you have an anti-virus software installed on your computer (Windows comes with Windows Defender by default), you can use it analyze the sample and know if it is detected as malicious. If you have Windows Defender, right-click on the sample file and choose "Scan with Windows Defender", please refer the your anti-virus documentation otherwise.
+
+If permitted by your internal guidelines, you can search for the SHA256 of the sample on multiple online services such as [VirusTotal](https://www.virustotal.com/). To search for our sample on VirusTotal, click on "Search" and paste the SHA256 of the sample.
+
+{{< img src="img/vt_search.png" alt="Search for a SHA256 on VirusTotal" caption="Search for a SHA256 on VirusTotal" class="d-block mx-auto shadow md-5" >}}
+
+{{< img src="img/vt_report.png" alt="VirusTotal report for our sample" caption="VirusTotal report for our sample" class="d-block mx-auto shadow md-5" >}}
+
+{{< alert icon="👉" >}}
+**Reminder** if your sample is not detected as malicious does not mean that it is not malicious - it can be a false-negative. It only means that no already known threat or malware has been detected. In some cases, non-malicious samples are detected as malicious even if they are not - false-positives exist too!
+{{< /alert >}}
+
+
+## Static and dynamic analysis
+
+What we just did with jadx was basic **static analysis**. This form of analysis is locally conducted analysis of source code without executing the application and without sharing information with third-party services like Pithus and VirusTotal. Static analysis is helpful mainly when we're not allowed to share the sample or any information around it with external services, and when it's risky to execute the application on our devices.
+
+Static analysis is conducted with various tools to decompile the binary, such as jadx (the tool we used), and other tools like [radare2](https://rada.re/n/radare2.html), [rizin](https://rizin.re/), and [jeb](https://www.pnfsoftware.com/jeb/). You can also use tools such as [droidlysis](https://github.com/cryptax/droidlysis) to conduct automatic offline static analysis.
+
+In contrast, **dynamic analysis** involves executing the application on a device (virtual or real). That means the binary code will run on the device, and this carries the risk of infecting the device with potential malware from the app we want to analyze. This analysis can disclose your location, your organization, and other identifiable information about you and your work. Therefore, it is preferable to work offline if possible to minimize the exfiltrated information.
+
+If the case you are working on is not too sensitive and if your internal guidelines allow it, you can upload your sample on [VirusTotal](https://www.virustotal.com/) to get basic static and dynamic analyses.
+
+Static and dynamic analysis are vital for investigating potentially malicious apps; however, they can be tricky, frustrating, and, in some cases, risky for beginner readers to conduct. So, if you have conducted static analysis and feel that a deeper investigation needs to be done, or if you want to conduct dynamic analysis but feel under-skilled and inexperienced for it, you can always ask for help and consult experts in analyzing and investigating potentially malicious apps. This will ensure thorough and trusted results.

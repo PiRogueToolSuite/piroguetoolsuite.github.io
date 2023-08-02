@@ -72,7 +72,7 @@ The padlock prefixing the name of a link between 2 entities indicates that this 
 {{< img src="img/entity_protected_link.png" alt="Protected link between two entities" class="d-block mx-auto shadow md-5" >}}
 {{< img src="img/graph_protected_link.png" alt="Protected link between two entities" class="d-block mx-auto shadow md-5" >}}
 
-By default, the layout of the graph is automatic and can make the graph hard to read. So, users can manually move entities and re-layout the entire graph. The layout done manually is persisted so that it is not necessary to redo it each time the graph is opened.
+By default, the layout of the graph is automatic and can make the graph hard to read. So, users can manually move entities and re-layout the entire graph. The layout done manually is saved so that it is not necessary to redo it each time the graph is opened.
 
 We continue improving the overall UI and UX.
 

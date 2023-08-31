@@ -45,13 +45,13 @@ If you open the [Pithus report](https://beta.pithus.org/report/ae05bbd31820c5665
 {{< img src="img/pithus_sha256.png" alt="SHA256 in Pithus" caption="SHA256 in Pithus" class="d-block mx-auto shadow md-5" >}}
 
 ### Compute the sample hash locally
-You can compute the SHA256 of the sample directly on your computer with the following command line, replace `<my.apk>` my the path to the sample file:
+You can compute the SHA256 of the sample directly on your computer with the following command line, replace `<my.apk>` by the path to the sample file:
 
-| Operating system | Command                                                                |
-|------------------|------------------------------------------------------------------------|
-| on Linux         | `sha256sum <my.apk>`                                                   |
-| on Windows       | `powershell: Get-FileHash .\<my.apk> -Algorithm SHA256 \| Format-List` |
-| on Mac OS        | `shasum -a 256 <my.apk>`                                               |
+| Operating system      | Command                                                                |
+|-----------------------|------------------------------------------------------------------------|
+| on Linux              | `sha256sum <my.apk>`                                                   |
+| on Windows Powershell | `Get-FileHash .\<my.apk> -Algorithm SHA256 \| Format-List`             |
+| on Mac OS             | `shasum -a 256 <my.apk>`                                               |
 
 The SHA256 of the sample we use in this guide is: `ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8`
 

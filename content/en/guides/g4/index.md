@@ -166,7 +166,7 @@ Once you have shared your backup file with the expert you are in touch with, sec
 
 | Operating system      | Command                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------|
-| on Linux              | `shred /path/to/backup/folder/backup.[ab\|zip]`                                           |
+| on Linux              | `shred -u /path/to/backup/folder/backup.[ab\|zip]`                                           |
 | on Windows Powershell | `sdelete -p 3 -r -q  D:/path/to/backup/folder/backup.[ab\|zip]`                           |
 | on Mac OS             | `srm /path/to/backup/folder/backup.[ab\|zip]`                                             |
 

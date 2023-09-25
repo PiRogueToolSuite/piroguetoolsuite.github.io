@@ -12,6 +12,8 @@
 							{{ if eq .Section "blog" -}}
 								<p>{{ .Params.lead | safeHTML }}</p>
 								{{ partial "main/blog-meta.html" . -}}
+							{{ else }}
+								<p>{{ .Params.description }}</p>
 							{{ end -}}
 						</div>
 					</div>

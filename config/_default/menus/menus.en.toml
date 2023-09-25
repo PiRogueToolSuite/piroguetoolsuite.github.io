@@ -31,10 +31,10 @@
   url = "/blog/"
   weight = 20
 
-#[[main]]
-#  name = "Roadmap"
-#  url = "/roadmap/"
-#  weight = 25
+[[main]]
+  name = "Contributors"
+  url = "/contributors/"
+  weight = 25
 
 [[main]]
   name = "About"

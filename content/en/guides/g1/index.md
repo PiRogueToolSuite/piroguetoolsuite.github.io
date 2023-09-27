@@ -95,7 +95,7 @@ Once you have downloaded the image, you can check its integrity (check if the fi
 To compute the SHA256 of the file you downloaded, run the following command in a terminal:
 
 * on Linux: `sha256sum PiRogue-OS-<year>-<month>-<day>.img.xz`
-* on Windows with powershell: `Get-FileHash .\PiRogue-OS-<year>-<month>-<day>.img.xz -Algorithm SHA256 | Format-List`
+* on Windows Powershell: `Get-FileHash .\PiRogue-OS-<year>-<month>-<day>.img.xz -Algorithm SHA256 | Format-List`
 
 
 ### Set up your SD card

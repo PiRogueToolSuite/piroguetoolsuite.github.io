@@ -47,7 +47,7 @@ We continue working on the learning materials. The list is available at [https:/
 
 We onboarded Sereen Dhamshi as a graphic designer, she is currently working on the illustrations of our learning materials.
 
-We have open 15 time slots in October to present the latest improvements of Colander, slots that anyone can attend. If you want to learn more about the different key features of Colander, feel free to book a demo session at [https://calendly.com/pirogue-tool-suite/demo](https://calendly.com/pirogue-tool-suite/demo).
+We have open multiple time slots in October to present the latest improvements of Colander, slots that anyone can attend. If you want to learn more about the different key features of Colander, feel free to book a demo session at [https://cloud.u039b.fr/apps/forms/s/HGss3MMSsDE43g6mStkE6K25](https://cloud.u039b.fr/apps/forms/s/HGss3MMSsDE43g6mStkE6K25).
 
 During these sessions, we will be focusing on:
 
@@ -56,7 +56,7 @@ During these sessions, we will be focusing on:
 * how to use the Colander graph editor;
 * how to use Colander feeds to export findings, IOCs and detection rules.
 
-[>> Book a demo session.](https://calendly.com/pirogue-tool-suite/demo)
+[>> Book a demo session.](https://cloud.u039b.fr/apps/forms/s/HGss3MMSsDE43g6mStkE6K25)
 
 We are hosting a beta version of Colander which is open to community members. Feel free to ask for an account.
 

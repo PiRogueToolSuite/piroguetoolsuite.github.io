@@ -64,7 +64,7 @@ copyRight = "Copyright (c) 2022-2023 Defensive Lab Agency"
 # Alert
 alert = true
 alertDismissable = true
-alertText = "If you need help or just want to chat, feel free to join <a class=\"alert-link stretched-link\" href=\"https://discord.gg/Tve3SP26QS\" target=\"_blank\" rel=\"noopener\">our Discord server</a>."
+alertText = "If you need help or just want to chat, feel free to join <a class=\"alert-link stretched-link\" href=\"https://discord.gg/qGX73GYNdp\" target=\"_blank\" rel=\"noopener\">our Discord server</a>."
 
 
 # Edit Page

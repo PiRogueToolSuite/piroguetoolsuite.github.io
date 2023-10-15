@@ -49,7 +49,7 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 ![PTS final logo](img/logo.png)
 
 ### Community
-We opened a Discord channel allowing anyone to join and ask for help or propose to contribute. This Discord channel is available at [https://discord.gg/Tve3SP26QS](https://discord.gg/Tve3SP26QS).
+We opened a Discord channel allowing anyone to join and ask for help or propose to contribute. This Discord channel is available at [https://discord.gg/qGX73GYNdp](https://discord.gg/qGX73GYNdp).
 
 We onboarded our first technical contributor [@CyrilBrulebois](https://twitter.com/CyrilBrulebois). Cyril works on improving the Debian packaging.
 

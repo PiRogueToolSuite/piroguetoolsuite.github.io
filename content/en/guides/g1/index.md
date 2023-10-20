@@ -177,6 +177,26 @@ ping -c1 pirogue.local
 For customizing your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](https://pts-project.org/docs/pirogue/configure-a-pirogue/).
 {{< /alert >}}
 
+## Continuous network traffic analysis
+
+The PiRogue is designed to continuously analyze the network traffic of any device connected to its Wi-Fi network. This means that it is constantly monitoring and inspecting the data packets that are being transmitted and received by these devices. The purpose of this analysis is to identify any suspicious or malicious activity that may be taking place on the network.
+
+### Two-pronged approach to network traffic analysis
+
+The PiRogue employs two primary methods for analyzing network traffic: Deep Packet Inspection (DPI) and [Suricata](https://suricata.io/) rule-based detection.
+
+### Deep Packet Inspection (DPI)
+
+DPI is a technique that allows the PiRogue to examine the contents of data packets in detail. This includes information such as the source and destination IP addresses, the ports being used, the type of data being transmitted, and even the identification of the application involved. By analyzing this information, we can identify patterns and anomalies that may indicate malicious activity.
+
+### Suricata rule-based detection
+
+[Suricata](https://suricata.io/) is an open-source intrusion detection system (IDS) that uses a set of rules to identify known threats. These rules are constantly being updated to keep up with the latest threats. The PiRogue comes pre-configured with rules from [ProofPoint Emerging Threat Open](https://community.emergingthreats.net/t/frequently-asked-questions/56) and [Echap](https://github.com/AssoEchap/stalkerware-indicators), two reputable sources of threat intelligence.
+
+### Visualizing analysis results in the dashboard
+
+The results of the PiRogue's automatic analysis can be visualized in the dashboard. This dashboard provides a graphical overview of the network traffic that has been analyzed, as well as any threats that have been detected. The dashboard also allows users to drill down into the details of specific network flows to learn more about them.
+
 ## The dashboard
 By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](https://pts-project.org/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
 
@@ -196,7 +216,7 @@ The PiRogue keeps 5 days of history, data older than 5 days is automatically del
 This panel displays various information:
 
 1. the number of different devices that have been connected to the PiRogue's Wi-Fi network during the selected period of time
-2. the number of security alerts that have occurred during the selected period of time
+2. the number of security alerts (based on Suricata rules) that have occurred during the selected period of time
 3. the amount of network traffic exchanged between connected devices and the Internet during the selected period of time
 4. the number of network flows that have occurred during the selected period of time
 5. the number of different domains that have been contacted during the selected period of time

@@ -21,12 +21,7 @@ resources:
 
 The PiRogue is an open hardware device based on a Raspberry Pi operating as a network router (like any ISP router) analyzing network traffic in real time.
 
-It can operate in three different modes: 
-
-- a kiosk mode for anyone who wants to know which servers a mobile device is communicating with
-  - useful for non-profit that want to know if a victim is targeted by stalkerware
-  - useful for educational purposes to highlight surveillance capitalism
-  - more generally assess if a mobile device is spied on/compromised by utilizing detection rules such as Suricata and others
+It can operate in different modes: 
 
 - an on-the-field mode
   - for emergency response (active spying, device tampering, ...) useful for responders in repressive environment

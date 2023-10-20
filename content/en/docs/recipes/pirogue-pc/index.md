@@ -66,4 +66,4 @@ pirogue-ctl status
 
 {{< img src="img/status.png" alt="Output of pirogue-ctl status" class="d-block mx-auto shadow" >}}
 
-If we see everything in a mix of purple and green, congrats! If not, [join the Discord channel](https://discord.gg/faBuCEUR) to get help.
+If we see everything in a mix of purple and green, congrats! If not, [join the Discord channel](https://discord.gg/qGX73GYNdp) to get help.

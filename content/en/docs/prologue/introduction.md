@@ -23,4 +23,4 @@ The PiRogue Tool Suite is made of two sub-systems:
 
 ## Help
 
-Get help on PiRogue Tool Suite. [Get help on Discord →](https://discord.gg/Tve3SP26QS)
+Get help on PiRogue Tool Suite. [Get help on Discord →](https://discord.gg/qGX73GYNdp)

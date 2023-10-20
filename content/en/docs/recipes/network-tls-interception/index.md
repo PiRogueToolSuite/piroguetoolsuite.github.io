@@ -113,7 +113,7 @@ pirogue-view-tls -i traffic.json -t socket_trace.json
 The display of the stack trace has been added to `pirogue-cli` in version `1.0.5`. Be sure to upgrade your PiRogue.
 {{< /alert >}}
 
-If you face any issue, [join the Discord channel](https://discord.gg/faBuCEUR) to get help.
+If you face any issue, [join the Discord channel](https://discord.gg/qGX73GYNdp) to get help.
 
 ## Generated files
 The commands `pirogue-intercept-single` and `pirogue-intercept-gated` generate the following files:

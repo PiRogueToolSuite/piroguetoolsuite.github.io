@@ -99,7 +99,12 @@ The second way is to use the ping command. To do so, on your computer connected 
 The first way is by looking at the screen of the PiRogue Hat.
 The second way is to use the ping command. To do so, on your computer connected to the same network as your PiRogue, run the following command:
 ping -c1 pirogue.local Example of output, in this example, the IP address of the PiRogue is 192.168.0.16:
-PING pirogue.local (192.168.0.16) 56(84) bytes of data. 64 bytes from pirogue.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms --- pirogue.local ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms The dashboard # By default, your PiRogue exposes a Grafana dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the cheatsheet to get default user and password of the dashboard.
+PING pirogue.local (192.168.0.16) 56(84) bytes of data. 64 bytes from pirogue.home (192.168.0.16): icmp_seq=1 ttl=64 time=0.319 ms --- pirogue.local ping statistics --- 1 packets transmitted, 1 received, 0% packet loss, time 0ms rtt min/avg/max/mdev = 0.319/0.319/0.319/0.000 ms Continuous network traffic analysis # The PiRogue is designed to continuously analyze the network traffic of any device connected to its Wi-Fi network. This means that it is constantly monitoring and inspecting the data packets that are being transmitted and received by these devices. The purpose of this analysis is to identify any suspicious or malicious activity that may be taking place on the network.
+Two-pronged approach to network traffic analysis # The PiRogue employs two primary methods for analyzing network traffic: Deep Packet Inspection (DPI) and Suricata rule-based detection.
+Deep Packet Inspection (DPI) # DPI is a technique that allows the PiRogue to examine the contents of data packets in detail. This includes information such as the source and destination IP addresses, the ports being used, the type of data being transmitted, and even the identification of the application involved. By analyzing this information, we can identify patterns and anomalies that may indicate malicious activity.
+Suricata rule-based detection # Suricata is an open-source intrusion detection system (IDS) that uses a set of rules to identify known threats. These rules are constantly being updated to keep up with the latest threats. The PiRogue comes pre-configured with rules from ProofPoint Emerging Threat Open and Echap, two reputable sources of threat intelligence.
+Visualizing analysis results in the dashboard # The results of the PiRogue\u0026rsquo;s automatic analysis can be visualized in the dashboard. This dashboard provides a graphical overview of the network traffic that has been analyzed, as well as any threats that have been detected. The dashboard also allows users to drill down into the details of specific network flows to learn more about them.
+The dashboard # By default, your PiRogue exposes a Grafana dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the cheatsheet to get default user and password of the dashboard.
 Open your dashboard →
 Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
 The default dashboard is composed of different panels, we will go through the main ones.
@@ -200,16 +205,18 @@ sudo curl -o /etc/apt/sources.list.d/pirogue.list https://pts-project.org/ppa/pi
 sudo apt install pirogue-base-pc Check if everything runs properly # To check how healthy our PiRogue is, run
 pirogue-ctl status If we see everything in a mix of purple and green, congrats! If not, join the Discord channel to get help.
 `}).add({id:16,href:"/docs/recipes/how-to-intercept-and-decrypt-tls-traffic/",title:"How to intercept and decrypt TLS traffic",description:`This recipe is dedicated to intrepid users 😎
-PiRogue comes with a pirogue-intercept-tls helper to help you intercept encrypted TLS traffic from applications, even in presence of SSL certificate pinning.
-This helper is meant to:
-capture the network traffic instrument a given application Requirements # To follow this recipe, you need:
+PiRogue comes with a pirogue-intercept-* helpers to help you intercept encrypted TLS traffic from applications, even in presence of TLS certificate pinning.
+These helpers are meant to:
+capture the network traffic instrument a specific application or any launched application Requirements # To follow this recipe, you need:
 an up-to-date PiRogue a rooted Android device Procedure # First, SSH onto your PiRogue. Attach your smartphone to the PiRogue through USB and make sure \u0026ldquo;USB debugging\u0026rdquo; is on and working.`,content:`This recipe is dedicated to intrepid users 😎
-PiRogue comes with a pirogue-intercept-tls helper to help you intercept encrypted TLS traffic from applications, even in presence of SSL certificate pinning.
-This helper is meant to:
-capture the network traffic instrument a given application Requirements # To follow this recipe, you need:
+PiRogue comes with a pirogue-intercept-* helpers to help you intercept encrypted TLS traffic from applications, even in presence of TLS certificate pinning.
+These helpers are meant to:
+capture the network traffic instrument a specific application or any launched application Requirements # To follow this recipe, you need:
 an up-to-date PiRogue a rooted Android device Procedure # First, SSH onto your PiRogue. Attach your smartphone to the PiRogue through USB and make sure \u0026ldquo;USB debugging\u0026rdquo; is on and working.
 Make sure to enable ADB Transfer files by clicking on the Android System notification.
-Your browser does not support the video tag. Identify and install the application # Android applications are identified by their package name. As an example, the French weather forecast application is fr.meteo. You can get the package name either from Google Play URL or from any tool analyzing Android apps such as Pithus, Virus Total, etc. In our example, the Google Play URL looks like https://play.google.com/store/apps/details?id=fr.meteo, the package name of the application is specified after id=.
+Your browser does not support the video tag. Then check if the PiRogue sees your device by running the command:
+adb devices You should see your device listed. If not, be sure to use the right USB cable for your device. If the issue remains, check that you have the rights to interact with USB devices. To do so, run the command groups to list the groups you belong to and check if the group plugdev is listed. If not, execute the following command sudo usermod -aG plugdev $LOGNAME and reboot.
+Identify and install the application # Android applications are identified by their package name. As an example, the French weather forecast application is fr.meteo. You can get the package name either from Google Play URL or from any tool analyzing Android apps such as Pithus, Virus Total, etc. In our example, the Google Play URL looks like https://play.google.com/store/apps/details?id=fr.meteo, the package name of the application is specified after id=.
 Once you have identified the application you want to analyze, you have to download and install it on your target device. If you need to download the application from Google Play, we recommend to use apkeep (not installed by default on PiRogue).
 Finally, to install the application, run the following command:
 adb install \u0026lt;APK file\u0026gt; If your application contains multiple APKs (like in XAPK), use the command adb install-multiple \u0026lt;list all apks\u0026gt;.

@@ -13,12 +13,12 @@ toc: true
 
 This recipe is dedicated to intrepid users 😎
 
-PiRogue comes with a `pirogue-intercept-tls` helper to help you intercept encrypted TLS traffic from applications, even in presence of SSL certificate pinning.
+PiRogue comes with a `pirogue-intercept-*` helpers to help you intercept encrypted TLS traffic from applications, even in presence of TLS certificate pinning.
 
-This helper is meant to:
+These helpers are meant to:
 
 * capture the network traffic
-* instrument a given application
+* instrument a specific application or any launched application
 
 ## Requirements
 To follow this recipe, you need:
@@ -38,6 +38,14 @@ Make sure to enable ADB *Transfer files* by clicking on the *Android System* not
   Your browser does not support the video tag.
   </video> 
 </center>
+
+Then check if the PiRogue *sees* your device by running the command:
+
+```
+adb devices
+```
+
+You should see your device listed. If not, be sure to use the right USB cable for your device. If the issue remains, check that you have the rights to interact with USB devices. To do so, run the command `groups` to list the groups you belong to and check if the group `plugdev` is listed. If not, execute the following command `sudo usermod -aG plugdev $LOGNAME` and reboot.
 
 ### Identify and install the application
 Android applications are identified by their *package name*. As an example, the French weather forecast application is `fr.meteo`. You can get the package name either from Google Play URL or from any tool analyzing Android apps such as [Pithus](https://beta.pithus.org), [Virus Total](https://www.virustotal.com/gui/home/upload), etc. In our example, the Google Play URL looks like `https://play.google.com/store/apps/details?id=fr.meteo`, the package name of the application is specified after `id=`. 

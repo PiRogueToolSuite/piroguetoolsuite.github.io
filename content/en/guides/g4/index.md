@@ -2,7 +2,7 @@
 title: Beginner guide - How to backup a mobile device for forensic analysis purpose
 weight: 40
 toc: true
-draft: true
+draft: false
 ---
 
 Creating a backup of a mobile device is a crucial and standard procedure in forensic analysis. It provides us with a secure and unaltered copy of the data, enabling a thorough and reliable investigation.
@@ -17,6 +17,8 @@ Moreover, if the analysis escalates to a court investigation, creating a backup 
 
 In this guide, we will walk you through the steps of creating a device backup on PiRogue, using different tools that comes pre-installed on PiRogue. However, we will also include steps and documentation for backup creation for non-PiRogue users and alternative methods.
 
+Note that, unfortunately, Android devices provide much less observability than their iOS cousins. Android stores very little diagnostic information useful to triage potential compromises.
+
 ## Preparation
 To prepare your mobile device for backup, make sure the following:
 * Your device is fully charged.
@@ -25,27 +27,30 @@ To prepare your mobile device for backup, make sure the following:
 * If you’re storing the backup on your computer make sure to have enough space.
 
 ## Backup an iOS device
-There are two ways to backup an iOS device, it depends on what computer you’re creating the backup. If you have a MacOS device it would be easier for you to create the backup with iTunes, if not so you will need to create it with command line using a third party tool.
+There are two ways to backup an iOS device, it depends on the computer you’re using to create the backup. If you have a MacOS device it would be easier for you to create the backup with iTunes or Finder, if not so you will need to create it with command line using a third-party tool.
 
-### Backup with iTunes on your computer
+### Backup with iTunes or Finder on your computer
 #### Prerequisites
 
-* You need to have iTunes installed on your computer running MacOS.
-* You need to have a USB cable to connect your iOS device to your computer.
+* You need to have a computer running MacOS or a Windows compute with iTunes already installed.
+* You need to have a USB/Thunderbolt cable to connect your iOS device to your computer.
 * You need to create a folder on your computer where you want to save the backup file.
+
+You can find more details in the [Apple documentation](https://support.apple.com/en-us/HT211229).
 
 #### Backup instructions
 
-* **Install iTunes**: If you don't have iTunes installed on your computer, download and install the latest version from the Apple website.
-* **Connect your iOS device**: Use a USB cable to connect your iOS device (iPhone, iPad, or iPod touch) to your computer. Launch iTunes if it doesn't open automatically.
+* **Connect your iOS device**: Use a USB/Thunderbolt cable to connect your iOS device (iPhone, iPad, or iPod touch) to your computer. Launch iTunes or Finder if it doesn't open automatically.
 * **Trust the computer**: On your iOS device, you may see a prompt asking you to "Trust This Computer." Enter your device passcode and tap "Trust" to establish the connection.
-* **Select your device**: In iTunes, you'll see an icon representing your iOS device in the upper-left corner. Click on it to access the device's summary page.
+* **Select your device**: In iTunes or in Finder (on latest versions of Mac OS), you'll see an icon representing your iOS device. Click on it to access the device's summary page.
 * **Choose backup method**: On the summary page, you have two backup options:
   * a. **Back up to iCloud**: This will back up your device to your iCloud account. Ensure that iCloud Backup is turned on in your device settings (Settings > [your name] > iCloud > iCloud Backup). If you want to back up to your computer, choose the next option.
-  * b. **Back up to this computer**: This option will create a local backup on your computer.
-* **Start the backup**: If you chose to back up to your computer, click on "Back Up Now" under the "Manually Back Up and Restore" section. iTunes will start the backup process, and you can monitor its progress on the top bar of the iTunes window.
+  * b. **Back up to this computer**: This option will create a local backup on your computer. Be sure to create an encrypted backup since it contains way more information.
+* **Start the backup**: If you chose to back up to your computer, click on "Back Up Now" under the "Manually Back Up and Restore" section. The backup process will start, and you can monitor its progress on the top bar of the iTunes window.
 * **Wait for the backup to complete**: The backup process may take some time, depending on the amount of data on your device. Make sure not to disconnect your device until the backup is complete.
 * **Verify the backup**: After the backup is finished, you can verify it by going to iTunes Preferences (on Mac) or Edit > Preferences (on Windows) and selecting the "Devices" tab. You should see your device's backup listed there with the date and time.
+
+You can find more details about encrypted backups in the [Apple documentation](https://support.apple.com/en-us/HT205220). If don't remember your backup password, check the [Apple documentation](https://support.apple.com/en-us/HT213037) to learn how to reset it.
 
 On Windows, the backup can be stored either in `%USERPROFILE%\Apple\MobileSync\` or `%USERPROFILE%\AppData\Roaming\Apple Computer\MobileSync\`. On macOS, the backup is stored in `~/Library/Application Support/MobileSync/`.
 
@@ -56,13 +61,13 @@ Backing up an iOS device with *libimobiledevice* allows you to perform backups w
 
 #### Prerequisites
 
-* You need to have [*libimobiledevice*](https://libimobiledevice.org/) installed on your computer, it is pre-installed on your PiRogue. If you don’t have it installed, follow the installation instructions [here](https://docs.mvt.re/en/latest/ios/install/).
-* You need to have a USB cable to connect your iOS device to your computer.
+* You need to have [*libimobiledevice*](https://libimobiledevice.org/) installed on your computer (Linux or MacOS, Windows is not supported), it is pre-installed on your PiRogue. If you don’t have it installed, follow the installation instructions [here](https://docs.mvt.re/en/latest/ios/install/).
+* You need to have a USB/Thunderbolt cable to connect your iOS device to your computer.
 * You need to create a folder on your computer where you want to save the backup file.
 
 #### Backup instructions
 
-* **Connect your iOS device**: Use a USB cable to connect your iOS device to your computer.
+* **Connect your iOS device**: Use a USB/Thunderbolt cable to connect your iOS device to your computer.
 * **Unlock your iOS device**: Unlock your iOS device and, if prompted, tap "Trust" to establish a connection with your computer.
 * **Open Terminal (macOS/Linux) or Command Prompt (Windows)**: You'll use the command line to execute the backup command.
 * **Check device connection**: To ensure your iOS device is detected, run the following command: 
@@ -83,11 +88,12 @@ Backing up an iOS device with *libimobiledevice* allows you to perform backups w
   | Operating system      | Command                                                                             |
   |-----------------------|-------------------------------------------------------------------------------------|
   | on Linux              | `idevicebackup2 backup --full /path/to/backup/folder`                               |
-  | on Windows Powershell | `idevicebackup2.exe backup --full /path/to/backup/folder`                           |
   | on Mac OS             | `idevicebackup2 backup --full /path/to/backup/folder`                               |
 
   Replace `/path/to/backup/folder` with the actual location on your computer where you want to save the backup.
 * **Wait for the backup to complete**: The backup process may take some time, depending on the amount of data on your device.
+
+You can find more details about encrypted backups in the [Apple documentation](https://support.apple.com/en-us/HT205220). If don't remember your backup password, check the [Apple documentation](https://support.apple.com/en-us/HT213037) to learn how to reset it.
 
 #### Create a ZIP archive of the backup
 `idevicebackup2` does not create a single file, it creates a folder instead. So, in order to later share the backup with an expert, you have to create a ZIP archive of it.
@@ -95,7 +101,6 @@ Backing up an iOS device with *libimobiledevice* allows you to perform backups w
 | Operating system      | Command                                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 | on Linux              | `zip -r ~/my_backup.zip /path/to/backup/folder`                                     |
-| on Windows Powershell | `Compress-Archive -Path D:/path/to/backup/folder -DestinationPath D:/my_backup.zip` |
 | on Mac OS             | `zip -r ~/my_backup.zip /path/to/backup/folder`                                     |
 
 Some additional explanations of the commands:
@@ -150,7 +155,6 @@ You then have compute the SHA256 of the backup file with the following command l
 | Operating system      | Command                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------|
 | on Linux              | `sha256sum /path/to/backup/folder/backup.[ab\|zip]`                                       |
-| on Windows Powershell | `Get-FileHash  D:/path/to/backup/folder/backup.[ab\|zip] -Algorithm SHA256 \| Format-List`|
 | on Mac OS             | `shasum -a 256 /path/to/backup/folder/backup.[ab\|zip]`                                   |
 
 ### Share your backup
@@ -166,8 +170,7 @@ Once you have shared your backup file with the expert you are in touch with, sec
 
 | Operating system      | Command                                                                                   |
 |-----------------------|-------------------------------------------------------------------------------------------|
-| on Linux              | `shred -u /path/to/backup/folder/backup.[ab\|zip]`                                           |
-| on Windows Powershell | `sdelete -p 3 -r -q  D:/path/to/backup/folder/backup.[ab\|zip]`                           |
+| on Linux              | `shred -u /path/to/backup/folder/backup.[ab\|zip]`                                        |
 | on Mac OS             | `srm /path/to/backup/folder/backup.[ab\|zip]`                                             |
 
 Note that the commands listed above will securely delete the file by overwriting the deleted file with random data.

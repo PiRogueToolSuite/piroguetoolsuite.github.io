@@ -8,7 +8,7 @@
 @import "bootstrap/scss/bootstrap";
 
 /** Import highlight.js */
-// @import "highlight.js/scss/github-dark-dimmed";
+@import "highlight.js/scss/github-dark-dimmed";
 
 /** Import KaTeX */
 @import "katex/dist/katex";
@@ -32,3 +32,8 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/sidebar";
+@import "syntax.scss";
+
+.hljs {
+    background-color: #f7f7f7;
+  }

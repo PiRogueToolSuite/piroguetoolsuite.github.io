@@ -45,6 +45,7 @@ body.docs {
 @include media-breakpoint-up(md) {
   body {
     font-size: $font-size-md;
+    font-weight: 300;
 
     /*
     padding-top: 4rem !important;

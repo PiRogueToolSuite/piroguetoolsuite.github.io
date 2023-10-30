@@ -16,14 +16,16 @@ This guide delves into the intricacies of conducting static analysis on suspicio
 Before embarking on the static analysis journey, ensure you have the following prerequisites in place:
 
 * **APKTool:** [APKTool](https://apktool.org) is a versatile tool for unpacking and reassembling Android application packages (APKs).
-* **Java decompiler:** A Java decompiler, such as [JADX-GUI](https://github.com/skylot/jadx) or [Procyon](https://github.com/mstrobel/procyon), is essential for examining the application's bytecode.
+* **Java decompiler:** A Java decompiler, such as [Jadx-gui](https://github.com/skylot/jadx) or [Procyon](https://github.com/mstrobel/procyon), is essential for examining the application's bytecode.
 * **Static Analysis Tools:** Dedicated static analysis tools, such as [MobSF](https://mobsf.github.io/docs/#/), [DroidLysis](https://github.com/cryptax/droidlysis) or [Pithus](https://beta.pithus.org), can automate the detection of common vulnerabilities and malicious patterns.
 * **Native Code Reverse Engineering tools:** A tool such as [Ghidra](https://github.com/NationalSecurityAgency/ghidra), [IDA](https://hex-rays.com/ida-pro/) or [radare2](https://github.com/radareorg/radare2) is recommended to conduct more in depth analysis of native code. However, this guide will not cover this kind of analysis.
 
 
 ## Technical aspects to investigate
 
-At this point, we will be focusing on the analysis of the decompiled Java code as well as the content and resources of the Android application we want to analyze.
+At this point, we will be using Jadx-gui and focusing on the analysis of the decompiled Java code as well as the content and resources of the Android application we want to analyze.
+
+Beware, many Android packages are now packed. Packers typically encrypt a payload DEX (or at least hide its existence, opacify a payload blob etc). So, when reversing a state-of-the-art sample, you should first check if your sample is packed (use `apkid` or `droidlysis`, or check manually for use of `DexClassLoader`). If your sample is not packed, good, go on with your static analysis. If your sample is packed, don't waste any more time analyzing the packer: unpack the sample first and retrieve the payload DEX and analyze that.
 
 ### Android manifest
 The `AndroidManifest.xml` file resides within the depths of the application's APK file, typically in its root directory. To unveil its contents, extract the APK file and utilize a text editor or a specialized manifest viewer tool to reveal its secrets.

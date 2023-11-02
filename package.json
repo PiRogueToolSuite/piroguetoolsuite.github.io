@@ -37,7 +37,7 @@
     "@babel/cli": "^7.16",
     "@babel/core": "^7.16",
     "@babel/preset-env": "^7.16",
-    "@fullhuman/postcss-purgecss": "^4.1",
+    "@fullhuman/postcss-purgecss": "^5.0",
     "auto-changelog": "^2.3.0",
     "autoprefixer": "^10.4",
     "bootstrap": "^5.1",

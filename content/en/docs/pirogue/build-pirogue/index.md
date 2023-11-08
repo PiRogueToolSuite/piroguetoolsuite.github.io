@@ -104,7 +104,7 @@ First, check that the SD card is correctly inserted into the appropriate slot of
 
 Now, connect to your PiRogue using SSH.
 
-```
+```bash
 ssh pi@pirogue.local
 ```
 
@@ -112,7 +112,7 @@ Type `raspberry` which is the default password and press `Entrer`.
 
 Once connected, you have to finalize the installation of your PiRogue by running the following commands:
 
-```
+```bash
 sudo apt update
 sudo apt install pirogue-base -y
 sudo apt dist-upgrade -y

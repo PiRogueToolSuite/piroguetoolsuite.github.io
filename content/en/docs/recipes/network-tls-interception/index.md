@@ -41,7 +41,7 @@ Make sure to enable ADB *Transfer files* by clicking on the *Android System* not
 
 Then check if the PiRogue *sees* your device by running the command:
 
-```
+```bash
 adb devices
 ```
 

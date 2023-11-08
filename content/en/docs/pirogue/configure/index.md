@@ -18,7 +18,7 @@ resources:
   src: img/restore-configuration.png
 ---
 
-{{< alert icon="⚠️" context="primary" >}}
+{{< alert icon="⚠️" >}}
 This documentation requires either
 * the package `pirogue-base` version `1.0.2` or more recent being installed
 * the package `pirogue-base-pc` version `1.0.0` or more recent being installed

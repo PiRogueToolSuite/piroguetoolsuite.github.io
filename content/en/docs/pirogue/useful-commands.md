@@ -51,7 +51,7 @@ For security reasons it is highly recommended to change the default password on 
 
 If you have set up another user on the PiRogue, you can connect to it in the same way, replacing the username with your own, e.g. `eben@192.168.1.5`
 
-```
+```bash
 pi@pirogue ~ $
 ```
 

@@ -27,23 +27,23 @@ Write your rules according to [Suricata's](https://suricata.readthedocs.io/en/su
 *After being connected to your PiRogue.*
 
 Add your new source in this fashion: 
-```
+```bash
 sudo suricata-update add-source YOUR_NAME URL_TO_THE_DOT_RULES
 ```
 
 Run 
-```
+```bash
 sudo suricata-update update-sources
 ``` 
 and then 
-```
+```bash
 sudo suricata-update
 ```
 and your rules must be updated 🙂
 
 ### Example with Abuse.ch SSL blocklist
 If you want to add the [Abuse.ch SSL blocklist](https://sslbl.abuse.ch/blacklist/sslblacklist.rules), run the following commands:
-```
+```bash
 sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules
 sudo suricata-update update-sources
 sudo suricata-update
@@ -53,11 +53,11 @@ sudo suricata-update
 
 While connected to your PiRogue:
 Run
-```
+```bash
 sudo suricata-update enable-source et/pro
 ```
 insert your `oink-code` when prompted and finally run
-```
+```bash
 sudo suricata-update update-sources
 sudo suricata-update
 ```

@@ -35,4 +35,3 @@ sudo pirogue-ctl config show
 | SSH configuration      | `/etc/ssh/sshd_config`                   |
 | PiRogue configuration  | `/var/lib/pirogue/config/pirogue.env`    |
 | Suricata rules         | `/var/lib/suricata/rules/suricata.rules` |
-| PiRogue screen         | `/etc/pirogue/pirogue_infos_screen.py`   |

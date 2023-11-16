@@ -159,7 +159,7 @@ After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi d
 
 First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` with your Web browser or directly with this link:
 
-[Open your dashboard →](http://raspberrypi.local:3000) 
+[Open your dashboard →](http://pirogue.local:3000) 
 
 It will take around 4 minutes before network flows start appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard by pressing `F5` key on your keyboard.
 

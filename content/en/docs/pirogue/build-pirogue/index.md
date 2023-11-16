@@ -137,7 +137,7 @@ First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi net
 
 It will take around 4 minutes before network flows start appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard by pressing `F5` key on your keyboard.
 
-[Open your dashboard →](http://raspberrypi.local:3000) 
+[Open your dashboard →](http://pirogue.local:3000) 
 
 {{< alert icon="⚠️" >}}
 The first time your PiRogue starts, some services would fail to start. See [how to check if your PiRogue is running properly]({{< relref "configure/#check-if-everything-runs-properly">}}).

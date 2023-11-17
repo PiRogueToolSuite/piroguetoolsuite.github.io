@@ -51,7 +51,7 @@ We have published two tutorials. The first one presents how to [use the PiRogue 
 
 ## Software
 We started working on a program to [automate TLS interception and decryption](https://github.com/PiRogueToolSuite/pirogue-cli). It is still WIP but you can already test it on your PiRogue:
-```
+```bash
 sudo apt-get update
 sudo apt-get install pirogue-cli
 

@@ -128,7 +128,7 @@ First, check that the SD card is correctly inserted into the appropriate slot of
 
 Now, connect to your PiRogue using SSH.
 
-```
+```bash
 ssh pi@pirogue.local
 ```
 
@@ -169,7 +169,7 @@ The first way is by looking at the screen of the PiRogue Hat.
 {{< img src="img/screen.png" alt="The PiRogue's screen" class="d-block mx-auto shadow" >}}
 
 The second way is to use the ping command. To do so, on your computer connected to the same network as your PiRogue, run the following command:
-```
+```bash
 ping -c1 pirogue.local
 ```
 

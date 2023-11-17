@@ -114,9 +114,9 @@ You can also refer to the [MVT documentation](https://docs.mvt.re/en/latest/ios/
 ## Backup an Android device on PiRogue
 ### Prerequisites
 
-* You need to have iTunes installed on your computer running MacOS.
-* You need to have a USB cable to connect your iOS device to your computer.
-* You need to create a folder on your computer where you want to save the backup file.
+* You need to have a PiRogue device or an other device with [ADB](https://developer.android.com/tools/adb) installed.
+* You need to have a good quality USB cable to connect your Android device to your computer.
+* You need to create a folder on the device where you want to save the backup file.
 
 ### Enabling Developer options on an Android device
 To enable Developer options on an Android device, you need to go to the **Settings** app and then tap on **About phone**. Tap on the **Build number** seven (7) times in a row. You will be prompted to enter your PIN or pattern if you have one set. Once you have enabled Developer options, you will see a new **Developer options** menu in the **Settings** app.
@@ -125,8 +125,8 @@ To enable Developer options on an Android device, you need to go to the **Settin
 To enable ADB on an Android device, you need to go to the **Settings** app and then tap on **Developer options** and then toggle the **USB debugging** switch to On.
 
 ### Backup instructions
-* Connect your Android device to your computer.
-* Open a command prompt or terminal window on your computer.
+* Connect your Android device to your PiRogue or device with ADB. In case you are not prompted to authorize the connected device, open the **USB Options** dialogue and select **USB Tethering** which should then prompt the authorization request.
+* Open a command prompt or terminal window on the device running ADB.
 * Navigate to the folder where you want to save the backup file.
 * Run the following command to create the backup file:
 

@@ -1,102 +1,134 @@
-/*==========================================================
-    Open Sans
-==========================================================*/
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-Light.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-Light.woff2') format('woff2');
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Regular.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Regular.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Regular.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Regular.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-VariableFont_wdthwght.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-VariableFont_wdthwght.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Italic.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Italic.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: open sans;
+  font-style: italic;
+  font-weight: 400;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Italic-VariableFont_wdthwght.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Italic-VariableFont_wdthwght.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: open sans;
+  font-style: normal;
   font-weight: 300;
-  font-style: normal;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Light.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Light.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-LightItalic.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-LightItalic.woff2') format('woff2');
+  font-family: open sans;
+  font-style: italic;
   font-weight: 300;
-  font-style: italic;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-LightItalic.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-LightItalic.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-Regular.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: open sans;
   font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-SemiBold.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-SemiBold.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-Italic.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-Italic.woff2') format('woff2');
-  font-weight: normal;
+  font-family: open sans;
   font-style: italic;
+  font-weight: 600;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-SemiBoldItalic.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-SemiBoldItalic.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-SemiBold.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-SemiBold.woff2') format('woff2');
-  font-weight: bolder;
+  font-family: open sans;
   font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-Bold.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Bold.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-SemiBoldItalic.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-SemiBoldItalic.woff2') format('woff2');
-  font-weight: bolder;
+  font-family: open sans;
   font-style: italic;
+  font-weight: 700;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-BoldItalic.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-BoldItalic.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-Bold.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-Bold.woff2') format('woff2');;
-  font-weight: bold;
-  font-style: italic;
+  font-family: open sans;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-ExtraBold.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-ExtraBold.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-BoldItalic.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-BoldItalic.woff2') format('woff2');
-  font-weight: bold;
+  font-family: open sans;
   font-style: italic;
+  font-weight: 800;
+  src: local('Open Sans'), 
+      url(fonts/OpenSans/OpenSans-ExtraBoldItalic.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-ExtraBold.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-ExtraBold.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
+  font-family: open sans light;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), 
+      url(fonts/OpenSans/OpenSans-Light-webfont.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-Light-webfont.woff2) format('woff2')
 }
 
 @font-face {
-  font-family: 'Open Sans';
-  src: 
-    local("OpenSans"),
-    url('fonts/OpenSans/OpenSans-ExtraBoldItalic.woff') format('woff'),
-    url('fonts/OpenSans/OpenSans-ExtraBoldItalic.woff2') format('woff2');
-  font-weight: bold;
-  font-style: italic;
+  font-family: open sans condensed;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Condensed'), 
+      url(fonts/OpenSans/OpenSans-CondBold.woff) format('woff'),
+      url(fonts/OpenSans/OpenSans-CondBold.woff2) format('woff2')
 }

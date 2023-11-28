@@ -20,9 +20,10 @@ $beige:    #fbf7f0;
 $purple:   #7122dc;
 $brown:    #aa9c84;
 
-$blue-300: #8ed6fb;
-$pink-100: #fcfaff;
-$pink-500: #d32e9d;
+$purple-300:#a88dce;
+$blue-300:  #8ed6fb;
+$pink-100:  #fcfaff;
+$pink-500:  #d32e9d;
 
 $primary: $purple;
 
@@ -108,7 +109,7 @@ $border-color:                $gray-200;
 // stylelint-disable value-keyword-case
 $font-family-sans-serif:      "Open Sans Light", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 // $font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-$font-family-monospace:       "JetBrains Mono", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-monospace:       "JetBrains Mono Light", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 // $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif;
 // stylelint-enable value-keyword-case

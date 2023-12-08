@@ -28,12 +28,12 @@ ssh -p22 pi@<PiRogue IP address>
 
 Then, export alert data in a CSV file:
 ```bash
-influx -database 'suricata' -execute 'SELECT * FROM "suricata"."suricata_5d"."alert"' -format 'csv'  alerts-`date +"%Y-%m- %d"`.csv
+influx -database 'suricata' -execute 'SELECT * FROM "suricata"."suricata_5d"."alert"' -format 'csv' > alerts-`date +"%Y-%m-%d"`.csv
 ```
 
 Export flow data too:
 ```bash
-influx -database 'flows' -execute 'SELECT * FROM "flows"."flows_5d"."flow"' -format 'csv'  flows-`date +"%Y-%m- %d"`.csv
+influx -database 'flows' -execute 'SELECT * FROM "flows"."flows_5d"."flow"' -format 'csv' > flows-`date +"%Y-%m-%d"`.csv
 ```
 
 Finally, copy 2 generated CSV files from PiRogue to your computer using `scp`. On your computed, use the following command:

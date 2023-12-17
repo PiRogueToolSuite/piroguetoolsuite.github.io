@@ -132,7 +132,7 @@ Now, connect to your PiRogue using SSH.
 ssh pi@pirogue.local
 ```
 
-Type `raspberry` which is the default password and press `Entrer`.
+Type `raspberry` which is the default password and press `Enter`.
 
 Once connected, you have to finalize the installation of your PiRogue by running the following commands, copy each line separately one by one:
 
@@ -145,8 +145,8 @@ Once connected, you have to finalize the installation of your PiRogue by running
 
 
 During the installation, when prompted, you will have to answer:
-* `No` to save iptables rules for IP v4
-* `No` to save iptables rules for IP v6
+* `No` to save firewall rules for IP v4
+* `No` to save firewall rules for IP v6
 * `Yes` to allow non-root users to capture network traffic 
 
 {{< img src="img/install-1.png" alt="Allow non-root users to capture network traffic" class="d-block mx-auto shadow" >}}

@@ -85,7 +85,7 @@ PiRogue Debian packages can be installed on any compatible hardware running Debi
 
 ## Installation procedure
 
-[Have a look to the guide dedicated to building a PiRogue→](/guides/g1)
+[Have a look to the guide dedicated to building a PiRogue →](/guides/g1)
 
 To install PiRogue OS on a Raspberry Pi, it is necessary to download the OS image and to flash it on an SD-card. After the first boot on the SD-card, it is possible to connect to the PiRogue using SSH by running the command 
 ```bash

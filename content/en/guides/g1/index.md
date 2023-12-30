@@ -74,10 +74,10 @@ In order to connect the PiRogue to the Internet, you should have an ethernet cab
 
 ### Optional stuff
 
-Depending on your needs, you would want to add a hat to your PiRogue and protect everything with a case. Check the [documentation](https://pts-project.org/docs/pirogue/overview/) for more details.
+Depending on your needs, you would want to add a hat to your PiRogue and protect everything with a case. Check the [documentation](/docs/pirogue/overview/) for more details.
 
 {{< alert icon="👉" >}}
-If you don't feel comfortable with building the case or the hat, feel free to buy one by [reaching out to us](https://pts-project.org/contact/).
+If you don't feel comfortable with building the case or the hat, feel free to buy one by [reaching out to us](/contact/).
 {{< /alert >}}
 
 
@@ -174,7 +174,7 @@ ping -c1 pirogue.local
 ```
 
 {{< alert icon="👉" >}}
-For customizing your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](https://pts-project.org/docs/pirogue/configure-a-pirogue/).
+For customizing your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/configure-a-pirogue/).
 {{< /alert >}}
 
 ## Continuous network traffic analysis
@@ -198,7 +198,7 @@ DPI is a technique that allows the PiRogue to examine the contents of data packe
 The results of the PiRogue's automatic analysis can be visualized in the dashboard. This dashboard provides a graphical overview of the network traffic that has been analyzed, as well as any threats that have been detected. The dashboard also allows users to drill down into the details of specific network flows to learn more about them.
 
 ## The dashboard
-By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](https://pts-project.org/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
+By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
 
 [Open your dashboard →](http://pirogue.local:3000) 
 

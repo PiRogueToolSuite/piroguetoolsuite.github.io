@@ -1,5 +1,5 @@
 ---
-title: ⌛ Comprehensive guide into case management and incident response
+title: 🚧 Mobile application analysis methodology
 weight: 100
 toc: true
 draft: false

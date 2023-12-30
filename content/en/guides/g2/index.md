@@ -41,14 +41,14 @@ In the upcoming section, we will delve into the topic of analyzing network traff
 * [Amnesty International](https://www.amnesty.org)
 * [CiviCERT](https://www.civicert.org/help/)
 
-## Connect to the PiRogue
+## Start the capture
 Before connecting the mobile device to the PiRogue Wi-Fi network, apply the following steps:
 
 * enable airplane mode
 * disable mobile data and use Wi-Fi only
 * disable VPN if possible
 
-To begin capturing the network traffic, we need to connect the device to the PiRogue. If this is your first time connecting to the PiRogue, please refer to the [first guide](https://pts-project.org/guides) for instructions. 
+To begin capturing the network traffic, we need to connect the device to the PiRogue. If this is your first time connecting to the PiRogue, please refer to the [first guide](/guides/g1) for instructions. 
 
 Throughout this period, we will be using the tool **tcpdump** to capture the network traffic. After a duration of 3 days, we will retrieve the file containing all the captured network traffic. This file is typically named a **PCAP** file, which can be opened with tools like **Wireshark**.
 
@@ -60,10 +60,6 @@ Save the entire network traffic into a single file:
 
 Now turn on the Wi-Fi connection of the device and connect to the PiRogue network.
 Next on your computer, open the PiRogue’s dashboard by going to `http://<PiRogue IP address>:3000` with your Web browser. Use the dashboard to get an overview of the network flow and potential alerts.
-
-{{< alert icon="👉" >}}
-If necessary, check the guide explaining [how to operate your PiRogue](https://pts-project.org/docs/pirogue/operate-a-pirogue/).
-{{< /alert >}}
 
 Let it run for a few days (3 days) while keeping using the device. 
 
@@ -78,7 +74,7 @@ scp pi@<PiRogue IP address>:~/example.pcap .
 
 ## Get insights with the dashboard
 
-Your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](https://pts-project.org/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
+Your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
 
 [Open your dashboard →](http://pirogue.local:3000) 
 

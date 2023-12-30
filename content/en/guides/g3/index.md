@@ -180,7 +180,7 @@ Static and dynamic analysis are vital for investigating potentially malicious ap
 
 ## Going further
 
-To go further, check out our other guide [How to statically analyze a potentially malicious Android app](https://pts-project.org/guides/g5/).
+To go further, check out our other guide [How to statically analyze a potentially malicious Android app](/guides/g5/).
 
 To learn more about Pithus, you can train yourself on [TryHackMe](https://tryhackme.com/room/androidmalwareanalysis).
 

@@ -1,13 +1,11 @@
 ---
-title: "Configure a PiRogue"
-date: 2022-08-17
-lastmod: 2022-08-17
+title: "Configuration"
 draft: false
 images: []
 menu:
   docs:
     parent: "pirogue"
-weight: 60
+weight: 40
 toc: true
 resources:
 - name: no_configuration
@@ -23,7 +21,7 @@ This documentation requires either
 * the package `pirogue-base` version `1.0.2` or more recent being installed
 * the package `pirogue-base-pc` version `1.0.0` or more recent being installed
 
-Not sure? [Upgrade your PiRogue]({{< relref "upgrade" >}}).
+Not sure? [Upgrade your PiRogue](/docs/pirogue/operating-system/#upgrade).
 {{< /alert >}}
 
 ## How the PiRogue configuration works

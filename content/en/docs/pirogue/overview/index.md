@@ -1,37 +1,21 @@
 ---
 title: "Overview"
-date: 2022-03-07
-lastmod: 2022-03-07
 draft: false
 menu:
   docs:
     parent: "pirogue"
 weight: 10
 toc: true
-resources:
-- name: pirogue
-  src: img/pirogue.jpg
 ---
 
 
-{{< img src="pirogue" alt="The PiRogue" class="d-block mx-auto shadow md-5" >}}
+{{< img src="img/pirogue.jpg" alt="The PiRogue" caption="The PiRogue" class="d-block mx-auto shadow md-5" >}}
 
 
-## What a PiRogue is
+The PiRogue is a Raspberry Pi-based network router that captures and analyses network traffic in real-time. This hardware component serves as the foundation for the suite's extensive software capabilities, which include:
 
-The PiRogue is an open hardware device based on a Raspberry Pi operating as a network router (like any ISP router) analyzing network traffic in real time.
+* **Network traffic analysis**: The PiRogue enables deep packet inspection of network traffic, facilitating the identification of suspicious patterns and potential threats.
 
-It can operate in different modes: 
+* **Mobile forensic**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages, and application data, providing valuable insights into user activity.
 
-- an on-the-field mode
-  - for emergency response (active spying, device tampering, ...) useful for responders in repressive environment
-  - conduct forensics analysis and network detection using a pre-installed set of tools
-
-- an expert mode for technical people to:
-  - determine the list of collected data
-  - assess regulatory compliance
-  - conduct penetration testing 
-  - analyze malware's behavior
-  - ensure reproducible analysis
-  - generate comprehensive reports
-
+{{< img src="img/pirogue-ports.png" alt="The different ports of the PiRogue - * indicates required connections/elements" caption="The different ports of the PiRogue - * indicates required connections/elements" class="d-block mx-auto shadow md-5" >}}

@@ -58,42 +58,12 @@ pi@pirogue ~ $
 You are now connected to the PiRogue remotely, and can execute commands.
 
 
-## Change the password of user `pi`
+## Change your password
 On your PiRogue, run the following command and answer the different questions:
 
 ```bash
 passwd
 ```
-
-## Change locale and/or timezone
-On your PiRogue, run the following command:
-
-```bash
-sudo raspi-config
-```
-
-You should now see something like
-```text
- 1 System Options         Configure system settings
- 2 Display Options        Configure display settings
- 3 Interface Options      Configure connections to peripherals
- 4 Performance Options    Configure performance settings
- 5 Localisation Options   Configure language and regional settings
- 6 Advanced Options       Configure advanced settings
- 8 Update                 Update this tool to the latest version
- 9 About raspi-config     Information about this configuration tool
-```
-
-Use the arrows of your keyboard to navigate through the different options and menus.
-Select **5 Localisation options** by hitting the down arrow of your keyboard. Press `Enter` to enter the menu. You should now see the following options
-
-```text
- L1 Locale         Configure language and regional settings
- L2 Timezone       Configure time zone
- L3 Keyboard       Set keyboard layout to match your keyboard
- L4 WLAN Country   Set legal wireless channels for your country
-```
-Then select either **L1** or **L2** depending on what you want to change. Press `Enter` to enter the menu and follow the instructions.
 
 ## Restart PiRogue services
 On your PiRogue, run the following command:

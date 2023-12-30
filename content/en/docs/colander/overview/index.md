@@ -34,4 +34,4 @@ Colander web platform is a case and incident response management platform that i
 
 ## Installation
 
-The deployment procedure is describe [on GitHub](https://github.com/PiRogueToolSuite/colander).
+The deployment procedure is described [on GitHub](https://github.com/PiRogueToolSuite/colander).

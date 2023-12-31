@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 520
+weight: 920
 toc: true
 resources:
 - name: mvt-android

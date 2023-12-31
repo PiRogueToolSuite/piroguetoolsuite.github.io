@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 540
+weight: 940
 toc: true
 ---
 
@@ -46,15 +46,15 @@ run `iw list`and scroll through its output to check if the wireless interface su
 Next, we have to add the PTS PPA (repositoty containing all PiRogue packages) by running 
 
 ```bash
-sudo curl -o /etc/apt/sources.list.d/pirogue.list https://pts-project.org/ppa/pirogue.list
-sudo curl -o /etc/apt/trusted.gpg.d/pirogue.asc   https://pts-project.org/ppa/Key.gpg
+sudo curl -o /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
+sudo curl -o /etc/apt/trusted.gpg.d/pirogue.asc   https://pts-project.org/debian-12/Key.gpg
 sudo apt update
 ```
 
 Finally install the PiRogue features:
 
 ```bash
-sudo apt install pirogue-base-pc
+sudo apt install pirogue-base
 ```
 
 ## Check if everything runs properly

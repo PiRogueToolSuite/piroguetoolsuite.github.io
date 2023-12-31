@@ -7,7 +7,7 @@ images: []
 menu:
   docs:
     parent: "recipes"
-weight: 510
+weight: 910
 toc: true
 resources:
 - name: router-:counter

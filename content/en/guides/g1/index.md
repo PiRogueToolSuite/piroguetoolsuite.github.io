@@ -207,7 +207,7 @@ The default credentials of the dashboard are:
 * username: `admin`
 * password: `PiRogue` 
 
-If you want to change the password, please refer to the [confiuguration documentation](/docs/pirogue/configuration/).
+If you want to change the password, please refer to the [configuration documentation](/docs/pirogue/configuration/).
 
 Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
 

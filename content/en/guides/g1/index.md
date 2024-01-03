@@ -152,7 +152,7 @@ During the installation, when prompted, you will have to answer:
 {{< img src="img/install-1.png" alt="Allow non-root users to capture network traffic" class="d-block mx-auto shadow" >}}
 
 {{< alert icon="👉" >}}
-If you're setting up the PiRogue in the context of an organization at your office or your lab you will have to enforce your internal security policies and guidelines. Learn more about [securing your Raspberry Pi guide](https://www.raspberrypi.com/documentation/computers/configuration.html#securing-your-raspberry-pi).
+If you're setting up the PiRogue in the context of an organization at your office or your lab you will have to enforce your internal security policies and guidelines. At least, change your password using the `passwd` command.
 {{< /alert >}}
 
 After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi device and use the PiRogue’s dashboard.
@@ -202,13 +202,20 @@ By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/la
 
 [Open your dashboard →](http://pirogue.local:3000) 
 
-Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
+The default credentials of the dashboard are:
 
-The default dashboard is composed of different panels, we will go through the main ones.
+* username: `admin`
+* password: `PiRogue` 
+
+If you want to change the password, please refer to the [confiuguration documentation](/docs/pirogue/configuration/).
+
+Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
 
 {{< alert icon="⚠️" context="warning" >}}
 The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted. 
 {{< /alert >}}
+
+The default dashboard is composed of different panels, we will go through the main ones.
 
 ### General statistics
 {{< img src="general_statistics" alt="The general statistics panel of the PiRogue's dashboard" class="d-block mx-auto shadow" >}}

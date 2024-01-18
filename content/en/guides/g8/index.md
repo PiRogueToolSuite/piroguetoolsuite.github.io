@@ -169,6 +169,8 @@ Now, interact with the application freely. When you are done interacting with th
 Make sure that the application you want to be analyzed is not running in background. You can, for example, force stop it in *Settings > Apps*, select the application and click on *Stop*.
 {{< /alert >}}
 
+If you want to continue the analysis in Colander, jump to our guide on [how to use Colander to analyze the network traffic of an app](/guides/g9/).
+
 ### Decrypt the traffic
 If we run the previous command with `sudo`, we have to fix the permissions of generated files by running:
 ```bash

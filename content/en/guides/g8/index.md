@@ -1,5 +1,5 @@
 ---
-title: Advanced guide - How to use PTS to intercept the TLS and cleartext network traffic of an app
+title: Advanced guide - How to use PTS to intercept the TLS traffic of a mobile app
 weight: 80
 toc: true
 draft: false
@@ -156,7 +156,7 @@ Don't launch the application.
 ### Instrument and intercept
 Once the application to be analyzed is installed on your Android device, connect your device to the PiRogue Wi-Fi network and run the following command:
 ```bash
-sudo pirogue-intercept-gated -o <path to the output directory>
+pirogue-intercept-gated -o <path to the output directory>
 ```
 Adapt the command according to your output directory of choice. Once started and showing `Waiting for data`, manually launch the application you want to analyze.
 
@@ -172,7 +172,7 @@ Make sure that the application you want to be analyzed is not running in backgro
 ### Decrypt the traffic
 If we run the previous command with `sudo`, we have to fix the permissions of generated files by running:
 ```bash
-chown -R pi:pi <path to the output directory>
+sudo chown -R pi:pi <path to the output directory>
 ```
 
 Then enter the output directory with:

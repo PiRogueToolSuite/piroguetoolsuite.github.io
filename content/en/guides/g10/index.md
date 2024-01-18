@@ -69,15 +69,13 @@ The primary approach used to analyze the apps is traffic analysis. Traffic analy
 
 For convenience, we analyze the network traffic using another tool from the PiRogue Tool Suite, called “Colander”. Colander enables a user to quickly identify any suspicious network connections or data sharing practices by applying detection rules directly to the decrypted traffic. Colander can also recover data that has been encrypted before being transmitted by looking at the cryptographic operations that occurred during the execution of the target application. An analysis report is automatically issued listing:
 
-* all analysis artifacts such as PCAP file containing traffic data or screen recording and
-* their digital signatures;
-* the communication direction (inbound or outbound);
-* the source and destination host, IP address and organization; the technical part of the application that has been handling the given data
-* transmission (internal application code or 3rd-party SDKs);
-* the identification and classification of the transmitted data such as advertising id, location data etc.;
-* when applicable, the inferred purpose (such as analytics or advertisement) of the data collection using [Exodus Privacy](https://exodus-privacy.eu.org/) tracker classification to identify the recipient company.
+* all artifacts such as PCAP file containing traffic data or screen recording and their digital signatures
+* the definition of the detection rules and the detection summary
+* the list of all transmissions listing the source and destination host, IP address and organization, the technical part of the application that has been handling the given data transmission (internal application code or 3rd-party SDKs)
+* the identification and classification of the transmitted data such as advertising ID, location data etc.
+* when applicable, the inferred purpose (such as analytics or advertisement) of the data collection using [Exodus Privacy](https://exodus-privacy.eu.org/) tracker classification to identify the recipient company
 
-Colander analysis and detection accuracy can be assessed by opening each artifacts with Wireshark and manually verifying each data transmission.
+Colander analysis and detection accuracy can be assessed by opening the PCAP file and the SSL keylog file in Wireshark and manually verifying each data transmission.
 
 
 ## Mobile device

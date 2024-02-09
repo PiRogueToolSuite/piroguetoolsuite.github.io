@@ -1,5 +1,5 @@
 ---
-title: "🚧 Network traffic analysis"
+title: "Network traffic analysis"
 draft: false
 images: []
 menu:
@@ -8,3 +8,5 @@ menu:
 weight: 600
 toc: true
 ---
+
+[Have a look to the guide dedicated to network traffic decryption →](/guides/g9)

@@ -85,7 +85,7 @@ Use tools to extract information that will help you identify the binary and its 
 **VirusTotal**: is an online service that analyzes suspicious files and URLs to detect types of malware and malicious content using antivirus engines and website scanners.
 
 {{< alert icon="👉" >}}
-**Depending on your internal guidelines, never share your sample.** Depending on your internal guidelines, and depending on the confidentiality of the case you’re investigating, it would be not allowed to share the sample (or even the sample hash) on third party services like VirusTotal.
+Depending on your internal guidelines, and depending on the confidentiality of the case you’re investigating, it would be not allowed to share the sample (or even the sample hash) on third party services like VirusTotal.
 {{< /alert >}}
 
 For this guide we will use two main tools to retrieve basic information for the example sample, Pithus and Jadx for exercising both options of analysis with online third party service and static offline analysis.

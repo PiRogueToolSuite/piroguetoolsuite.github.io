@@ -40,15 +40,20 @@ The exported STIX2 feed serves as a repository of IOCs, encapsulating details su
 
 It's crucial to emphasize that the effectiveness of this integration hinges upon the accuracy and completeness of the initial investigation conducted in Colander. Meticulous data collection and analysis are paramount to ensure the generated STIX2 feed accurately reflects the true scope of the cyber threat you are investigating.
 
+Use the command `mvt-ios check-iocs --iocs <path to you STIX2 file>` or `mvt-android check-iocs --iocs <path to you STIX2 file>` to use the IOCs you downloaded from your Colander feed.
+
+Use the command `mvt-ios download-iocs` or `mvt-android download-iocs` to automatically download the latest public indicator files.
+
 ## Overview of the analysis of an iOS device
 Follows a quick overview of the different steps required to analyze an iOS device using MVT:
 
 1. Connect the iOS device to the PiRogue. Use a USB cable to connect the iPhone or iPad to the PiRogue running MVT. Ensure the device is unlocked and trusted for data transfer.
 2. Create an encrypted backup. Open a terminal window and navigate to your directory of choice. Use the command 
    ```bash
-   $ mvt-ios backup --encrypted --password <backup_password> --output <backup_path>
+   $ idevicebackup2 backup encryption on -i
+   $ idevicebackup2 backup --full <backup_path>
    ```
-   to create an encrypted backup of the device. Replace `<backup_password>` with a strong password and `<backup_path>` with the desired location for the backup file.
+   to create an encrypted backup of the device. Replace `<backup_path>` with the desired location for the backup file.
 
 3. Decrypt the backup. Once the backup is complete, use the command 
    ```bash

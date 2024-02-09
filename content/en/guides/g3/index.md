@@ -3,6 +3,7 @@ title: Beginner guide - How to handle a potentially malicious mobile app
 weight: 30
 toc: true
 draft: false
+contributors: ["Esther Onfroy"]
 ---
 
 On a daily basis, we encounter potentially malicious applications in various forms. They can appear as seemingly harmless apps we intend to download from Google Play (although it's rare -- Google usually takes them down), or they may be disguised as links or APK files shared within chat groups, especially if we are human rights defenders operating in a high-surveillance environment. Additionally, these malicious applications can be found on compromised devices.

@@ -12,6 +12,7 @@ resources:
   src: img/world_map.png
 - name: general_statistics
   src: img/general_statistics.png
+contributors: ["Esther Onfroy"]
 ---
 
 To begin, let's explain first what we are doing here:

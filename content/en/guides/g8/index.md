@@ -3,6 +3,7 @@ title: Advanced guide - How to use PTS to intercept the TLS traffic of a mobile 
 weight: 80
 toc: true
 draft: false
+contributors: ["Esther Onfroy"]
 ---
 
 ## Objective

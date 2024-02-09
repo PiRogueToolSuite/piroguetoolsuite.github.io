@@ -3,6 +3,7 @@ title: Intermediate guide - How to use MVT to conduct the analysis of a mobile d
 weight: 70
 toc: true
 draft: false
+contributors: ["Esther Onfroy"]
 ---
 
 The [Mobile Verification Toolkit (MVT)](https://docs.mvt.re) developed by [Amnesty International's Security Lab](https://securitylab.amnesty.org/) is not a magic tool. This is a complex forensic framework designed to delve into the internals of Android and iOS devices, meticulously dissecting digital traces in search of malicious activities such as spyware.

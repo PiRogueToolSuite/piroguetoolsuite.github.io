@@ -3,6 +3,7 @@ title: Advanced guide - Mobile application regulatory compliance audit methodolo
 weight: 100
 toc: true
 draft: false
+contributors: ["Esther Onfroy"]
 ---
 
 ## Objective 

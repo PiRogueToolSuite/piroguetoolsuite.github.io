@@ -23,9 +23,9 @@ MVT is designed for highly trained professionals. These individuals possess the 
 MVT is a powerful tool for trained professionals, not a magic wand for self-diagnosis. While its potential to uncover hidden threats and protect privacy is undeniable, it requires specialized expertise and responsible use. 
 
 ## Consensual mobile device forensic
-Consensual mobile device forensic analysis is the process of examining a mobile device with the owner's consent to identify signs of compromise or active spying. This involves analyzing data stored on the device, such as call logs, text messages, and browsing history, as well as examining installed apps and system configurations. The goal is to uncover any unauthorized access, surveillance activities, or malicious software that may be compromising the device's security and privacy. This process is often used by cybersecurity professionals, law enforcement agencies, and private investigators to gather evidence of digital intrusions or targeted attacks.
+Consensual mobile device forensic analysis is the process of examining a mobile device with the owner's consent to identify signs of compromise or active spying. This involves analyzing data stored on the device, such as call logs, text messages, and browsing history, as well as examining installed apps and system configurations. The goal is to uncover any unauthorized access, surveillance activities, or malicious software that may be compromising the device's security and privacy. 
 
-The PiRogue comes with MVT pre-installed. MVT is an open-source software tool designed for consensual mobile device forensics. It helps investigators and security researchers analyze Android and iOS devices to detect potential signs of compromise, particularly from sophisticated spyware like Pegasus. The tool utilizes indicators of compromise (IOCs) to scan device backups and identify traces of spyware infection or targeting. It also assists in extracting forensically sound data for further analysis. MVT is primarily intended for technical experts and is not designed for end-user self-assessment. 
+The PiRogue comes with MVT pre-installed. MVT is an open-source software tool designed for consensual mobile device forensics. It helps investigators and security researchers analyze Android and iOS devices to detect potential signs of compromise, particularly from sophisticated spyware like Pegasus. The tool utilizes indicators of compromise (IOCs) to scan device backups and identify traces of spyware infection or targeting.
 
 For more details about MVT, please check its official documentation: [https://docs.mvt.re](https://docs.mvt.re)
 
@@ -39,8 +39,6 @@ The exported STIX2 feed serves as a repository of IOCs, encapsulating details su
 {{< img src="img/colander-feed.png"  caption="Example of entity feed in Colander" alt="Example of entity feed in Colander" class="d-block mx-auto shadow" >}}
 
 It's crucial to emphasize that the effectiveness of this integration hinges upon the accuracy and completeness of the initial investigation conducted in Colander. Meticulous data collection and analysis are paramount to ensure the generated STIX2 feed accurately reflects the true scope of the cyber threat you are investigating.
-
-Furthermore, leveraging this combined approach requires a thorough understanding of both Colander's functionalities and MVT's capabilities. Familiarity with STIX2 data structures and the nuances of mobile device forensics is essential for interpreting the results and drawing meaningful conclusions from the extracted IOCs.
 
 ## Overview of the analysis of an iOS device
 Follows a quick overview of the different steps required to analyze an iOS device using MVT:

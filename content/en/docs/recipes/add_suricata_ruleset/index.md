@@ -33,20 +33,20 @@ sudo suricata-update add-source YOUR_NAME URL_TO_THE_DOT_RULES
 
 Run 
 ```bash
-sudo suricata-update update-sources
+sudo suricata-update
 ``` 
 and then 
 ```bash
-sudo suricata-update
+sudo suricatasc -c reload-rules 
 ```
-and your rules must be updated 🙂
+and your rules must be updated and taken into account 🙂
 
 ### Example with Abuse.ch SSL blocklist
 If you want to add the [Abuse.ch SSL blocklist](https://sslbl.abuse.ch/blacklist/sslblacklist.rules), run the following commands:
 ```bash
 sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules
-sudo suricata-update update-sources
 sudo suricata-update
+sudo suricatasc -c reload-rules 
 ```
 
 ## Add an already published rule set such as ET Pro
@@ -58,8 +58,8 @@ sudo suricata-update enable-source et/pro
 ```
 insert your `oink-code` when prompted and finally run
 ```bash
-sudo suricata-update update-sources
 sudo suricata-update
+sudo suricatasc -c reload-rules 
 ```
 
 In both cases, the PiRogue will grab the new version of your rules on a daily basis.

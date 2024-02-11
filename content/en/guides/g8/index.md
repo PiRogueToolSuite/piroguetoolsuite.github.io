@@ -1,5 +1,5 @@
 ---
-title: Advanced guide - How to use PTS to intercept the TLS traffic of a mobile app
+title: Advanced guide - How to use PiRogue to intercept the TLS traffic of a mobile app
 weight: 80
 toc: true
 draft: false

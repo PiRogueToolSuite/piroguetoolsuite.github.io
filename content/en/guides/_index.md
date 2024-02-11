@@ -26,7 +26,7 @@ Remember, these learning paths are starting points. Mix and match guides based o
 * [How to handle a potentially malicious mobile app](/guides/g3)
 * [How to statically analyze a potentially malicious Android app](/guides/g5)
 * [How to use MVT to conduct the analysis of a mobile device and its backup image](/guides/g7)
-* [How to use PTS to intercept the TLS traffic of a mobile app](/guides/g8)
+* [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 
 **3. Digital forensics investigators:**
 
@@ -36,7 +36,7 @@ Remember, these learning paths are starting points. Mix and match guides based o
 * [How to statically analyze a potentially malicious Android app](/guides/g5)
 * [How to use MVT to conduct the analysis of a mobile device and its backup image](/guides/g7)
 * [How to capture and analyze device's network traffic](/guides/g2)
-* [How to use PTS to intercept the TLS traffic of a mobile app](/guides/g8)
+* [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)
 
 **4. Regulatory compliance investigators:**
@@ -44,14 +44,14 @@ Remember, these learning paths are starting points. Mix and match guides based o
 * [Mobile application regulatory compliance audit methodology](/guides/g10)
 * [How to setup a PiRogue](/guides/g11)
 * [How to capture and analyze device's network traffic](/guides/g2)
-* [How to use PTS to intercept the TLS traffic of a mobile app](/guides/g8)
+* [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)
 
 **5. Security professionals:**
 
 * [How to setup a PiRogue](/guides/g11)
 * [How to handle a potentially malicious mobile app](/guides/g3)
-* [How to use PTS to intercept the TLS traffic of a mobile app](/guides/g8)
+* [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)
 
 

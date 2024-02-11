@@ -296,12 +296,12 @@ Write your rules according to Suricata\u0026rsquo;s documentation. Bare in mind,
 After being connected to your PiRogue.
 Add your new source in this fashion:
 sudo suricata-update add-source YOUR_NAME URL_TO_THE_DOT_RULES Run
-sudo suricata-update update-sources and then
-sudo suricata-update and your rules must be updated 🙂
+sudo suricata-update and then
+sudo suricatasc -c reload-rules and your rules must be updated and taken into account 🙂
 Example with Abuse.ch SSL blocklist # If you want to add the Abuse.ch SSL blocklist, run the following commands:
-sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules sudo suricata-update update-sources sudo suricata-update Add an already published rule set such as ET Pro # While connected to your PiRogue: Run
+sudo suricata-update add-source SSLBL https://sslbl.abuse.ch/blacklist/sslblacklist.rules sudo suricata-update sudo suricatasc -c reload-rules Add an already published rule set such as ET Pro # While connected to your PiRogue: Run
 sudo suricata-update enable-source et/pro insert your oink-code when prompted and finally run
-sudo suricata-update update-sources sudo suricata-update In both cases, the PiRogue will grab the new version of your rules on a daily basis.
+sudo suricata-update sudo suricatasc -c reload-rules In both cases, the PiRogue will grab the new version of your rules on a daily basis.
 `}).add({id:37,href:"/docs/recipes/turn-a-regular-pc-into-a-pirogue/",title:"Turn a regular PC into a PiRogue",description:`This recipe is dedicated to intrepid users 😎
 Requirements # To follow this recipe we need:
 a PC with one Ethernet interface, one wireless interface and Debian 11 freshly installed the wireless interface has to support the AP mode (access-point mode) the PC is connected to our local network via its Ethernet adapter the PC has an Internet connection ⚠️ Don\u0026rsquo;t install any desktop environment. Prepare the system # We will do everything by command line so, we connect to our PC and run the following command to upgrade it:`,content:`This recipe is dedicated to intrepid users 😎

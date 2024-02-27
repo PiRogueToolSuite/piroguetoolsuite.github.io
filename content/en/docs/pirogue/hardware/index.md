@@ -27,10 +27,10 @@ The backup battery is a CR1220 button battery.
 
 The screen is a `ST7789` 240x240px color TFT screen that uses the SPI protocol to communicate with the operating system through the GPIOs:
 
-`MOSI`: `BCM10`
-`SCK`: `BCM11`
-`RESET`: `BCM5`
-`DC`: `BCM6`
+* `MOSI`: `BCM10`
+* `SCK`: `BCM11`
+* `RESET`: `BCM5`
+* `DC`: `BCM6`
 
 The cooling fan is controlled by the operating system using PWM though the GPIO `BCM13`.
 

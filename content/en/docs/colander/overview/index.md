@@ -15,6 +15,8 @@ Colander web platform is a case and incident response management platform that i
 
 * **Artifact management**: Colander streamlines the handling and preservation of digital evidence, maintaining chain of custody and ensuring admissibility in legal proceedings.
 
+* **Digital investigation**: Colander simplifies the digital investigation process, offering a central platform for case management, evidence handling, gathering threat intelligence for 3rd-party, collaboration, and network traffic analysis.
+
 
 ## Key features
 

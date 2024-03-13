@@ -17,11 +17,13 @@ At the core of the PiRogue Tool Suite lies the **PiRogue** hardware device, a Ra
 
 * **Mobile app and malware analysis**: The PiRogue is capable of dynamically instrumenting mobile applications and operating system to trace all network communication, data collection and cryptographic operations, providing evidence of data transmission and malicious activities.
 
-The PiRogue Tool Suite's capabilities are enhanced by the **Colander** web platform, a case and incident response management platform that integrates seamlessly with the hardware and software components. Colander provides a centralized hub for managing investigations, streamlining workflows, and enabling collaboration among team members.
+The PiRogue Tool Suite's capabilities are complemented by the **Colander** web platform, a case and incident response management platform that integrates seamlessly with the hardware and software components. Colander provides a centralized hub for managing investigations, streamlining workflows, and enabling collaboration among team members.
 
 * **Knowledge management**: Colander facilitates the organization and sharing of investigative knowledge, ensuring that insights are readily available to team members, promoting collaboration and efficiency.
 
 * **Artifact management**: Colander streamlines the handling and preservation of digital evidence, maintaining chain of custody and facilitating admissibility in legal proceedings.
+
+* **Digital investigation**: Colander simplifies the digital investigation process, offering a central platform for case management, evidence handling, gathering threat intelligence for 3rd-party, collaboration, and network traffic analysis.
 
 The PiRogue Tool Suite offers several key advantages that make it an attractive option for organizations seeking a comprehensive and cost-effective solution for digital investigations:
 

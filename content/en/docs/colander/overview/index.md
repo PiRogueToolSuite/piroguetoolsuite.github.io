@@ -33,7 +33,3 @@ Colander web platform is a case and incident response management platform that i
 * Ensure artifact integrity and authenticity
 * Generate comprehensive data transmission report
 * Create feeds to export your findings in different formats
-
-## Installation
-
-The deployment procedure is described [on GitHub](https://github.com/PiRogueToolSuite/colander).

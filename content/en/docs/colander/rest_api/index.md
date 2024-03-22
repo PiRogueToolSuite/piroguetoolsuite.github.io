@@ -45,7 +45,7 @@ artifact = client.upload_artifact(filepath='/tmp/captured.file', artifact_type=a
 Find more details on [GitHub](https://github.com/PiRogueToolSuite/colander-python-client).
 
 ## Threatr
-[Threatr](https://github.com/PiRogueToolSuite/threatr) is a bridge between Colander and various 3rd-party services such as VirusTotal and OTX Alien Vault. Even if it is design to operate along with Colander, Threatr can be used standalone and users can interact with it via its REST API.   
+[Threatr](https://github.com/PiRogueToolSuite/threatr) is a bridge between Colander and various 3rd-party services such as VirusTotal and OTX Alien Vault. Even if it is designed to operate along with Colander, Threatr can be used standalone and users can interact with it via its REST API.   
 
 By now, Threatr supports requests on the following types of observables:
 * `IPV4`

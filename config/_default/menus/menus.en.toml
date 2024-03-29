@@ -27,6 +27,11 @@
   weight = 10
 
 [[main]]
+  name = "Download"
+  url = "/download"
+  weight = 15
+
+[[main]]
   name = "Blog"
   url = "/blog/"
   weight = 20

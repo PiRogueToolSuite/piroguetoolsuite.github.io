@@ -23,7 +23,7 @@ We recommend to install Debian as is the operating system we know, and we will b
 Your server must have a public IP address as well as a domain name.
 
 ## Deployment procedure
-Once your server is up and running, download the Colander deployment package available on GitHub and decompress it on your server. To download the latest deployment package go to [the Github Actions page](https://github.com/PiRogueToolSuite/colander/actions?query=workflow%3ACI) and click on the latest successful build, you will find the package in the *Artifacts* section.
+Once your server is up and running, [download the latest Colander deployment package](https://github.com/PiRogueToolSuite/colander/releases/latest) available on GitHub and decompress it on your server.
 
 ### Configuration
 The next step is to configure the stack to be deployed. To do so, edit the file `.envs/.tpl/.base` and set the following variables according to your production environment:

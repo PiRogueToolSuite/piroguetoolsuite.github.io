@@ -94,11 +94,11 @@ docker compose -f no-sso.yml run --rm threatr-front python manage.py insert_defa
 ### Connect Colander to Threatr
 In the administration panel of Threatr, create a regular user via the *Users* menu. Then, via the *Auth Token* menu, create a new API key for the user you just created. Next, via the menu *Vendor credentials*, create a new entry for each 3rd-party API key you have for Virus Total and/or OTX Alien Vault.
 
-* for VirusTotal, use the vendor identified `vt` and for the credentials field, set 
+* for VirusTotal, use the vendor identifier `vt` and for the credentials field, set 
     ```json
       {"api_key": "your VT API key"}
     ```
-* for OTX Alien Vault, use the vendor identified `otx` and for the credentials field, set 
+* for OTX Alien Vault, use the vendor identifier `otx` and for the credentials field, set 
     ```json
       {"api_key": "your OTX API key"}
     ```

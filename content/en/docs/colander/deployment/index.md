@@ -110,9 +110,9 @@ In the administration panel of Colander, via the menu *Backend credentials*, cre
     {"api_key": "your Threatr API key"}
 ```
 
-# Development environment
+## Development environment
 
-## Setup
+### Setup
 The development environment relies on Docker Compose (or Podman). The file `local.yml` provides the entire stack you need.
 
 ```text

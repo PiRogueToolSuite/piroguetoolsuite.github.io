@@ -36,6 +36,8 @@ sudo pirogue-telemetry config show
 ## What data we collect
 The unique ID collected corresponds to the sha256 sum of the ID generated at its first launch. The AS and the country where the PiRogue is connected from are determined by making a call to https://ip-info.pts-project.org/json. We do not collect any other data than what's listed here.
 
+You can review the code of the telemetry service in charge of collecting and send ing the telemetry [on GitHub](https://github.com/PiRogueToolSuite/telemetry/blob/main/pts_telemetry/telemetry.py).
+
 Here is an example of the data we collect on a daily basis:
 ```json 
 {

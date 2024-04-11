@@ -144,7 +144,6 @@ Once connected, you have to finalize the installation of your PiRogue by running
 | `sudo apt dist-upgrade -y`         | Upgrade the entire operating system and all additional installed software |
 | `sudo reboot`                      | Reboot the PiRogue                                                        |
 
-
 During the installation, when prompted, you will have to answer:
 * `No` to save firewall rules for IP v4
 * `No` to save firewall rules for IP v6
@@ -157,6 +156,10 @@ If you're setting up the PiRogue in the context of an organization at your offic
 {{< /alert >}}
 
 After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi device and use the PiRogue’s dashboard.
+
+{{< alert icon="👉" >}}
+The telemetry is enabled by default but you can easily opt-out. Find more details in the [section dedicated to the telemetry](/docs/pirogue/telemetry/).
+{{< /alert >}}
 
 First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` with your Web browser or directly with this link:
 

@@ -41,7 +41,10 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
 
-**Important note**: Suricata is disabled on devices having less then 1.5GB of RAM.
+
+{{< callout context="danger" title="Important note" icon="alert-octagon" >}}
+Suricata is disabled on devices having less than 1.5GB of RAM.
+{{< /callout >}}
 
 {{< callout context="caution" title="Caution" icon="alert-triangle" >}}
 Be sure to have an appropriate power supply for your PiRogue. If you don't know what to choose, pick the official USB-C Raspberry Pi power supply.
@@ -84,9 +87,25 @@ Once you have downloaded the image, you can check its integrity (check if the fi
 
 To compute the SHA256 of the file you downloaded, run the following command in a terminal:
 
-* on Linux: `sha256sum PiRogue-OS-<year>-<month>-<day>.img.xz`
-* on Windows Powershell: `Get-FileHash .\PiRogue-OS-<year>-<month>-<day>.img.xz -Algorithm SHA256 | Format-List`
+{{< tabs "backup" >}}
+{{< tab "Linux" >}}
+```bash
+sha256sum [image file name].img.xz
+```
+{{< /tab >}}
+{{< tab "Windows" >}}
+```bash
+Get-FileHash .\[image file name].img.xz -Algorithm SHA256 | Format-List
+```
+{{< /tab >}}
+{{< tab "Mac OS" >}}
+```bash
+shasum -a 256 [image file name].img.xz
+```
+{{< /tab >}}
+{{< /tabs >}}
 
+Replace `[image file name].img.xz` with the image file you just downloaded.
 
 ### Set up your SD card
 Advanced Linux users can use a combination of `xz` and `dd` commands to flash their SD-card.
@@ -185,6 +204,10 @@ DPI is a technique that allows the PiRogue to examine the contents of data packe
 ### Suricata rule-based detection
 
 [Suricata](https://suricata.io/) is an open-source intrusion detection system (IDS) that uses a set of rules to identify known threats. These rules are constantly being updated to keep up with the latest threats. The PiRogue comes pre-configured with rules from [ProofPoint Emerging Threat Open](https://community.emergingthreats.net/t/frequently-asked-questions/56) and [Echap](https://github.com/AssoEchap/stalkerware-indicators), two reputable sources of threat intelligence.
+
+{{< callout context="danger" title="Important note" icon="alert-octagon" >}}
+Suricata is disabled on devices having less than 1.5GB of RAM.
+{{< /callout >}}
 
 ### Visualizing analysis results in the dashboard
 

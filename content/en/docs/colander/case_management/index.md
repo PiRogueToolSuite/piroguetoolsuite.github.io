@@ -11,7 +11,7 @@ toc: true
 
 In the context of digital investigation, the effective organization and management of cases are imperative. As a digital investigator you focus on documenting incident, the utilization of Colander serves as a comprehensive platform to streamline and document investigative efforts. This document explain how to use Colander for organizing and managing digital investigation cases.
 
-## Case management
+## Overview
 
 Case management is the overarching framework that organizes and oversees the entire digital investigation process, from the initial identification of a potential crime or incident to the final report and resolution. It serves as a central hub for coordinating all aspects of the investigation, ensuring that the investigation is conducted effectively and efficiently.
 

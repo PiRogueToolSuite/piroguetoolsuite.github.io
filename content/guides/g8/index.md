@@ -74,7 +74,7 @@ Decrypting TLS-encrypted network traffic of a mobile application requires specia
 
 **Man-in-the-Middle (MITM) attack**
 
-{{< img src="img/mitm.png" class="d-block mx-auto" >}}
+{{< img src="img/mitm.png" class="d-block mx-auto mb-4" >}}
 
 MITM attacks involve intercepting and modifying the communication between the mobile app and its intended server. This requires positioning a proxy or a custom certificate authority (CA) between the app and the server, effectively impersonating the server to the app and vice versa.
 
@@ -82,7 +82,7 @@ To establish the MITM attack, the device's trust store needs to be modified to a
 
 **Retrieving TLS Keys from device memory**
 
-{{< img src="img/pirogue.png" class="d-block mx-auto" >}}
+{{< img src="img/pirogue.png" class="d-block mx-auto mb-4" >}}
 
 This technique involves extracting the TLS session keys directly from the device's memory while the app is actively communicating with the server. This requires root access or a jailbroken device to gain access to the memory space where the keys are stored.
 
@@ -159,13 +159,18 @@ Once the application to be analyzed is installed on your Android device, connect
 ```bash
 pirogue-intercept-gated -o <path to the output directory>
 ```
+
+{{< callout context="danger" title="Limitations" icon="alert-octagon" >}}
+PiRogue does not support all TLS libraries. This means that the PiRogue may not be able to capture some TLS traffic.
+{{< /callout >}}
+
 Adapt the command according to your output directory of choice. Once started and showing `Waiting for data`, manually launch the application you want to analyze.
 
-{{< img src="img/launch.png" alt="Command capturing TLS traffic" class="d-block mx-auto shadow" >}}
+{{< img src="img/launch.png" alt="Command capturing TLS traffic" class="d-block mx-auto mb-4 shadow" >}}
 
 Now, interact with the application freely. When you are done interacting with the app, hit `Ctrl`+`C` on your keyboard to stop interception.
 
-{{< callout context="tip" title="tips" icon="rocket" >}}
+{{< callout context="tip" title="Tips" icon="rocket" >}}
 Make sure that the application you want to be analyzed is not running in background. You can, for example, force stop it in *Settings > Apps*, select the application and click on *Stop*.
 {{< /callout >}}
 
@@ -182,7 +187,7 @@ Then enter the output directory with:
 cd <path to the output directory>
 ```
 
-{{< img src="img/permissions.png" alt="Command fixing file permissions" class="d-block mx-auto shadow" >}}
+{{< img src="img/permissions.png" alt="Command fixing file permissions" class="d-block mx-auto mb-4 shadow" >}}
 
 Next, we generate a PCAPNG file containing both the TLS keys and the captured traffic:
 ```bash
@@ -194,14 +199,14 @@ Next, we export the decrypted traffic in JSON:
 tshark -2 -T ek --enable-protocol communityid -Ndmn -r decrypted.pcapng > traffic.json
 ```
 
-{{< img src="img/decrypt.png" alt="Command decrypting TLS traffic" class="d-block mx-auto shadow" >}}
+{{< img src="img/decrypt.png" alt="Command decrypting TLS traffic" class="d-block mx-auto mb-4 shadow" >}}
 
 Finally, to view the decrypted traffic, run: 
 ```bash
 pirogue-view-tls -i traffic.json -t socket_trace.json
 ```
 
-{{< img src="img/view+.png" alt="Command displaying TLS traffic" class="d-block mx-auto shadow" >}}
+{{< img src="img/view+.png" alt="Command displaying TLS traffic" class="d-block mx-auto mb-4 shadow" >}}
 
 {{< callout context="note" title="Note" icon="info-circle" >}}
 The display of the stack trace has been added to `pirogue-cli` in version `1.0.5`. Be sure to upgrade your PiRogue.

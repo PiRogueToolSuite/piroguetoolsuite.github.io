@@ -15,7 +15,7 @@ The graphical interface changes depending on a case as been selected or not. Whe
 * **Cases** to create or edit cases
 * **Collaborate** to create or edit teams
 
-{{< img src="img/1.png" alt="Overview of the Colander interface when no case is selected" caption="Overview of the Colander interface when no case is selected" class="d-block mx-auto shadow md-5" >}}
+{{< img src="img/1.png" alt="Overview of the Colander interface when no case is selected" caption="Overview of the Colander interface when no case is selected" class="d-block mx-auto shadow mb-4" >}}
 
 When a case is selected, the quick search bar only applies to the current case. In this mode, 6 workspaces are accessible:
 * **Collect** to create, edit, delete entities 
@@ -25,8 +25,8 @@ When a case is selected, the quick search bar only applies to the current case. 
 * **Investigate** to quickly retrieve intelligence from [VirusTotal](http://virustotal.com/) or [OTX Alien Vault](https://otx.alienvault.com) via Threatr
 * **CyberChef** to open to self-hosted [CyberChef](https://github.com/gchq/CyberChef) tool
 
-{{< img src="img/2.png" alt="Overview of the Colander interface when a case is selected" caption="Overview of the Colander interface when a case is selected" class="d-block mx-auto shadow md-5" >}}
+{{< img src="img/2.png" alt="Overview of the Colander interface when a case is selected" caption="Overview of the Colander interface when a case is selected" class="d-block mx-auto shadow mb-4" >}}
 
 When a case is selected, the documentation editor can be opened within the current workspace. The documentation editor is then shown on the lower third of the page. 
 
-{{< img src="img/3.png" alt="Overview of the Colander graph and documentation editor" caption="Overview of the Colander graph and documentation editor" class="d-block mx-auto shadow md-5" >}}
+{{< img src="img/3.png" alt="Overview of the Colander graph and documentation editor" caption="Overview of the Colander graph and documentation editor" class="d-block mx-auto shadow mb-4" >}}

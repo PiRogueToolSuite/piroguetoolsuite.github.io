@@ -1,32 +1,54 @@
 {{ define "main" }}
-	<div class="row justify-content-center flex-xl-nowrap">
+	<div class="row flex-xl-nowrap">
+		{{ if (in site.Params.doks.sectionNav .Section) -}}
+		<div class="col-lg-5 col-xl-4 docs-sidebar{{ if ne site.Params.doks.navbarSticky true }} docs-sidebar-top{{ end }}{{ if site.Params.doks.headerBar }} docs-sidebar-offset{{ end }} d-none d-lg-block">
+			{{ partial "sidebar/section-menu.html" . }}
+		</div>
+		{{ end -}}
+		{{ if and (eq site.Params.doks.containerBreakpoint "fluid") (in .Site.Params.mainSections .Type) }}
+			<div class="col container-fw d-lg-flex flex-lg-row justify-content-center mx-auto">
+		{{ end }}
 		{{ if ne .Params.toc false -}}
-		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
-			{{ partial "sidebar/docs-toc.html" . }}
+		<nav class="docs-toc{{ if ne site.Params.doks.navbarSticky true }} docs-toc-top{{ end }}{{ if site.Params.doks.headerBar }} docs-toc-offset{{ end }} d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
+			{{ partial "sidebar/docs-toc-desktop.html" . }}
 		</nav>
 		{{ end -}}
 		{{ if .Params.toc -}}
-		<main class="docs-content col-lg-11 col-xl-9">
+		<main class="docs-content col-lg-12 col-xl-12">
 		{{ else -}}
-		<main class="docs-content col-lg-11 col-xl-9 mx-xl-auto">
+		<main class="docs-content col-lg-12 col-xl-12 mx-xl-auto">
 		{{ end -}}
+			{{ if site.Params.doks.breadcrumbTrail -}}
+				<!-- https://discourse.gohugo.io/t/breadcrumb-navigation-for-highly-nested-content/27359/6 -->
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						{{ partial "main/breadcrumb" . -}}
+						<li class="breadcrumb-item active" aria-current="page">{{ .Title }}</li>
+					</ol>
+				</nav>
+			{{ end }}
 			<h1>{{ .Title }}</h1>
-			{{ partial "main/doc-meta.html" . }}
-			<p class="lead">{{ .Params.lead | safeHTML }}</p>
+			<!-- <p class="lead">{{ .Params.lead | safeHTML }}</p> -->
 			{{ if ne .Params.toc false -}}
-			<nav class="d-xl-none" aria-label="Quaternary navigation">
-				{{ partial "sidebar/docs-toc.html" . }}
+			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
+				{{ partial "sidebar/docs-toc-mobile.html" . }}
 			</nav>
 			{{ end -}}
-			{{ .Content }}
+
+			{{ if site.Params.doks.headlineHash -}}
+				{{ partial "main/headline-hash" .Content }}
+			{{ else -}}
+				{{ .Content }}
+			{{ end -}}
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
-				{{ if .Site.Params.lastMod -}}
+				{{ if site.Params.doks.lastMod -}}
 					{{ partial "main/last-modified.html" . }}
 				{{ end -}}
-				{{ if .Site.Params.editPage -}}
+				{{ if site.Params.doks.editPage -}}
 					{{ partial "main/edit-page.html" . }}
 				{{ end -}}
 			</div>
+			{{ partial "main/docs-navigation.html" . }}
 			<!--
 			{{ if not .Site.Params.options.collapsibleSidebar -}}
 				{{ partial "main/docs-navigation.html" . }}
@@ -35,5 +57,8 @@
 			{{ end -}}
 			-->
 		</main>
+		{{ if and (eq site.Params.doks.containerBreakpoint "fluid") (in .Site.Params.mainSections .Type) }}
+			</div>
+		{{ end }}
 	</div>
 {{ end }}

@@ -1,97 +1,144 @@
-# Meta Data for SEO
-
-## Homepage
-title = "PiRogue tool suite"
-titleSeparator = "-"
-titleAddition = "Mobile forensic & digital investigation"
+# Hugo
+title = "PiRogue Tool Suite"
 description = "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and digital investigation platform targeting mobile devices both Android and iOS, internet of things devices (devices that are connected to the user mobile apps), and in general any device using wi-fi to connect to the Internet."
+images = ["cover.png"]
 
-## Documentation
-# docsVersion = "0.3"
+# mainSections
+mainSections = ["docs", "guides", "download"]
 
-## Open Graph
-images = []
-ogLocale = "en_US"
-domainTLD = "pts-project.org"
-titleHome = "PiRogue tool suite"
+footer = ""
 
-## Twitter Cards
-twitterSite = "@PiRogueTools"
-twitterCreator = "@u039b"
+[social]
+  twitter = "PiRogueTools"
 
-## JSON-LD
-schemaType = "Organization"
-schemaName = "PiRogue tool suite"
-schemaAuthor = "Esther Onfroy"
-schemaAuthorTwitter = "https://twitter.com/u039b"
-schemaAuthorGitHub = "https://github.com/u039b"
-schemaLocale = "en-US"
-schemaLogo = "android-chrome-512x512.png"
-schemaLogoWidth = 512
-schemaLogoHeight = 512
-schemaTwitter = "https://twitter.com/PiRogueTools"
-schemaLinkedIn = ""
-schemaGitHub = "https://github.com/PiRogueToolSuite/"
-schemaSection = "blog"
+# Doks (@hyas/doks-core)
+[doks]
+  # Color mode
+  colorMode = "auto" # auto (default), light or dark
+  colorModeToggler = true # true (default) or false (this setting is only relevant when colorMode = auto)
 
-## Sitelinks Search Box
-siteLinksSearchBox = false
+  # Navbar
+  navbarSticky = true # true (default) or false
+  containerBreakpoint = "fluid" # "", "sm", "md", "lg" (default), "xl", "xxl", or "fluid"
 
-## Chrome Browser
-themeColor = "#fff"
+  ## Button
+  navBarButton = false # false (default) or true
+  navBarButtonUrl = "/docs/prologue/introduction/"
+  navBarButtonText = "Get started"
 
-# Images
-quality = 100
-bgColor = "#fff"
-#landscapePhotoWidths = [900, 800, 700]
-#portraitPhotoWidths = [800, 700]
-lqipWidth = "1800x"
-smallLimit = "900"
+  # FlexSearch
+  flexSearch = true # true (default) or false
+  searchExclKinds = [] # list of page kinds to exclude from search indexing (e.g. ["home", "taxonomy", "term"] )
+  searchExclTypes = [] # list of content types to exclude from search indexing (e.g. ["blog", "docs", "legal", "contributors", "categories"])
+  showSearch = [] # [] (all pages, default) or homepage (optionally) and list of sections (e.g. ["homepage", "blog", "guides"])
+  indexSummary = false # true or false (default); whether to index only the `.Summary` instead of the full `.Content`; limits the respective JSON field size and thus increases loading time
 
+  ## Search results
+  showDate = false # false (default) or true
+  showSummary = true # true (default) or false
+  searchLimit = 99 # 0 (no limit, default) or natural number
 
-[imaging]
-  anchor = "Center"
-  bgColor = "#ffffff"
-  hint = "photo"
-  quality = 85
-  resampleFilter = "Lanczos"
+  # Global alert
+  alert = true # false (default) or true
+  alertDismissable = true # true (default) or false
 
+  # Bootstrap
+  bootstrapJavascript = false # false (default) or true
 
-# Footer
-footer = "Copyright (c) 2022-2024 Defensive Lab Agency"
+  # Nav
+  sectionNav = ["docs"] # ["docs"] (default) or list of sections (e.g. ["docs", "guides"])
+  toTopButton = false # false (default) or true
+  breadcrumbTrail = false # false (default) or true
+  headlineHash = true # true (default) or false
+  scrollSpy = true # true (default) or false
 
-# Feed
-copyRight = "Copyright (c) 2022-2024 Defensive Lab Agency"
+  # Multilingual
+  multilingualMode = false # false (default) or true
+  showMissingLanguages = true # whether or not to show untranslated languages in the language menu; true (default) or false
 
-# Alert
-alert = true
-alertDismissable = true
-alertText = "If you need help or just want to chat, feel free to join <a class=\"alert-link stretched-link\" href=\"https://discord.gg/qGX73GYNdp\" target=\"_blank\" rel=\"noopener\">our Discord server</a>."
+  # Versioning
+  docsVersioning = false # false (default) or true
+  docsVersion = "1.0"
 
+  # UX
+  headerBar = false # true (default) or false
+  backgroundDots = false # true (default) or false
 
-# Edit Page
-# repoHost [Github | Gitea | GitLab] is used for building the edit link based on git hoster
-repoHost = "GitHub"
-docsRepo = "https://github.com/PiRogueToolSuite/piroguetoolsuite.github.io"
-docsRepoBranch = "main"
-editPage = true
-lastMod = true
+  # Homepage
+  sectionFooter = false # false (default) or true
 
-[options]
-  lazySizes = true
-  clipBoard = true
-  instantPage = true
-  flexSearch = true
-  darkMode = true
-  bootStrapJs = true
-  breadCrumb = true
-  highLight = true
-  kaTex = false
-  multilingualMode = false
-  docsVersioning = false
+  # Blog
+  relatedPosts = false # false (default) or true
+  imageList = true # true (default) or false
+  imageSingle = true # true (default) or false
 
-[menu]
-  [menu.section]
-    auto = true
-    collapsibleSidebar = true
-    mainSections = ["docs", "guides"]
+  # Repository
+  editPage = true # false (default) or true
+  lastMod = true # false (default) or true
+  repoHost = "GitHub" # GitHub (default), Gitea, GitLab, Bitbucket, or BitbucketServer
+  docsRepo = "https://github.com/PiRogueToolSuite/piroguetoolsuite.github.io"
+  docsRepoBranch = "v2" # main (default), master, or <branch name>
+  docsRepoSubPath = "" # "" (none, default) or <sub path>
+
+  # SCSS colors
+  # backGround = "yellowgreen"
+  ## Dark theme
+  #textDark = "#00ff00" # "#dee2e6" (default), "#dee2e6" (orignal), or custom color
+  #accentDark = "#00ff00" # "#5d2f86" (default), "#5d2f86" (original), or custom color
+  ## Light theme
+  #textLight = "#1d2d35" # "#1d2d35" (default), "#1d2d35" (orignal), or custom color
+  #accentLight = "#7122dc" # "#8ed6fb" (default), "#8ed6fb" (orignal), or custom color
+
+  # [doks.menu]
+  #   [doks.menu.section]
+  #     auto = true # true (default) or false
+  #     collapsibleSidebar = true # true (default) or false
+
+# Debug
+[render_hooks.image]
+  errorLevel = 'ignore' # ignore (default), warning, or error (fails the build)
+
+[render_hooks.link]
+  errorLevel = 'ignore' # ignore (default), warning, or error (fails the build)
+  highlightBroken = false # true or false (default)
+
+# Images (@hyas/images)
+[hyas_images]
+  [hyas_images.defaults]
+    decoding = "async" # sync, async, or auto (default)
+    fetchpriority = "auto" # high, low, or auto (default) 
+    loading = "lazy" # eager or lazy (default)
+    widths = [480, 576, 768, 1025, 1200, 1440] # [640, 768, 1024, 1366, 1600, 1920] for example
+    sizes = "auto" # 100vw (default), 75vw, or auto for example
+    process = "" # "fill 1600x900" or "fill 2100x900" for example
+    lqip = "16x webp q20" # "16x webp q20" or "21x webp q20" for example
+
+# Inline SVG (@hyas/inline-svg)
+[inline_svg]
+  iconSetDir = "tabler-icons" # "tabler-icons" (default)
+
+# SEO (@hyas/seo)
+[seo]
+  [seo.title]
+    separator = " | "
+    suffix = ""
+  [seo.favicons]
+    sizes = []
+    icon = "favicon.png" # favicon.png (default)
+    svgIcon = "favicon.svg" # favicon.svg (default)
+    maskIcon = "mask-icon.svg" # mask-icon.svg (default)
+    maskIconColor = "white" # white (default)
+  [seo.schemas]
+    type = "Organization" # Organization (default) or Person
+    logo = "favicon-512x512.png" # Logo of Organization — favicon-512x512.png (default)
+    name = "PiRogue Tool Suite" # Name of Organization or Person
+    sameAs = [] # E.g. ["https://github.com/gethyas/hyas", "https://fosstodon.org/@hyas"]
+    images = ["cover.png"] # ["cover.png"] (default)
+    article = [] # Article sections
+    newsArticle = [] # NewsArticle sections
+    blogPosting = ["blog"] # BlogPosting sections
+    product = [] # Product sections
+
+# Add-ons
+[add_ons]
+  plausibleDomain = "pts-project.org" 

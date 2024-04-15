@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div class="row justify-content-center">
-    <div class="col-md-12 col-lg-12 col-xl-10">
+    <div class="col-md-12 col-lg-12 col-xl-12">
         <article>
             <div class="blog-header">
                 <h1>{{ .Title }}</h1>
@@ -8,7 +8,7 @@
             <p class="lead">{{ .Params.lead | safeHTML }}</p>
             {{ .Content }}
             
-            <div class="col-md-12 col-lg-12 col-xl-">
+            <div class="col-md-12 col-lg-12 col-xl-12">
                 <h1>List of guides</h1>
                 <ul>
                     {{ range .Pages.ByWeight -}}

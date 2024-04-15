@@ -1,0 +1,27 @@
+@import "common/fonts_open_sans";
+@import "common/fonts_jetbrains_mono";
+
+$font-family-sans-serif:      "Open Sans Light", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       "JetBrains Mono Light", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+// $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-base:            $font-family-sans-serif;
+$font-size-base:              0.98rem; // Assumes the browser default, typically `16px`
+$font-size-xl:                $font-size-base * 1.375;
+$font-size-lg:                $font-size-base * 1.25;
+$font-size-md:                $font-size-base * 1.125;
+$font-size-sm:                $font-size-base * 0.875;
+
+$purple:   #7122dc;
+$brown:    #aa9c84;
+
+$purple-300:#a88dce;
+$primary: $purple;
+
+$link-color:                              $primary;
+$link-decoration:                         none;
+$link-color-dark: $purple-300;
+$button-color-dark: $link-color-dark;
+$focus-color-dark: lighten($link-color-dark, 2.5%);
+$navbar-dark-hover-color:           $link-color-dark;
+$navbar-dark-active-color:          $link-color-dark;

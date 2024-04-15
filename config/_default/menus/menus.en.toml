@@ -70,7 +70,7 @@
   url = "https://discord.gg/qGX73GYNdp"
   weight = 30
 
-# [[footer]]
-#   name = "Privacy"
-#   url = "/privacy-policy/"
-#   weight = 10
+[[footer]]
+  name = "Privacy"
+  url = "/privacy-policy/"
+  weight = 10

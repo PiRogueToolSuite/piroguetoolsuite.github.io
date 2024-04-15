@@ -73,12 +73,16 @@ Backing up an iOS device with *libimobiledevice* allows you to perform backups w
 * **Open Terminal (macOS/Linux) or Command Prompt (Windows)**: You'll use the command line to execute the backup command.
 * **Check device connection**: To ensure your iOS device is detected, run the following command: 
   
-  ```idevice_id -l```
+  ```bash
+  idevice_id -l
+  ```
   
   If your device's UUID is displayed, it means the device is connected and recognized.
 * **Turn backup encryption on by running the command**: 
 
-  ```idevicebackup2 backup encryption on -i```
+  ```bash
+  idevicebackup2 backup encryption on -i
+  ```
   
   {{< callout context="tip" title="Note" icon="rocket" >}}
   Note that if a backup password was previously set on this device, you might need to use the same or change it. You can try changing password using `idevicebackup2 -i changepw`, or by turning off encryption (`idevicebackup2 -i encryption off`) and turning it back on again.
@@ -86,18 +90,9 @@ Backing up an iOS device with *libimobiledevice* allows you to perform backups w
 
 * **Backup your iOS device**: To perform the backup, use the `idevicebackup2` command followed by the backup destination path:
 
-  {{< tabs "backup" >}}
-  {{< tab "Linux" >}}
   ```bash
   idevicebackup2 backup --full /path/to/backup/folder
   ```
-  {{< /tab >}}
-  {{< tab "Mac OS" >}}
-  ```bash
-  idevicebackup2 backup --full /path/to/backup/folder
-  ```
-  {{< /tab >}}
-  {{< /tabs >}}
 
   Replace `/path/to/backup/folder` with the actual location on your computer where you want to save the backup.
 * **Wait for the backup to complete**: The backup process may take some time, depending on the amount of data on your device.

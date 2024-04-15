@@ -36,7 +36,7 @@ By employing Colander within a digital investigation workflow, you have the capa
 
 The exported STIX2 feed serves as a repository of IOCs, encapsulating details such as file hashes, network indicators, and malicious domain names. This wealth of information empowers MVT to conduct in-depth examinations of mobile devices, potentially uncovering hidden threats or compromised data that may have eluded traditional detection methods. After creating your feed in Colander, execute the suggested commands on the computer running MVT. 
 
-{{< img src="img/colander-feed.png"  caption="Example of entity feed in Colander" alt="Example of entity feed in Colander" class="d-block mx-auto shadow" >}}
+{{< img src="img/colander-feed.png"  caption="Example of entity feed in Colander" alt="Example of entity feed in Colander" class="d-block mx-auto shadow mb-4" >}}
 
 It's crucial to emphasize that the effectiveness of this integration hinges upon the accuracy and completeness of the initial investigation conducted in Colander. Meticulous data collection and analysis are paramount to ensure the generated STIX2 feed accurately reflects the true scope of the cyber threat you are investigating.
 
@@ -50,20 +50,20 @@ Follows a quick overview of the different steps required to analyze an iOS devic
 1. Connect the iOS device to the PiRogue. Use a USB cable to connect the iPhone or iPad to the PiRogue running MVT. Ensure the device is unlocked and trusted for data transfer.
 2. Create an encrypted backup. Open a terminal window and navigate to your directory of choice. Use the command 
    ```bash
-   $ idevicebackup2 backup encryption on -i
-   $ idevicebackup2 backup --full <backup_path>
+   idevicebackup2 backup encryption on -i
+   idevicebackup2 backup --full <backup_path>
    ```
    to create an encrypted backup of the device. Replace `<backup_path>` with the desired location for the backup file.
 
 3. Decrypt the backup. Once the backup is complete, use the command 
    ```bash
-   $ mvt-ios decrypt-backup --password <backup_password> --input <backup_path> --output <decrypted_path>
+   mvt-ios decrypt-backup --password <backup_password> --input <backup_path> --output <decrypted_path>
    ```
    to decrypt the backup file. Replace `<backup_password>` with the same password used for encryption and `<decrypted_path>` with the desired location for the decrypted files.
 
 4. Analyze the decrypted backup. Use the command 
    ```bash
-   $ mvt-ios check-backup --iocs <ioc_path> --output <report_path> <decrypted_path>
+   mvt-ios check-backup --iocs <ioc_path> --output <report_path> <decrypted_path>
    ```
    to analyze the decrypted backup for indicators of compromise (IOCs). Replace `<ioc_path>` with the path to the IOCs file, `<report_path>` with the desired location for the analysis report, and `<decrypted_path>` with the path to the decrypted backup folder.
 
@@ -78,7 +78,7 @@ Follows a quick overview of the different steps required to analyze an Android d
 
 3. Analyze forensic data. Open a terminal and navigate to your directory of choice. Use the command
    ```bash
-   $ mvt-android check-adb -f --iocs <ioc_path> --output <report_path>
+   mvt-android check-adb -f --iocs <ioc_path> --output <report_path>
    ```
    to analyze forensic data from the connected device. Replace `<ioc_path>` with the path to the IOCs file and `<report_path>` with the desired location for the analysis report.This will extract various information, including system logs, installed apps, and network connections.
 

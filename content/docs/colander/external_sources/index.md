@@ -41,54 +41,54 @@ The user interface of the *Investigate* workspace is composed of 5 different sec
 ### Search
 To search for an observable, select its type and specify its value. In the example below, we want to retrieve information about the *domain name* `sharefilesonline.live`.
 
-  {{< img src="img/search.png" alt="Investigate search form" caption="Investigate search form" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/search.png" alt="Investigate search form" caption="Investigate search form" class="d-block mx-auto shadow" >}}
 
 
 ### Summary
 Once the results are available, Colander shows details retrieved about the requested observable and a summary of the results in the form of a knowledge graph.
 
-  {{< img src="img/summary.png" alt="Overview of the results" caption="Overview of the results" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/summary.png" alt="Overview of the results" caption="Overview of the results" class="d-block mx-auto shadow" >}}
 
 ### Observables
 The next section contains the list of all the observables that are related to the requested one. From this list, you can either pivot on a specific observable or add it to your current case.
 
-  {{< img src="img/observables.png" alt="List of the related observables" caption="List of the related observables" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/observables.png" alt="List of the related observables" caption="List of the related observables" class="d-block mx-auto shadow" >}}
 
 ### Events
 The next section contains the list of the events involving the requested observables. Those events can be detections, passive DNS resolutions, etc. From this list, you can import events directly into your current case.
 
-  {{< img src="img/events.png" alt="List of the events" caption="List of the events" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/events.png" alt="List of the events" caption="List of the events" class="d-block mx-auto shadow" >}}
 
 ## Search for an existing observable and enrich it
 Alternatively to the search form, you can jump into the *Investigate* workspace directly from an existing observable by clicking on the button *Investigate* accessible in the details of the observable.
 
-  {{< img src="img/observable-1.png" alt="A domain name we need information about" caption="A domain name we need information about" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/observable-1.png" alt="A domain name we need information about" caption="A domain name we need information about" class="d-block mx-auto shadow" >}}
 
 Then, in the list of observable, the first one will always corresponds to the requested one. If you add it to your case, Colander will automatically merge the information already specified with the ones coming from the external services.
 
-  {{< img src="img/observable-2.png" alt="A domain name with external information added" caption="A domain name with external information added" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/observable-2.png" alt="A domain name with external information added" caption="A domain name with external information added" class="d-block mx-auto shadow" >}}
 
 ## Import observables
 When we import observables from the *Investigate* workspace to your current case, Colander will automatically merge the knowledge graph representing the results from the external services with your existing knowledge graph. As an example, let's imagine that your current case only contains one observable `sharefilesonline.live`, your knowledge graph contains only one node.
 
 From the *Investigate* workspace, you add some observables, your knowledge graph now contains all the imported observables.
 
-  {{< img src="img/import-1.png" alt="Import observables" caption="Import observables" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/import-1.png" alt="Import observables" caption="Import observables" class="d-block mx-auto shadow" >}}
 
 Your knowledge graph now contains all the imported observables.
 
-  {{< img src="img/import-2.png" alt="Knowledge graph containing the imported observables" caption="Knowledge graph containing the imported observables" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/import-2.png" alt="Knowledge graph containing the imported observables" caption="Knowledge graph containing the imported observables" class="d-block mx-auto shadow" >}}
 
 ## Import events
 From the *Investigate* workspace, you can also import events.
 
-  {{< img src="img/import-3.png" alt="Import events" caption="Import events" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/import-3.png" alt="Import events" caption="Import events" class="d-block mx-auto shadow" >}}
 
 Your knowledge graph now contains the events you just imported.
 
-  {{< img src="img/import-4.png" alt="Knowledge graph containing the imported events" caption="Knowledge graph containing the imported events" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/import-4.png" alt="Knowledge graph containing the imported events" caption="Knowledge graph containing the imported events" class="d-block mx-auto shadow" >}}
 
 Now, in the details on the `sharefilesonline.live` observables, you will find the list of the related entities and the timeline containing all the information you imported.
 
-  {{< img src="img/details.png" alt="Details of the observable" caption="Details of the observable" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/details.png" alt="Details of the observable" caption="Details of the observable" class="d-block mx-auto shadow" >}}
 

@@ -23,7 +23,7 @@ By virtue of their graph-based representation, knowledge graphs offer a multitud
 
 Knowledge graphs serve as a powerful tool for digital investigators, enabling them to navigate the complexities of vast datasets and extract meaningful insights. Their ability to represent relationships between entities, track artifact movement, contextualize observables, and infer missing data proves invaluable in solving digital investigations and mitigating cyber threats. 
 
-{{< img src="img/1.png" alt="Overview the graph editor" caption="Overview the graph editor" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/1.png" alt="Overview the graph editor" caption="Overview the graph editor" class="d-block mx-auto shadow" >}}
 
 The graph editor of Colander allows the users to quickly add, edit, remove entities and relationships, and layout the graph in the way they want. 
 

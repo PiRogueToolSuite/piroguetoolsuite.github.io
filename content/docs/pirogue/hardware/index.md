@@ -48,9 +48,9 @@ Precision regarding some parts:
 {{< /callout >}}
 
 
-{{< img src="img/schematic.png"  caption="PiRogue HAT schematic" alt="PiRogue HAT schematic" class="d-block mx-auto shadow" >}}
-{{< img src="img/pcb.png"  caption="Overview of the HAT PCB" alt="Overview of the HAT PCB" class="d-block mx-auto shadow" >}}
-{{< img src="img/3D.png"  caption="3D view of the HAT" alt="3D view of the HAT" class="d-block mx-auto shadow" >}}
+{{< figure src="img/schematic.png"  caption="PiRogue HAT schematic" alt="PiRogue HAT schematic" class="d-block mx-auto shadow" >}}
+{{< figure src="img/pcb.png"  caption="Overview of the HAT PCB" alt="Overview of the HAT PCB" class="d-block mx-auto shadow" >}}
+{{< figure src="img/3D.png"  caption="3D view of the HAT" alt="3D view of the HAT" class="d-block mx-auto shadow" >}}
 
 ## PiRogue case
 The current PiRogue case version is `v1.0_beta`.

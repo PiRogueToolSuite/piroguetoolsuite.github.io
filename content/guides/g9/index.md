@@ -231,7 +231,7 @@ Analyzing and detecting data transmissions within network traffic during the usa
 # Network traffic analysis in Colander
 Colander implements a graphical interface dedicated to traffic decryption, decoding and analysis of each network transmission. The purpose of this interface is to display information related to the network traffic as well as information related to the execution of the analyzed application. More precisely, this interface shows what part of an application was in charge of each network transmission.
 
-{{< img src="img/decrypted_traffic.png" alt="Example of decrypted network transmission" caption="Example of decrypted network transmission" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/decrypted_traffic.png" alt="Example of decrypted network transmission" caption="Example of decrypted network transmission" class="d-block mx-auto shadow" >}}
 
 The interface of each network transmission is composed of the following sections:
 1. summary of the transmission listing:
@@ -336,7 +336,7 @@ pirogue-colander collect-artifact -c "<ID of your case>" <path of the file to be
 
 You can find this command listed in Colander *Collect / Artifact* at the bottom of the artifact creation form.
 
-{{< img src="img/experiment_graph.png" alt="Graph representation of a PiRogue experiment uploaded to Colander" caption="Graph representation of a PiRogue experiment uploaded to Colander" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/experiment_graph.png" alt="Graph representation of a PiRogue experiment uploaded to Colander" caption="Graph representation of a PiRogue experiment uploaded to Colander" class="d-block mx-auto shadow" >}}
 
 
 ## Decrypt the network traffic

@@ -43,7 +43,7 @@ It is advised to only work on copies of the original file and refrain from modif
 ### Get the sample hash from Pithus
 If you open the [Pithus report](https://beta.pithus.org/report/ae05bbd31820c566543addbb0ddc7b19b05be3c098d0f7aa658ab83d6f6cd5c8), you see in the *Fingerprints* workspace a section *File sums* specifying 3 different types of hash (MD5, SHA1 and SHA256). 
 
-{{< img src="img/pithus_sha256.png" alt="SHA256 in Pithus" caption="SHA256 in Pithus" class="d-block mx-auto shadow md-5" >}}
+{{< figure src="img/pithus_sha256.png" alt="SHA256 in Pithus" caption="SHA256 in Pithus" class="d-block mx-auto shadow" >}}
 
 ### Compute the sample hash locally
 You can compute the SHA256 of the sample directly on your computer with the following command line, replace `<my.apk>` by the path to the sample file:
@@ -104,60 +104,60 @@ For this guide we will use two main tools to retrieve basic information for the 
 #### Application and package names
 The application name is the name that will be displayed under the application icon on your phone. The package name is the technical name (identifier) of this application, the information that Android will be using to uniquely identify the application.
 
-{{< img src="img/pithus_app_name.png" alt="Get both application and package names from Pithus" caption="Get both application and package names from Pithus" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_app_name.png" alt="Get both application and package names from Pithus" caption="Get both application and package names from Pithus" class="d-block mx-auto shadow" >}}
 
 #### Signing certificate information
 
 The certificate plays a crucial role in distinguishing between the original application and potentially suspicious ones. Once you have obtained the application name and package name (as mentioned in the previous section), you can search for it on the Google Play Store and compare the signing certificate fingerprints. It's important to remember that the digital signature of Android applications cannot be faked. Two applications can have the same name, the same package name and have been signed with two different certificates. 
 
-{{< img src="img/pithus_malicious_cert.png" alt="Signing certificate of the malicious sample" caption="Signing certificate of the <b>malicious sample</b>" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_malicious_cert.png" alt="Signing certificate of the malicious sample" caption="Signing certificate of the <b>malicious sample</b>" class="d-block mx-auto shadow" >}}
 
-{{< img src="img/pithus_genuine_cert.png" alt="Signing certificate of the genuine Wire application" caption="Signing certificate of the <b>genuine Wire application</b>" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_genuine_cert.png" alt="Signing certificate of the genuine Wire application" caption="Signing certificate of the <b>genuine Wire application</b>" class="d-block mx-auto shadow" >}}
 
 #### Google Play *frosting* information
 To check if the sample was *frosted* by Google Play Store (Android only), refers to the *Frosting* information in the Pithus report.
 
-{{< img src="img/pithus_malicious_frosting.png" alt="Frosting flag of the malicious sample" caption="Frosting flag of the <b>malicious sample</b>" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_malicious_frosting.png" alt="Frosting flag of the malicious sample" caption="Frosting flag of the <b>malicious sample</b>" class="d-block mx-auto shadow" >}}
 
-{{< img src="img/pithus_genuine_frosting.png" alt="Frosting flag of the genuine Wire application" caption="Frosting flag of the <b>genuine Wire application</b>" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_genuine_frosting.png" alt="Frosting flag of the genuine Wire application" caption="Frosting flag of the <b>genuine Wire application</b>" class="d-block mx-auto shadow" >}}
 
 #### Requested permissions
 
 Permissions can serve as an important indicator to determine whether an application is malicious or not. By reviewing the permissions requested, we can evaluate if they align with the legitimate purpose and functionality of the application. Take the example of the fake Wire application, which requests excessive permissions unrelated to its intended use as a communication application. This discrepancy raises suspicions about the application's integrity. If our assessment (and gut feeling) says that these are not legitimate permissions and there's something shady with them, then it's worth investigating.
 
-{{< img src="img/pithus_permissions.png" alt="Requested permissions by the malicious sample" caption="Requested permissions by the malicious sample" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/pithus_permissions.png" alt="Requested permissions by the malicious sample" caption="Requested permissions by the malicious sample" class="d-block mx-auto shadow" >}}
 
 ### With jadx (offline)
 
 First, you have to install jadx on your computer.To do so, follow the [documentation available on GitHub](https://github.com/skylot/jadx#download). If you are using Windows, we suggest to download the file named `jadx-gui-[version]-with-jre-win.zip` from the [releases page](https://github.com/skylot/jadx/releases/latest), decompress the downloaded ZIP archive and double-click on the `.bat` file to launch jadx.
 
-{{< img src="img/jadx.png" alt="Jadx main view" caption="Jadx main view" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx.png" alt="Jadx main view" caption="Jadx main view" class="d-block mx-auto shadow" >}}
 
 Once launched, select and open your sample file. After a few seconds or minutes depending on the size of the APK, jadx will display the content of the Android application as a tree on the left part of the screen.
 
-{{< img src="img/jadx_open.png" alt="Our sample opened with jadx" caption="Our sample opened with jadx" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx_open.png" alt="Our sample opened with jadx" caption="Our sample opened with jadx" class="d-block mx-auto shadow" >}}
 
 #### Application and package names
 
 To get both application name and package name, double-click open the `AndroidManifest.xml` file listed in the tree. It will open it and show you its content in a human-readable way. To get the package name, look at the field `package` in the `AndroidManifest.xml` file.
 
-{{< img src="img/jadx_package.jpeg" alt="Package name in jadx" caption="Package name in jadx" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx_package.jpeg" alt="Package name in jadx" caption="Package name in jadx" class="d-block mx-auto shadow" >}}
 
 To get the application name, look at the field `android:label` of the element `application` in the `AndroidManifest.xml` file.
 
-{{< img src="img/jadx_app_name.jpeg" alt="Application name in jadx" caption="Application name in jadx" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx_app_name.jpeg" alt="Application name in jadx" caption="Application name in jadx" class="d-block mx-auto shadow" >}}
 
 #### Signing certificate information
 
 To get the signing certificate information, double-click on `APK signature` listed at the bottom of the tree and look at the entry `SHA-256 Fingerprint`.
 
-{{< img src="img/jadx_cert.jpeg" alt="Signing certificate information in jadx" caption="Signing certificate information in jadx" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx_cert.jpeg" alt="Signing certificate information in jadx" caption="Signing certificate information in jadx" class="d-block mx-auto shadow" >}}
 
 #### Requested permissions
 
 To get the list of requested permissions, open the `AndroidManifest.xml` file and look at `uses-permissions` elements in it.
 
-{{< img src="img/jadx_permissions.jpeg" alt="Requested permissions in jadx" caption="Requested permissions in jadx" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/jadx_permissions.jpeg" alt="Requested permissions in jadx" caption="Requested permissions in jadx" class="d-block mx-auto shadow" >}}
 
 The same thing we did with Pithus, here we can also review the permissions and assess if these are legitimate permissions for the app's purpose. If our assessment (and gut feeling) says that these are not legitimate permissions and there's something shady with them, then it's worth investigating.
 
@@ -167,9 +167,9 @@ If you have an anti-virus software installed on your computer (Windows comes wit
 
 If permitted by your internal guidelines, you can search for the SHA256 of the sample on multiple online services such as [VirusTotal](https://www.virustotal.com/). To search for our sample on VirusTotal, click on "Search" and paste the SHA256 of the sample.
 
-{{< img src="img/vt_search.png" alt="Search for a SHA256 on VirusTotal" caption="Search for a SHA256 on VirusTotal" class="d-block mx-auto shadow mb-4 md-5" >}}
+{{< figure src="img/vt_search.png" alt="Search for a SHA256 on VirusTotal" caption="Search for a SHA256 on VirusTotal" class="d-block mx-auto shadow" >}}
 
-{{< img src="img/vt_report.png" alt="VirusTotal report for our sample" caption="VirusTotal report for our sample" class="d-block mx-auto shadow md-5" >}}
+{{< figure src="img/vt_report.png" alt="VirusTotal report for our sample" caption="VirusTotal report for our sample" class="d-block mx-auto shadow" >}}
 
 {{< callout context="caution" title="Reminder" icon="alert-triangle" >}}
 If your sample is not detected as malicious does not mean that it is not malicious - it can be a false-negative. It only means that no already known threat or malware has been detected. In some cases, non-malicious samples are detected as malicious even if they are not - false-positives exist too!

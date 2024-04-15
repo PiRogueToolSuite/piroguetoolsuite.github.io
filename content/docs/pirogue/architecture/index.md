@@ -17,7 +17,7 @@ The PiRogue network router acts as a packet inspection system (PIS) that is used
 * **InfluxDB**: This component is a time series database that is used to store and analyze the data collected by NFStream and Suricata. InfluxDB is a highly scalable database that can handle large volumes of data. It also supports a variety of query languages, including SQL, InfluxQL, and Flux.
 * **Grafana**: This component is a data visualization tool that is used to display the data collected by NFStream and Suricata in a graphical format. Grafana supports a variety of dashboards and visualizations, which can be used to monitor the network traffic and alerts.
 
-{{< img src="img/1.png" alt="The architecture of the PiRogue" caption="The architecture of the PiRogue" class="d-block mx-auto shadow md-5" >}}
+{{< figure src="img/1.png" alt="The architecture of the PiRogue" caption="The architecture of the PiRogue" class="d-block mx-auto shadow" >}}
 
 The PiRogue works as follows:
 

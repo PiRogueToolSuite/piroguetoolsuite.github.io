@@ -33,15 +33,15 @@ The administration panel of Colander is accessible at `https://[colander domain]
 ## Account creation
 **By now, the only way for a new user to get an account is requesting its creation to an administrator.** The administrator must use the administration panel to add a new user.
 
-{{< img src="img/create-user-1.png" alt="Menu of the administration panel showing the entry for managing the accounts" caption="Menu of the administration panel showing the entry for managing the accounts" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/create-user-1.png" alt="Menu of the administration panel showing the entry for managing the accounts" caption="Menu of the administration panel showing the entry for managing the accounts" class="d-block mx-auto shadow" >}}
 
 Then, the administrator has to specify the username and password that will then be shared with the user.
 
-{{< img src="img/create-user-2.png" alt="Menu of the administration panel showing the user account creation form" caption="Menu of the administration panel showing the user account creation form" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/create-user-2.png" alt="Menu of the administration panel showing the user account creation form" caption="Menu of the administration panel showing the user account creation form" class="d-block mx-auto shadow" >}}
 
 To grant the administrative rights to a specific user, an administrator has to select *Active*, *Staff status* and *Superuser status* options.
 
-{{< img src="img/create-user-3.png" alt="Menu of the administration panel showing the options to grant administrative rights" caption="Menu of the administration panel showing the options to grant administrative rights" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/create-user-3.png" alt="Menu of the administration panel showing the options to grant administrative rights" caption="Menu of the administration panel showing the options to grant administrative rights" class="d-block mx-auto shadow" >}}
 
 Instead of deleting an account, administrators can deactivate a given account.
 
@@ -61,4 +61,4 @@ After having linked their email address, the user can logout, go back to the log
 ## 2-factor authentication
 Users can set up 2-factor authentication by following the procedure in their profile, section *2FA*. By now, Colander only supports TOTP.
 
-{{< img src="img/create-user-4.png" alt="Overview of the form for setting up the 2-factor authentication" caption="Overview of the form for setting up the 2-factor authentication" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/create-user-4.png" alt="Overview of the form for setting up the 2-factor authentication" caption="Overview of the form for setting up the 2-factor authentication" class="d-block mx-auto shadow" >}}

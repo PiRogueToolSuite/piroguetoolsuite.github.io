@@ -36,7 +36,7 @@ By employing Colander within a digital investigation workflow, you have the capa
 
 The exported STIX2 feed serves as a repository of IOCs, encapsulating details such as file hashes, network indicators, and malicious domain names. This wealth of information empowers MVT to conduct in-depth examinations of mobile devices, potentially uncovering hidden threats or compromised data that may have eluded traditional detection methods. After creating your feed in Colander, execute the suggested commands on the computer running MVT. 
 
-{{< img src="img/colander-feed.png"  caption="Example of entity feed in Colander" alt="Example of entity feed in Colander" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/colander-feed.png"  caption="Example of entity feed in Colander" alt="Example of entity feed in Colander" class="d-block mx-auto shadow" >}}
 
 It's crucial to emphasize that the effectiveness of this integration hinges upon the accuracy and completeness of the initial investigation conducted in Colander. Meticulous data collection and analysis are paramount to ensure the generated STIX2 feed accurately reflects the true scope of the cyber threat you are investigating.
 

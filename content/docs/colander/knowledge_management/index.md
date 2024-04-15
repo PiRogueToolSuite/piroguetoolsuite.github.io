@@ -14,12 +14,12 @@ Knowledge management is an ongoing process of capturing, organizing, and sharing
 ### Knowledge repository
 A central knowledge repository serves as the storage and organization hub for digital evidence, case files, investigative techniques, and lessons learned from past investigations. This repository allows investigators to quickly access relevant information, share knowledge with colleagues, and track the evolution of investigative practices.
 
-  {{< img src="img/3.png" alt="Overview of different entities saved in Colander" caption="Overview of different entities saved in Colander" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/3.png" alt="Overview of different entities saved in Colander" caption="Overview of different entities saved in Colander" class="d-block mx-auto shadow" >}}
 
 ### Knowledge sharing
 Facilitating the exchange of knowledge among investigators, both within the same organization and across different jurisdictions, is crucial for promoting learning and continuous improvement. This can be achieved through formal knowledge sharing feeds. Colander supports export feeds accessible via a password-protected URL giving access to the knowledge in different formats such as JSON, STIX 2 or CSV.
 
-  {{< img src="img/4.png" alt="Overview of a feed exporting entities" caption="Overview of a feed exporting entities" class="d-block mx-auto shadow mb-4" >}}
+  {{< figure src="img/4.png" alt="Overview of a feed exporting entities" caption="Overview of a feed exporting entities" class="d-block mx-auto shadow" >}}
 
 ### Knowledge codification
 Knowledge can be represented in a way that is both understandable and usable by a wide range of people, regardless of their technical expertise. This is important for digital investigations, as it allows investigators to share knowledge with each other, even if they have different levels of technical knowledge. Colander uses standard and generic terminology and concepts. This helps to ensure that everyone is using the same language to describe the same things. 
@@ -37,7 +37,7 @@ Colander defines the following types of entity:
 
 Each type of entity can be more precisely defined. For example, Colander comes with a set of sub-types such as Observable / IP v4, Artifact / Android backup, etc.
 
-{{< img src="img/5.png" alt="Example of entity sub-types" caption="Example of entity sub-types" class="d-block mx-auto shadow mb-4" >}}
+{{< figure src="img/5.png" alt="Example of entity sub-types" caption="Example of entity sub-types" class="d-block mx-auto shadow" >}}
 
 Colander defines two different types of relationships: loose and tight. Tight relationships are defined as attributes attached to an entity following a pre-defined ontology, they are not editable with the graph editor and are marked with a padlock. Loose relationships are any user-defined relationships.
 

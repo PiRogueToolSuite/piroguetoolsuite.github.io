@@ -110,16 +110,16 @@ The application name is the name that will be displayed under the application ic
 
 The certificate plays a crucial role in distinguishing between the original application and potentially suspicious ones. Once you have obtained the application name and package name (as mentioned in the previous section), you can search for it on the Google Play Store and compare the signing certificate fingerprints. It's important to remember that the digital signature of Android applications cannot be faked. Two applications can have the same name, the same package name and have been signed with two different certificates. 
 
-{{< figure src="img/pithus_malicious_cert.png" alt="Signing certificate of the malicious sample" caption="Signing certificate of the <b>malicious sample</b>" class="d-block mx-auto shadow" >}}
+{{< figure src="img/pithus_malicious_cert.png" alt="Signing certificate of the malicious sample" caption="Signing certificate of the malicious sample" class="d-block mx-auto shadow" >}}
 
-{{< figure src="img/pithus_genuine_cert.png" alt="Signing certificate of the genuine Wire application" caption="Signing certificate of the <b>genuine Wire application</b>" class="d-block mx-auto shadow" >}}
+{{< figure src="img/pithus_genuine_cert.png" alt="Signing certificate of the genuine Wire application" caption="Signing certificate of the genuine Wire application" class="d-block mx-auto shadow" >}}
 
 #### Google Play *frosting* information
 To check if the sample was *frosted* by Google Play Store (Android only), refers to the *Frosting* information in the Pithus report.
 
-{{< figure src="img/pithus_malicious_frosting.png" alt="Frosting flag of the malicious sample" caption="Frosting flag of the <b>malicious sample</b>" class="d-block mx-auto shadow" >}}
+{{< figure src="img/pithus_malicious_frosting.png" alt="Frosting flag of the malicious sample" caption="Frosting flag of the malicious sample" class="d-block mx-auto shadow" >}}
 
-{{< figure src="img/pithus_genuine_frosting.png" alt="Frosting flag of the genuine Wire application" caption="Frosting flag of the <b>genuine Wire application</b>" class="d-block mx-auto shadow" >}}
+{{< figure src="img/pithus_genuine_frosting.png" alt="Frosting flag of the genuine Wire application" caption="Frosting flag of the genuine Wire application" class="d-block mx-auto shadow" >}}
 
 #### Requested permissions
 

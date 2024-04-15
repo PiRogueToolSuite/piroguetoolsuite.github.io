@@ -13,8 +13,10 @@ toc: true
 
 [Build your PiRogue →](/guides/g1/) 
 
-Alternatively, you can buy a PiRogue from us by [reaching out to us]({{< relref "contact" >}}).
+Alternatively, you can buy a PiRogue by [reaching out to us]({{< relref "contact" >}}).
 
 ## Colander
 
-*In development*
+[Deploy on your server →](/docs/colander/deployment/) 
+
+You prefer having a managed server? Feel free to [reach out to us]({{< relref "contact" >}}).

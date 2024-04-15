@@ -38,5 +38,5 @@ The PiRogue Tool Suite offers several key advantages that make it an attractive 
 * **Community support**: The active open-source community provides ongoing support and development, ensuring that the suite remains up-to-date and continuously improves and adapts to evolving needs.
 
 {{< callout context="tip" title="Did you know?" icon="rocket" >}}
-The PiRogue can be used without Colander."
+The PiRogue can be used without Colander.
 {{< /callout >}}

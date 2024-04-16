@@ -51,6 +51,8 @@ Each type of entity can be more precisely defined. For example, Colander comes w
 ### Actors
 Entities of this type represent individuals, organizations or groups that can perform actions in the digital environment.
 
+{{< figure src="img/actor.png" alt="Create a new actor" caption="Create a new actor" class="d-block mx-auto shadow" >}}
+
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
 
@@ -59,6 +61,8 @@ Colander supports the following tight relationships which represents the bare mi
 
 ### Artifacts
 Entities of this type represent files or any digital trace left behind by actors or the execution of a software.
+
+{{< figure src="img/artifact.png" alt="Create a new artifact" caption="Create a new artifact" class="d-block mx-auto shadow" >}}
 
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
@@ -71,6 +75,8 @@ Colander supports the following tight relationships which represents the bare mi
 ### Devices
 Entities of this type represent computers, smartphones, tablets, and other electronic devices that store and transmit data.
 
+{{< figure src="img/device.png" alt="Create a new device" caption="Create a new device" class="d-block mx-auto shadow" >}}
+
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
 
@@ -81,6 +87,8 @@ Colander supports the following tight relationships which represents the bare mi
 ### Detection rules
 Entities of this type represent sets of criteria used to identify suspicious activity or potential threats.
 
+{{< figure src="img/detection_rule.png" alt="Create a new detection rule" caption="Create a new detection rule" class="d-block mx-auto shadow" >}}
+
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
 
@@ -89,6 +97,8 @@ Colander supports the following tight relationships which represents the bare mi
 ### Threats
 Entities of this type represent potential risks or harmful actions that can target individuals, organizations, or systems.
 
+{{< figure src="img/threat.png" alt="Create a new threat" caption="Create a new threat" class="d-block mx-auto shadow" >}}
+
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
 
@@ -96,6 +106,8 @@ Colander supports the following tight relationships which represents the bare mi
 
 ### Observables
 Entities of this type represent specific pieces of evidence or information that can be used to identify a technical information.
+
+{{< figure src="img/observable.png" alt="Create a new observable" caption="Create a new observable" class="d-block mx-auto shadow" >}}
 
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
@@ -108,6 +120,8 @@ Colander supports the following tight relationships which represents the bare mi
 ### Events
 Entities of this type represent recorded occurrences of actions or changes in a system.
 
+{{< figure src="img/event.png" alt="Create a new event" caption="Create a new event" class="d-block mx-auto shadow" >}}
+
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:
 
@@ -117,6 +131,8 @@ Colander supports the following tight relationships which represents the bare mi
 
 ### Fragment of data
 Entities of this type represent small pieces of data that can be used to reconstruct a larger dataset or provide insights into the activities of actors or systems.
+
+{{< figure src="img/fragment.png" alt="Create a new fragment of data" caption="Create a new fragment of data" class="d-block mx-auto shadow" >}}
 
 #### Tight relationships
 Colander supports the following tight relationships which represents the bare minimum level of information needed to represent relationships between entities:

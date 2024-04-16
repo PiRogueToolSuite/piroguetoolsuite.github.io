@@ -8,8 +8,6 @@ weight: 15
 toc: true
 ---
 
-
-
 The PiRogue network router acts as a packet inspection system (PIS) that is used to detect  potentially malicious network traffic of any device connected to its Wi-Fi access-point. It relies on the following components:
 
 * **NFStream**: This component is responsible for capturing and parsing network traffic. It can capture traffic from a variety of sources, including physical interfaces, virtual interfaces, and network taps. NFStream also supports a variety of packet capture formats, including pcap, pcapng, and AF_PACKET.
@@ -43,4 +41,6 @@ Here is an example of how the PiRogue could be used to detect malware:
 9. The analyst investigates the alert and determines that the user's device is infected with malware.
 10. The analyst takes steps to remediate the infection.
 
-⚠️ Note that the PiRogue keeps 5 days of history, data older than 5 days is automatically deleted.
+{{< callout context="caution" title="Data retention" icon="alert-triangle" >}}
+The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted. 
+{{< /callout >}}

@@ -1,6 +1,15 @@
-# pts-project.org
-
-Source of the PiRogue Tool Suite project website 
+<div align="center">
+<img width="60px" src="https://pts-project.org/android-chrome-512x512.png">
+<h1>PiRogue Tool Suite website</h1>
+<p>
+License: MIT
+</p>
+<p>
+<a href="https://pts-project.org">Website</a> | 
+<a href="https://pts-project.org/docs/colander/overview/">Documentation</a> | 
+<a href="https://discord.gg/qGX73GYNdp">Support</a>
+</p>
+</div>
 
 
 ## Getting Started

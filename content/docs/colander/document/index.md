@@ -1,6 +1,6 @@
 ---
 title: "🚧 Write documentation"
-draft: false
+draft: true
 images: []
 menu:
   docs:

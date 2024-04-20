@@ -91,6 +91,11 @@
   weight = 30
 
 [[footer]]
+  name = "Code of Conduct"
+  url = "/contributors/coc/"
+  weight = 40
+
+[[footer]]
   name = "Copyright (c) 2022-2024 Defensive Lab Agency"
   url = "https://defensive-lab.agency/"
   weight = 120

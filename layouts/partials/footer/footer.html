@@ -1,0 +1,10 @@
+<footer class="footer text-muted">
+      <div class="row justify-content-md-center">
+        <div class="col-lg-12 text-center text-lg-center">
+          <ul class="list-inline">
+            {{ range .Site.Menus.footer -}}
+              <li class="list-inline-item"><a class="text-muted" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+            {{- end }}
+          </ul>
+        </div>
+  </footer>

@@ -76,16 +76,22 @@
   weight = 30
 
 [[footer]]
-  name = "Privacy"
+  name = "Privacy Policy"
   url = "/privacy-policy/"
   weight = 10
 
 [[footer]]
-  name = "Copyright (c) 2022-2024 Defensive Lab Agency"
-  url = "https://defensive-lab.agency/"
+  name = "Security Advisory"
+  url = "/security/advisory/"
   weight = 20
 
 [[footer]]
-  name = "MIT License"
-  url = "https://github.com/PiRogueToolSuite/piroguetoolsuite.github.io/blob/v2/LICENSE"
+  name = "Vulnerability Disclosure Policy"
+  url = "/security/disclosure/"
   weight = 30
+
+[[footer]]
+  name = "Copyright (c) 2022-2024 Defensive Lab Agency"
+  url = "https://defensive-lab.agency/"
+  weight = 120
+

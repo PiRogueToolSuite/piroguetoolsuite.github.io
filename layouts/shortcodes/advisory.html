@@ -1,0 +1,36 @@
+{{ with .Get "url" }}
+    {{ $url := . }}
+    {{ $data := getJSON $url }}
+    {{ range $data }}
+        {{ if eq .state "open"}}
+            {{ if or (eq .rule.security_severity_level "critical") (eq .rule.security_severity_level "high") }}
+            <div class="mb-2 p-2 border rounded border-primary-subtle">
+                <div class="pb-1 border-bottom border-primary-subtle">
+                    <span class="badge text-bg-danger">{{ .rule.security_severity_level | strings.ToUpper }}</span> 
+                    <span class="small">{{ .rule.description }}</span>
+                </div>
+                <div class="">
+                    <ul class="list-unstyled">
+                        <li class="small">
+                            {{ range .rule.tags }}
+                                {{ if and (not (eq . "critical")) (not (eq . "HIGH")) }}
+                                    <span class="badge text-bg-secondary small">{{.}}</span>
+                                {{ end }}
+                            {{ end }}
+                        </li>
+                        <li class="small">Date: {{ .updated_at }}</li>
+                        <li class="small">Rule: {{ .rule.id }}</li>
+                        <li class="small">Reference: <span class="font-monospace small">{{ .most_recent_instance.ref }} #{{ .most_recent_instance.commit_sha }}</span></li>
+                        <li class="small">Location: <span class="font-monospace small">{{ .most_recent_instance.location.path }}</span></li>
+                        <li>
+                            <span class="small">Details:</span>
+                            <pre class="">{{ .most_recent_instance.message.text }}</pre>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+

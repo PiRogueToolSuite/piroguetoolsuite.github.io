@@ -1,0 +1,1382 @@
+[
+  {
+    "number": 36,
+    "created_at": "2024-04-20T07:27:54Z",
+    "updated_at": "2024-04-20T07:28:12Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/36",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/36",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2018-20225",
+      "severity": "error",
+      "description": "CVE-2018-20225: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "  Vulnerability   : CVE-2018-20225                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pip@23.0.1                           \n  Affected range  : >=0                                           \n  Fixed version   : not fixed                                     \n  CVSS Score      : 7.8                                           \n  CVSS Vector     : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.001120                                      \n  EPSS Percentile : 0.441280                                      \n"
+      },
+      "location": {
+        "path": "/usr/local/lib/python3.10/site-packages/pip-23.0.1.dist-info/METADATA",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": ["library"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/36/instances"
+  },
+  {
+    "number": 35,
+    "created_at": "2024-04-19T17:19:20Z",
+    "updated_at": "2024-04-20T07:28:12Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/35",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/35",
+    "state": "fixed",
+    "fixed_at": "2024-04-20T07:28:10Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2024-1135",
+      "severity": "error",
+      "description": "CVE-2024-1135: Inconsistent Interpretation of HTTP Requests ('HTTP Request/Response Smuggling')",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "fixed",
+      "commit_sha": "263ba788c5ca48cb33c5b33bc94b29215b3b5aed",
+      "message": {
+        "text": "  Vulnerability   : CVE-2024-1135                                 \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/gunicorn@21.2.0                      \n  Affected range  : <22.0.0                                       \n  Fixed version   : 22.0.0                                        \n  CVSS Score      : 8.2                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N  \n  EPSS Score      : 0.000430                                      \n  EPSS Percentile : 0.082100                                      \n"
+      },
+      "location": {
+        "path": "/usr/local/lib/python3.9/site-packages/gunicorn-21.2.0.dist-info/METADATA",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": ["library"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/35/instances"
+  },
+  {
+    "number": 34,
+    "created_at": "2024-04-19T17:19:20Z",
+    "updated_at": "2024-04-20T07:28:12Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/34",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/34",
+    "state": "fixed",
+    "fixed_at": "2024-04-20T07:28:10Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-50447",
+      "severity": "error",
+      "description": "CVE-2023-50447: Improper Control of Generation of Code ('Code Injection')",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "fixed",
+      "commit_sha": "263ba788c5ca48cb33c5b33bc94b29215b3b5aed",
+      "message": {
+        "text": "  Vulnerability   : CVE-2023-50447                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pillow@10.1.0                        \n  Affected range  : <10.2.0                                       \n  Fixed version   : 10.2.0                                        \n  CVSS Score      : 8.1                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.000740                                      \n  EPSS Percentile : 0.309840                                      \n"
+      },
+      "location": {
+        "path": "/usr/local/lib/python3.9/site-packages/Pillow-10.1.0.dist-info/METADATA",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": ["library"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/34/instances"
+  },
+  {
+    "number": 33,
+    "created_at": "2024-04-19T17:19:20Z",
+    "updated_at": "2024-04-20T07:28:12Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/33",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/33",
+    "state": "fixed",
+    "fixed_at": "2024-04-20T07:28:10Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2018-20225",
+      "severity": "error",
+      "description": "CVE-2018-20225: OWASP Top Ten 2017 Category A9 - Using Components with Known Vulnerabilities",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "fixed",
+      "commit_sha": "263ba788c5ca48cb33c5b33bc94b29215b3b5aed",
+      "message": {
+        "text": "  Vulnerability   : CVE-2018-20225                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pip@23.0.1                           \n  Affected range  : >=0                                           \n  Fixed version   : not fixed                                     \n  CVSS Score      : 7.8                                           \n  CVSS Vector     : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.001120                                      \n  EPSS Percentile : 0.441280                                      \n"
+      },
+      "location": {
+        "path": "/usr/local/lib/python3.9/site-packages/pip-23.0.1.dist-info/METADATA",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": ["library"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/33/instances"
+  },
+  {
+    "number": 32,
+    "created_at": "2024-04-19T17:19:20Z",
+    "updated_at": "2024-04-19T17:19:22Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/32",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/32",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2023-52425",
+      "severity": "error",
+      "description": "CVE-2023-52425",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "  Vulnerability   : CVE-2023-52425                                                                \n  Severity        : HIGH                                                                          \n  Package         : pkg:deb/debian/expat@2.5.0-1?os_distro=bookworm&os_name=debian&os_version=12  \n  Affected range  : >=2.5.0-1                                                                     \n  Fixed version   : not fixed                                                                     \n  EPSS Score      : 0.000570                                                                      \n  EPSS Percentile : 0.224550                                                                      \n"
+      },
+      "location": {
+        "path": "Dockerfile",
+        "start_line": 6,
+        "end_line": 6,
+        "start_column": 1,
+        "end_column": 40
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/32/instances"
+  },
+  {
+    "number": 31,
+    "created_at": "2024-04-19T17:19:20Z",
+    "updated_at": "2024-04-20T07:28:12Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/31",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/31",
+    "state": "fixed",
+    "fixed_at": "2024-04-20T07:28:10Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "CVE-2022-40897",
+      "severity": "error",
+      "description": "CVE-2022-40897: Inefficient Regular Expression Complexity",
+      "name": "OsPackageVulnerability",
+      "tags": ["HIGH"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "Docker Scout",
+      "guid": null,
+      "version": "1.7.1"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/ci.yml:docker-build",
+      "environment": "{}",
+      "category": ".github/workflows/ci.yml:docker-build",
+      "state": "fixed",
+      "commit_sha": "263ba788c5ca48cb33c5b33bc94b29215b3b5aed",
+      "message": {
+        "text": "  Vulnerability   : CVE-2022-40897                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/setuptools@58.1.0                    \n  Affected range  : <65.5.1                                       \n  Fixed version   : 65.5.1                                        \n  CVSS Score      : 7.5                                           \n  CVSS Vector     : CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H  \n  EPSS Score      : 0.003230                                      \n  EPSS Percentile : 0.704040                                      \n"
+      },
+      "location": {
+        "path": "/usr/local/lib/python3.9/site-packages/setuptools-58.1.0.dist-info/METADATA",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 1,
+        "end_column": 1
+      },
+      "classifications": ["library"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/31/instances"
+  },
+  {
+    "number": 30,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/30",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/30",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/stack-trace-exposure",
+      "severity": "error",
+      "description": "Information exposure through an exception",
+      "name": "py/stack-trace-exposure",
+      "tags": ["external/cwe/cwe-209","external/cwe/cwe-497","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Stack trace information flows to this location and may be exposed to an external user."
+      },
+      "location": {
+        "path": "colander/core/views/upload_views.py",
+        "start_line": 41,
+        "end_line": 41,
+        "start_column": 33,
+        "end_column": 52
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/30/instances"
+  },
+  {
+    "number": 29,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/29",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/29",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/stack-trace-exposure",
+      "severity": "error",
+      "description": "Information exposure through an exception",
+      "name": "py/stack-trace-exposure",
+      "tags": ["external/cwe/cwe-209","external/cwe/cwe-497","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Stack trace information flows to this location and may be exposed to an external user."
+      },
+      "location": {
+        "path": "colander/core/views/upload_views.py",
+        "start_line": 38,
+        "end_line": 38,
+        "start_column": 37,
+        "end_column": 63
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/29/instances"
+  },
+  {
+    "number": 28,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/28",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/28",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/views.py",
+        "start_line": 450,
+        "end_line": 450,
+        "start_column": 25,
+        "end_column": 57
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/28/instances"
+  },
+  {
+    "number": 27,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/27",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/27",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/views.py",
+        "start_line": 120,
+        "end_line": 120,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/27/instances"
+  },
+  {
+    "number": 26,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/26",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/26",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/relation_views.py",
+        "start_line": 73,
+        "end_line": 73,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/26/instances"
+  },
+  {
+    "number": 25,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/25",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/25",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/obversable_views.py",
+        "start_line": 180,
+        "end_line": 180,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/25/instances"
+  },
+  {
+    "number": 24,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/24",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/24",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/experiment_views.py",
+        "start_line": 227,
+        "end_line": 227,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/24/instances"
+  },
+  {
+    "number": 23,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/23",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/23",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/experiment_views.py",
+        "start_line": 214,
+        "end_line": 214,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/23/instances"
+  },
+  {
+    "number": 22,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/22",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/22",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/comment_views.py",
+        "start_line": 53,
+        "end_line": 53,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/22/instances"
+  },
+  {
+    "number": 21,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/21",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/21",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/comment_views.py",
+        "start_line": 22,
+        "end_line": 22,
+        "start_column": 21,
+        "end_column": 53
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/21/instances"
+  },
+  {
+    "number": 20,
+    "created_at": "2024-04-19T07:59:46Z",
+    "updated_at": "2024-04-19T07:59:49Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/20",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/20",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "py/url-redirection",
+      "severity": "error",
+      "description": "URL redirection from remote source",
+      "name": "py/url-redirection",
+      "tags": ["external/cwe/cwe-601","security"],
+      "security_severity_level": "medium"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"python\"}",
+      "category": "/language:python",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "Untrusted URL redirection depends on a user-provided value."
+      },
+      "location": {
+        "path": "colander/core/views/comment_views.py",
+        "start_line": 21,
+        "end_line": 21,
+        "start_column": 29,
+        "end_column": 61
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/20/instances"
+  },
+  {
+    "number": 19,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T07:59:45Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/19",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/19",
+    "state": "open",
+    "fixed_at": null,
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/useless-regexp-character-escape",
+      "severity": "error",
+      "description": "Useless regular-expression character escape",
+      "name": "js/useless-regexp-character-escape",
+      "tags": ["correctness","external/cwe/cwe-020","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "open",
+      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "message": {
+        "text": "The escape sequence '\\b' is a backspace, and not a word-boundary assertion when it is used in a regular expression."
+      },
+      "location": {
+        "path": "colander/static/js/colander-text-editor.js",
+        "start_line": 1,
+        "end_line": 1,
+        "start_column": 195115,
+        "end_column": 195117
+      },
+      "classifications": []
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/19/instances"
+  },
+  {
+    "number": 18,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/18",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/18",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 25900,
+        "end_line": 25900,
+        "start_column": 186,
+        "end_column": 195
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/18/instances"
+  },
+  {
+    "number": 17,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/17",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/17",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 25900,
+        "end_line": 25900,
+        "start_column": 157,
+        "end_column": 166
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/17/instances"
+  },
+  {
+    "number": 16,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/16",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/16",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 24585,
+        "end_line": 24585,
+        "start_column": 175,
+        "end_column": 184
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/16/instances"
+  },
+  {
+    "number": 15,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/15",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/15",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 24585,
+        "end_line": 24585,
+        "start_column": 146,
+        "end_column": 155
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/15/instances"
+  },
+  {
+    "number": 14,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/14",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/14",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 19640,
+        "end_line": 19640,
+        "start_column": 14,
+        "end_column": 31
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/14/instances"
+  },
+  {
+    "number": 13,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/13",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/13",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 18515,
+        "end_line": 18515,
+        "start_column": 183,
+        "end_column": 192
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/13/instances"
+  },
+  {
+    "number": 12,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/12",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/12",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 18515,
+        "end_line": 18515,
+        "start_column": 154,
+        "end_column": 163
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/12/instances"
+  },
+  {
+    "number": 11,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/11",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/11",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 17535,
+        "end_line": 17535,
+        "start_column": 229,
+        "end_column": 238
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/11/instances"
+  },
+  {
+    "number": 10,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/10",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/10",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 17535,
+        "end_line": 17535,
+        "start_column": 200,
+        "end_column": 209
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/10/instances"
+  },
+  {
+    "number": 9,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/9",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/9",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 16329,
+        "end_line": 16329,
+        "start_column": 174,
+        "end_column": 183
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/9/instances"
+  },
+  {
+    "number": 8,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/8",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/8",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 16329,
+        "end_line": 16329,
+        "start_column": 145,
+        "end_column": 154
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/8/instances"
+  },
+  {
+    "number": 7,
+    "created_at": "2024-04-19T07:59:43Z",
+    "updated_at": "2024-04-19T08:50:26Z",
+    "url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/7",
+    "html_url": "https://github.com/PiRogueToolSuite/colander/security/code-scanning/7",
+    "state": "fixed",
+    "fixed_at": "2024-04-19T08:50:23Z",
+    "dismissed_by": null,
+    "dismissed_at": null,
+    "dismissed_reason": null,
+    "dismissed_comment": null,
+    "rule": {
+      "id": "js/incomplete-sanitization",
+      "severity": "warning",
+      "description": "Incomplete string escaping or encoding",
+      "name": "js/incomplete-sanitization",
+      "tags": ["correctness","external/cwe/cwe-020","external/cwe/cwe-080","external/cwe/cwe-116","security"],
+      "security_severity_level": "high"
+    },
+    "tool": {
+      "name": "CodeQL",
+      "guid": null,
+      "version": "2.17.0"
+    },
+    "most_recent_instance": {
+      "ref": "refs/heads/main",
+      "analysis_key": ".github/workflows/codeql.yml:analyze",
+      "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
+      "category": "/language:javascript-typescript",
+      "state": "fixed",
+      "commit_sha": "58860ff6782ba68068ca57045a2c2958b0cc8784",
+      "message": {
+        "text": "This does not escape backslash characters in the input."
+      },
+      "location": {
+        "path": "colander/static/js/mermaid.esm.min.mjs",
+        "start_line": 5680,
+        "end_line": 5680,
+        "start_column": 164,
+        "end_column": 176
+      },
+      "classifications": ["generated"]
+    },
+    "instances_url": "https://api.github.com/repos/PiRogueToolSuite/colander/code-scanning/alerts/7/instances"
+  }
+]

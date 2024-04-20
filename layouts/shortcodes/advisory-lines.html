@@ -1,0 +1,25 @@
+{{ with .Get "url" }}
+    {{ $url := . }}
+    {{ with $.Get "name" }}
+        {{ $name := . }}
+        {{ with $.Get "type" }}
+            {{ $type := . }}
+            {{ $data := getJSON $url }}
+            {{ range $data }}
+                {{ if eq .state "open"}}
+                    {{ if or (eq .rule.security_severity_level "critical") (eq .rule.security_severity_level "high") }}
+                        <tr>
+                            <td>{{ $name }}</td>
+                            <td class="text-muted">{{ $type }}</td>
+                            <td><span class="badge text-bg-danger">{{ .rule.security_severity_level | strings.ToUpper }}</span></td>
+                            <td class="text-wrap">
+                                <span class="">{{ .rule.description }}</span>
+                            </td>
+                        </tr>
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+

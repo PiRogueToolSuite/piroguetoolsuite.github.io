@@ -25,9 +25,9 @@ images: []
     </p>
 </div>
 <div class="col-md-12">
-    <h2 class="mb-0">Overview</h2>
-    <div class="table-responsive">
-        <table class="table table-sm small">
+    <h2 class="mb-2">Overview</h2>
+    <div class="table-responsive m-0">
+        <table class="table table-sm table-hover small mt-0">
             <thead>
                 <tr>
                     <th>Component</th>
@@ -44,9 +44,6 @@ images: []
 
 <div class="col-md-12">
     <h2 class="mb-2">Detected vulnerabilities</h2>
-</div>
-
-<div class="col-md-12">
     {{< advisory url="data/advisory/pts.json">}}
 </div>
 

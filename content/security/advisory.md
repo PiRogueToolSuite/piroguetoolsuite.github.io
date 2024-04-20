@@ -9,7 +9,7 @@ images: []
 
 <div class="col-md-12">
     <p>
-        This page gives an overview of the already known vulnerabilities of the different components we deliver. Those vulnerabilities have been automatically detected and reported by scanning both the code and the final package using <a href="https://codeql.github.com/">CodeQL</a> and <a href="https://docs.docker.com/scout/">Docker Scout</a>.
+        This page gives an overview of the already known vulnerabilities of the different components we deliver. Those vulnerabilities have been automatically detected and reported by scanning both the code and the dependencies using <a href="https://codeql.github.com/">CodeQL</a> and <a href="https://docs.docker.com/scout/">Docker Scout</a>.
     </p>
 </div>
 <div class="col-md-12">

@@ -6,6 +6,8 @@
             {{ if or (eq .rule.security_severity_level "critical") (eq .rule.security_severity_level "high") }}
             <div class="mb-2 p-2 border rounded border-primary-subtle">
                 <div class="pb-1 border-bottom border-primary-subtle">
+                    <a href="{{ .repository.html_url }}" target="_blank">{{ .repository.full_name }}</a>
+                    <br>
                     <span class="badge text-bg-danger">{{ .rule.security_severity_level | strings.ToUpper }}</span> 
                     <span class="small">{{ .rule.description }}</span>
                 </div>

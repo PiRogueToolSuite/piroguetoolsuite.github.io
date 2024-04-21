@@ -20,7 +20,7 @@
                                 {{ end }}
                             {{ end }}
                         </li>
-                        <li class="small">Date: {{ .updated_at }}</li>
+                        <li class="small">Date of analysis: {{ .updated_at }}</li>
                         <li class="small">Rule: {{ .rule.id }}</li>
                         <li class="small">Reference: <span class="font-monospace small">{{ .most_recent_instance.ref }} #{{ .most_recent_instance.commit_sha }}</span></li>
                         <li class="small">Location: <span class="font-monospace small">{{ .most_recent_instance.location.path }}</span></li>

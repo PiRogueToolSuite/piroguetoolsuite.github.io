@@ -82,6 +82,13 @@ All PiRogue-specific packages are defined in the GitHub repository [https://gith
 
 PiRogue Debian packages can be installed on any compatible hardware running Debian 12 (without graphical environment). The package hardware-detection will be taking care of installing the HAT drivers if the installation is done on a Raspberry Pi.
 
+{{< details "PiRogue packages dependency tree" >}}
+<img
+  src="img/dpkg.svg"
+  alt="PiRogue packages dependency tree"
+  width="80%" />
+{{< /details >}}
+
 
 ## Installation procedure
 

@@ -76,12 +76,8 @@ docker compose -f no-sso.yml run --rm threatr-front python manage.py createsuper
 
 and follow the instructions.
 
-**Don't forget to save the credentials in your favorite password manager!**
-
-Note that the administration panels are accessible at random URLs specified in the files `.envs/.production/.colander` and `.envs/.production/.threatr`.
-
 {{< callout context="danger" title="Backup" icon="alert-octagon" >}}
-Don't forget to backup the `.envs` folder.
+Don't forget to backup the credentials and the `.envs` folder.
 {{< /callout >}}
 
 ### Insert default data
@@ -103,12 +99,20 @@ In the administration panel of Threatr, create a regular user via the *Users* me
       {"api_key": "your OTX API key"}
     ```
 
-**NB** you can add multiple API keys for a same vendor    
+{{< callout context="tip" title="Did you know?" icon="rocket" >}}
+You can add multiple API keys for a same vendor, Threatr will do a round-robin on them.
+{{< /callout >}}
 
 In the administration panel of Colander, via the menu *Backend credentials*, create a new entry with `threatr` as backend identifier and for the credentials field, set 
 ```json
     {"api_key": "your Threatr API key"}
 ```
+
+{{< callout context="note" title="Administration panel URLs" icon="info-circle" >}}
+Note that the administration panels are accessible at random URLs:
+* for Colander: `https://${COLANDER_FQDN}/${DJANGO_ADMIN_URL}` with the variables set in  `.envs/.production/.base` and `.envs/.production/.colander`
+* for Threatr: `https://${THREATR_FQDN}/${DJANGO_ADMIN_URL}` with the variables set in  `.envs/.production/.base` and `.envs/.production/.threatr`
+{{< /callout >}}
 
 ## Development environment
 

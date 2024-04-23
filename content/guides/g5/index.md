@@ -3,6 +3,7 @@ title: Intermediate guide - How to statically analyze a potentially malicious An
 weight: 50
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

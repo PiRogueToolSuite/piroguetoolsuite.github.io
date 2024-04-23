@@ -3,6 +3,7 @@ title: Advanced guide - How to use Colander to analyze the network traffic of an
 weight: 90
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

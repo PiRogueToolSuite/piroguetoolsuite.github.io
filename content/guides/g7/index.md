@@ -3,6 +3,7 @@ title: Intermediate guide - How to use MVT to conduct the analysis of a mobile d
 weight: 70
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

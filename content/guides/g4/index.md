@@ -3,6 +3,7 @@ title: Beginner guide - How to backup a mobile device for forensic analysis purp
 weight: 40
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

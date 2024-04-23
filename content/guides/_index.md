@@ -1,6 +1,7 @@
 ---
 title: Learning materials
 layout: "guide-list"
+license: CC-BY-SA
 ---
 
 In today's digital landscape, safeguarding sensitive information on mobile devices is crucial for civil society actors and human rights defenders, including journalists, activists, and researchers. Mastering mobile security empowers you to protect your data, investigate potential threats, and ensure regulatory compliance. However, navigating the wealth of available learning resources can be overwhelming. To address this challenge, we have curated a selection of learning guides tailored to your specific needs.

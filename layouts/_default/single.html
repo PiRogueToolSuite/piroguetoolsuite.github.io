@@ -28,7 +28,9 @@
 				</nav>
 			{{ end }}
 			<h1>{{ .Title }}</h1>
-			<!-- <p class="lead">{{ .Params.lead | safeHTML }}</p> -->
+			{{ if .Params.license }}
+				<p class="small">License: {{ .Params.license | safeHTML }}</p>
+			{{ end }}
 			{{ if ne .Params.toc false -}}
 			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
 				{{ partial "sidebar/docs-toc-mobile.html" . }}

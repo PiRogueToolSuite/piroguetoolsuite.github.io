@@ -3,6 +3,7 @@ title: Beginner guide - How to handle a potentially malicious mobile app
 weight: 30
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

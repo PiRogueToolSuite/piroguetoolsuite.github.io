@@ -3,6 +3,7 @@ title: Advanced guide - How to use PiRogue to intercept the TLS traffic of a mob
 weight: 80
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

@@ -3,6 +3,7 @@ title: Beginner guide - How to capture and analyze device's network traffic
 weight: 20
 toc: true
 draft: false
+license: CC-BY-SA
 resources:
 - name: alerts
   src: img/alerts.png

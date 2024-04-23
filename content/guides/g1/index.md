@@ -3,6 +3,7 @@ title: Beginner guide - How to setup a PiRogue
 weight: 10
 toc: true
 draft: false
+license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 

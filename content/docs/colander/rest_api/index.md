@@ -12,7 +12,7 @@ toc: true
 ## Colander
 A Python 3 library abstracting the REST API of Colander is [available on GitHub](https://github.com/PiRogueToolSuite/colander-python-client).
 
-To use it, you have to specify your Colander API you can find in your profile.
+To use it, you have to specify your Colander API key you can find in your profile.
 
 **Installation**
 ```bash {title="Install the Python library"}

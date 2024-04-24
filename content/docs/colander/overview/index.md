@@ -9,7 +9,7 @@ weight: 500
 toc: true
 ---
 
-Colander web platform is a case and incident response management platform that integrates seamlessly with the hardware and software components. Colander provides a centralized hub for managing investigations, streamlining workflows, and enabling effective collaboration among team members.
+Colander web platform is a case and digital investigation platform that integrates seamlessly with the hardware and software components. Colander provides a centralized hub for managing investigations, streamlining workflows, and enabling effective collaboration among team members.
 
 * **Knowledge management**: Colander facilitates the organization and sharing of investigative knowledge, ensuring that insights are readily available to team members, promoting collaboration and efficiency.
 

@@ -29,7 +29,22 @@
 			{{ end }}
 			<h1>{{ .Title }}</h1>
 			{{ if .Params.license }}
-				<p class="small">License: {{ .Params.license | safeHTML }}</p>
+				{{ if eq .Params.license "CC-BY-SA" }}
+					<div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" 
+						class="small border-start border-4 border-primary p-2 ps-3 mb-4 bg-light">
+						<span property="dct:title"> </span>By <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://defensive-lab.agency/">Defensive Lab Agency</a>, licensed under 
+						<img style="height:16px!important;margin-left:1px;margin-bottom: 5px;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+						<img style="height:16px!important;margin-left:1px;margin-bottom: 5px;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+						<img style="height:16px!important;margin-left:1px;margin-bottom: 5px;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+						<p class="mb-0">
+							<a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">
+								Creative Commons Attribution-ShareAlike 4.0 International
+							</a>
+						</p>
+					</div> 
+				{{ else }}
+					<p class="small">License: {{ .Params.license | safeHTML }}</p>
+				{{ end }}
 			{{ end }}
 			{{ if ne .Params.toc false -}}
 			<nav class="toc-mobile d-xl-none" aria-label="Quaternary navigation">
@@ -50,7 +65,7 @@
 					{{ partial "main/edit-page.html" . }}
 				{{ end -}}
 			</div>
-			{{ partial "main/docs-navigation.html" . }}
+			<!-- {{ partial "main/docs-navigation.html" . }} -->
 			<!--
 			{{ if not .Site.Params.options.collapsibleSidebar -}}
 				{{ partial "main/docs-navigation.html" . }}

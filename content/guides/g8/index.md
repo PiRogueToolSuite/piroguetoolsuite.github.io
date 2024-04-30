@@ -227,5 +227,6 @@ The commands `pirogue-intercept-single` and `pirogue-intercept-gated` generate t
 * `traffic.pcap` contains the entire network traffic captured during the experiment
 * `ad_ids.txt` contains all Android advertising IDs issued during the experiment
 
-
-**NB**: you can open the PCAP file with Wireshark and specify the key log file in *Settings > Protocols > TLS*. This way, Wireshark will automatically decrypt TLS traffic.
+{{< callout context="tip" title="Did you know?" icon="rocket" >}}
+You can open the PCAP file with Wireshark and specify the key log file in *Settings > Protocols > TLS*. This way, Wireshark will automatically decrypt TLS traffic.
+{{< /callout >}}

@@ -32,9 +32,9 @@
       "environment": "{}",
       "category": ".github/workflows/ci.yml:docker-build",
       "state": "open",
-      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "commit_sha": "7cfd9bb85e55e157354fd7640ac8b21b5cc952b1",
       "message": {
-        "text": "  Vulnerability   : CVE-2018-20225                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pip@23.0.1                           \n  Affected range  : >=0                                           \n  Fixed version   : not fixed                                     \n  CVSS Score      : 7.8                                           \n  CVSS Vector     : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.001120                                      \n  EPSS Percentile : 0.441280                                      \n"
+        "text": "  Vulnerability   : CVE-2018-20225                                \n  Severity        : HIGH                                          \n  Package         : pkg:pypi/pip@23.0.1                           \n  Affected range  : >=0                                           \n  Fixed version   : not fixed                                     \n  CVSS Score      : 7.8                                           \n  CVSS Vector     : CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H  \n  EPSS Score      : 0.001120                                      \n  EPSS Percentile : 0.441500                                      \n"
       },
       "location": {
         "path": "/usr/local/lib/python3.10/site-packages/pip-23.0.1.dist-info/METADATA",
@@ -149,9 +149,9 @@
       "environment": "{}",
       "category": ".github/workflows/ci.yml:docker-build",
       "state": "open",
-      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "commit_sha": "7cfd9bb85e55e157354fd7640ac8b21b5cc952b1",
       "message": {
-        "text": "  Vulnerability   : CVE-2023-52425                                                                \n  Severity        : HIGH                                                                          \n  Package         : pkg:deb/debian/expat@2.5.0-1?os_distro=bookworm&os_name=debian&os_version=12  \n  Affected range  : >=2.5.0-1                                                                     \n  Fixed version   : not fixed                                                                     \n  EPSS Score      : 0.000570                                                                      \n  EPSS Percentile : 0.224550                                                                      \n"
+        "text": "  Vulnerability   : CVE-2023-52425                                                                \n  Severity        : HIGH                                                                          \n  Package         : pkg:deb/debian/expat@2.5.0-1?os_distro=bookworm&os_name=debian&os_version=12  \n  Affected range  : >=2.5.0-1                                                                     \n  Fixed version   : not fixed                                                                     \n  EPSS Score      : 0.000570                                                                      \n  EPSS Percentile : 0.225170                                                                      \n"
       },
       "location": {
         "path": "Dockerfile",
@@ -258,7 +258,7 @@
     "tool": {
       "name": "CodeQL",
       "guid": null,
-      "version": "2.17.0"
+      "version": "2.17.1"
     },
     "most_recent_instance": {
       "ref": "refs/heads/main",
@@ -266,7 +266,7 @@
       "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
       "category": "/language:javascript-typescript",
       "state": "open",
-      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "commit_sha": "7cfd9bb85e55e157354fd7640ac8b21b5cc952b1",
       "message": {
         "text": "The escape sequence '\\b' is a backspace, and not a word-boundary assertion when it is used in a regular expression."
       },
@@ -377,7 +377,7 @@
     "tool": {
       "name": "CodeQL",
       "guid": null,
-      "version": "2.17.0"
+      "version": "2.17.1"
     },
     "most_recent_instance": {
       "ref": "refs/heads/main",
@@ -385,7 +385,7 @@
       "environment": "{\"build-mode\":\"none\",\"language\":\"javascript-typescript\"}",
       "category": "/language:javascript-typescript",
       "state": "open",
-      "commit_sha": "eddc10e02dd0deb0c7f46789ba964779af43f1c4",
+      "commit_sha": "7cfd9bb85e55e157354fd7640ac8b21b5cc952b1",
       "message": {
         "text": "This replaces only the first occurrence of /&/."
       },

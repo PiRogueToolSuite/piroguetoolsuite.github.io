@@ -5,6 +5,7 @@
             {{ range .Site.Menus.footer -}}
               <li class="list-inline-item"><a class="text-muted" href="{{ .URL | relURL }}">{{ .Name }}</a></li>
             {{- end }}
+            <li class="list-inline-item"><a class="text-muted" href="https://defensive-lab.agency/">Copyright © 2022-{{ now.Year }} Defensive Lab Agency</a></li>
           </ul>
         </div>
   </footer>

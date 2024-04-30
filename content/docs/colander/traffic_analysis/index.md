@@ -9,4 +9,8 @@ weight: 600
 toc: true
 ---
 
-[Have a look to the guide dedicated to network traffic decryption →](/guides/g9)
+{{< link-card
+  title="Network traffic analysis"
+  description="Learn how to analyze network traffic with Colander"
+  href="/guides/g9"
+>}}

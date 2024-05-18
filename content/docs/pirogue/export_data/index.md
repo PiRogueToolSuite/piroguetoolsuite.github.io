@@ -13,13 +13,13 @@ PiRogue deletes the data every 5 days for security reasons but to do a further a
 
 Once connected to the PiRogue, run the command 
 ```bash
-$ influx -database 'suricata' -execute 'SELECT * FROM "suricata"."suricata_5d"."alert"' -format 'csv'  alerts-`date +"%Y-%m-%d"`.csv
+$ influx -database 'suricata' -execute 'SELECT * FROM "suricata"."suricata_5d"."alert"' -format 'csv' > alerts-`date +"%Y-%m-%d"`.csv
 ```
 to export all Suricata alerts in a CSV file.
 
 Run the command 
 ```bash
-$ influx -database 'flows' -execute 'SELECT * FROM "flows"."flows_5d"."flow"' -format 'csv'  flows-`date +"%Y-%m-%d"`.csv
+$ influx -database 'flows' -execute 'SELECT * FROM "flows"."flows_5d"."flow"' -format 'csv' > flows-`date +"%Y-%m-%d"`.csv
 ```
 to export all network flows in a CSV file.
 
@@ -67,3 +67,8 @@ You can refine your request by filtering the following fields of the Suricata al
 * `proto`: transport protocol (UDP, TCP)
 * `src_ip`: source IP address string representation
 * `src_port`: transport layer source port
+
+
+---
+
+*This documentation is based on the translation of a [tutorial originally written by niculcha](https://blog.codigosur.org/pirogue).*

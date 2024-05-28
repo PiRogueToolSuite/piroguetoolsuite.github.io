@@ -1,6 +1,6 @@
 ---
 title: Monthly report n⁰28 - 2024-05
-description: "Monthly report of a 2-year journey on the PiRogue Tool Suite project"
+description: "Monthly report on the activities we have carried out this month on PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and digital investigation platform."
 date: 2024-05-25
 lastmod: 2024-05-25

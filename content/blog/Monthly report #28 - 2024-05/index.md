@@ -31,7 +31,7 @@ cat /etc/os-release | grep PRETTY_NAME
 If the command does not return `PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"`, the latest version of PiRogue OS has to be installed, this guide explains [how to setup a PiRogue](https://pts-project.org/guides/g1/). We suggest to use another SD-card than the one already used by the PiRogue. Once the latest image has be flashed on a new SD-card, simply replace the "old" SD-card by the new one.
 
 ## Colander
-Nothing notable has been done this month.
+Nothing noteworthy has been done this month.
 
 ## Community and outreach
 We attended the CiviCERT in-person meeting and we've received countless positive feedbacks on PTS.

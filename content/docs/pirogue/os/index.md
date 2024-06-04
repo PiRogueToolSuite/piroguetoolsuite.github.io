@@ -77,7 +77,7 @@ We also packaged, for Debian, tools that are not maintained by PTS team:
 * `python3-nfstream`
 * `frida`
 
-All PiRogue-specific packages are defined in the GitHub repository [https://github.com/PiRogueToolSuite/deb-package](https://github.com/PiRogueToolSuite/deb-package) in 2 separate branches: one for Raspberry Pi OS 11 and one for Debian 12.
+All PiRogue-specific packages are defined in the GitHub repository [https://github.com/PiRogueToolSuite/deb-packages](https://github.com/PiRogueToolSuite/deb-packages) in 2 separate branches: one for Raspberry Pi OS 11 and one for Debian 12.
 
 PiRogue Debian packages can be installed on any compatible hardware running Debian 12 (without graphical environment). The package hardware-detection will be taking care of installing the HAT drivers if the installation is done on a Raspberry Pi.
 

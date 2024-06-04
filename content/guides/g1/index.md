@@ -187,7 +187,7 @@ ping -c1 pirogue.local
 ```
 
 {{< callout context="note" title="Note" icon="info-circle" >}}
-To customize your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/configure-a-pirogue/).
+To customize your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/configuration/).
 {{< /callout >}}
 
 ## Continuous network traffic analysis

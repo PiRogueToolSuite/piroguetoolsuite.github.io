@@ -49,7 +49,7 @@ PiRogue features can be installed on a Raspberry Pi as well as on a regular comp
 
 ## Packaging for PiRogue
 
-All features and software installed on the PiRogue are packaged for Debian. These packages are published on 2 PPAs. One for Raspberry Pi OS 11 and one for Debian 12.
+All features and software installed on the PiRogue are packaged for Debian 12. These packages are published on our [PPA](https://pts-project.org/ppa/).
 
 A Personal Package Archive (PPA) serves as a repository for software packages maintained by individuals or teams outside of the official Debian distribution. It allows developers to distribute and update their software independently, providing users with access to newer versions or packages not yet included in Debian's main repositories. PPAs offer a convenient way to access other software but require cautious use as they may not undergo the same rigorous testing as official Debian packages.
 

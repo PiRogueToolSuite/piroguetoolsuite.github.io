@@ -20,7 +20,6 @@ Pirogue Tool Suite uses a comprehensive set of software tools for network traffi
 * `tcpdump`: Captures network traffic and stores it in PCAP files for further analysis.
 * `suricata`: Detects malicious traffic based on predefined rules and signatures.
 * `nfstream`: Inspects network traffic in-depth to determine the specific applications involved in each data flow.
-* `yara`: Applies detection rules to decrypted network traffic, identifying patterns and anomalies.
 * `adb`: Provides a command-line interface for interacting with Android devices for forensic analysis.
 * `libimobiledevice`: Enables communication and data extraction from iOS devices for forensic investigations.
 * `mvt`: Conducts comprehensive device forensic analysis, identifying signs of compromise or spyware infection.

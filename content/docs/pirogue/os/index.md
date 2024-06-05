@@ -104,7 +104,7 @@ Once connected, the operating system has to be upgraded and the PiRogue installa
 ```bash
 $ sudo apt update
 $ sudo apt dist-upgrade
-$ sudo apt install install pirogue-base
+$ sudo apt install pirogue-base
 ```
 
 And finally reboot the PiRogue with the command 
@@ -121,7 +121,7 @@ $ sudo curl -o /etc/apt/trusted.gpg.d/pirogue.asc   https://pts-project.org/debi
 And finally install the PiRogue packages with the commands 
 ```bash
 $ sudo apt update
-$ sudo apt install install pirogue-base
+$ sudo apt install pirogue-base
 $ sudo reboot
 ```
 

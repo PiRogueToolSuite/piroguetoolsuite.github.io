@@ -18,7 +18,7 @@ We suggest to use a dedicated server with at least:
 * 4GB of RAM
 * 500GB of storage space
 
-We recommend to install Debian as is the operating system we know, and we will be able to guide you through all different steps for installation, maintenance and debugging. 
+We recommend installing Debian because it's the operating system we're familiar with, and we can guide you through all the installation, maintenance, and debugging steps. 
 
 Your server must have a public IP address as well as a domain name.
 

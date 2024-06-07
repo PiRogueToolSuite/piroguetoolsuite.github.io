@@ -1,0 +1,38 @@
+on:
+  push:
+    branches:
+      - $default-branch
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      - name: Install dependencies
+        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Build production website
+        env:
+          # For maximum backward compatibility with Hugo modules
+          HUGO_ENVIRONMENT: production
+          HUGO_ENV: production
+        run: |
+          npm run build \
+            -- \
+            --gc \
+            --minify
+      - name: Test HTML
+        continue-on-error: true
+        uses: wjdp/htmltest-action@master
+        with:
+          config: .htmltest.yml
+          
+ 

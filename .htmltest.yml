@@ -1,0 +1,14 @@
+DirectoryPath: "./public"
+IgnoreDirectoryMissingTrailingSlash: true
+IgnoreInternalEmptyHash: true
+CheckImages: false
+IgnoreAltEmpty: true
+IgnoreAltMissing: true
+IgnoreExternalBrokenLinks: true
+IgnoreURLs:
+  - "http://pirogue.local:3000"
+  - "http://localhost:8000"
+  - "https://discord.gg"
+  - "^img/adb_config_out*"
+# Experimental concurrent testing 
+TestFilesConcurrently: true

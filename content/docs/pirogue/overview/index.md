@@ -16,6 +16,6 @@ The PiRogue is a Raspberry Pi-based network router that captures and analyses ne
 
 * **Network traffic analysis**: The PiRogue enables deep packet inspection of network traffic, facilitating the identification of suspicious patterns and potential threats.
 
-* **Mobile forensic**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages, and application data, providing valuable insights into user activity.
+* **Mobile Device Forensics**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages, and application data, providing valuable insights into user activity.
 
 {{< figure src="img/pirogue-ports.png" alt="The different ports of the PiRogue - * indicates required connections/elements" caption="The different ports of the PiRogue - * indicates required connections/elements" class="d-block mx-auto shadow" >}}

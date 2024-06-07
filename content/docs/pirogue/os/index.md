@@ -20,7 +20,6 @@ Pirogue Tool Suite uses a comprehensive set of software tools for network traffi
 * `tcpdump`: Captures network traffic and stores it in PCAP files for further analysis.
 * `suricata`: Detects malicious traffic based on predefined rules and signatures.
 * `nfstream`: Inspects network traffic in-depth to determine the specific applications involved in each data flow.
-* `yara`: Applies detection rules to decrypted network traffic, identifying patterns and anomalies.
 * `adb`: Provides a command-line interface for interacting with Android devices for forensic analysis.
 * `libimobiledevice`: Enables communication and data extraction from iOS devices for forensic investigations.
 * `mvt`: Conducts comprehensive device forensic analysis, identifying signs of compromise or spyware infection.
@@ -49,7 +48,7 @@ PiRogue features can be installed on a Raspberry Pi as well as on a regular comp
 
 ## Packaging for PiRogue
 
-All features and software installed on the PiRogue are packaged for Debian. These packages are published on 2 PPAs. One for Raspberry Pi OS 11 and one for Debian 12.
+All features and software installed on the PiRogue are packaged for Debian 12. These packages are published on our [PPA](https://pts-project.org/ppa/).
 
 A Personal Package Archive (PPA) serves as a repository for software packages maintained by individuals or teams outside of the official Debian distribution. It allows developers to distribute and update their software independently, providing users with access to newer versions or packages not yet included in Debian's main repositories. PPAs offer a convenient way to access other software but require cautious use as they may not undergo the same rigorous testing as official Debian packages.
 
@@ -78,7 +77,7 @@ We also packaged, for Debian, tools that are not maintained by PTS team:
 * `python3-nfstream`
 * `frida`
 
-All PiRogue-specific packages are defined in the GitHub repository [https://github.com/PiRogueToolSuite/deb-package](https://github.com/PiRogueToolSuite/deb-package) in 2 separate branches: one for Raspberry Pi OS 11 and one for Debian 12.
+All PiRogue-specific packages are defined in the GitHub repository [https://github.com/PiRogueToolSuite/deb-packages](https://github.com/PiRogueToolSuite/deb-packages) for Debian 12.
 
 PiRogue Debian packages can be installed on any compatible hardware running Debian 12 (without graphical environment). The package hardware-detection will be taking care of installing the HAT drivers if the installation is done on a Raspberry Pi.
 

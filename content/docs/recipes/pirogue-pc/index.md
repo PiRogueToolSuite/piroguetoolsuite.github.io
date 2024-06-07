@@ -15,7 +15,7 @@ This recipe is dedicated to intrepid users 😎
 
 ## Requirements
 To follow this recipe we need:
-* a PC with one Ethernet interface, one wireless interface and Debian 11 freshly installed
+* a PC with one Ethernet interface, one wireless interface and Debian 12 freshly installed
 * the wireless interface has to support the AP mode (access-point mode)
 * the PC is connected to our local network via its Ethernet adapter
 * the PC has an Internet connection
@@ -43,7 +43,7 @@ run `iw list`and scroll through its output to check if the wireless interface su
 {{< img src="img/ap-mode.png" alt="Output of iw list" class="d-block mx-auto shadow" >}}
 
 ## Install the PiRogue packages
-Next, we have to add the PTS PPA (repositoty containing all PiRogue packages) by running 
+Next, we have to add the PTS PPA (repository containing all PiRogue packages) by running 
 
 ```bash
 sudo curl -o /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list

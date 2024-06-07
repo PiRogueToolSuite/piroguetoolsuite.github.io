@@ -35,13 +35,19 @@ In addition to a computer and an Internet connection, you will need, at least, a
 
 First, you need a Raspberry Pi. We support the following versions of Raspberry Pi:
 
-* Raspberry Pi 3 Model B
-* Raspberry Pi 3 Model B+
-* Raspberry Pi 4 Model B - 1GB
+* Raspberry Pi 3 Model B <sup>1</sup>
+* Raspberry Pi 3 Model B+ <sup>1</sup>
+* Raspberry Pi 4 Model B - 1GB <sup>1</sup>
 * Raspberry Pi 4 Model B - 2GB
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
+* Raspberry Pi 5  <sup>2</sup>
 
+<small>
+<sup>1</sup> Not all services can be run on these devices due to limited memory.
+
+<sup>2</sup> Debian 12 doesn't currently support this device. However you can install PiRogue packages manually using Raspberry Pi OS instead.
+</small>
 
 {{< callout context="danger" title="Important note" icon="alert-octagon" >}}
 Suricata is disabled on devices having less than 1.5GB of RAM.

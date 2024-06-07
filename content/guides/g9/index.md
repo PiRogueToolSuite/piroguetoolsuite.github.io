@@ -19,8 +19,8 @@ In the contemporary landscape of mobile applications, a clear understanding of n
 This guide offers a roadmap for those exploring network traffic analysis. From transmission decryption to manual decoding and the formulation of detection rules, each section contributes to a practical understanding. Whether a seasoned analyst or an enthusiast, this journey aims to decipher the digital communication intricacies inherent in mobile applications using Colander. 
 
 
-# On hurry?
-You are on hurry but can't remember the different commands to run on your PiRogue? Here they are:
+# In a hurry?
+Can't remember the PiRogue commands you need? Don't worry! Here they are:
 * Instrument the mobile device: `pirogue-intercept-gated -o output`
 * Wait until it says `Waiting for data` and start the application to be analyzed
 * Hit `Ctrl + C` when done with the app

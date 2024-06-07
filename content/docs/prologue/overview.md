@@ -13,7 +13,7 @@ At the core of the PiRogue Tool Suite lies the **PiRogue** hardware device, a Ra
 
 * **Network traffic analysis**: The PiRogue enables deep packet inspection of network traffic, facilitating the identification of suspicious patterns and potential threats.
 
-* **Mobile forensic**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages and application data, providing valuable insights into the system activity.
+* **Mobile Device Forensics**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages and application data, providing valuable insights into the system activity.
 
 * **Mobile app and malware analysis**: The PiRogue is capable of dynamically instrumenting mobile applications and operating system to trace all network communication, data collection and cryptographic operations, providing evidence of data transmission and malicious activities.
 

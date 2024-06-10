@@ -5,6 +5,7 @@ date: 2024-02-26T14:26:23+00:00
 lastmod: 2024-02-26T14:26:23+00:00
 draft: false
 images: []
+weight: 60
 ---
 
 Debian expert at PiRogue Tool Suite.

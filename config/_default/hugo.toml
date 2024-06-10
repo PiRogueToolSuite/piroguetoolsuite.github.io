@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir = false
 copyRight = "Copyright (c) 2022-2024 Defensive Lab Agency"
 
 [build.buildStats]
-  enable = true
+  enable = false
 
 [outputs]
   home = ["HTML", "RSS", "searchIndex"]

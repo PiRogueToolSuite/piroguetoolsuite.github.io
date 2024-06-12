@@ -2,6 +2,7 @@
 .stylelintcache
 .netlify
 .hugo_build.lock
+.env
 yarn-error.log
 node_modules
 public

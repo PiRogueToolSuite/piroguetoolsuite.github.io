@@ -258,7 +258,7 @@
     "tool": {
       "name": "CodeQL",
       "guid": null,
-      "version": "2.17.3"
+      "version": "2.17.4"
     },
     "most_recent_instance": {
       "ref": "refs/heads/main",
@@ -377,7 +377,7 @@
     "tool": {
       "name": "CodeQL",
       "guid": null,
-      "version": "2.17.3"
+      "version": "2.17.4"
     },
     "most_recent_instance": {
       "ref": "refs/heads/main",

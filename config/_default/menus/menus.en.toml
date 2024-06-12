@@ -34,17 +34,17 @@
 [[main]]
   name = "Blog"
   url = "/blog/"
-  weight = 20
-
-[[main]]
-  name = "Contributors"
-  url = "/contributors/"
   weight = 25
 
 [[main]]
-  name = "About"
-  url = "/about/"
-  weight = 30
+  name = "Team"
+  url = "/team/"
+  weight = 20
+
+# [[main]]
+#   name = "About"
+#   url = "/about/"
+#   weight = 30
 
 [[main]]
   name = "Contact"
@@ -98,6 +98,6 @@
 
 [[footer]]
   name = "Code of Conduct"
-  url = "/contributors/coc/"
+  url = "/code-of-conduct/"
   weight = 40
 

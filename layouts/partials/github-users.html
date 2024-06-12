@@ -1,0 +1,10 @@
+
+    {{ range $.Site.Data.collaborators }}
+        <div class="col-md-4">
+            <a href="{{ .html_url }}">
+                <img src="{{ .avatar_url }}">
+                {{ .login }}
+            </a>
+            {{ .description|markdownify}}
+        </div>
+    {{ end }}

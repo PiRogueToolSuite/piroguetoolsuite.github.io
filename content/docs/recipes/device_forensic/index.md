@@ -1,5 +1,5 @@
 ---
-title: "Device forensic with MVT"
+title: "Device forensics with MVT"
 date: 2022-05-23
 lastmod: 2022-05-23
 draft: false
@@ -31,7 +31,7 @@ To do so, on your PiRogue, run the following command
 mvt-android download-iocs
 ```
 
-## Forensic of an Android device
+## Forensic analysis of an Android device
 First of all, you have to connect the target device with USB to your PiRogue. On the device, you have to enable ADB in the *Developer Settings*. If the device is rooted, you should enable *root* for ADB only. On the Android device select **Transfer files** by taping on *Android System - USB charging* (in the list of notifications).
 
 **NB**: all the following commands have to be executed on your PiRogue.
@@ -66,7 +66,7 @@ It might produce an output similar to
 
 
 
-## Forensic of an iOS device
+## Forensic analysis of an iOS device
 
 ### Prepare the iOS device to be analyzed
 First of all, you have to connect the target device with USB to your PiRogue. 

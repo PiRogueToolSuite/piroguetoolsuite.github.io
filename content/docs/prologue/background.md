@@ -13,13 +13,13 @@ PiRogue Tool Suite project is the reboot of the PiRanhaLysis project. PTS is fou
 
 Defensive Lab Agency (DLA) is a French company founded in 2018 by Esther Onfroy with the objective of providing expert services on digital security and privacy issues. DLA is specialized in mobile security and focuses its work on supporting NGOs, activists, journalists, human rights defenders and public institutions against digital surveillance.
 
-Since 2018, DLA's major public contributions were [reverse engineering of FinSpy Android for Amnesty International](https://defensive-lab.agency/2020/09/finspy-android/), conducting [privacy analysis of edtech mobile apps for Human Rights Watch](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments) and hosting [mobile forensic online courses for Digital Defender Partnership](https://www.digitaldefenders.org/introduction-to-forensics-of-mobile-devices-identification-of-spyware-and-documentation-of-digital-threats-with-a-human-rights-and-gender-perspective/).
+Since 2018, DLA's major public contributions were [reverse engineering of FinSpy Android for Amnesty International](https://defensive-lab.agency/2020/09/finspy-android/), conducting [privacy analysis of edtech mobile apps for Human Rights Watch](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments) and hosting [mobile device forensics online courses for Digital Defender Partnership](https://www.digitaldefenders.org/introduction-to-forensics-of-mobile-devices-identification-of-spyware-and-documentation-of-digital-threats-with-a-human-rights-and-gender-perspective/).
 
 The services DLA specializes in are:
 
 * **Reverse engineering of Android apps and malware**: this includes decompiling the app to its source code, analyzing the code for malicious behavior, and identifying its vulnerabilities. DLA can also help to develop secure Android apps by providing feedback on your code and recommending security best practices.
 
-* **Consensual mobile forensic analysis**: DLA can investigate security incidents involving mobile devices. This includes extracting and analyzing data from mobile devices to identify evidence of malicious activity.
+* **Consensual mobile device forensic analysis**: DLA can investigate security incidents involving mobile devices. This includes extracting and analyzing data from mobile devices to identify evidence of malicious activity.
 
 * **Mobile app privacy analysis**: DLA can help understand how mobile apps collect and process user data. This includes reviewing the app's privacy policy, analyzing the app's code, and testing the app's behavior. DLA can also help develop privacy-friendly mobile apps by providing recommendations on how to collect and process user data in a responsible manner.
 

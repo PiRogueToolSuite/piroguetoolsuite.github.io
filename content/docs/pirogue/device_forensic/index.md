@@ -1,5 +1,5 @@
 ---
-title: "Consensual device forensic"
+title: "Consensual device forensics"
 draft: false
 images: []
 menu:

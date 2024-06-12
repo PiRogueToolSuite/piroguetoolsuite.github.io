@@ -2,6 +2,7 @@
 .stylelintcache
 .netlify
 .hugo_build.lock
+hugo_stats.json
 .env
 yarn-error.log
 node_modules
@@ -9,3 +10,5 @@ public
 resources
 notes.txt
 data/advisory/pts-*.json
+bin/
+tmp/

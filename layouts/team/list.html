@@ -3,38 +3,47 @@
   <div class="col-md-10 col-lg-10 col-xl-10">
     <article>
 		<h1 class="text-center">Core team</h1>
-		<div class="text-center">{{ .Content }}</div>
 		<div class="row row-cols-1 row-cols-md-2 g-auto  justify-content-center">
 			{{ range .Data.Pages -}}
-				<div class="col" style="max-width: 300px;">
-					<div class="card mt-4 shadow-sm">
-							{{ if .Params.avatar_url }}
-								<img src="{{ .Params.avatar_url }}" class="card-img-top">
-							{{ end }}
-							<div class="card-body text-center p-2">
-								<h5 class="card-title mt-3">
-									<a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a>
-								</h5>					  
-								<p class="card-text">
-									{{ if eq .Section "blog" -}}
-										<p>{{ .Params.lead | safeHTML }}</p>
-										{{ partial "main/blog-meta.html" . -}}
-									{{ else }}
-										<p>{{ .Params.description }}</p>
-									{{ end -}}
-								</p>
-							</div>
-					</div>
-				</div>
+				{{ if strings.Contains .RelPermalink "core" }}
+				{{ partial "team/member.html" .}}
+				{{ end }}
 			{{ end -}}
 		</div>
     </article>
   </div>
 </div>
+{{ if fileExists "team/advisory-committee"}}
 <div class="row justify-content-center">
-	<div class="col-md-12 col-lg-10 col-xl-8">
-		{{ partial "github-users.html" . }}
-	</div>
+  <div class="col-md-10 col-lg-10 col-xl-10">
+    <article>
+		<h1 class="text-center">Advisory Committee</h1>
+		<div class="row row-cols-1 row-cols-md-2 g-auto  justify-content-center">
+			{{ range .Data.Pages -}}
+				{{ if strings.Contains .RelPermalink "advisory-committee" }}
+				{{ partial "team/member.html" .}}
+				{{ end }}
+			{{ end -}}
+		</div>
+    </article>
+  </div>
 </div>
+{{ end }}
+{{ if fileExists "team/github"}}
+<div class="row justify-content-center">
+  <div class="col-md-10 col-lg-10 col-xl-10">
+    <article>
+		<h1 class="text-center">Contributors</h1>
+		<div class="row row-cols-1 row-cols-md-2 g-auto  justify-content-center">
+			{{ range .Data.Pages -}}
+				{{ if strings.Contains .RelPermalink "github" }}
+				{{ partial "team/member.html" .}}
+				{{ end }}
+			{{ end -}}
+		</div>
+    </article>
+  </div>
+</div>
+{{ end }}
 {{ end }}
 

@@ -1,0 +1,20 @@
+<div class="col" style="max-width: 300px;">
+    <div class="card mt-4 shadow-sm">
+        {{ if .Params.avatar_url }}
+            <img src="{{ .Params.avatar_url }}" class="card-img-top">
+        {{ end }}
+        <div class="card-body text-center p-2">
+            <h5 class="card-title mt-3">
+                <a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+            </h5>					  
+            <p class="card-text">
+                {{ if eq .Section "blog" -}}
+                    <p>{{ .Params.lead | safeHTML }}</p>
+                    {{ partial "main/blog-meta.html" . -}}
+                {{ else }}
+                    <p>{{ .Params.description }}</p>
+                {{ end -}}
+            </p>
+        </div>
+    </div>
+</div>

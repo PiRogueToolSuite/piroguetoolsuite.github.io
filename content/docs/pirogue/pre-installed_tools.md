@@ -33,7 +33,7 @@ Your PiRogue comes with a set a pre-installed and pre-configured tools covering 
 * `grafana` to display data on dashboards - [documentation](https://grafana.com/docs/)
 
 ## Utilities
-* `vim` to edit files - [documentation](https://vimguide.readthedocs.io/en/latest/vim.html)
+* `vim` to edit files - [documentation](https://wiki.gentoo.org/wiki/Vim/Guide)
 * `git` to version files - [documentation](https://git-scm.com/docs)
 * `jq` to manipulate JSON files - [documentation](https://stedolan.github.io/jq/manual/)
 * `gnupg2` to sign, encrypt and verify files - [documentation](https://www.gnupg.org/documentation/)

@@ -29,7 +29,7 @@ We added an automatic vulnerability analysis of the Docker images we provide. Th
 The documentation of the whole project is available on [our website](https://pts-project.org). 
 
 We published the following documents which are applicable to all the repositories we manage:
-* our [contributor covenant code of conduct](https://pts-project.org/contributors/coc/) 
+* our [contributor covenant code of conduct](https://pts-project.org/code-of-conduct/) 
 * our [privacy policy](https://pts-project.org/privacy-policy/) 
 * our [vulnerability disclosure policy](https://pts-project.org/security/disclosure/)
 * the [security advisory](https://pts-project.org/security/advisory/)

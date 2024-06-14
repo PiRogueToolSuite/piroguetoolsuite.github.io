@@ -47,7 +47,7 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 We have started working on the first public release of PTS. We plan to reach out to around 10 NGOs to present the project and if they wish, to test it. The objective for us is to have regular feedback from them in order to better respond to their needs.
 
 ### Documentation
-We have published two tutorials. The first one presents how to [use the PiRogue without wired connection](https://pts-project.org/docs/recipes/pirogue-without-ethernet-connection/) to the Internet (such as in a car). The second one explains [how to conduct forensic analysis with MVT](https://pts-project.org/docs/recipes/device-forensic-with-mvt/).
+We have published two tutorials. The first one presents how to [use the PiRogue without wired connection](https://pts-project.org/docs/recipes/pirogue-without-ethernet-connection/) to the Internet (such as in a car). The second one explains [how to conduct forensic analysis with MVT](https://pts-project.org/docs/recipes/device-forensics-with-mvt/).
 
 ## Software
 We started working on a program to [automate TLS interception and decryption](https://github.com/PiRogueToolSuite/pirogue-cli). It is still WIP but you can already test it on your PiRogue:

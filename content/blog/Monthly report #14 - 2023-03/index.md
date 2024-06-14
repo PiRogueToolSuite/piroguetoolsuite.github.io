@@ -44,7 +44,7 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 ## PiRogue
 We have published a new release (v1.11) of `pirogue-cli` improving the way we retrieve TLS keys from the device memory. 
 
-We have changed the way we deliver the OS image for the PiRogue and updated the documentation accordingly. The new procedure is described [here](https://pts-project.org/docs/pirogue/build-a-pirogue/).
+We have changed the way we deliver the OS image for the PiRogue and updated the documentation accordingly. The new procedure is described [here](https://pts-project.org/guides/g1/).
 
 ## Colander
 Colander is able to recovers data that has been encrypted before being transmitted by looking at the different cryptographic operations that occurred during the execution of the target app. 

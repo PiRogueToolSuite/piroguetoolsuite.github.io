@@ -223,7 +223,7 @@ The commands `pirogue-intercept-single` and `pirogue-intercept-gated` generate t
 * `experiment.json` contains timing information such as the start and end date of the experiment
 * `screen.mp4` contains the video recording of the device's screen
 * `socket_trace.json` contains the stack trace of all operations on sockets (open, close, read, write...)
-* `sslkeylog.txt` contains the TLS encryption keys in the [NSS key log format](https://firefox-source-docs.mozilla.org/security/nss/legacy/key_log_format/index.html)
+* `sslkeylog.txt` contains the TLS encryption keys in the [NSS key log format](https://nss-crypto.org/reference/security/nss/legacy/key_log_format/index.html)
 * `traffic.pcap` contains the entire network traffic captured during the experiment
 * `ad_ids.txt` contains all Android advertising IDs issued during the experiment
 

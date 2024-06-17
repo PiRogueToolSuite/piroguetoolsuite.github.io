@@ -5,7 +5,8 @@ $font-family-sans-serif:      "Open Sans Light", arial, "Noto Sans", sans-serif,
 // $font-family-sans-serif:      "Jost", -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $font-family-monospace:       "JetBrains Mono Light", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 // $font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
-$font-family-base:            $font-family-sans-serif;
+$font-family-base:            $font-family-sans-serif !default;
+$font-family-code:            $font-family-monospace !default;
 $font-size-base:              0.98rem; // Assumes the browser default, typically `16px`
 $font-size-xl:                $font-size-base * 1.375;
 $font-size-lg:                $font-size-base * 1.25;
@@ -38,4 +39,7 @@ figcaption {
 .purple-text-shadow {
     text-shadow: rgba($purple, .325) 0 .5rem 1rem;
   }
-  
+
+.expressive-code pre > code {
+    font-family: $font-family-code !important;
+}

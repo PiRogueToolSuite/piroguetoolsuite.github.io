@@ -51,8 +51,8 @@ Major updates are now announced on the project mailing list. Feel free to contac
 ### Documentation
 We published documentation on:
 
-* [how to upgrade your PiRogue](https://pts-project.org/docs/pirogue/upgrade-a-pirogue/)
-* [how to configure your PiRogue](https://pts-project.org/docs/pirogue/configure-a-pirogue/)
+* [how to upgrade your PiRogue](https://pts-project.org/docs/pirogue/operating-system/#upgrade)
+* [how to configure your PiRogue](https://pts-project.org/docs/pirogue/configuration/)
 * [how to turn a PC into a PiRogue](https://pts-project.org/docs/recipes/turn-a-regular-pc-into-a-pirogue/)
 * [how to add your own Suricata rules](https://pts-project.org/docs/recipes/add-your-own-suricata-rules-to-pirogue/)
 
@@ -62,7 +62,7 @@ We published documentation on:
 We have upgraded the MVT package.
 
 ### PiRogue configuration
-We finally released a tool allowing the user to configure their PiRogue and published [the corresponding documentation](https://pts-project.org/docs/pirogue/configure-a-pirogue/).
+We finally released a tool allowing the user to configure their PiRogue and published [the corresponding documentation](https://pts-project.org/docs/pirogue/configuration/).
 
 {{< img src="img/config.png" alt="Command managing PiRogue configuration" class="d-block mx-auto shadow" >}}
 
@@ -75,8 +75,8 @@ We also released a tool displaying the PiRogue status in a more human friendly w
 
 Thanks to the great work of [Echap](https://echap.eu.org) and [Amnesty International](https://www.amnesty.org/en/) the PiRogue can detect stalkerware in two ways:
 
-* by [inspecting the network traffic with Suricata](https://pts-project.org/docs/pirogue/operate-a-pirogue/)
-* by [inspecting a smartphone with MVT](https://pts-project.org/docs/recipes/device-forensic-with-mvt/)
+* by [inspecting the network traffic with Suricata](https://pts-project.org/guides/g2/)
+* by [inspecting a smartphone with MVT](https://pts-project.org/docs/recipes/device-forensics-with-mvt/)
 
 You can browse [IOCs provided by Echap on GitHub](https://github.com/AssoEchap/stalkerware-indicators).
 

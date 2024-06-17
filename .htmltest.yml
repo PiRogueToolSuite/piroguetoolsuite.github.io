@@ -9,6 +9,7 @@ IgnoreURLs:
   - "http://pirogue.local:3000"
   - "http://localhost:8000"
   - "https://discord.gg"
+  - "https://www.linkedin.com"
   - "^img/adb_config_out*"
 # Experimental concurrent testing 
 TestFilesConcurrently: true

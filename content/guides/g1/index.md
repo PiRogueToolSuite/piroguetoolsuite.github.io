@@ -41,7 +41,6 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 * Raspberry Pi 4 Model B - 2GB
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
-* Raspberry Pi 5 <sup>2</sup>
 
 
 {{< callout context="danger" title="Important: High RAM Usage by Suricata IDS" icon="alert-octagon" >}}
@@ -49,9 +48,10 @@ Suricata, the Intrusion Detection System (IDS) and network security monitoring e
 
 To conserve resources on devices with limited RAM, Suricata is automatically disabled on systems with less than 1.5GB of RAM. This configuration is located in the system file `/etc/systemd/system/suricata.service.d/override.conf`.
 
+<strong>We do not support Raspberry Pi 5</string>
+
 <small>
 <sup>1</sup> Not all services can be run on these devices due to limited memory.<br/>
-<sup>2</sup> Debian 12 doesn't currently support this device. However you can install PiRogue packages manually using Raspberry Pi OS instead.
 </small>
 {{< /callout >}}
 

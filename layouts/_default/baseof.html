@@ -11,6 +11,8 @@
       {{ if and (eq site.Params.doks.containerBreakpoint "fluid") (or (not (in .Site.Params.mainSections .Type)) (.IsNode)) }}</div>{{ end }}
       </div>
     </div>
+    
+    {{ block "partners" . }}{{ end }}
     {{ block "sidebar-prefooter" . }}{{ end }}
     {{ block "sidebar-footer" . }}{{ end }}
     {{ partial "footer/footer" . }}

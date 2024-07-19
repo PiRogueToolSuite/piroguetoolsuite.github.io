@@ -140,20 +140,25 @@
       </div>
     </div>
   </div>
-  <div class="row justify-content-center mt-5 mb-0 text-center p-4 pt-3 text-white g-2" style="background-color: rgb(160,160,160);">
-      <p class="h6 mt-1 mb-4">PiRogue Tool Suite received support from</p>
-      <div class="col-lg-2 col-md-3 col-sm-4 text-center">
-        <a href="https://www.digitaldefenders.org/community-and-network-fund/" ><img style="max-height: 50px" alt="Logo of Digital Defenders Partnership" src="images/ddp_logo.png"></a>
+</section>
+
+{{ end }}
+
+{{ define "partners" }}
+<section class="section container-fluid m-0 p-0">
+  <div class="row justify-content-center m-0 mt-5 text-center p-4 pt-3 g-3" style="background-color: rgb(255, 255, 255);">
+      <p class="h4 mt-1 mb-4 text-black">PiRogue Tool Suite received support from</p>
+      <div class="col-lg-3 col-md-3 col-sm-4 text-center">
+        <a href="https://www.digitaldefenders.org/community-and-network-fund/" ><img style="max-height: 60px" alt="Logo of Digital Defenders Partnership" src="images/ddp_logo.png"></a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 text-center">
-        <a href="https://www.opentech.fund/" ><img style="max-height: 50px" alt="Logo of Open Technology Fund" src="images/otf_logo.png"></a>
+      <div class="col-lg-3 col-md-3 col-sm-4 text-center">
+        <a href="https://www.opentech.fund/" ><img style="max-height: 60px" alt="Logo of Open Technology Fund" src="images/otf-logo.png"></a>
       </div>
-      <div class="col-lg-2 col-md-3 col-sm-4 text-center">
-        <a href="https://defensive-lab.agency/" ><img style="max-height: 50px" alt="Logo of Defensive Lab Agency" src="images/dla_logo.png"></a>
+      <div class="col-lg-3 col-md-3 col-sm-4 text-center">
+        <a href="https://defensive-lab.agency/" ><img style="max-height: 60px" alt="Logo of Defensive Lab Agency" src="images/dla-logo.png"></a>
       </div>
   </div>
 </section>
-
 {{ end }}
 
 {{ define "sidebar-prefooter" }}
@@ -162,11 +167,5 @@
 {{ end }}
 
 {{ define "sidebar-footer" }}
-<section class="section section-sm container-fluid">
-  <div class="row justify-content-center text-center">
-    <div class="col-lg-9">
-      {{- .Content -}}
-    </div>
-  </div>
-</section>
+
 {{ end }}

@@ -23,8 +23,14 @@ copyRight = "Copyright (c) 2022-2024 Defensive Lab Agency"
   enable = false
 
 [outputs]
-  home = ["HTML", "RSS", "searchIndex"]
+  home = ["HTML", "RSS", "searchIndex", "email"]
   section = ["HTML", "RSS", "SITEMAP"]
+  page = ["HTML", "email"]
+
+[outputFormats.email]
+  mediaType = "text/html"
+  baseName = "email"
+  isPlainText = true
 
 [outputFormats.searchIndex]
   mediaType = "application/json"

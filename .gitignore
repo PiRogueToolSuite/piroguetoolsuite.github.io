@@ -3,9 +3,12 @@
 .netlify
 .hugo_build.lock
 .idea
+.env
+.DS_Store
 yarn-error.log
 node_modules
 public
 resources
 notes.txt
 data/advisory/pts-*.json
+build_data.sh

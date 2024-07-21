@@ -177,7 +177,7 @@ If you're setting up the PiRogue in the context of an organization at your offic
 After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi device and use the PiRogue’s dashboard.
 
 {{< callout context="danger" title="Important note about telemetry" icon="alert-octagon" >}}
-The telemetry is enabled by default but you can easily opt-out. Find more details in the [section dedicated to the telemetry](/docs/pirogue/telemetry/).
+The telemetry is enabled by default but you can easily opt out. Find more details in the [section dedicated to the telemetry](/docs/pirogue/telemetry/).
 {{< /callout >}}
 
 First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` (default credentials: `admin:PiRogue`) with your Web browser or directly with this link:

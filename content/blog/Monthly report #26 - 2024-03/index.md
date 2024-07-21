@@ -34,7 +34,7 @@ We created a dashboard keeping track of a few KPIs providing us with a rough est
 We are hosting a beta version of Colander which is open to community members. Feel free to ask for an account.
 
 # What we plan to do next month
-* continue working on the implementation of a privacy-preserving telemetry for PiRogue and Colander users can opt-out
+* continue working on the implementation of a privacy-preserving telemetry for PiRogue and Colander users can opt out
 * continue testing and fixing bugs
 * continue working on the project documentation
 

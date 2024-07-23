@@ -17,7 +17,7 @@ images: []
         </p>
       </div>
       <div class="text-center">
-            <a href="https://github.com/PiRogueToolSuite/pirogue-os/releases/latest" alt="PiRogue OS image download link" class="btn btn-primary btn-lg">Download from GitHub</a>
+            <a href="https://github.com/PiRogueToolSuite/pirogue-images/releases/latest" alt="PiRogue OS image download link" class="btn btn-primary btn-lg">Download from GitHub</a>
       </div>
       <div class="mt-2">
         Don't forget to check the <a href="/guides/g1/">installation instructions</a>!

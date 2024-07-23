@@ -89,9 +89,9 @@ If you don't feel comfortable with building the case or the hat, feel free to bu
 
 ### Get PiRogue OS
 PiRogue OS is periodically released. The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema 
-`PiRogue-OS-<year>-<month>-<day>.img.xz`.
+`PiRogue-OS-<Debian major version>-<supported hardware>-<year>-<month>-<day>.img.xz`.
 
-[Download the latest version of PiRogue OS →](https://github.com/PiRogueToolSuite/pirogue-os/releases/latest)
+[Download the latest version of PiRogue OS →](https://github.com/PiRogueToolSuite/pirogue-images/releases/latest)
 
 ### Check the integrity of the image
 Once you have downloaded the image, you can check its integrity (check if the file has not been modified or corrupted) by comparing its SHA256 and the SHA256 displayed on the GitHub page. If both SHA256 are the same, the file you downloaded has not been tampered.

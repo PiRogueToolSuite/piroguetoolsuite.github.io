@@ -41,7 +41,7 @@ The definition of the different DTB overlays and `udev` rules can be reviewed on
 
 By implementing custom DTB overlays and `udev` rules, PiRogue OS ensures seamless integration between the Raspberry Pi, the custom HAT, and the Linux kernel. This tailored approach enables the PiRogue to operate smoothly within the Debian environment. The Linux Kernel uses the RTC as a reference of time and takes care synchronizing the system time with the RTC one at its boot if NTP is not available. 
 
-The generation of the operating system image to be flashed on an SD-card is ensured by Packer. It takes the official Debian image and applies changes such as creating a default user and configuring a PPA. The modifications applied to the official Debian image is available on GitHub [https://github.com/PiRogueToolSuite/pirogue-os](https://github.com/PiRogueToolSuite/pirogue-os).
+The generation of the operating system image to be flashed on an SD-card is ensured by Packer. It takes the official Debian image and applies changes such as creating a default user and configuring a PPA. The modifications applied to the official Debian image is available on GitHub [https://github.com/PiRogueToolSuite/pirogue-images](https://github.com/PiRogueToolSuite/pirogue-images).
 
 PiRogue features can be installed on a Raspberry Pi as well as on a regular computer equipped with a Wi-Fi interface and an Ethernet interface. 
 

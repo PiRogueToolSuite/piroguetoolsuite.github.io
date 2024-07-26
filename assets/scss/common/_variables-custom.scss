@@ -42,6 +42,10 @@ $spacers: (
   7: $spacer * 5
 ) !default;
 
+img {
+  margin: $spacer;
+}
+
 figcaption {
     text-align: center;
 }

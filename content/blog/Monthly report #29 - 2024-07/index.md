@@ -104,8 +104,11 @@ To support the virtualization of the PiRogue while ensuring it remains iso-funct
 * security
 * full compatibility with physical PiRogue
 
-{{< img src="img/logic-architecture.png" alt="Software components architecture" caption="Software components architecture" class="d-block mx-auto shadow md-5" >}}
 
+<center>
+<img width="500px" alt="image" src="https://github.com/user-attachments/assets/60f66511-665b-4b59-87c9-cc36c98dc785">
+</center>
+  
 To achieve these goals, we are introducing two major software components:
 
 * the administration daemon running on the PiRogue (physical or virtual)
@@ -113,7 +116,11 @@ To achieve these goals, we are introducing two major software components:
 
 The administration client can be used locally by running it directly on the PiRogue and remotely by running it on a remote computer.
 
-{{< img src="img/package-architecture.png" alt="Debian packages" caption="Debian packages" class="d-block mx-auto shadow md-5" >}}
+
+<center>
+<img width="400px" alt="image" src="https://github.com/user-attachments/assets/899b974d-b558-4693-8480-b4683735c0eb">
+</center>
+
 
 The two software components are split in three different Debian packages, with `pirogue-admin-api` defining the communication contract between the client and the daemon.
 

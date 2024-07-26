@@ -34,7 +34,7 @@ Adding support for the Raspberry Pi 5 facilitates project adoption, as an increa
 
 
 # Activity report
-You can find more details about the different activities on the [PTS project roadmap](https://github.com/orgs/PiRogueToolSuite/projects/3/views/4).
+You can find more details about the different activities in the  [PTS project roadmap](https://github.com/orgs/PiRogueToolSuite/projects/3/views/4).
 
 
 ##  US4 - Evidence collection [#22](https://github.com/PiRogueToolSuite/project-management/issues/22)
@@ -104,7 +104,7 @@ To support the virtualization of the PiRogue while ensuring it remains iso-funct
 * security
 * full compatibility with physical PiRogue
 
-![image](https://github.com/user-attachments/assets/60f66511-665b-4b59-87c9-cc36c98dc785)
+{{< img src="img/logic-architecture.png" alt="Software components architecture" caption="Software components architecture" class="d-block mx-auto shadow md-5" >}}
 
 To achieve these goals, we are introducing two major software components:
 
@@ -113,7 +113,7 @@ To achieve these goals, we are introducing two major software components:
 
 The administration client can be used locally by running it directly on the PiRogue and remotely by running it on a remote computer.
 
-![image](https://github.com/user-attachments/assets/899b974d-b558-4693-8480-b4683735c0eb)
+{{< img src="img/package-architecture.png" alt="Debian packages" caption="Debian packages" class="d-block mx-auto shadow md-5" >}}
 
 The two software components are split in three different Debian packages, with `pirogue-admin-api` defining the communication contract between the client and the daemon.
 

@@ -31,6 +31,20 @@ $box-shadow-sm:               0 .125rem .25rem rgba($purple, .075);
 $box-shadow-lg:               0 1rem 3rem rgba($purple, .175);
 $box-shadow-inset:            inset 0 1px 2px rgba($purple, .075);
 
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5, 
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5
+) !default;
+
+img {
+  margin: $spacer;
+}
 
 figcaption {
     text-align: center;

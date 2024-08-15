@@ -1,5 +1,5 @@
 # Overrides for production environment
-#baseurl = https://pts-project.org
+baseurl = "https://pts-project.org"
 #canonifyURLs = true
 
 [build.buildStats]

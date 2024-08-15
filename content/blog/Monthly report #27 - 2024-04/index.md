@@ -14,7 +14,7 @@ You can check out our work on GitHub at [https://github.com/PiRogueToolSuite/](h
 
 ## PiRogue
 
-We have implemented the privacy preserving telemetry which is now installed by default. Users can easily opt-out as described in [the documentation](https://pts-project.org/docs/pirogue/telemetry/).
+We have implemented the privacy preserving telemetry which is now installed by default. Users can easily opt out as described in [the documentation](https://pts-project.org/docs/pirogue/telemetry/).
 
 We have published the [dependency tree](https://pts-project.org/docs/pirogue/operating-system/#packaging-for-pirogue) of the PiRogue Debian packages. This way, users can know what will be installed.
 

@@ -14,7 +14,7 @@ The telemetry is used to measure the adoption of the project, but also to get so
 
 The collected data is stored for a year on a server managed by us, hosted by Hetzner in Germany.
 
-## How to opt-out
+## How to opt out
 You can use the command
 ```bash {title="Disable the telemetry"}
 sudo pirogue-telemetry config disable

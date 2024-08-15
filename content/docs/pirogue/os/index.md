@@ -114,7 +114,7 @@ $ sudo reboot
 To convert a regular PC into a PiRogue, it requires Debian 12 being installed without any graphical environment and to add the PTS PPA with commands 
 ```bash
 $ sudo curl -o /etc/apt/sources.list.d/pirogue.list    https://pts-project.org/debian-12/pirogue.list
-$ sudo curl -o /etc/apt/trusted.gpg.d/pirogue.asc   https://pts-project.org/debian-12/Key.gpg
+$ sudo curl -o /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
 ```
 
 And finally install the PiRogue packages with the commands 

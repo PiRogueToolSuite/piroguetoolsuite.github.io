@@ -8,17 +8,17 @@ toc: false
 images: []
 ---
 
-### You want to say hello
-Drop us an email at **{{< email user="hello" domain="pts-project.org" >}}**
+### General Inquiries
+To say hello or for general inquiries, you can email to **{{< email user="hello" domain="pts-project.org" >}}**
 
 
-### You want to notify a security issue
-Drop us an email at **{{< email user="security" domain="pts-project.org" >}}**
+### Security Issues
+If you need to report security issues, you can email to **{{< email user="security" domain="pts-project.org" >}}**
 
 
-### You want to buy a PiRogue
-Drop us an email at **{{< email user="sales" domain="pts-project.org" >}}**
+### Purchasing a Pirogue
+If you’re interested in purchasing a Pirogue or have any inquiries related to sales, you can email to **{{< email user="sales" domain="pts-project.org" >}}**
 
 {{< callout context="note" title="Note" icon="info-circle" >}}
-You plan to buy a PiRogue from us, we will supply NGOs first.
+While we offer Pirogues for purchase, we prioritize supplying NGOs first.
 {{< /callout >}}

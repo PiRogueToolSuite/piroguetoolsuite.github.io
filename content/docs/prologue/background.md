@@ -13,7 +13,7 @@ PiRogue Tool Suite project is the reboot of the PiRanhaLysis project. PTS is fou
 
 Defensive Lab Agency (DLA) is a French company founded in 2018 by Esther Onfroy with the objective of providing expert services on digital security and privacy issues. DLA is specialized in mobile security and focuses its work on supporting NGOs, activists, journalists, human rights defenders and public institutions against digital surveillance.
 
-Since 2018, DLA's major public contributions were [reverse engineering of FinSpy Android for Amnesty International](https://defensive-lab.agency/2020/09/finspy-android/), conducting [privacy analysis of edtech mobile apps for Human Rights Watch](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments) and hosting [mobile device forensics online courses for Digital Defender Partnership](https://www.digitaldefenders.org/introduction-to-forensics-of-mobile-devices-identification-of-spyware-and-documentation-of-digital-threats-with-a-human-rights-and-gender-perspective/).
+Since 2018, DLA's major public contributions were [reverse engineering of FinSpy Android for Amnesty International](https://defensive-lab.agency/blog/2020/09/finspy-android/), conducting [privacy analysis of edtech mobile apps for Human Rights Watch](https://www.hrw.org/report/2022/05/25/how-dare-they-peep-my-private-life/childrens-rights-violations-governments) and hosting [mobile device forensics online courses for Digital Defender Partnership](https://www.digitaldefenders.org/introduction-to-forensics-of-mobile-devices-identification-of-spyware-and-documentation-of-digital-threats-with-a-human-rights-and-gender-perspective/).
 
 The services DLA specializes in are:
 

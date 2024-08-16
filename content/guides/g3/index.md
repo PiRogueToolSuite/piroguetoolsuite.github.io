@@ -197,4 +197,4 @@ To learn more about Pithus, you can train yourself on [TryHackMe](https://tryhac
 
 You can also learn from:
 * [https://www.ragingrock.com/AndroidAppRE/app_fundamentals.html](https://www.ragingrock.com/AndroidAppRE/app_fundamentals.html)
-* [https://mobile-security.gitbook.io/mobile-security-testing-guide/overview/0x03-overview](https://mobile-security.gitbook.io/mobile-security-testing-guide/overview/0x03-overview)
+* [OWASP Mobile Application Security Testing Guide (MASTG)](https://mas.owasp.org/MASTG/)

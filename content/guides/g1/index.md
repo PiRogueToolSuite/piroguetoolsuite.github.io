@@ -123,9 +123,9 @@ Replace `[image file name].img.xz` with the image file you just downloaded.
 ### Set up your SD card
 Advanced Linux users can use a combination of `xz` and `dd` commands to flash their SD-card.
 
-We recommend to [download Balena Etcher](https://www.balena.io/etcher/) and install it on your computer. Run *Balena Etcher* as administrator and follow the steps illustrated by the screenshots below.
+We recommend downloading and installing [Balena Etcher](https://etcher.balena.io) on your computer. Run *Balena Etcher* as administrator. This software allows you to flash compressed images; however, if you encounter any difficulties, uncompress the image file before flashing.
 
-[Download Balena Etcher →](https://www.balena.io/etcher/)
+Please follow the steps outlined in the screenshots below for successful completion.
 
 {{< img src="img/etcher-1.png" alt="The PiRogue" class="d-block mx-auto shadow mb-4" >}}
 {{< img src="img/etcher-2.png" alt="The PiRogue" class="d-block mx-auto shadow mb-4" >}}

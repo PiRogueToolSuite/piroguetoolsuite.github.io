@@ -66,13 +66,11 @@
 				{{ end -}}
 			</div>
 			<!-- {{ partial "main/docs-navigation.html" . }} -->
-			<!--
 			{{ if not .Site.Params.options.collapsibleSidebar -}}
 				{{ partial "main/docs-navigation.html" . }}
 			{{ else -}}
 				<div class="my-n3"></div>
 			{{ end -}}
-			-->
 		</main>
 		{{ if and (eq site.Params.doks.containerBreakpoint "fluid") (in .Site.Params.mainSections .Type) }}
 			</div>

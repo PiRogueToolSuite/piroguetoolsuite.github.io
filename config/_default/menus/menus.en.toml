@@ -37,6 +37,31 @@
   weight = 25
 
 [[main]]
+  name = "Community"
+  url = ""
+  weight = 29
+
+[[main]]
+  name = "Contribute"
+  url = "/contributing/"
+  weight = 10
+  parent = "Community"
+
+[[main]]
+  name = "Discord"
+  url = "https://discord.com/invite/qGX73GYNdp"
+  weight = 20
+  parent = "Community"
+
+[[main]]
+  name = "Open Collective"
+  url = "https://opencollective.com/pts"
+  weight = 30
+  parent = "Community"
+
+
+
+[[main]]
   name = "Team"
   url = "/team/"
   weight = 20

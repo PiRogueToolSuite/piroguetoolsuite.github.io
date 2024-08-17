@@ -41,20 +41,17 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 * Raspberry Pi 4 Model B - 2GB
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
-* Raspberry Pi 5 **experimental**
+* Raspberry Pi 5 **(Experimental Support)** <sup>2</sup>
 
+<small>
+<sup>1</sup> Not all services can be run on these devices due to limited memory.<br/>
+<sup>2</sup> We are actively developing Raspberry Pi 5 support. Download the experimental PiRogue OS version for Raspberry Pi 5 from our download page.
+</small>
 
 {{< callout context="danger" title="Important: High RAM Usage by Suricata IDS" icon="alert-octagon" >}}
 Suricata, the Intrusion Detection System (IDS) and network security monitoring engine, requires significant system resources. It needs enough memory to hold rules and process large volumes of network packets.
 
 To conserve resources on devices with limited RAM, Suricata is automatically disabled on systems with less than 1.5GB of RAM. This configuration is located in the system file `/etc/systemd/system/suricata.service.d/override.conf`.
-
-
-<small>
-<sup>1</sup> Not all services can be run on these devices due to limited memory.<br/>
-</small>
-
-
 {{< /callout >}}
 
 {{< callout context="caution" title="Caution" icon="alert-triangle" >}}

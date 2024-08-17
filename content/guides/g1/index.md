@@ -164,8 +164,6 @@ Once connected, you have to finalize the installation of your PiRogue by running
 | `sudo apt dist-upgrade -y`         | Upgrade the entire operating system and all additional installed software |
 | `sudo apt install pirogue-base -y` | Install the PiRogue packages/features                                     |
 | `sudo reboot`                      | Reboot the PiRogue                                                        |
-| `sudo apt install pirogue-base -y` | Install the PiRogue packages/features                                     |
-| `sudo reboot`                      | Reboot the PiRogue                                                        |
 
 During the installation, when prompted, you will have to answer:
 * `No` to save firewall rules for IP v4

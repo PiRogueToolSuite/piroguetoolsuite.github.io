@@ -5,7 +5,7 @@ images: []
 menu:
   docs:
     parent: "pirogue"
-weight: 40
+weight: 730
 toc: true
 resources:
 - name: no_configuration

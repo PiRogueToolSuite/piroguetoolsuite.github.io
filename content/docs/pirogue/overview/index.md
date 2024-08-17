@@ -19,3 +19,8 @@ The PiRogue is a Raspberry Pi-based network router that captures and analyses ne
 * **Mobile Device Forensics**: The PiRogue allows for the consensual extraction and analysis of data from mobile devices, including messages, and application data, providing valuable insights into user activity.
 
 {{< figure src="img/pirogue-ports.png" alt="The different ports of the PiRogue - * indicates required connections/elements" caption="The different ports of the PiRogue - * indicates required connections/elements" class="d-block mx-auto shadow" >}}
+
+
+{{< callout context="note" title="Note" icon="info-circle" >}}
+The custom PiRogue case and PiRogue HAT are optional accessories that expand PiRogue OS capabilities. However, you can still use PiRogue OS without them.
+{{< /callout >}}

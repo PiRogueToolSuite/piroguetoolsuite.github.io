@@ -14,24 +14,26 @@ In today's digital landscape, safeguarding sensitive information on mobile devic
 
 Remember, these learning paths are starting points. Mix and match guides based on your specific role and objectives.
 
-**1. Individual users at risk:**
+
+**1. PiRogue Setup and Overview:**
 
 * [How to setup a PiRogue](/guides/g1)
+
+**2. Individual users at risk:**
+
 * [How to capture and analyze device's network traffic](/guides/g2)
 * [How to backup a mobile device for forensic analysis purpose](/guides/g4)
 * [How to handle a potentially compromised device](/guides/g6)
 
-**2. Technical users concerned about malicious apps:**
+**3. Technical users concerned about malicious apps:**
 
-* [How to setup a PiRogue](/guides/g1)
 * [How to handle a potentially malicious mobile app](/guides/g3)
 * [How to statically analyze a potentially malicious Android app](/guides/g5)
 * [How to use MVT to conduct the analysis of a mobile device and its backup image](/guides/g7)
 * [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 
-**3. Digital forensics investigators:**
+**4. Digital forensics investigators:**
 
-* [How to setup a PiRogue](/guides/g1)
 * [How to backup a mobile device for forensic analysis purpose](/guides/g4)
 * [How to handle a potentially compromised device](/guides/g6)
 * [How to statically analyze a potentially malicious Android app](/guides/g5)
@@ -40,17 +42,15 @@ Remember, these learning paths are starting points. Mix and match guides based o
 * [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)
 
-**4. Regulatory compliance investigators:**
+**5. Regulatory compliance investigators:**
 
 * [Mobile application regulatory compliance audit methodology](/guides/g10)
-* [How to setup a PiRogue](/guides/g1)
 * [How to capture and analyze device's network traffic](/guides/g2)
 * [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)
 
-**5. Security professionals:**
+**6. Security professionals:**
 
-* [How to setup a PiRogue](/guides/g1)
 * [How to handle a potentially malicious mobile app](/guides/g3)
 * [How to use PiRogue to intercept the TLS traffic of a mobile app](/guides/g8)
 * [How to use Colander to analyze the network traffic of an app](/guides/g9)

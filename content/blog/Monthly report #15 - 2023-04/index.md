@@ -7,6 +7,7 @@ lastmod: 2023-04-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project revamped Colander's UI/UX with new features like large file upload, URL screenshot capture, and Yara rule support."
 ---
 
 # Context of the project

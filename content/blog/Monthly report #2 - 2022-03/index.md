@@ -7,6 +7,7 @@ lastmod: 2022-03-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project provides different functionalities depending on needs, from basic checks to in-depth investigations. The project has made significant progress on documentation, community building, and features like TLS decryption."
 ---
 
 # Context of the project

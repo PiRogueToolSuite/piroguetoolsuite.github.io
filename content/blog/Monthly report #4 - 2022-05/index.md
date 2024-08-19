@@ -7,6 +7,7 @@ lastmod: 2022-05-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is nearing its first public release. The project has added functionalities for mobile data network usage and automated TLS decryption, while facing challenges extracting keys from system apps. The project plans to collaborate with NGOs for further testing and feedback."
 ---
 
 # Context of the project

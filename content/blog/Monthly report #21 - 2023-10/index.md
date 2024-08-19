@@ -7,6 +7,7 @@ lastmod: 2023-10-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project released a new Raspberry Pi OS and improved Colander's UI/UX. However, the project is facing a technical challenge where PiRogue's custom rules aren't working properly after OS upgrades."
 ---
 
 # Context of the project

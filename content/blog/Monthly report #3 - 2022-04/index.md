@@ -7,6 +7,7 @@ lastmod: 2022-04-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has made significant progress on packaging their PiRogue OS software and building a communication strategy. The project is facing a challenge dumping TLS keys from system applications with Frida and are actively investigating solutions."
 ---
 
 # Context of the project

@@ -7,6 +7,7 @@ lastmod: 2023-03-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has improved TLS key retrieval and Colander's decryption capabilities for encrypted data. The Threatr module now gathers intelligence from VirusTotal and Alien Vault OTX. The project is facing challenges packaging the latest Frida version which is critical for supporting Android 13."
 ---
 
 # Context of the project

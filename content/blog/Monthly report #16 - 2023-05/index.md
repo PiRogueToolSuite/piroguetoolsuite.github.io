@@ -7,6 +7,7 @@ lastmod: 2023-05-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is migrating their OS to Debian 12 for better dependency management and improving Colander with collaboration features, data export, and a dynamic graph editor. The project is facing a challenge packaging Frida for Debian 12 as the current version doesn't support Android 13."
 ---
 
 # Context of the project

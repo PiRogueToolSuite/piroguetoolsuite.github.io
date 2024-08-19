@@ -7,6 +7,7 @@ lastmod: 2022-09-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has achieved a major milestone with their new tool for intercepting and decrypting TLS traffic from Android applications. The project is also building a scalable software suite for managing evidence, analysis, and reporting, while acknowledging challenges in keeping up-to-date with third-party libraries."
 ---
 
 # Context of the project
@@ -87,3 +88,4 @@ The *Tool Suite* is meant to offer the following features:
 
 # Challenges
 It is difficult for us to keep the various third-party libraries we package up to date.
+The PiRogue Tool Suite project has achieved a major milestone with their new tool for intercepting and decrypting TLS traffic from Android applications. They're also building a scalable software suite for managing evidence, analysis, and reporting, while acknowledging challenges in keeping up-to-date with third-party libraries.

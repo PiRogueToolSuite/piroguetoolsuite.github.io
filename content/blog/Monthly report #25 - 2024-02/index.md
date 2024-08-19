@@ -7,6 +7,7 @@ lastmod: 2024-02-29
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PTS Project is in a feature freeze for both PiRogue and Colander until March 2024, focusing on bug fixes and usability improvements. The project is developing learning materials and facing some user-reported issues with Android 13."
 ---
 
 # What we have done so far

@@ -7,6 +7,7 @@ lastmod: 2023-06-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is migrating their OS from Raspberry Pi OS to Debian 12 for better dependency management. The project made significant progress on Colander with a new knowledge graph editor, data import/export features, and are seeking community feedback for UI/UX improvements."
 ---
 
 # Context of the project

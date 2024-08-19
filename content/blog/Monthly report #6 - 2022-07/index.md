@@ -7,6 +7,7 @@ lastmod: 2022-07-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has expanded compatibility to include regular PCs, is actively engaging with NGOs for feedback, and is improving documentation and user experience."
 ---
 
 # Context of the project

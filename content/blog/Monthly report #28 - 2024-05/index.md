@@ -7,6 +7,7 @@ lastmod: 2024-05-25
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: 'The PTS Project has released a new version of Frida and emphasizes using the latest PiRogue OS for Raspberry Pi (v2.0.0 based on Debian 12). They are planning maintenance and exploring adding friTap for better TLS traffic capture and decryption'
 ---
 
 # What we have done so far

@@ -7,6 +7,7 @@ lastmod: 2022-11-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has named their software suite 'Colander' and made significant progress on its core functionalities. Colander offers case management, observable enrichment (like VirusTotal reports), and artifact analysis (like PCAP analysis). The project is facing challenges packaging the latest version of Frida but are actively working on integrating PiRogue with Colander."
 ---
 
 # Context of the project

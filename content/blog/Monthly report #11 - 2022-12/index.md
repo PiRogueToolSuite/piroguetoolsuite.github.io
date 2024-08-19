@@ -7,6 +7,7 @@ lastmod: 2022-12-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has released a new tool for automatically intercepting TLS keys and is making significant progress on their Colander software suite. Colander offers case management, automatic analysis (like AV scans), and enrichment (without relying solely on expensive 3rd party services)"
 ---
 
 # Context of the project

@@ -7,6 +7,7 @@ lastmod: 2023-08-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is focusing on Colander UI/UX improvements and knowledge graph editor, while also collaborating with NOYB to file legal complaints based on PiRogue analysis."
 ---
 
 # Context of the project

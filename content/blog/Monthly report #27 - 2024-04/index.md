@@ -7,6 +7,7 @@ lastmod: 2024-04-25
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PTS Project has released new versions of PiRogue and Colander, implemented privacy-preserving telemetry, and published important project documents. The project is transitioning to a community-supported model and seek support through donations, code contributions, and user feedback."
 ---
 
 # What we have done so far

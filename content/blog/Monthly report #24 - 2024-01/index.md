@@ -7,6 +7,7 @@ lastmod: 2024-01-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite is an open-source project providing mobile device security and privacy assessment tools. It offers both on-the-field and expert modes for various use cases. The project is  currently focusing on bug fixes, documentation improvement, and user education materials while seeking funding for further development."
 ---
 
 # Context of the project

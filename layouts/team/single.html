@@ -1,9 +1,13 @@
 {{ define "main" }}
 <div class="row justify-content-center">
       <div class="blog-header">
-        {{ if .Params.avatar_url }}
-          <img src="{{ .Params.avatar_url }}" class="shadow img-fluid rounded mt-4" style="max-width: 200px;">
-        {{ end }}
+        {{- if .Params.avatar_img -}}
+            {{ with .Resources.GetMatch (printf "**%s" .Params.avatar_img) -}}
+                <img src="{{ .RelPermalink }}" class="shadow img-fluid rounded mt-4" style="max-width: 200px;">
+            {{ end }}
+        {{- else -}}
+            <img src="{{ .Params.avatar_url }}" class="shadow img-fluid rounded mt-4" style="max-width: 200px;">
+        {{- end -}}
         <h1 class="mt-2">{{ .Title }}</h1>
         <strong>
           {{ .Description }}

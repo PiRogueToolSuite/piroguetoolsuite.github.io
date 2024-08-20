@@ -125,3 +125,10 @@ ls -l checked
 ```
 
 The folder `checked` contains several JSON files. **Any IOC matches are stored in JSON files suffixed by `_detected`**.
+
+# Going further
+
+To enhance your MVT skills and knowledge, explore these valuable resources:
+
+* **MVT Documentation**: This [comprehensive guide](https://docs.mvt.re/en/latest/) provides in-depth instructions for using MVT effectively.
+* **OWASP Mobile Application Security Testing Guide (MASTG):** Learn security concepts for mobile applications with the [OWASP MASTG](https://mas.owasp.org/MASTG).

@@ -84,3 +84,12 @@ Follows a quick overview of the different steps required to analyze an Android d
    to analyze forensic data from the connected device. Replace `<ioc_path>` with the path to the IOCs file and `<report_path>` with the desired location for the analysis report.This will extract various information, including system logs, installed apps, and network connections.
 
 4. Review the analysis report. The analysis report will contain details of any potential IOCs found during the scan. Review the report carefully to identify any suspicious findings and determine if further investigation is necessary.
+
+# Deepen Your MVT Knowledge
+
+Expand your expertise with the Mobile Verification Toolkit (MVT) by exploring these valuable external resources:
+
+* **MVT Documentation**: This [comprehensive guide ](https://docs.mvt.re/en/latest/) provides in-depth instructions for using MVT effectively.
+* **OWASP Mobile Application Security Techniques (MASTG):** Explore defensive strategies and testing techniques for mobile applications within the [OWASP MASTG](https://mas.owasp.org/MASTG/techniques/).
+* **Forensic Methodology Report: How to Catch NSO Group’s Pegasus**: Learn from Amnesty International's [detailed report](https://www.amnesty.org/en/latest/research/2021/07/forensic-methodology-report-how-to-catch-nso-groups-pegasus/) on forensic methods for detecting Pegasus spyware.
+*  **Catching NSO Group's Pegasus spyware talk at CCC 2021 (Video)**: Gain insights from a [video presentation](https://www.youtube.com/watch?v=1p0Xm-Opzjg&t=1415s) on detecting Pegasus spyware with MVT, presented at CCC 2021 .

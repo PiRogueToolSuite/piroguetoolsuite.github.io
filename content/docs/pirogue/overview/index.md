@@ -4,7 +4,7 @@ draft: false
 menu:
   docs:
     parent: "pirogue"
-weight: 10
+weight: 700
 toc: true
 ---
 

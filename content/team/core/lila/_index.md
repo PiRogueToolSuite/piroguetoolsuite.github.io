@@ -7,7 +7,7 @@ draft: false
 type: team
 layout: single
 website: https://lila.ink
-avatar_url: https://pbs.twimg.com/profile_images/435039741671505920/Kt7C5rQi.jpeg
+avatar_img: img/avatar.jpeg
 images: []
 weight: 20
 ---

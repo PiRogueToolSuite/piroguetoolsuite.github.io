@@ -57,3 +57,8 @@ figcaption {
 .expressive-code pre > code {
     font-family: $font-family-code !important;
 }
+
+#socialMenu {
+  margin-left: 1.5*$spacer !important;
+  opacity: 0.75;
+}

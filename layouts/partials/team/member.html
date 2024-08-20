@@ -1,8 +1,12 @@
 <div class="col" style="max-width: 300px;">
     <div class="card mt-4 shadow-sm">
-        {{ if .Params.avatar_url }}
+        {{- if .Params.avatar_img -}}
+            {{ with .Resources.GetMatch (printf "**%s" .Params.avatar_img) -}}
+                <img src="{{ .RelPermalink }}" class="card-img-top">
+            {{ end }}
+        {{- else -}}
             <img src="{{ .Params.avatar_url }}" class="card-img-top">
-        {{ end }}
+        {{- end -}}
         <div class="card-body text-center p-2">
             <h5 class="card-title mt-3">
                 <a class="stretched-link text-body" href="{{ .RelPermalink }}">{{ .Params.title }}</a>

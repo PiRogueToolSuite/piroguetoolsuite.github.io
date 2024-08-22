@@ -38,7 +38,7 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 * Raspberry Pi 3 Model B <sup>1</sup>
 * Raspberry Pi 3 Model B+ <sup>1</sup>
 * Raspberry Pi 4 Model B - 1GB <sup>1</sup>
-* Raspberry Pi 4 Model B - 2GB
+* Raspberry Pi 4 Model B - 2GB <sup>1</sup>
 * Raspberry Pi 4 Model B - 4GB
 * Raspberry Pi 4 Model B - 8GB
 * Raspberry Pi 5 **(Experimental Support)** <sup>2</sup>
@@ -51,7 +51,7 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 {{< callout context="danger" title="Important: High RAM Usage by Suricata IDS" icon="alert-octagon" >}}
 Suricata, the Intrusion Detection System (IDS) and network security monitoring engine, requires significant system resources. It needs enough memory to hold rules and process large volumes of network packets.
 
-To conserve resources on devices with limited RAM, Suricata is automatically disabled on systems with less than 1.5GB of RAM. This configuration is located in the system file `/etc/systemd/system/suricata.service.d/override.conf`.
+To conserve resources on devices with limited RAM, Suricata is automatically disabled on systems with less than 2.5GB of RAM. This configuration is located in the system file `/etc/systemd/system/suricata.service.d/override.conf`.
 {{< /callout >}}
 
 {{< callout context="caution" title="Caution" icon="alert-triangle" >}}
@@ -216,7 +216,7 @@ DPI is a technique that allows the PiRogue to examine the contents of data packe
 [Suricata](https://suricata.io/) is an open-source intrusion detection system (IDS) that uses a set of rules to identify known threats. These rules are constantly being updated to keep up with the latest threats. The PiRogue comes pre-configured with rules from [ProofPoint Emerging Threat Open](https://community.emergingthreats.net/t/frequently-asked-questions/56) and [Echap](https://github.com/AssoEchap/stalkerware-indicators), two reputable sources of threat intelligence.
 
 {{< callout context="danger" title="Important note" icon="alert-octagon" >}}
-Suricata is disabled on devices having less than 1.5GB of RAM.
+Suricata is disabled on devices having less than 2.5GB of RAM.
 {{< /callout >}}
 
 ### Visualizing analysis results in the dashboard

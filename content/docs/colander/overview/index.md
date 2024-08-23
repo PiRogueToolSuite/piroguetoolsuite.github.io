@@ -21,15 +21,15 @@ Colander web platform is a case and digital investigation platform that integrat
 ## Key features
 
 * Organize knowledge in different cases
-* Invite team member to collaborate to your cases
-* Represent the real world with generic entities such as artifact, actor, observable, event and more
+* Invite team member to collaborate on your cases
+* Represent the real world with generic entities such as artifacts, actors, observables, events and more
 * Graph knowledge using the web graph editor
-* Write documentation at anytime
-* Import intelligence from 3rd-party service such as VirusTotal or OTX Alien Vault via Threatr
+* Write documentation at any time
+* Import intelligence from third-party services such as VirusTotal or OTX Alien Vault via Threatr
 * Collect and sign artifacts directly from your PiRogue
 * Analyze decrypted network traffic and payloads
-* Decode network payload with CyberChef
+* Decode network payloads with CyberChef
 * Apply Yara rules directly on the network traffic
 * Ensure artifact integrity and authenticity
-* Generate comprehensive data transmission report
+* Generate comprehensive data transmission reports
 * Create feeds to export your findings in different formats

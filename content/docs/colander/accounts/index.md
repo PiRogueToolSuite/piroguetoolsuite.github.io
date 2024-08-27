@@ -58,7 +58,7 @@ Having a verified primary email address linked is necessary to reset the passwor
 ## Password change
 After having linked their email address, the user can logout, go back to the login page and click on *Forgot your password?*. An email detailing the procedure will be sent to the primary email address linked to the account.
 
-## 2-factor authentication
+## Multi-factor authentication
 Users can set up 2-factor authentication by following the procedure in their profile, section *2FA*. By now, Colander only supports TOTP.
 
 {{< figure src="img/create-user-4.png" alt="Overview of the form for setting up the 2-factor authentication" caption="Overview of the form for setting up the 2-factor authentication" class="d-block mx-auto shadow" >}}

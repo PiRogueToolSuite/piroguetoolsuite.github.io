@@ -22,22 +22,25 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 * Get support: [Discord](https://discord.gg/qGX73GYNdp)
 * Support us: [OpenCollective](https://opencollective.com/pts)
 
-# Announcements
+---
+
+# 📢 Announcements
 We are thrilled to announce that PTS has just been granted the support from Internews for the next 3 months and from Open Technology Fund for the next 2 years to continue to improve the tools we provide and meet evolving needs.
 
 The virtual community meeting will take place every last Friday of the month at 12:00 UTC. They will be announced on our mailing list and on CiviCERT's Mattermost.
 
 Each month, we will analyze an Android application selected by the community. Details will be communicated soon on our mailing list and on CiviCERT's Mattermost as well.
 
-# Impacts and results
+# 🎉 Impacts and results
 Adding support for the Raspberry Pi 5 facilitates project adoption, as an increasing number of users have transitioned to the latest version of the Raspberry Pi hardware.
 
 
-# Activity report
-You can find more details about the different activities in the  [PTS project roadmap](https://github.com/orgs/PiRogueToolSuite/projects/3/views/4).
+# 📒 Activity report
+You can find more details about the different activities in the  [project roadmap](https://github.com/orgs/PiRogueToolSuite/projects/3/views/4).
 
+{{< user_stories >}}
 
-##  US4 - Evidence collection [#22](https://github.com/PiRogueToolSuite/project-management/issues/22)
+## 📦 US4 - Evidence collection [#22](https://github.com/PiRogueToolSuite/project-management/issues/22)
 Efforts will be directed towards the extraction and preservation of artifacts and evidence, particularly those extracted from online content and mobile devices. The system will automatically archive and index various forms of online content such as photos, videos, social media posts, and web pages. Additionally, the capability of saving a watermarked capture or recording of the victim’s phone screen will be added to the PiRogue. In the context of forensic analysis, it is crucial to not only collect potential evidence of a compromise but also collect its  context, such as the attack vector. As an example, retrieving and storing tweets was key in the [Citizen Lab investigation on Predator](https://citizenlab.ca/2023/10/predator-spyware-targets-us-eu-lawmakers-journalists/), retrieving and storing WhatsApp messages in the [Citizen Lab investigation on Tibetan groups being targeted](https://citizenlab.ca/2019/09/poison-carp-tibetan-groups-targeted-with-1-click-mobile-exploits/).
 
 ### Overview of the different activities
@@ -80,7 +83,7 @@ We are planning to release this Debian package next month.
 The primary challenge was to establish a mechanism for offline timestamp verification exclusively reliant upon OpenSSL.
 
 
-##  US9 - PiRogue virtualization [#35](https://github.com/PiRogueToolSuite/project-management/issues/35)
+## 📦 US9 - PiRogue virtualization [#35](https://github.com/PiRogueToolSuite/project-management/issues/35)
 We want to provide end users with OS images and installation procedure allowing them to deploy PiRogue in a virtual environment (VM, cloud...). One of the direct implication is supporting a vast variety of configuration such as:
 * Eth - Eth
 * Wi-Fi - Eth
@@ -152,7 +155,7 @@ We are planning to release a first alpha version of the `pirogue-admin` RPC envi
 #### Challenges
 Setting up a fully functional and secure development environment that includes root system mocks was challenging.
 
-##  US100 - Documentation [#36](https://github.com/PiRogueToolSuite/project-management/issues/36)
+## 📦 US100 - Documentation [#36](https://github.com/PiRogueToolSuite/project-management/issues/36)
 Documenting the project is key in its usability. We are continuously documenting the different tools and features we develop and build new learning materials to facilitate skills development.
 
 #### This month
@@ -165,7 +168,7 @@ We will continue to enhance the project documentation to accurately reflect ongo
 None.
 
 
-##  US101 - Maintenance [#37](https://github.com/PiRogueToolSuite/project-management/issues/37)
+## 📦 US101 - Maintenance [#37](https://github.com/PiRogueToolSuite/project-management/issues/37)
 We manufacture PiRogues to supply organizations, while taking care of its maintenance. We will include OS upgrades, improvement of the documentation and fixing bugs. Regarding Colander and Threatr, we maintain the public Colander server, upgrade dependencies, improve the documentation and fix bugs.
 
 #### This month
@@ -182,7 +185,7 @@ Support for the Raspberry Pi 5 requires some components outside the Debian and P
 Unfortunately, the Debian images for Raspberry Pi that are turned into PiRogue images are also outdated (compared to the updates in Debian 12). Until it's resolved on the Debian side, an independent image build has been set up, to ensure images are generated weekly.
 
 
-##  US102 - Community and outreach [#38](https://github.com/PiRogueToolSuite/project-management/issues/38)
+## 📦 US102 - Community and outreach [#38](https://github.com/PiRogueToolSuite/project-management/issues/38)
 Given the success of events, webinars and demos with members of the civil society, NGOs and security researchers, we continue with our outreach plan. We organize trainings and demonstration sessions as well as creating spaces for the community to share feedback and request new features via our mailing list, GitHub issues or Discord server.
 We analyze one Android app that has received the community's interest (ex COP28 app) per month. The application to be analyzed is chosen by the community. The analysis report is first privately shared with the community and one month later it is publicly released.
 
@@ -214,7 +217,7 @@ Likely more live sessions around `pirogue-admin` (to support more than just Rasp
 None.
 
 
-##  US103 - Governance [#39](https://github.com/PiRogueToolSuite/project-management/issues/39)
+## 📦 US103 - Governance [#39](https://github.com/PiRogueToolSuite/project-management/issues/39)
 #### This month
 We have composed a document that delineates the scope and objectives of the advisory committee. This document also outlines the various strategic axes that we intend to address, leveraging the insights and recommendations provided by this committee. 
 

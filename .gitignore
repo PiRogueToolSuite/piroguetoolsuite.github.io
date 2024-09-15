@@ -12,3 +12,4 @@ resources
 notes.txt
 data/advisory/pts-*.json
 build_data.sh
+notes

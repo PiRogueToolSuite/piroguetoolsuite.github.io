@@ -8,7 +8,7 @@ type: team
 layout: single
 github: u039b
 website: https://esther.codes
-avatar_url: "https://avatars.githubusercontent.com/u/34188010?v=4"
+avatar_img: "img/avatar.png"
 images: []
 weight: 10
 ---

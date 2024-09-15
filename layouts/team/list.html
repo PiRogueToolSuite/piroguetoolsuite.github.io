@@ -1,8 +1,9 @@
 {{ define "main" }}
+{{ if strings.Contains .Params.team "core" }}
 <div class="row justify-content-center">
   <div class="col-md-10 col-lg-10 col-xl-10">
     <article>
-		<h1 class="text-center">Core team</h1>
+		<h1 class="text-center">Team</h1>
 		<div class="row row-cols-1 row-cols-md-2 g-auto  justify-content-center">
 			{{ range .Data.Pages -}}
 				{{ if strings.Contains .RelPermalink "core" }}
@@ -13,14 +14,15 @@
     </article>
   </div>
 </div>
-{{ if fileExists "team/advisory-committee"}}
+{{ end }}
+{{ if strings.Contains .Params.team "advisory" }}
 <div class="row justify-content-center">
   <div class="col-md-10 col-lg-10 col-xl-10">
     <article>
 		<h1 class="text-center">Advisory Committee</h1>
 		<div class="row row-cols-1 row-cols-md-2 g-auto  justify-content-center">
 			{{ range .Data.Pages -}}
-				{{ if strings.Contains .RelPermalink "advisory-committee" }}
+				{{ if strings.Contains .RelPermalink "advisory" }}
 				{{ partial "team/member.html" .}}
 				{{ end }}
 			{{ end -}}
@@ -29,7 +31,7 @@
   </div>
 </div>
 {{ end }}
-{{ if fileExists "team/github"}}
+{{ if strings.Contains .Params.team "github" }}
 <div class="row justify-content-center">
   <div class="col-md-10 col-lg-10 col-xl-10">
     <article>

@@ -48,7 +48,7 @@
   parent = "Community"
 
 [[main]]
-  name = "Discord"
+  name = "Discord server"
   url = "https://discord.com/invite/qGX73GYNdp"
   weight = 20
   parent = "Community"
@@ -59,22 +59,35 @@
   weight = 30
   parent = "Community"
 
-
+# About 
+[[main]]
+  name = "About us"
+  url = ""
+  weight = 40
 
 [[main]]
-  name = "Team"
-  url = "/team/"
+  name = "Advisory committee"
+  url = "/team/advisory"
+  parent = "About us"
+  weight = 10
+
+[[main]]
+  name = "Project team"
+  url = "/team/core"
+  parent = "About us"
   weight = 20
 
-# [[main]]
-#   name = "About"
-#   url = "/about/"
-#   weight = 30
+[[main]]
+  name = "Code of Conduct"
+  url = "/code-of-conduct"
+  parent = "About us"
+  weight = 30
 
 [[main]]
   name = "Contact"
   url = "/contact/"
-  weight = 40
+  parent = "About us"
+  weight = 70
 
 [[social]]
   name = "GitHub"

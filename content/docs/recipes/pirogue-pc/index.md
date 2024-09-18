@@ -46,8 +46,8 @@ run `iw list`and scroll through its output to check if the wireless interface su
 Next, we have to add the PTS PPA (repository containing all PiRogue packages) by running 
 
 ```bash
-sudo curl -o /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
-sudo curl -o /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
+sudo wget -O /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
+sudo wget -O /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
 sudo apt update
 ```
 

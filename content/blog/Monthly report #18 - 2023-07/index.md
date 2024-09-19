@@ -7,6 +7,7 @@ lastmod: 2023-07-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has made significant progress on Colander's knowledge graph editor with search and layout features, and are collaborating with the community for UI/UX improvements."
 ---
 
 # Context of the project

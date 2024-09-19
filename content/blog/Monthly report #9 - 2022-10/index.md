@@ -7,6 +7,7 @@ lastmod: 2022-10-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is making significant progress on their cloud-independent software suite, 'Colander,' for managing evidence, analysis, and reporting. The project currently focusing on case, observable, and knowledge management functionalities but are facing challenges packaging the latest version of Frida."
 ---
 
 # Context of the project

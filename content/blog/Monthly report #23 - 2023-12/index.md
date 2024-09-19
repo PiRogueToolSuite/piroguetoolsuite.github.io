@@ -7,6 +7,7 @@ lastmod: 2023-12-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project completed major UI/UX improvements for Colander and are focusing on releasing the first stable versions of both PiRogue and Colander in the coming month. Despite facing some user-reported issues with Android 13, the project made significant progress this year with increased user base and code contributions."
 ---
 
 # Context of the project

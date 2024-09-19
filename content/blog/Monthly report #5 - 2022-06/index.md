@@ -7,6 +7,7 @@ lastmod: 2022-06-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has successfully launched its first stable release, gaining traction with NGOs and receiving valuable feedback. The project is now expanding compatibility to include mini PCs and focusing on enhancing security while balancing usability."
 ---
 
 # Context of the project
@@ -72,3 +73,4 @@ Two main needs were expressed. The first one is supporting other platform than R
 
 # Challenges
 We are struggling to find an equilibrium between security of PiRogue OS and usability.
+The PiRogue Tool Suite project has successfully launched its first stable release, gaining traction with NGOs and receiving valuable feedback. They're now expanding compatibility to include mini PCs and focusing on enhancing security while balancing usability.

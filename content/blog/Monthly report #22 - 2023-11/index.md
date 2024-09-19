@@ -7,6 +7,7 @@ lastmod: 2023-11-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite released a new Raspberry Pi OS image compatible with latest Pi models and are improving Colander's UI/UX and deployment procedures."
 ---
 
 # Context of the project

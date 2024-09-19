@@ -7,6 +7,7 @@ lastmod: 2022-08-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has released user-friendly configuration tools, improved documentation, and expanded stalkerware detection capabilities in collaboration with NGOs."
 ---
 
 # Context of the project

@@ -7,6 +7,7 @@ lastmod: 2024-03-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PTS Project fixed bugs in PiRogue and Colander, released Colander v1.0.5, and started implementing opt-out privacy telemetry. The project is facing issues with Android 13 and seeking user reports for investigation."
 ---
 
 # What we have done so far

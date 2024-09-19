@@ -11,6 +11,7 @@ outputs:
    - 'html'
    - 'email'
 contributors: ["Esther Onfroy"]
+summary: "The PTS Project secures funding, expands tool capabilities, and focuses on evidence collection from online content and mobile devices. Join the community and contribute to the project."
 ---
 
 # Project overview

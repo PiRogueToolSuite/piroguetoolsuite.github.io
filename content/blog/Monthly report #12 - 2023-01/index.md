@@ -7,6 +7,7 @@ lastmod: 2023-01-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has released new tools for TLS interception and improved their Colander software suite. Colander now offers case management with integrity checks, a traffic decryption UI, and basic case graph visualization. The project is also facing challenges due to the Raspberry Pi shortage and are working on improving user experience and documentation."
 ---
 
 # Context of the project

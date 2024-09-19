@@ -9,6 +9,7 @@ weight: 50
 toc: true
 contributors: ["Esther Onfroy"]
 images: []
+summary: "The PiRogue Tool Suite project offers open-source hardware and software for mobile device security analysis. Their PiRogue device captures network traffic and performs basic forensics, while Colander helps manage the collected data and generate reports. They're facing a challenge packaging Frida for Debian 12 which is critical for supporting the latest Android versions."
 ---
 
 ## PiRogue

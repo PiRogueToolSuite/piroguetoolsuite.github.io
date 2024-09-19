@@ -7,6 +7,7 @@ lastmod: 2023-02-28
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project has released new functionalities to capture device screen recordings and implemented user authentication with 2FA for their Colander software suite. Colander also offers improved documentation editing, case entity creation, and CyberChef integration for network traffic analysis. To address the Raspberry Pi shortage, the project has expanded support to older models and designing new cases for them."
 ---
 
 # Context of the project

@@ -7,6 +7,7 @@ lastmod: 2022-02-28
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project offers an open-source hardware and software toolkit for mobile device security analysis. The project provides a kiosk mode for basic checks, an on-field mode for emergency response, and an expert mode for in-depth investigations. The project current challenge is packaging a dependency, NFStream, for ARM architectures."
 ---
 
 # Context of the project

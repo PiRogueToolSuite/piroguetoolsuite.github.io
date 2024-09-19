@@ -7,6 +7,7 @@ lastmod: 2023-09-30
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+summary: "The PiRogue Tool Suite project is improving their open-source mobile device security tools. Colander received UI/UX improvements and new features for case management and documentation. The project is also facing a challenge where PiRogue's custom rules aren't working properly after OS upgrades."
 ---
 
 # Context of the project

@@ -100,25 +100,10 @@ docker compose -f no-sso.yml run --rm threatr-front python manage.py insert_defa
 
 ### Connect Colander to Threatr
 
-To connect Colander to Threatr for threat intelligence, follow these steps:
-* In the Threatr administration panel, create a regular user via **Users** menu and an API key for the user.
+To connect Colander to Threatr, follow these steps:
+* In the Threatr administration panel, create a regular user in the menu *Users* menu and an API key for this user in the menu *Tokens*.
 
-* Create new entries for your Virus Total and/or OTX Alien Vault API keys in Threatr's **Vendor Credentials** menu.
-
-* For VirusTotal, use the vendor identifier `vt` and for the credentials field, set 
-    ```json
-      {"api_key": "your VT API key"}
-    ```
-* For OTX Alien Vault, use the vendor identifier `otx` and for the credentials field, set 
-    ```json
-      {"api_key": "your OTX API key"}
-    ```
-
-{{< callout context="tip" title="Did you know?" icon="rocket" >}}
-You can add multiple API keys for a same vendor, Threatr will do a round-robin on them.
-{{< /callout >}}
-
-In the administration panel of Colander, via the menu *Backend credentials*, create a new entry with `threatr` as backend identifier and for the credentials field, set 
+* In the administration panel of Colander, via the menu *Backend credentials*, create a new entry with `threatr` as backend identifier and for the credentials field, set 
 ```json
     {"api_key": "your Threatr API key"}
 ```
@@ -127,6 +112,41 @@ In the administration panel of Colander, via the menu *Backend credentials*, cre
 Note that the administration panels are accessible at random URLs:
 * for Colander: `https://${COLANDER_FQDN}/${DJANGO_ADMIN_URL}` with the variables set in  `.envs/.production/.base` and `.envs/.production/.colander`
 * for Threatr: `https://${THREATR_FQDN}/${DJANGO_ADMIN_URL}` with the variables set in  `.envs/.production/.base` and `.envs/.production/.threatr`
+{{< /callout >}}
+
+### Connect Threatr to 3rd-party vendors
+In the Threatr administration panel, create new entries for the 3rd-party vendors in the *Vendor Credentials* menu.
+
+{{< tabs "api_keys" >}}
+  {{< tab "VirusTotal" >}}
+  Use the vendor identifier `vt` and for the credentials field, set
+  ```json
+  {"api_key": "your API key"}
+  ```
+  {{< /tab >}}
+  {{< tab "OTX Alien Vault" >}}
+  Use the vendor identifier `otx` and for the credentials field, set
+  ```json
+  {"api_key": "your API key"}
+  ```
+  {{< /tab >}}
+  {{< tab "Shodan" >}}
+  Use the vendor identifier `shodan` and for the credentials field, set
+  ```json
+  {"api_key": "your API key"}
+  ```
+  {{< /tab >}}
+  {{< tab "Scarlet Shark" >}}
+  Use the vendor identifier `scarlet_shark` and for the credentials field, set
+  ```json
+  {"api_key": "your API key"}
+  ```
+  {{< /tab >}}
+{{< /tabs >}}
+
+
+{{< callout context="tip" title="Did you know?" icon="rocket" >}}
+You can add multiple API keys for a same vendor, Threatr will do a round-robin on them. To do so, add multiple *Vendor Credentials* for the same vendor identifier.
 {{< /callout >}}
 
 ## Development environment setup

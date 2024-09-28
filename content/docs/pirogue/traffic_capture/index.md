@@ -15,7 +15,7 @@ With the PiRogue, it is quite easy to capture the entire network traffic of any 
 
 The command 
 ```bash
-$ tcpdump -i wlan0 -w capture.pcap
+$ tcpdump -i wlan0 -w $(date +%Y%m%d%H%M)_capture.pcap
 ```
 instructs the `tcpdump` utility to capture network traffic from the wireless interface `wlan0` and store the captured data in a file named `capture.pcap`.
 

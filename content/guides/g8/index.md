@@ -158,7 +158,7 @@ Don't launch the application.
 ### Instrument and intercept
 Once the application to be analyzed is installed on your Android device, connect your device to the PiRogue Wi-Fi network and run the following command:
 ```bash
-pirogue-intercept-gated -o <path to the output directory>
+pirogue-intercept-gated -o $(date +%Y%m%d%H%M)_output
 ```
 
 {{< callout context="danger" title="Limitations" icon="alert-octagon" >}}

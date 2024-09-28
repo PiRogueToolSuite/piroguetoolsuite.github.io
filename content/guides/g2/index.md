@@ -75,7 +75,7 @@ To begin capturing the network traffic, we need to connect the device to the PiR
 Throughout this period, we will be using the tool **tcpdump** to capture the network traffic. After a duration of 3 days, we will retrieve the file containing all the captured network traffic. This file is typically named a **PCAP** file, which can be opened with tools like **Wireshark**.
 
 ```bash {title="Save the entire network traffic into a single file"}
-sudo tcpdump -i wlan0 -w example.pcap
+sudo tcpdump -i wlan0 -w $(date +%Y%m%d%H%M)_capture.pcap
 ```
 
 Now turn on the Wi-Fi connection of the device and connect to the PiRogue network.

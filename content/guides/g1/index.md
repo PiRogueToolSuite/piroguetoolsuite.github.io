@@ -28,6 +28,11 @@ It can operate in different modes:
   - ensure reproducible analysis
   - generate comprehensive reports
 
+## Limitations
+
+Raspberry Pi devices have slower, more power-efficient processors, limited memory, and limited onboard WiFi throughput compared to conventional computers. These limitations can potentially affect their performance when running demanding tasks. Due to the limited performance of Raspberry Pi devices, we recommend using PiRogue with up to 2-3 devices simultaneously.
+
+
 ## The hardware you need
 In addition to a computer and an Internet connection, you will need, at least, a Raspberry Pi (+ its power supply), a micro SD-card and an ethernet cable. 
 

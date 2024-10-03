@@ -28,11 +28,6 @@ It can operate in different modes:
   - ensure reproducible analysis
   - generate comprehensive reports
 
-## Limitations
-
-Raspberry Pi devices have slower, more power-efficient processors, limited memory, and limited onboard WiFi throughput compared to conventional computers. These limitations can potentially affect their performance when running demanding tasks. Due to the limited performance of Raspberry Pi devices, we recommend using PiRogue with up to 2-3 devices simultaneously.
-
-
 ## The hardware you need
 In addition to a computer and an Internet connection, you will need, at least, a Raspberry Pi (+ its power supply), a micro SD-card and an ethernet cable. 
 
@@ -49,21 +44,21 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 * Raspberry Pi 5 **(Experimental Support)** <sup>2</sup>
 
 <small>
-<sup>1</sup> Not all services can be run on these devices due to limited memory.<br/>
+<sup>1</sup> Not all services such as Suricata can be run on these devices due to limited memory.<br/>
 <sup>2</sup> We are actively developing Raspberry Pi 5 support. Download the experimental PiRogue OS version for Raspberry Pi 5 from our download page.
 </small>
 
-{{< callout context="danger" title="Important: High RAM Usage by Suricata IDS" icon="alert-octagon" >}}
-Suricata, the Intrusion Detection System (IDS) and network security monitoring engine, requires significant system resources. It needs enough memory to hold rules and process large volumes of network packets.
-
-To conserve resources on devices with limited RAM, Suricata is automatically disabled on systems with less than 2.5GB of RAM. This configuration is located in the system file `/etc/systemd/system/suricata.service.d/override.conf`.
-{{< /callout >}}
-
-{{< callout context="caution" title="Caution" icon="alert-triangle" >}}
-Be sure to have an appropriate power supply for your PiRogue. If you don't know what to choose, pick the official USB-C Raspberry Pi power supply.
-{{< /callout >}}
-
 If you want to buy a Raspberry Pi, visit [the rpilocator website](https://rpilocator.com/?cat=PI4) to check for availability. 
+
+{{< callout context="caution" title="Power supply" icon="alert-triangle" >}}
+Be sure to have an appropriate power supply for your PiRogue. If you don't know what to choose, pick the official Raspberry Pi power supply.
+{{< /callout >}}
+
+{{< callout context="danger" title="Limitations" icon="alert-octagon" >}}
+Raspberry Pi devices have slower, more power-efficient processors, limited memory, and limited onboard WiFi throughput compared to conventional computers. These limitations can potentially affect their performance when running demanding tasks. Due to the limited performance of Raspberry Pi devices, we recommend using PiRogue with **up to 2-3 devices connected to the Wi-Fi access point simultaneously**.
+
+Suricata, the Intrusion Detection System (IDS) and network security monitoring engine, requires significant system resources. It needs enough memory to hold rules and process large volumes of network packets. To conserve resources on devices with limited RAM, **Suricata is automatically disabled on systems with less than 2.5GB of RAM**. This limitation is set in the file `/etc/systemd/system/suricata.service.d/override.conf`.
+{{< /callout >}}
 
 ### Pick a micro SD-card
 

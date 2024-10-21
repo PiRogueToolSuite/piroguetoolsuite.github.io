@@ -9,7 +9,9 @@ weight: 740
 toc: true
 ---
 
-By default, the PiRogue exposes a Grafana dashboard at the address [http://pirogue.local:3000](http://pirogue.local:3000) showing in real-time the ongoing network connections, security alerts and other information. The default dashboard is composed of different panels.
+By default, the PiRogue exposes a Grafana dashboard at the address [http://pirogue.local/dashboard](http://pirogue.local/dashboard) showing in real-time the ongoing network connections, security alerts and other information. The default dashboard is composed of different panels.
+
+On older versions of PiRogue, the dashboard was accessible at the address [http://pirogue.local:3000](http://pirogue.local:3000)
 
 {{< figure src="img/overview.png" alt="Overview of the PiRogue dashboard" caption="Overview of the PiRogue dashboard" class="d-block mx-auto shadow" >}}
 

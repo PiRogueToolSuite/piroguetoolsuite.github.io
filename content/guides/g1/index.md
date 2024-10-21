@@ -162,7 +162,7 @@ Once connected, you have to finalize the installation of your PiRogue by running
 | `sudo apt install pirogue-base -y` | Install the PiRogue packages/features                                     |
 | `sudo reboot`                      | Reboot the PiRogue                                                        |
 
-During the installation, when prompted, you will have to answer:
+During the installation, if prompted, you will have to answer:
 * `No` to save firewall rules for IP v4
 * `No` to save firewall rules for IP v6
 * `Yes` to allow non-root users to capture network traffic 
@@ -179,9 +179,11 @@ After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi d
 The telemetry is enabled by default but you can easily opt out. Find more details in the [section dedicated to the telemetry](/docs/pirogue/telemetry/).
 {{< /callout >}}
 
-First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>:3000` (default credentials: `admin:PiRogue`) with your Web browser or directly with this link:
+First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>/dashboard` (default credentials: `admin:PiRogue`) with your Web browser or directly with this link:
 
-[Open your dashboard →](http://pirogue.local:3000) 
+[Open your dashboard →](http://pirogue.local/dashboard)
+
+On older versions of PiRogue, the dashboard was accessible at the address [http://pirogue.local:3000](http://pirogue.local:3000)
 
 It will take around 4 minutes before network flows start appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard by pressing `F5` key on your keyboard.
 
@@ -196,7 +198,7 @@ ping -c1 pirogue.local
 ```
 
 {{< callout context="note" title="Note" icon="info-circle" >}}
-To customize your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/configuration/).
+To customize your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/version_1.x/configuration/).
 {{< /callout >}}
 
 ## Continuous network traffic analysis
@@ -233,7 +235,7 @@ The default credentials of the dashboard are:
 * username: `admin`
 * password: `PiRogue` 
 
-If you want to change the password, please refer to the [configuration documentation](/docs/pirogue/configuration/).
+If you want to change the password, please refer to the [configuration documentation](/docs/pirogue/version_1.x/configuration/).
 
 Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
 

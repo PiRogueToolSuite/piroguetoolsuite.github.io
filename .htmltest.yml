@@ -2,6 +2,8 @@ DirectoryPath: "./public"
 IgnoreDirectoryMissingTrailingSlash: true
 IgnoreInternalEmptyHash: true
 CheckImages: false
+CheckExternal: false
+CheckInternal: true
 IgnoreAltEmpty: true
 IgnoreAltMissing: true
 IgnoreExternalBrokenLinks: true
@@ -11,5 +13,6 @@ IgnoreURLs:
   - "https://discord.gg"
   - "https://www.linkedin.com"
   - "^img/adb_config_out*"
+  - "^/livereload.js*"
 # Experimental concurrent testing 
 TestFilesConcurrently: true

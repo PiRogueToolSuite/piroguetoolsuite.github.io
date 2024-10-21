@@ -27,7 +27,7 @@ Pirogue Tool Suite uses a comprehensive set of software tools for network traffi
 * `sha256`: Computes file hashes to check data integrity.
 
 
-## Hardware integration
+## Integration with Raspberry Pi
 
 PiRogue OS is a tailored version of Debian mainline, a popular Linux distribution known for its stability and reliability. However, the custom HAT (Hardware Attachment on Top) used in PiRogue requires additional configurations to integrate seamlessly with the Linux kernel. To achieve this compatibility, custom Device Tree Blobs (DTBs) and `udev` rules have been developed.
 
@@ -55,7 +55,7 @@ A Personal Package Archive (PPA) serves as a repository for software packages ma
 PTS’s PPAs contain both PiRogue-specific tools as well as external tools that are not available on official Debian repository.
 
 By the time writing this document, PiRogue-specific packages are:
-* `pirogue-ap` to setup the Wi-Fi access point
+* `pirogue-networking` to set up the network
 * `pirogue-base` is a meta-package to install all PiRogue-specific packages
 * `pirogue-cli` to install the PiRogue command line tools
 * `pirogue-dashboard` to setup the PiRogue dashboard
@@ -89,58 +89,9 @@ PiRogue Debian packages can be installed on any compatible hardware running Debi
 {{< /details >}}
 
 
-## Installation procedure
+## Installation
 
 [Have a look to the guide dedicated to building a PiRogue →](/guides/g1)
-
-To install PiRogue OS on a Raspberry Pi, it is necessary to download the OS image and to flash it on an SD-card. After the first boot on the SD-card, it is possible to connect to the PiRogue using SSH by running the command
-```bash
-$ ssh pi@pirogue.local
-```
-the default SSH password is `raspberry`.
-
-Once connected, the operating system has to be upgraded and the PiRogue installation has been to be completed by running the commands
-```bash
-$ sudo apt update
-$ sudo apt dist-upgrade
-$ sudo apt install pirogue-base
-```
-
-And finally reboot the PiRogue with the command
-```bash
-$ sudo reboot
-```
-
-To convert a regular PC into a PiRogue, it requires Debian 12 being installed without any graphical environment and to add the PTS PPA with commands
-```bash
-$ sudo wget -O /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
-$ sudo wget -O /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
-```
-
-And finally install the PiRogue packages with the commands
-```bash
-$ sudo apt update
-$ sudo apt install pirogue-base
-$ sudo reboot
-```
-
-The upgrade of the PiRogue, is done using the command, the same way as a regular operating  system upgrade
-```bash
-$ sudo apt update
-$ sudo apt dist-upgrade
-$ sudo reboot
-```
-
-Instead of delegating the hardware detection to the corresponding package, it is also possible to provision a specific configuration **before** installing PiRogue packages by specifying the following parameters:
-
-`WIFI_NETWORK_NAME`: SSID of the Wi-Fi network to created
-`WIFI_NETWORK_KEY`: password required to connect to the PiRogue’s Wi-Fi network
-`WIFI_COUNTRY_CODE`: 2-letter country code where the PiRogue is located
-`ETH_IFACE`: the name of the network interface having access to the Internet
-`WLAN_IFACE`: the name of the network interface to setup the Wi-Fi access point on
-
-in the file `/var/lib/pirogue/config/pirogue.user.env`
-
 
 ## Upgrade
 All PiRogue features are bundled as Debian packages. So, by upgrading Debian (which is the only supported operating system) you are also upgrading your PiRogue.

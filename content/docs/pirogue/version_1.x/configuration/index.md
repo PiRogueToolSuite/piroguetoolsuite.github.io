@@ -1,11 +1,11 @@
 ---
-title: "Configuration (for v1.x)"
+title: "Configuration"
 draft: false
 images: []
 menu:
   docs:
-    parent: "configure"
-weight: 730
+    parent: "version_1.x"
+weight: 801
 toc: true
 resources:
 - name: no_configuration
@@ -16,12 +16,14 @@ resources:
   src: img/restore-configuration.png
 ---
 
-{{< callout context="note" title="Note" icon="info-circle" >}}
-This documentation requires either
-* the package `pirogue-base` version `1.0.2` or more recent being installed
-* the package `pirogue-base-pc` version `1.0.0` or more recent being installed
+{{< callout context="caution" title="PiRogue version <2.0.0" icon="info-circle" >}}
+This documentation only applies when the package `pirogue-base` version `<2.0.0` is installed.
 
-Not sure? [Upgrade your PiRogue](/docs/pirogue/operating-system/#upgrade).
+Use `dpkg -l` to check what version is installed:
+```shell {title="pirogue version 1.0.3 is installed"}
+$ dpkg -l | grep pirogue-base
+ii  pirogue-base    1.0.3    all    Install all PiRogue packages
+```
 {{< /callout >}}
 
 ## How the PiRogue configuration works

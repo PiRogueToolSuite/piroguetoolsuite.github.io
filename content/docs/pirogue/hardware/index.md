@@ -8,6 +8,11 @@ menu:
 weight: 710
 toc: true
 ---
+
+{{< callout context="caution" title="Documentation context" icon="info-circle" >}}
+This documentation only applies to Raspberry Pi hardware.
+{{< /callout >}}
+
 The PiRogue's core hardware consists of a Raspberry Pi 4, a versatile single-board computer, enhanced with a custom-designed HAT (Hardware Attachment on Top). This HAT serves as an expansion board that seamlessly integrates with the Raspberry Pi, providing additional functionalities and enhancing its capabilities. It features a TFT screen, a Real-Time Clock (RTC), and cooling fan control circuitry.
 
 ## PiRogue HAT

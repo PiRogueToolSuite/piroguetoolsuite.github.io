@@ -1,10 +1,10 @@
 ---
-title: "Configuration"
+title: "Configuration (for v1.x)"
 draft: false
 images: []
 menu:
   docs:
-    parent: "pirogue"
+    parent: "configure"
 weight: 730
 toc: true
 resources:
@@ -46,7 +46,7 @@ PiRogue features come in Debian packages, each package manages some system confi
 Any changes made manually in these files are overridden when these packages are installed and upgraded.
 {{< /callout >}}
 
-To ease the configuration of your PiRogue, we provide a tool `pirogue-ctl` which allows you to manage your configuration, create configuration backups, etc. 
+To ease the configuration of your PiRogue, we provide a tool `pirogue-ctl` which allows you to manage your configuration, create configuration backups, etc.
 
 `pirogue-ctl` will generate new configuration files for the different services running on your PiRogue and ensure that your configuration is not modified when you upgrade your PiRogue.
 
@@ -75,9 +75,9 @@ sudo nano /var/lib/pirogue/config/pirogue.env
 it will open a text editor (nano) showing your own configuration file. In this file you can safely change the following options:
 
 * `WIFI_NETWORK_NAME` the name of the wi-fi network managed by your PiRogue, by default `PiRogue1`
-* `WIFI_NETWORK_KEY` the passphrase required to connect to the wi-fi network, by default `superlongkey`. 
+* `WIFI_NETWORK_KEY` the passphrase required to connect to the wi-fi network, by default `superlongkey`.
 * `WIFI_COUNTRY_CODE` indicates the country (ISO/IEC 3166-1 format) in which your PiRogue is operating, by default `FR`
-* `DASHBOARD_PASSWORD` the password asked when you log in the PiRogue's dashboard, by default `PiRogue` 
+* `DASHBOARD_PASSWORD` the password asked when you log in the PiRogue's dashboard, by default `PiRogue`
 
 {{< callout context="danger" title="Danger" icon="alert-octagon" >}}
 Do not use `"`, `#` or any emoji in your configuration.
@@ -95,7 +95,7 @@ ETH_IFACE=eth0
 DASHBOARD_PASSWORD=PiRogue
 ```
 
-Press `ctrl`+`x` on your keyboard to exit nano, press y to save your modifications, press `n` otherwise. 
+Press `ctrl`+`x` on your keyboard to exit nano, press y to save your modifications, press `n` otherwise.
 
 ## Apply my configuration
 Once you have edited the PiRogues's configuration file, run the following command to apply this new configuration:
@@ -110,9 +110,9 @@ press `y` to apply your configuration, `n` otherwise.
 
 Now your configuration has been succesfuly applied. You can see it by running `sudo pirogue-ctl config show`.
 
-By default, your configuration and all the different configuration files modified by `pirogue-ctl` have been backed-up. 
+By default, your configuration and all the different configuration files modified by `pirogue-ctl` have been backed-up.
 
-At any time you can restore a previous configuration by running the command: 
+At any time you can restore a previous configuration by running the command:
 ```bash
 sudo pirogue-ctl config restore
 ```
@@ -123,7 +123,7 @@ sudo pirogue-ctl config restore
 To check how healthy your PiRogue is, run
 
 ```bash
-pirogue-ctl status 
+pirogue-ctl status
 ```
 
 {{< img src="img/status.png" alt="Output of pirogue-ctl status" class="d-block mx-auto shadow" >}}

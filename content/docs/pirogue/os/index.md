@@ -1,6 +1,6 @@
 ---
 title: "Operating system"
-draft: false
+draft: true
 images: []
 menu:
   docs:
@@ -36,14 +36,14 @@ PiRogue OS is a tailored version of Debian mainline, a popular Linux distributio
 **`Udev` rules**, on the other hand, are configuration files that govern how the Linux kernel handles device events and assigns device permissions. Custom `udev` rules for the PiRogue HAT ensure that the kernel properly detects the HAT's devices, assigns them appropriate permissions, and triggers the necessary actions when events occur.
 
 The definition of the different DTB overlays and `udev` rules can be reviewed on GitHub:
-* [https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-hat/linux/arm64](https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-hat/linux/arm64) 
-* [https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-screen-st7789-240x240/linux/arm64](https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-screen-st7789-240x240/linux/arm64) 
+* [https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-hat/linux/arm64](https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-hat/linux/arm64)
+* [https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-screen-st7789-240x240/linux/arm64](https://github.com/PiRogueToolSuite/deb-packages/tree/debian-12/pirogue-screen-st7789-240x240/linux/arm64)
 
-By implementing custom DTB overlays and `udev` rules, PiRogue OS ensures seamless integration between the Raspberry Pi, the custom HAT, and the Linux kernel. This tailored approach enables the PiRogue to operate smoothly within the Debian environment. The Linux Kernel uses the RTC as a reference of time and takes care synchronizing the system time with the RTC one at its boot if NTP is not available. 
+By implementing custom DTB overlays and `udev` rules, PiRogue OS ensures seamless integration between the Raspberry Pi, the custom HAT, and the Linux kernel. This tailored approach enables the PiRogue to operate smoothly within the Debian environment. The Linux Kernel uses the RTC as a reference of time and takes care synchronizing the system time with the RTC one at its boot if NTP is not available.
 
 The generation of the operating system image to be flashed on an SD-card is ensured by Packer. It takes the official Debian image and applies changes such as creating a default user and configuring a PPA. The modifications applied to the official Debian image is available on GitHub [https://github.com/PiRogueToolSuite/pirogue-images](https://github.com/PiRogueToolSuite/pirogue-images).
 
-PiRogue features can be installed on a Raspberry Pi as well as on a regular computer equipped with a Wi-Fi interface and an Ethernet interface. 
+PiRogue features can be installed on a Raspberry Pi as well as on a regular computer equipped with a Wi-Fi interface and an Ethernet interface.
 
 
 ## Packaging for PiRogue
@@ -56,11 +56,11 @@ PTS’s PPAs contain both PiRogue-specific tools as well as external tools that 
 
 By the time writing this document, PiRogue-specific packages are:
 * `pirogue-ap` to setup the Wi-Fi access point
-* `pirogue-base` is a meta-package to install all PiRogue-specific packages 
+* `pirogue-base` is a meta-package to install all PiRogue-specific packages
 * `pirogue-cli` to install the PiRogue command line tools
-* `pirogue-dashboard` to setup the PiRogue dashboard 
+* `pirogue-dashboard` to setup the PiRogue dashboard
 * `pirogue-eve-collector` to configure Suricata and setup the tools managing Suricata alerts
-* `pirogue-flow-inspector` to setup the deep packet inspection 
+* `pirogue-flow-inspector` to setup the deep packet inspection
 * `pirogue-hat` to setup the HAT of the PiRogue
 * `pirogue-maintenance` to setup the daily maintenance such as detection rules update
 * `pirogue-screen-st7789-240x240` to setup the TFT screen of the HAT
@@ -93,11 +93,11 @@ PiRogue Debian packages can be installed on any compatible hardware running Debi
 
 [Have a look to the guide dedicated to building a PiRogue →](/guides/g1)
 
-To install PiRogue OS on a Raspberry Pi, it is necessary to download the OS image and to flash it on an SD-card. After the first boot on the SD-card, it is possible to connect to the PiRogue using SSH by running the command 
+To install PiRogue OS on a Raspberry Pi, it is necessary to download the OS image and to flash it on an SD-card. After the first boot on the SD-card, it is possible to connect to the PiRogue using SSH by running the command
 ```bash
 $ ssh pi@pirogue.local
 ```
-the default SSH password is `raspberry`. 
+the default SSH password is `raspberry`.
 
 Once connected, the operating system has to be upgraded and the PiRogue installation has been to be completed by running the commands
 ```bash
@@ -106,18 +106,18 @@ $ sudo apt dist-upgrade
 $ sudo apt install pirogue-base
 ```
 
-And finally reboot the PiRogue with the command 
+And finally reboot the PiRogue with the command
 ```bash
 $ sudo reboot
 ```
 
-To convert a regular PC into a PiRogue, it requires Debian 12 being installed without any graphical environment and to add the PTS PPA with commands 
+To convert a regular PC into a PiRogue, it requires Debian 12 being installed without any graphical environment and to add the PTS PPA with commands
 ```bash
 $ sudo wget -O /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
 $ sudo wget -O /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
 ```
 
-And finally install the PiRogue packages with the commands 
+And finally install the PiRogue packages with the commands
 ```bash
 $ sudo apt update
 $ sudo apt install pirogue-base
@@ -145,7 +145,7 @@ in the file `/var/lib/pirogue/config/pirogue.user.env`
 ## Upgrade
 All PiRogue features are bundled as Debian packages. So, by upgrading Debian (which is the only supported operating system) you are also upgrading your PiRogue.
 
-To upgrade both the OS and the PiRogue features, run the following two commands: 
+To upgrade both the OS and the PiRogue features, run the following two commands:
 
 ```bash
 sudo apt update
@@ -160,8 +160,10 @@ We advice you to upgrade your PiRogue **weekly**.
 
 
 ### Heavily customized PiRogue
-Some users would want to customize their PiRogue by playing with the different configuration files of the system. If so, be sure to backup your changes BEFORE upgrading your PiRogue. The upgrade will override your customization.
+Some users would want to customize their PiRogue by playing with the different configuration files of the system.
+If so, be sure to backup your changes BEFORE upgrading your PiRogue. The upgrade will override your customization.
 
+#### For PiRogue v1.x series
 The following configuration files are managed by the PiRogue packages:
 * `/etc/hostapd/hostapd.conf`
 * `/etc/dnsmasq.conf`
@@ -174,3 +176,14 @@ The following configuration files are managed by the PiRogue packages:
 * `/etc/grafana/provisioning/dashboards/grafana_dashboards.yml`
 * `/var/lib/grafana/dashboards/pirogue-dashboard.json`
 * `/var/lib/grafana/dashboards/pirogue-flow-details-dashboard.json`
+
+#### For PiRogue v2.x series
+A best effort is done to keep user configured PiRogue configuration files.
+That said, be sure to keep a copy of the following files in case an update doesn't go as planned:
+* `/var/lib/pirogue/admin/config.yaml`
+* `/var/lib/pirogue/admin/wireguard/config.yaml` (if any)
+* `/var/lib/pirogue/admin/client.yaml`
+* `/var/lib/pirogue/admin/daemon.yaml`
+* `/var/lib/pirogue/admin/pirogue-external-exposure/fullchain.pem`
+* `/var/lib/pirogue/admin/pirogue-external-exposure/privkey.pem`
+

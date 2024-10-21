@@ -1,6 +1,6 @@
 ---
 title: "Operating system"
-draft: true
+draft: false
 images: []
 menu:
   docs:

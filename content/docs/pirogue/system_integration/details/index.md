@@ -1,5 +1,5 @@
 ---
-title: "System integration — Details"
+title: "Details"
 draft: true
 images: []
 menu:

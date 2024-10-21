@@ -1,5 +1,5 @@
 ---
-title: "System integration — Tests"
+title: "Tests"
 draft: true
 images: []
 menu:

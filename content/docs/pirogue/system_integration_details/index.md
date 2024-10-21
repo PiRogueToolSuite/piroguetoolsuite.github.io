@@ -1,6 +1,6 @@
 ---
 title: "System integration — Details"
-draft: false
+draft: true
 images: []
 menu:
   docs:

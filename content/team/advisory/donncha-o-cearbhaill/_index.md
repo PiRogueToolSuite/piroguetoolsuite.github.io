@@ -12,6 +12,6 @@ images: []
 weight: 10
 ---
 
-Donncha (“Done-a-ka”) Ó Cearbhaill (IE/DE) is a hacker and cybersecurity expert. He leads the Security Lab at Amnesty International which continues to play a critical role in exposing the global spyware crisis throught the Pegasus Project, the Predator Files and other wide-ranging investigations.
+Donncha (“Done-a-ka”) Ó Cearbhaill (IE/DE) is a hacker and cybersecurity expert. He leads the [Security Lab at Amnesty International](https://securitylab.amnesty.org) which continues to play a critical role in exposing the global spyware crisis throught the Pegasus Project, the Predator Files and other wide-ranging investigations.
 
 He is a skilled digital investigator who is passionate about protecting journalists, activists and other members of civil society from unlawful surveillance and other human rights abuses.

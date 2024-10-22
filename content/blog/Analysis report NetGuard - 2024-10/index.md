@@ -180,3 +180,94 @@ public final com.google.android.datatransport.cct.d.e0.s a(e0.s p6)
     return v6_2.d();
 }
 ```
+
+## Captured example payload sent to Google
+
+Here is an example of a payload sent to Google's servers that we captured during the analysis:
+
+```json
+{
+  "logRequest": [
+    {
+      "requestTimeMs": 1729585805999,
+      "requestUptimeMs": 676376223,
+      "clientInfo": {
+        "clientType": "ANDROID_FIREBASE",
+        "androidClientInfo": {
+          "sdkVersion": 29,
+          "model": "SM-G965F",
+          "hardware": "samsungexynos9810",
+          "device": "star2lte",
+          "product": "star2ltexx",
+          "osBuild": "QQ3A.200805.001",
+          "manufacturer": "samsung",
+          "fingerprint": "samsung/star2ltexx/star2lte:10/QP1A.190711.020/G965FXXU8DTC5:user/release-keys",
+          "locale": "en",
+          "country": "US",
+          "mccMnc": "20810",
+          "applicationBuild": "2024090101"
+        }
+      },
+      "logSourceName": "GDT_CLIENT_METRICS",
+      "logEvent": [
+        {
+          "eventTimeMs": 1729585805970,
+          "eventUptimeMs": 676376194,
+          "sourceExtension": "Cg4I84DimqsyEJD145qrMhoLCgkIgMADEICAgAUiFGV1LmZhaXJjb2RlLm5ldGd1YXJk",
+          "timezoneOffsetSeconds": 7200,
+          "networkConnectionInfo": {
+            "networkType": "WIFI",
+            "mobileSubtype": "UNKNOWN_MOBILE_SUBTYPE"
+          }
+        }
+      ],
+      "qosTier": "DEFAULT"
+    },
+    {
+      "requestTimeMs": 1729585806000,
+      "requestUptimeMs": 676376224,
+      "clientInfo": {
+        "clientType": "ANDROID_FIREBASE",
+        "androidClientInfo": {
+          "sdkVersion": 29,
+          "model": "SM-G965F",
+          "hardware": "samsungexynos9810",
+          "device": "star2lte",
+          "product": "star2ltexx",
+          "osBuild": "QQ3A.200805.001",
+          "manufacturer": "samsung",
+          "fingerprint": "samsung/star2ltexx/star2lte:10/QP1A.190711.020/G965FXXU8DTC5:user/release-keys",
+          "locale": "en",
+          "country": "US",
+          "mccMnc": "20810",
+          "applicationBuild": "2024090101"
+        }
+      },
+      "logSourceName": "PLAY_BILLING_LIBRARY",
+      "logEvent": [
+        {
+          "eventTimeMs": 1729585775839,
+          "eventUptimeMs": 676346062,
+          "sourceExtension": "Ch0KBTYuMC4xEhRldS5mYWlyY29kZS5uZXRndWFyZBoCCAU=",
+          "timezoneOffsetSeconds": 7200,
+          "networkConnectionInfo": {
+            "networkType": "WIFI",
+            "mobileSubtype": "UNKNOWN_MOBILE_SUBTYPE"
+          }
+        },
+        {
+          "eventTimeMs": 1729585775846,
+          "eventUptimeMs": 676346070,
+          "sourceExtension": "Ch0KBTYuMC4xEhRldS5mYWlyY29kZS5uZXRndWFyZBoCCAs=",
+          "timezoneOffsetSeconds": 7200,
+          "networkConnectionInfo": {
+            "networkType": "WIFI",
+            "mobileSubtype": "UNKNOWN_MOBILE_SUBTYPE"
+          }
+        }
+      ],
+      "qosTier": "DEFAULT"
+    }
+  ]
+}
+```

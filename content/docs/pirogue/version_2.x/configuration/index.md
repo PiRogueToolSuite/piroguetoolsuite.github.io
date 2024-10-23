@@ -18,7 +18,7 @@ resources:
 This documentation only applies when the package `pirogue-base` version `>=2.0.0` is installed.
 
 Use `dpkg -l` to check what version is installed:
-```shell {title="pirogue version 2.0.2 is installed"}
+```shell {title="PiRogue version 2.0.2 is installed"}
 $ dpkg -l | grep pirogue-base
 ii  pirogue-base    2.0.2    all    Install all PiRogue packages
 ```
@@ -31,17 +31,18 @@ The PiRogue functionalities are all controlled and configured by the `pirogue-ad
 By default, on a first and fresh installation, `pirogue-admin` detects and generates the
 best configuration for the current system.
 
-However, modifying this configuration can be done using the `pirogue-admin-client` tool after the initial installation.
+However, modifying this configuration must be done using the `pirogue-admin-client` tool after the initial installation.
 
 ### Administration concepts
-After a system installation, it's possible to get current applied and running configuration
+After the installation of the system, it's possible to get the current system configuration
 with the following command:
-```shell
+
+```shell {title="Get the current system configuration"}
 pirogue-admin-client system get-configuration
 ```
 
 The result should look like:
-```yaml
+```yaml {linenos=true,hl_lines=[1,16],title="Example of configuration"}
 DASHBOARD_PASSWORD: PiRogue
 ENABLE_DHCP: 'True'
 ENABLE_PUBLIC_ACCESS: 'False'
@@ -61,30 +62,35 @@ WIFI_PASSPHRASE: superlongkey
 WIFI_SSID: PiRogue
 ```
 
-Administrating a PiRogue consists in modifying these variables.
+Under the hood, administrating a PiRogue consists in modifying these variables.
 Subsequently, lots of system files are updated and
 system services are started, stopped or reloaded accordingly.
 
 With the wide variety of PiRogue's new network capabilities, it could be hard
 to maintain a coherent and safe relationship between all the configuration variables,
-system files, and services.
+the system files, and the services.
 
 This is why PiRogue offers two level of administration:
-* `pirogue-admin`: low-level administration tool (used internally, and must not be used directly)
+* `pirogue-admin`: low-level administration tool (**used internally, and must not be used directly**)
 * `pirogue-admin-client`: high-level administration tool aiming safety and ease of use
 
-### Safe and easy administration
+{{< callout context="danger" title="Never use `pirogue-admin`" icon="alert-triangle" >}}
+`pirogue-admin` must do be used directly, use `pirogue-admin-client` instead.
+{{< /callout >}}
+
+### Administration tool
 `pirogue-admin-client` is the tool to administrate high-level PiRogue features.
 It allows you to configure many PiRogue components without having to deal
-with the variables directly.
+with the complexity of the system.
 
-You can explore all its capabilities using the command line parameter `--help`, e.g:
-```shell
+You can explore all its capabilities using the command line parameter `--help`, *e.g*:
+
+```shell {title="List administration commands"}
 pirogue-admin-client --help
 ```
 
-The tool is subdivided in sections on which `--help` can be shown, e.g:
-```shell
+The tool is subdivided in sections on which `--help` can be shown, *e.g*:
+```shell {title="Example of administration commands"}
 pirogue-admin-client wifi --help
 pirogue-admin-client wifi get-configuration --help
 pirogue-admin-client wifi set-configuration --help
@@ -94,144 +100,145 @@ pirogue-admin-client system --help
 
 
 ## Operating modes
-Depending on system capabilities, `pirogue-admin` has configured automatically
-the PiRogue in the adequate mode.
+Depending on system capabilities, the PiRogue is configured automatically in the adequate mode.
 
-Here are the different modes:
-* **Wireguard mode**: when only one network interface is available on the system
-* **Appliance mode**: when two different network interfaces are available on the system
-* **Access-point mode**: when two different network interfaces are available, one of which has WiFi capabilities
+PiRogue supports 3 different operating modes:
+* **Wireguard mode**: when only one wired network interface is available on the system
+* **Appliance mode**: when two wired network interfaces are available on the system
+* **Access-Point mode**: when two different network interfaces are available, one of which has WiFi capabilities
 
 {{< img src="pirogue_operating_modes" alt="PiRogue operating modes" class="d-block mx-auto" >}}
 
-Depending on the operating mode, `pirogue-admin-client` offers different configuration tools.
-
-## General configuration
-The following commands applies to all operating modes.
-
-### Dashboard configuration
-
-The password of the dashboard can be changed with:
-```shell
-pirogue-admin-client dashboard set-configuration --password 'mySuperSecretPassword!'
+The following command will tell you in what mode your PiRogue is running:
+```shell {title="Get the current operating mode"}
+pirogue-admin-client system get-configuration | grep SYSTEM_OPERATING_MODE
 ```
 
-The username of the dashboard remains `admin`.
 
-If you have forgotten the dashboard password, you can always retrieve it with the following command:
-```shell
+## General configuration
+The following commands applies to all operating modes. In the *appliance* operating mode, you can only configure the dashboard and open/close network ports.
+
+### Dashboard configuration
+The default username of the dashboard is `admin`.
+
+As the password of the dashboard is randomly generated during the installation, the following command allows you to retrieve it.
+```shell {title="Get the password of the dashboard"}
 pirogue-admin-client dashboard get-configuration
 ```
 
-### Isolated port management
-By default, a PiRogue system blocks most traffic on the **Isolated** network side.
+The password of the dashboard can be changed with:
+```shell {title="Change the password of the dashboard"}
+pirogue-admin-client dashboard set-configuration --password 'mySuperSecretPassword!'
+```
 
-By default, a PiRogue system controls DHCP and DNS requests
-and allows internet access accordingly for devices connected
-to the **Isolated** interface.
+The dashboard is accessible on `http://<PiRogue IP address>/dashboard` when the PiRogue is running in the modes access-point or appliance.
 
-All other traffic is blocked, including devices connecting
-to the PiRogue on local network.
+### Network ports management
+By default, the PiRogue blocks most of the network traffic coming from the isolated network except the traffic on the Internet. 
+The PiRogue handles the DCHP and DNS requests from the devices connected to the isolated network. The network traffic from the 
+isolated network to the external network is blocked.
 
-{{< img src="pirogue_isolated_device" alt="Device connected to PiRogue Isolated network interface" class="d-block mx-auto" >}}
+{{< img src="pirogue_isolated_device" alt="Device connected to PiRogue isolated network interface" class="d-block mx-auto" >}}
 
-However, for specific investigations, the operator might want to provide
-custom services hosted on the PiRogue to devices connected to the **Isolated** network.
+However, in some cases, the administrator might want to provide
+custom services hosted on the PiRogue to the devices connected to the isolated network.
 
-To achieve this, the `pirogue-admin-client` offers the ability
-to manage ports on the isolated interface.
+To achieve this, the `pirogue-admin-client` offers the ability to open and close ports on the isolated network.
 
-(Note: In the following examples, port management is assumed to be related the isolated network interface.)
-
-It's possible, to get a list of open ports :
-```shell
+The following command list the open ports:
+```shell {title="List the open ports on the isolated network"}
 pirogue-admin-client isolated-network list-open-ports
 ```
 
 And the result looks like (if any ports are open):
-```yaml
+```yaml {title="Example of list of the ports that have been opened"}
 - port: 8080
 - port: 9090
 ```
 
-Open a port on isolated interface (e.g: `8080`):
-```shell
+As an example, if you want to open the port `8080` on the isolated network, use the command:
+```shell {title="Open a port on the isolated network"}
 pirogue-admin-client isolated-network open-port 8080
 ```
 
-The administrator can close all open ports at once using the following command:
-```shell
+The administrator can close all the ports that have been manually opened at once with the command:
+```shell {title="Close all ports"}
 pirogue-admin-client isolated-network close-port
 ```
 
-But, the administrator can close a single port (e.g: `8080`):
-```shell
+It is also possible to close a single port (e.g: `8080`):
+```shell {title="Close a specific port"}
 pirogue-admin-client isolated-network close-port --incoming-port 8080
 ```
 
-## **Access Point** mode configuration
+## Access-Point mode
 {{< callout context="note" title="WiFi access-point mode" icon="info-circle" >}}
-This section only applies if the current [operating mode](#operating-modes) is **Access Point** (a.k.a AP)
+This section only applies if the current [operating mode](#operating-modes) is **Access-Point** (*a.k.a* AP).
+
+Check the output of this command to get the current operating mode your PiRogue is in:
+```shell {title="Get the current operating mode"}
+pirogue-admin-client system get-configuration | grep SYSTEM_OPERATING_MODE
+```
 {{< /callout >}}
 
-By default, WiFi password is generated at installation.
-To retrieve WiFi connection information, we have to get the current WiFi configuration.
+By default, WiFi password is generated at installation. The passphrase of the WiFi access-point can be found in the WiFi configuration.
 
 ### Get WiFi configuration
-
 To get the current WiFi configuration, use the following command:
-```shell
+```shell {title="Get the configuration of the WiFi access-point"}
 pirogue-admin-client wifi get-configuration
 ```
 
-The result looks like:
-```yaml
+The output looks like:
+```yaml {title="Example of WiFi access-point configuration"}
 country_code: FR
 passphrase: superlongkey
 ssid: PiRogue
 ```
 
-We can use these information to connect a device to the PiRogue access point,
-using `ssid` and `passphrase`.
+Use this information to connect a device to the PiRogue access-point.
 
 ### Change the WiFi configuration
-
-Change the WiFi SSID and password:
-```shell
+The following command allows you to change the WiFi SSID and password:
+```shell {title="Configure the WiFi access-point"}
 pirogue-admin-client wifi set-configuration --ssid 'Investigation_Lab' --passphrase 'Hard to guess passphrase !'
 ```
 
-Explore the WiFi configuration parameters:
-```shell
+Use the following command to list the parameters that can be configured:
+```shell {title="List of supported configuration parameters"}
 pirogue-admin-client wifi set-configuration --help
 ```
 
-## **Wireguard** mode configuration
+## Wireguard mode
 {{< callout context="note" title="Wireguard mode" icon="info-circle" >}}
-Only applies if the current [operating mode](#operating-modes) is **VPN** (a.k.a Wireguard)
+Only applies if the current [operating mode](#operating-modes) is **VPN** (a.k.a Wireguard).
+
+Check the output of this command to get the current operating mode your PiRogue is in:
+```shell {title="Get the current operating mode"}
+pirogue-admin-client system get-configuration | grep SYSTEM_OPERATING_MODE
+```
 {{< /callout >}}
 
-### Manage VPN peers
-
-Add a new VPN peer:
-```shell
+### Manage Wireguard peers
+Add a new Wireguard peer:
+```shell {title="Add a Wireguard peer"}
 pirogue-admin-client vpn add-peer
 ```
 
 The result will look like:
-```yaml
+```yaml {title="Example of a peer definition"}
 idx: 3
 private_key: YGe5EF//sIj6QF/2sglmx20b7jxgxFpV1sl8hXBDy34=
 public_key: 8lSksu3/HF8vCGi5lCOktI3C9L68PsfNhzDwyuAtMQ0=
 ```
 
-Get a list of current active VPN peers:
-```shell
+To get the a list of the currently configured peers, use the command:
+```shell {title="List the Wireguard peers"}
 pirogue-admin-client vpn list-peers
 ```
 
 The result will look like:
-```yaml
+```yaml {title="Example of list of Wireguard peers"}
 - idx: 2
   private_key: oA3PBMH5yhBCIykx1odFPbnH+QKq18FBPmdPU1MrmEQ=
   public_key: hdlwEsh7SQ0lEPC5Qpl66y9slJkhH4wUYEpzvkEq6V4=
@@ -240,21 +247,19 @@ The result will look like:
   public_key: 8lSksu3/HF8vCGi5lCOktI3C9L68PsfNhzDwyuAtMQ0=
 ```
 
-Delete a peer, given its index:
-```shell
+To delete a peer, you have to specify its index (`idx`):
+```shell {title="Delete the peer #2"}
 pirogue-admin-client vpn delete-peer 2
 ```
 
 ### Connect peers to the VPN
-
-To connect a VPN peer, we need to get its full configuration file.
-You can get the configuration using the following command:
-```shell
+To connect a peer to the Wireguard VPN, you first need to get its configuration. The peer configuration is returned by the command:
+```shell {title="Get the configuration of the peer #3"}
 pirogue-admin-client vpn get-peer-configuration 3
 ```
 
 The result looks like:
-```ini
+```ini {title="Example of peer configuration"}
 [Interface]
 Address = 10.8.0.3/24
 PrivateKey = YGe5EF//sIj6QF/2sglmx20b7jxgxFpV1sl8hXBDy34=
@@ -267,20 +272,40 @@ AllowedIPs = 0.0.0.0/0
 PersistentKeepAlive = 20
 ```
 
-We can save this content to a `.conf` file and load it on the mobile device we want to connect.
+You need to save the configuration of the peer in a `.conf` file to be loaded on the device. To do so, use the command: 
+```shell {title="Save the configuration of the peer #3 in the file my-peer-3.conf"}
+pirogue-admin-client vpn get-peer-configuration 3 > my-peer-3.conf
+```
 
-It's also possible to generate a QR code to scan it with the mobile device Wireguard application:
-```shell
+Alternatively, you can generate a QR-code to be scanned with the Wireguard mobile app:
+```shell {title="Get the configuration of the peer #3 QR-code"}
 pirogue-admin-client vpn get-peer-config 3 | qrencode -t ansiutf8
 ```
 
-## Public accessibility
+## Make the PiRogue accessible from the Internet
+Opening the PiRogue to the Internet refers to the ability for a PiRogue to be reached via the Internet. This notion is crucial for security 
+and PiRogue network configuration.
 
-**Public accessibility** refers to the ability of a PiRogue
-to be reached publicly via the internet.
-This notion is crucial for security and PiRogue network configuration.
+By default, the PiRogue dashboard and remote administration are not publicly exposed on the Internet.
 
-By default, PiRogue Dashboard and Remote administration are not accessible to the external world.
+{{< callout context="caution" title="Requirements" icon="info-circle" >}}
+To Make the PiRogue accessible from the Internet, you must have:
+* a managed domain name
+* a valid email address to register against certification authorities such as Let's Encrypt
+{{< /callout >}}
+
+Let's assume the following:
+* you own a domain name: `my-domain.org`
+* you have a valid administrative email address: `contact@my-domain.org`
+* the IP address on the Internet of your PiRogue is `185.199.111.153`
+* the domain `pirogue-lab.my-domain.org` resolves the IP address of your PiRogue: `pirogue-lab.my-domain.org. 3600	IN	A	185.199.111.153`
+
+To Make the PiRogue accessible from the Internet, you have to run the following command on your PiRogue:
+```shell {title="Make the PiRogue accessible from the Internet"}
+pirogue-admin-client external-network enable-public-access --domain pirogue-lab.my-domain.org --email contact@my-domain.org
+```
+
+Once successfully done, the dashboard of your PiRogue is accessible on `https://pirogue-lab.my-domain.org/dashboard`.
 
 ## Remote administration
 {{< callout context="caution" title="Warning" icon="info-circle" >}}
@@ -292,198 +317,42 @@ wants to perform remote administration, the configuration of
 the PiRogue and the administrator's computer is different.
 
 There are two main topologies possible:
-* Local Area Network (LAN): usually home or organization internal network,
-  connections will stay inside the network
-* Wide Area Network (WAN): when the PiRogue is exposed on Internet
+* Local Area Network (LAN): usually at home or in organization internal network, connections will be routed within the private network.
+* Wide Area Network (WAN): when the PiRogue is exposed on the Internet
 
 ### Administrator's computer setup
-Regardless of the administration network topology, we must install `pirogue-admin-client` on the administrator's computer.
-It can be done by adding our PPA:
-```shell
+Regardless of the administration network topology, you must install `pirogue-admin-client` on the administrator's computer.
+It can be done by adding our PPA and installing the required packages:
+```shell {title="Install the administration client on the administrator's computer"}
 # Install PiRogue PPA
 sudo wget -O /etc/apt/sources.list.d/pirogue.list https://pts-project.org/debian-12/pirogue.list
 sudo wget -O /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian-12/pirogue.gpg
 sudo apt update
 # Install pirogue-admin-client
 sudo apt install pirogue-admin-client
-# If we want to generate QR-Code
+# If we want to generate QR-codes
 sudo apt install qrencode
 ```
 
-### LAN administration
+### Administration over the Internet
+First of all, make sure to open your PiRogue to the Internet, see the instructions above.
 
-Let's assume the following topology:
-```kroki {type=PlantUML}
-@startuml
-
-!$PERSON_BG_COLOR="#7122dc"
-!$PERSON_FONT_COLOR="#ffffff"
-!$SYSTEM_BG_COLOR="#7122dc"
-!$SYSTEM_FONT_COLOR="#ffffff"
-!$CONTAINER_BG_COLOR="#7122dc"
-!$CONTAINER_FONT_COLOR="#ffffff"
-!$COMPONENT_BG_COLOR="#7122dc"
-!$COMPONENT_FONT_COLOR="#ffffff"
-!$EXTERNAL_PERSON_BG_COLOR="#9C88B6"
-!$EXTERNAL_PERSON_FONT_COLOR="#ffffff"
-!$EXTERNAL_SYSTEM_BG_COLOR="#9C88B6"
-!$EXTERNAL_SYSTEM_FONT_COLOR="#ffffff"
-!$EXTERNAL_CONTAINER_BG_COLOR="#9C88B6"
-!$EXTERNAL_CONTAINER_FONT_COLOR="#ffffff"
-!$EXTERNAL_COMPONENT_BG_COLOR="#9C88B6"
-!$EXTERNAL_COMPONENT_FONT_COLOR="#ffffff"
-
-!include C4_Component.puml
-HIDE_STEREOTYPE()
-
-
-Enterprise_Boundary(prv_network, 'Private network') {
-
-  Component(router, "Router", "192.168.1.0/24", "Entreprise LAN")
-
-  System_Boundary(pirogue, 'Pirogue') {
-    Component(pi_ext_itf, "External interface", "192.168.1.37")
-    Component_Ext(pi_iso_itf, "Isolated part", "Depend on operating mode")
-  }
-
-  System_Boundary(computer, 'Computer') {
-    Component(cp_itf, "Network interface", "192.168.1.25")
-  }
-
-  Person(admin, 'Admin')
-  Rel_U(admin, computer, '')
-  Rel_U(pi_ext_itf, router, '')
-  Rel_U(cp_itf, router, '')
-}
-
-@enduml
-```
-
-By default, PiRogue installation will generate a self-signed certificate to secure the connections between the PiRogue and the administration client.
-This certificate is needed to allow the administration daemon running on the PiRogue and by the administration client to communicate between each other securely.
-
-Get the self-signed certificate:
-```shell
-pirogue-admin-client external-network get-administration-certificate > virogue-external.cert
-```
-
-Get configuration commands:
-```shell
-pirogue-admin-client external-network get-administration-clis
-```
-
-Results look like:
-```yaml
-# One time client configuration
-pirogue-admin-client --save --host '192.168.1.37' --port 50051 --token UH77iumyt64BSThL6N06667SuTcKkOq2EkR5ckvQ5Ww
-```
-
-On the administration device, we can run the following command to configure the remote administration client:
-```shell
-# Replace <remote-user> by the user of your PiRogue installation
-scp <remote-user>@192.168.1.37:~/virogue-selfsigned.cert .
-pirogue-admin-client --save --host '192.168.1.37' --port 50051 --token UH77iumyt64BSThL6N06667SuTcKkOq2EkR5ckvQ5Ww --certificate ~/virogue-external.cert
-```
-
-Setup is done. Try running a first administration command:
-```shell
-pirogue-admin-client system get-configuration
-```
-
-### Online administration
-{{< callout context="caution" title="Requirements" icon="info-circle" >}}
-* a managed domain name or fully qualified named virtual machine
-* a valid email address to register against certification authorities
-{{< /callout >}}
-
-Let's assume the following topology:
-```kroki {type=PlantUML}
-@startuml
-
-!$PERSON_BG_COLOR="#7122dc"
-!$PERSON_FONT_COLOR="#ffffff"
-!$SYSTEM_BG_COLOR="#7122dc"
-!$SYSTEM_FONT_COLOR="#ffffff"
-!$CONTAINER_BG_COLOR="#7122dc"
-!$CONTAINER_FONT_COLOR="#ffffff"
-!$COMPONENT_BG_COLOR="#7122dc"
-!$COMPONENT_FONT_COLOR="#ffffff"
-!$EXTERNAL_PERSON_BG_COLOR="#9C88B6"
-!$EXTERNAL_PERSON_FONT_COLOR="#ffffff"
-!$EXTERNAL_SYSTEM_BG_COLOR="#9C88B6"
-!$EXTERNAL_SYSTEM_FONT_COLOR="#ffffff"
-!$EXTERNAL_CONTAINER_BG_COLOR="#9C88B6"
-!$EXTERNAL_CONTAINER_FONT_COLOR="#ffffff"
-!$EXTERNAL_COMPONENT_BG_COLOR="#9C88B6"
-!$EXTERNAL_COMPONENT_FONT_COLOR="#ffffff"
-
-!include C4_Component.puml
-HIDE_STEREOTYPE()
-
-
-Enterprise_Boundary(internet, 'Internet') {
-  Component(untrusted_router, "Untrusted router", "")
-}
-
-
-Enterprise_Boundary(prv_network, 'Private network') {
-
-  Component(router, "Router", "185.199.111.153\n192.168.1.0/24", "WAN Gateway\nEntreprise LAN")
-
-  System_Boundary(pirogue, 'Pirogue') {
-    Component(pi_ext_itf, "External interface", "192.168.1.37")
-    Component_Ext(pi_iso_itf, "Isolated part", "Depend on operating mode")
-  }
-
-  Rel_U(pi_ext_itf, router, '')
-}
-
-
-Rel_L(untrusted_router, router, 'pirogue-lab.my-domain.org\nresolves to')
-
-System_Boundary(computer, 'Computer') {
-  Component(cp_itf, "Network interface", "ANY")
-}
-
-
-Rel_U(cp_itf, untrusted_router, '')
-
-Person(admin, 'Admin')
-Rel_U(admin,computer, '')
-
-@enduml
-```
-
-Let's assume the following:
-* we own a domain name: `my-domain.org`
-* we have a valid administrative email address: `contact@my-domain.org`
-* the following DNS record exists: `pirogue-lab.my-domain.org. 3600	IN	A	185.199.111.153`
-* contacting port `80` on IP address `185.199.111.153`
-  is redirected to the port `80` on local IP address `192.168.1.37`
-* contacting port `50051` on IP address `185.199.111.153`
-  is redirected to the port `50051` on local IP address `192.168.1.37`
-
-Enable public exposure and access on the PiRogue:
-```shell
-pirogue-admin-client external-network enable-public-access --domain pirogue-lab.my-domain.org --email contact@my-domain.org
-```
-
-The authentication of the administration client uses a token. You can get the token with:
-```shell
+To connect to the PiRogue remotely, the administration client uses an authentication token. To get this token, use the command:
+```shell {title="Get the administration authentication token"}
 pirogue-admin-client external-network get-administration-token
 ```
 
-Or, you can reset it with:
-```shell
+The following command will reset the authentication token:
+```shell {title="Reset the administration authentication token"}
 pirogue-admin-client external-network reset-administration-token
 ```
 
-On the administrator's computer, we run the following command to configure the remote administration client:
-```shell
+On the administrator's computer, run the following command to configure the administration client:
+```shell {title="Configure the administration client on the administrator's computer"}
 pirogue-admin-client --save --host 'pirogue-lab.my-domain.org' --port 50051 --token <administration token>
 ```
 
-Test the communication between the administration client and the PiRogue with:
-```shell
+And finally, test the communication between the administration client and the PiRogue with:
+```shell {title="Example of remote administration from the administrator's computer"}
 pirogue-admin-client system get-configuration
 ```

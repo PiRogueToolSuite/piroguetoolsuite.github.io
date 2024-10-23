@@ -7,6 +7,11 @@ menu:
     parent: "version_2.x"
 weight: 852
 toc: true
+resources:
+- name: pirogue_isolated_device
+  src: img/pirogue-isolated-device.png
+- name: pirogue_operating_modes
+  src: img/pirogue-operating-modes.png
 ---
 
 {{< callout context="caution" title="PiRogue version >=2.0.0" icon="info-circle" >}}
@@ -23,7 +28,7 @@ ii  pirogue-base    2.0.2    all    Install all PiRogue packages
 The PiRogue functionalities are all controlled and configured by the `pirogue-admin` tool.
 `pirogue-admin` uses and writes its configuration files in the system folder: `/var/lib/pirogue/admin`.
 
-By default, on a first and fresh installation, `pirogue-admin` detects and generates the 
+By default, on a first and fresh installation, `pirogue-admin` detects and generates the
 best configuration for the current system.
 
 However, modifying this configuration can be done using the `pirogue-admin-client` tool after the initial installation.
@@ -97,74 +102,7 @@ Here are the different modes:
 * **Appliance mode**: when two different network interfaces are available on the system
 * **Access-point mode**: when two different network interfaces are available, one of which has WiFi capabilities
 
-
-```kroki {type=PlantUML}
-@startuml
-
-!$PERSON_BG_COLOR="#7122dc"
-!$PERSON_FONT_COLOR="#ffffff"
-!$SYSTEM_BG_COLOR="#7122dc"
-!$SYSTEM_FONT_COLOR="#ffffff"
-!$CONTAINER_BG_COLOR="#7122dc"
-!$CONTAINER_FONT_COLOR="#ffffff"
-!$COMPONENT_BG_COLOR="#7122dc"
-!$COMPONENT_FONT_COLOR="#ffffff"
-!$EXTERNAL_PERSON_BG_COLOR="#9C88B6"
-!$EXTERNAL_PERSON_FONT_COLOR="#ffffff"
-!$EXTERNAL_SYSTEM_BG_COLOR="#9C88B6"
-!$EXTERNAL_SYSTEM_FONT_COLOR="#ffffff"
-!$EXTERNAL_CONTAINER_BG_COLOR="#9C88B6"
-!$EXTERNAL_CONTAINER_FONT_COLOR="#ffffff"
-!$EXTERNAL_COMPONENT_BG_COLOR="#9C88B6"
-!$EXTERNAL_COMPONENT_FONT_COLOR="#ffffff"
-
-!include C4_Component.puml
-HIDE_STEREOTYPE()
-title Supported operating modes
-
-AddRelTag("wireless", $lineStyle = DashedLine())
-
-Person(Admin2, "Admin")
-
-System_Ext(device21, "Device 3", "Tested device")
-
-System_Boundary(virogue2, "Access-Point Mode") {
-  Component(isolated_itf2, "WiFi", "network interface", "Wireless")
-  Component(external_itf2, "External interface", "network interface", "Wired")
-  Rel_L(isolated_itf2, external_itf2, "")
-}
-
-Rel_D(Admin2, external_itf2, "administrate")
-Rel_U(device21, isolated_itf2, "connected to", $tags="wireless")
-
-Person(Admin0, "Admin")
-
-System_Ext(device01, "Device 1", "Tested device")
-
-System_Boundary(virogue0, "Appliance Mode") {
-  Component(isolated_itf0, "Isolated interface", "network interface", "Wired")
-  Component(external_itf0, "External interface", "network interface", "Wired")
-  Rel_L(isolated_itf0, external_itf0, "")
-}
-
-Rel_D(Admin0, external_itf0, "administrate")
-Rel_U(device01, isolated_itf0, "connected to")
-
-Person(Admin1, "Admin")
-
-System_Ext(device11, "Device 2", "Tested device")
-
-System_Boundary(virogue1, "Wireguard Mode") {
-  Component(isolated_itf1, "VPN", "wireguard service", "Virtual")
-  Component(external_itf1, "External interface", "network interface", "Wired")
-  Rel_L(isolated_itf1, external_itf1, "")
-}
-
-Rel_D(Admin1, external_itf1, "administrate")
-Rel_U(device11, isolated_itf1, "connected to")
-
-@enduml
-```
+{{< img src="pirogue_operating_modes" alt="PiRogue operating modes" class="d-block mx-auto" >}}
 
 Depending on the operating mode, `pirogue-admin-client` offers different configuration tools.
 
@@ -185,14 +123,63 @@ If you have forgotten the dashboard password, you can always retrieve it with th
 pirogue-admin-client dashboard get-configuration
 ```
 
+### Isolated port management
+By default, a PiRogue system blocks most traffic on the **Isolated** network side.
+
+By default, a PiRogue system controls DHCP and DNS requests
+and allows internet access accordingly for devices connected
+to the **Isolated** interface.
+
+All other traffic is blocked, including devices connecting
+to the PiRogue on local network.
+
+{{< img src="pirogue_isolated_device" alt="Device connected to PiRogue Isolated network interface" class="d-block mx-auto" >}}
+
+However, for specific investigations, the operator might want to provide
+custom services hosted on the PiRogue to devices connected to the **Isolated** network.
+
+To achieve this, the `pirogue-admin-client` offers the ability
+to manage ports on the isolated interface.
+
+(Note: In the following examples, port management is assumed to be related the isolated network interface.)
+
+It's possible, to get a list of open ports :
+```shell
+pirogue-admin-client isolated-network list-open-ports
+```
+
+And the result looks like (if any ports are open):
+```yaml
+- port: 8080
+- port: 9090
+```
+
+Open a port on isolated interface (e.g: `8080`):
+```shell
+pirogue-admin-client isolated-network open-port 8080
+```
+
+The administrator can close all open ports at once using the following command:
+```shell
+pirogue-admin-client isolated-network close-port
+```
+
+But, the administrator can close a single port (e.g: `8080`):
+```shell
+pirogue-admin-client isolated-network close-port --incoming-port 8080
+```
+
 ## **Access Point** mode configuration
 {{< callout context="note" title="WiFi access-point mode" icon="info-circle" >}}
 This section only applies if the current [operating mode](#operating-modes) is **Access Point** (a.k.a AP)
 {{< /callout >}}
 
-### Change the WiFi configuration
+By default, WiFi password is generated at installation.
+To retrieve WiFi connection information, we have to get the current WiFi configuration.
 
-Get the current WiFi configuration:
+### Get WiFi configuration
+
+To get the current WiFi configuration, use the following command:
 ```shell
 pirogue-admin-client wifi get-configuration
 ```
@@ -201,8 +188,13 @@ The result looks like:
 ```yaml
 country_code: FR
 passphrase: superlongkey
-ssid: PiRogue1
+ssid: PiRogue
 ```
+
+We can use these information to connect a device to the PiRogue access point,
+using `ssid` and `passphrase`.
+
+### Change the WiFi configuration
 
 Change the WiFi SSID and password:
 ```shell
@@ -282,6 +274,13 @@ It's also possible to generate a QR code to scan it with the mobile device Wireg
 pirogue-admin-client vpn get-peer-config 3 | qrencode -t ansiutf8
 ```
 
+## Public accessibility
+
+**Public accessibility** refers to the ability of a PiRogue
+to be reached publicly via the internet.
+This notion is crucial for security and PiRogue network configuration.
+
+By default, PiRogue Dashboard and Remote administration are not accessible to the external world.
 
 ## Remote administration
 {{< callout context="caution" title="Warning" icon="info-circle" >}}
@@ -459,6 +458,8 @@ Let's assume the following:
 * we own a domain name: `my-domain.org`
 * we have a valid administrative email address: `contact@my-domain.org`
 * the following DNS record exists: `pirogue-lab.my-domain.org. 3600	IN	A	185.199.111.153`
+* contacting port `80` on IP address `185.199.111.153`
+  is redirected to the port `80` on local IP address `192.168.1.37`
 * contacting port `50051` on IP address `185.199.111.153`
   is redirected to the port `50051` on local IP address `192.168.1.37`
 

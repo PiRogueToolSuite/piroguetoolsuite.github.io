@@ -90,7 +90,7 @@ pirogue-admin-client --help
 ```
 
 The tool is subdivided in sections on which `--help` can be shown, *e.g*:
-```shell {title="Example of administration commands"}
+```txt {linenos=true,title="Example of administration commands"}
 pirogue-admin-client wifi --help
 pirogue-admin-client wifi get-configuration --help
 pirogue-admin-client wifi set-configuration --help
@@ -151,7 +151,7 @@ pirogue-admin-client isolated-network list-open-ports
 ```
 
 And the result looks like (if any ports are open):
-```yaml {title="Example of list of the ports that have been opened"}
+```yaml {linenos=true,title="Example of list of the ports that have been opened"}
 - port: 8080
 - port: 9090
 ```
@@ -190,7 +190,7 @@ pirogue-admin-client wifi get-configuration
 ```
 
 The output looks like:
-```yaml {title="Example of WiFi access-point configuration"}
+```yaml {linenos=true,title="Example of WiFi access-point configuration"}
 country_code: FR
 passphrase: superlongkey
 ssid: PiRogue
@@ -226,7 +226,7 @@ pirogue-admin-client vpn add-peer
 ```
 
 The result will look like:
-```yaml {title="Example of a peer definition"}
+```yaml {linenos=true,title="Example of a peer definition"}
 idx: 3
 private_key: YGe5EF//sIj6QF/2sglmx20b7jxgxFpV1sl8hXBDy34=
 public_key: 8lSksu3/HF8vCGi5lCOktI3C9L68PsfNhzDwyuAtMQ0=
@@ -238,7 +238,7 @@ pirogue-admin-client vpn list-peers
 ```
 
 The result will look like:
-```yaml {title="Example of list of Wireguard peers"}
+```yaml {linenos=true,title="Example of list of Wireguard peers"}
 - idx: 2
   private_key: oA3PBMH5yhBCIykx1odFPbnH+QKq18FBPmdPU1MrmEQ=
   public_key: hdlwEsh7SQ0lEPC5Qpl66y9slJkhH4wUYEpzvkEq6V4=
@@ -259,7 +259,7 @@ pirogue-admin-client vpn get-peer-configuration 3
 ```
 
 The result looks like:
-```ini {title="Example of peer configuration"}
+```ini {linenos=true,title="Example of peer configuration"}
 [Interface]
 Address = 10.8.0.3/24
 PrivateKey = YGe5EF//sIj6QF/2sglmx20b7jxgxFpV1sl8hXBDy34=
@@ -289,7 +289,7 @@ and PiRogue network configuration.
 By default, the PiRogue dashboard and remote administration are not publicly exposed on the Internet.
 
 {{< callout context="caution" title="Requirements" icon="info-circle" >}}
-To Make the PiRogue accessible from the Internet, you must have:
+To make the PiRogue accessible from the Internet, you must have:
 * a managed domain name
 * a valid email address to register against certification authorities such as Let's Encrypt
 {{< /callout >}}

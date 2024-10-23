@@ -66,6 +66,10 @@ sudo apt-get update
 sudo apt-get install pirogue-base
 ```
 
+During the installation, if prompted, you will have to answer:
+
+- `Yes` to allow non-superusers to capture network traffic.
+
 Afterwards, the complete configuration can be inspected using the following
 command (no need to be `root`):
 
@@ -118,6 +122,10 @@ sudo wget -O /etc/apt/trusted.gpg.d/pirogue.gpg   https://pts-project.org/debian
 sudo apt-get update
 sudo apt-get install pirogue-base
 ```
+
+During the installation, if prompted, you will have to answer:
+
+- `Yes` to allow non-superusers to capture network traffic.
 
 Afterwards, the complete configuration can be inspected using the following
 command (no need to be `root`):

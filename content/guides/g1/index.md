@@ -7,9 +7,13 @@ license: CC-BY-SA
 contributors: ["Esther Onfroy"]
 ---
 
-PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensic and network traffic analysis platform targeting mobile devices both Android and iOS, internet of things devices (devices that are connected to the user mobile apps), and in general any device using wi-fi to connect to the Internet.
+PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and network traffic analysis platform targeting mobile devices both Android and iOS, internet of things devices, and in general any devices using WiFi to connect to the Internet.
 
 {{< img src="img/pirogue.jpg" alt="The PiRogue" class="d-block mx-auto shadow md-5" >}}
+
+{{< callout context="caution" title="Raspberry Pi-based PiRogue" icon="info-circle" >}}
+This guide explains how to install PiRogue on a Raspberry Pi. To learn how to install PiRogue in other configurations, refer to the [installation documentation](/docs/pirogue/installation/).
+{{< /callout >}}
 
 ## Main PiRogue capabilities
 
@@ -151,7 +155,7 @@ Now, connect to your PiRogue using SSH.
 ssh pi@pirogue.local
 ```
 
-Type `raspberry` which is the default password and press `Enter`.
+Type `raspberry` which is the default password of the user `pi` and press `Enter`.
 
 Once connected, you have to finalize the installation of your PiRogue by running the following commands, copy each line separately one by one:
 
@@ -179,11 +183,43 @@ After the reboot, wait a few minutes, you will then be able to connect a Wi-Fi d
 The telemetry is enabled by default but you can easily opt out. Find more details in the [section dedicated to the telemetry](/docs/pirogue/telemetry/).
 {{< /callout >}}
 
-First, connect a wi-fi device such as your smartphone to the PiRogue's wi-fi network `PiRogue1` (default password: `superlongkey`). Next, open the PiRogue's dashboard by going at `http://<PiRogue IP address>/dashboard` (default credentials: `admin:PiRogue`) with your Web browser or directly with this link:
+### Default passwords
+Before connecting a device to the WiFi access point of the PiRogue or opening the dashboard, you have to determine what version of PiRogue you are using. To do so,
+run the following command on your PiRogue. The version of your PiRogue corresponds to the version of the package `pirogue-base`.
+```shell {title="PiRogue version 2.0.2 is installed"}
+$ dpkg -l | grep pirogue-base
+ii  pirogue-base    2.0.2    all    Install all PiRogue packages
+```
 
-[Open your dashboard →](http://pirogue.local/dashboard)
+{{< tabs "wifi-and-dashboard-configuration" >}}
+{{< tab "PiRogue version 2.x" >}}
 
-On older versions of PiRogue, the dashboard was accessible at the address [http://pirogue.local:3000](http://pirogue.local:3000)
+In this version of PiRogue, the passphrase of the WiFi access-point and the password of the dashboard are randomly generated during the installation. 
+
+On your PiRogue
+* the command `pirogue-admin-client wifi get-configuration` will give you the passphrase of the WiFi
+* the command `pirogue-admin-client dashboard get-configuration` will give you the password of the dashboard for the user `admin`
+
+The dashboard is accessible on `http://pirogue.local/dashboard`.  
+If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_2.x/configuration/).
+
+---
+
+{{< /tab >}}
+{{< tab "PiRogue version 1.x" >}}
+
+In this version of PiRogue:
+
+* the default passphrase of the WiFi is `superlongkey`
+* the default password of the dashboard for the user `admin` is `PiRogue`
+
+The dashboard is accessible on `http://pirogue.local:3000`.  
+If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_1.x/configuration/).
+
+---
+
+{{< /tab >}}
+{{< /tabs >}}
 
 It will take around 4 minutes before network flows start appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard by pressing `F5` key on your keyboard.
 
@@ -196,10 +232,6 @@ The second way is to use the ping command. To do so, on your computer connected 
 ```bash
 ping -c1 pirogue.local
 ```
-
-{{< callout context="note" title="Note" icon="info-circle" >}}
-To customize your PiRogue relying on your organizations internal guideline, check [how to configure your PiRogue](/docs/pirogue/version_1.x/configuration/).
-{{< /callout >}}
 
 ## Continuous network traffic analysis
 
@@ -226,19 +258,6 @@ Suricata is disabled on devices having less than 2.5GB of RAM.
 The results of the PiRogue's automatic analysis can be visualized in the dashboard. This dashboard provides a graphical overview of the network traffic that has been analyzed, as well as any threats that have been detected. The dashboard also allows users to drill down into the details of specific network flows to learn more about them.
 
 ## The dashboard
-By default, your PiRogue exposes a [Grafana](https://grafana.com/docs/grafana/latest/basics/) dashboard showing in realtime the ongoing network connections, security alerts and few other information. Checkout the [cheatsheet](/docs/pirogue/cheatsheet/) to get default user and password of the dashboard. 
-
-[Open your dashboard →](http://pirogue.local:3000) 
-
-The default credentials of the dashboard are:
-
-* username: `admin`
-* password: `PiRogue` 
-
-If you want to change the password, please refer to the [configuration documentation](/docs/pirogue/version_1.x/configuration/).
-
-Depending on your network configuration, this link above may not work. If so, check how to get the IP address of your PiRogue in the previous section.
-
 {{< callout context="caution" title="Data retention" icon="alert-triangle" >}}
 The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted. 
 {{< /callout >}}

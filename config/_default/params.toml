@@ -1,6 +1,6 @@
 # Hugo
 title = "PiRogue Tool Suite"
-description = "PiRogue tool suite (PTS) provides a platform combining analysis tools, knowledge management, incident response management and artifact management, which allows NGOs with limited resources to equip themselves at a low cost. The project consists of an open-source tool suite that provides a comprehensive mobile device forensics and network traffic analysis platform targeting mobile devices, both for Android and iOS."
+description = "PiRogue tool suite (PTS) provides a platform combining forensics tools, knowledge management, incident response management and artifact management, which allows civil society organizations with limited resources to equip themselves at a low cost. The project consists of an open-source tool suite that provides a comprehensive mobile device forensics and network traffic analysis platform targeting mobile devices, both for Android and iOS."
 images = ["cover.png"]
 
 # mainSections

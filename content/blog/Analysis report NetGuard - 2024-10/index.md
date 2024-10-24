@@ -9,6 +9,7 @@ weight: 50
 toc: true
 contributors: ["Esther Onfroy"]
 images: []
+categories: ['analysis reports']
 ---
 
 ---

@@ -7,6 +7,7 @@ lastmod: 2023-05-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+categories: ['activity reports']
 ---
 
 # Context of the project

@@ -7,6 +7,7 @@ lastmod: 2024-03-31
 draft: false
 weight: 50
 contributors: ["Esther Onfroy"]
+categories: ['activity reports']
 ---
 
 # What we have done so far

@@ -12,6 +12,7 @@ outputs:
    - 'html'
    - 'email'
 contributors: ["Esther Onfroy"]
+categories: ['activity reports']
 ---
 
 # Project overview

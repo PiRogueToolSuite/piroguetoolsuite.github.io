@@ -11,6 +11,8 @@ outputs:
    - 'html'
    - 'email'
 contributors: ["Esther Onfroy"]
+featured: true
+categories: ['announcements']
 ---
 
 We’re thrilled to announce the **release of PiRogue v2**, and it’s packed with powerful upgrades! 🎯 Get ready to experience a **sleeker deployment**, and **new features** that give you even more control over your PiRogue.

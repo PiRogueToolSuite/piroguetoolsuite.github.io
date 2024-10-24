@@ -18,11 +18,9 @@ We’re thrilled to announce the **release of PiRogue v2**, and it’s packed wi
 **What’s new in PiRogue v2?**
 * ✨ **Revamped Administration** – Manage your PiRogue easier, locally or remotely.
 * 🌐 **Sleeker Deployment** – Deploy PiRogue on your local network or in the cloud.
-* 🔎 **Improve traffic analysis** – Analyze the traffic of devices over Internet.
+* 🔎 **Improved Traffic Analysis** – Analyze the traffic of devices over Internet.
+* 👾 **New Operating Modes** - PiRogue now supports Wi-Fi access-point, appliance and VPN.
 
-It’s everything you love about PiRogue—now more powerful and efficient! 💪
+{{< img src="img/pirogue-operating-modes.png" alt="PiRogue operating modes" class="d-block mx-auto" >}}
 
 Ready to explore? [Deploy your PiRogue today](/docs/pirogue/installation/)!
-
-Best,  
-The PTS Team  

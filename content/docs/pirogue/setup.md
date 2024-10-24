@@ -10,6 +10,39 @@ menu:
 weight: 720
 toc: true
 ---
+{{< callout context="caution" title="Breaking changes" icon="alert-triangle" >}}
+The newer version (`>=2.x`)has implemented significant changes to the dashboard and WiFi configuration, resulting in compatibility issues with previous setups. To know the version of your PiRogue, simply check the version of the package `pirogue-base`.
+```shell {title="PiRogue version 2.0.3 is installed"}
+$ dpkg -l | grep pirogue-base
+ii  pirogue-base    2.0.3    all    Install all PiRogue packages
+```
+See below the default configuration depending on the version of your PiRogue:
+{{< tabs "wifi-and-dashboard-configuration" >}}
+{{< tab "PiRogue version 2.x" >}}
+
+In this version of PiRogue, the passphrase of the WiFi access-point and the password of the dashboard are randomly generated during the installation. 
+
+On your PiRogue
+* the command `pirogue-admin-client wifi get-configuration` will give you the passphrase of the WiFi
+* the command `pirogue-admin-client dashboard get-configuration` will give you the password of the dashboard for the user `admin`
+
+The dashboard is accessible on `http://pirogue.local/dashboard`.  
+If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_2.x/configuration/).
+
+{{< /tab >}}
+{{< tab "PiRogue version 1.x" >}}
+
+In this version of PiRogue:
+
+* the default passphrase of the WiFi is `superlongkey`
+* the default password of the dashboard for the user `admin` is `PiRogue`
+
+The dashboard is accessible on `http://pirogue.local:3000`.  
+If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_1.x/configuration/).
+
+{{< /tab >}}
+{{< /tabs >}}
+{{< /callout >}}
 
 ## Installing PiRogue on a Raspberry Pi
 

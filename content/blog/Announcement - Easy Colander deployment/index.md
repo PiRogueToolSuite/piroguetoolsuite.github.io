@@ -1,6 +1,7 @@
 ---
-title:  "🚀 Deploy Colander in 10 minutes"
-description: "🚀 Deploy Colander in 10 minutes"
+title:  "🚀 Self-host Colander in 10 minutes"
+description: "🚀 Self-host Colander in 10 minutes"
+slug: deploy-colander-in-10-minutes
 date: 2025-02-20
 lastmod: 2025-02-20
 summary: "Deploy, update, and manage Colander with ease!  We're thrilled to release our new Ansible playbooks, simplifying the entire Colander deployment process for a smoother, more efficient experience."

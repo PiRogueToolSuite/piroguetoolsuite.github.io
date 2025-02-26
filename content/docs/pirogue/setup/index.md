@@ -11,7 +11,7 @@ weight: 720
 toc: true
 ---
 {{< callout context="caution" title="Breaking changes" icon="alert-triangle" >}}
-The newer version (`>=2.x`)has implemented significant changes to the dashboard and WiFi configuration, resulting in compatibility issues with previous setups. To know the version of your PiRogue, simply check the version of the package `pirogue-base`.
+The newer version (`>=2.x`) has implemented significant changes to the dashboard and WiFi configuration, resulting in compatibility issues with previous setups. To know the version of your PiRogue, simply check the version of the package `pirogue-base`.
 ```shell {title="PiRogue version 2.0.3 is installed"}
 $ dpkg -l | grep pirogue-base
 ii  pirogue-base    2.0.3    all    Install all PiRogue packages
@@ -119,7 +119,7 @@ Important variables:
  - `WIFI_PASSPHRASE` is the passphrase used for the Wi-Fi network, when
    operating in “access point” mode, also generated during the install.
  - `EXTERNAL_ADDRESS` is where the dashboard is exposed, it's accessible at
-   <http://$EXTERNAL_ADDRESS/dashboard>.
+   `http://$EXTERNAL_ADDRESS/dashboard`.
 
 See [Configuration](/docs/pirogue/version_2.x/configuration/) for instructions
 on how to change those generated secrets.
@@ -187,7 +187,7 @@ There are two big differences though:
  2. We need to create WireGuard peers, and configure the VPN on e.g. phones to be
     analyzed.
 
-Here, we assume :
+Here, we assume:
  * a DNS record exists already, pointing to the public IP address of the
 PiRogue.
  * port `80` and `443` from your public IP address fully translate to your PiRogue respective ports
@@ -199,7 +199,7 @@ be done this way:
 pirogue-admin-client external-network enable-public-access --domain pirogue.example.org --email contact@example.org
 ```
 
-The dashboard is available at <https://pirogue.example.org/dashboard> afterwards.
+The dashboard is available at `https://pirogue.example.org/dashboard` afterwards.
 
 To create a VPN peer, run the following commands, then scan the QR code using
 the WireGuard application on the phone, and enable the VPN:

@@ -68,7 +68,7 @@ This permission is asked in order to scan QRcodes to load a wallet address.
 
 ## Traffic Analysis
 
-The application was dynamically analyzed with PTS and custom frida scripts to decrypt flutter's HTTPS communications, this analysis showed that the application communicates exclusively with `shmacash.com`. The content of the requests seem to be themselves further encrypted with rolling AES keys, which are themselves encrypted using RSA 2048 in each requests.
+The application was dynamically analyzed with PTS and custom frida scripts to decrypt flutter's HTTPS communications, this analysis showed that the application communicates exclusively with `shamcash.com`. The content of the requests seem to be themselves further encrypted with rolling AES keys, which are themselves encrypted using RSA 2048 in each requests.
 
 Except for the login request, which is different, all other requests uses the same encrypted format.
 

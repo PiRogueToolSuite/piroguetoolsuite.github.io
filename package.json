@@ -35,7 +35,7 @@
     "hugo-installer": "^4.0.1"
   },
   "devDependencies": {
-    "shx": "^0.3.4"
+    "shx": "^0.4.0"
   },
   "otherDependencies": {
     "hugo": "0.123.7"

@@ -1,9 +1,9 @@
 ---
-title: Analysis of Istanbul Senin
+title: Analysis of Istanbul Senin app
 summary: ""
 lead: ""
-date: 2025-04-01
-lastmod: 2025-04-01
+date: 2025-03-31
+lastmod: 2025-03-31
 draft: true
 weight: 50
 toc: true

@@ -2,8 +2,8 @@
 title: Analysis of Istanbul Senin
 summary: "Istanbul Senin is a heavily protected Android application designed to give information about Istanbul and its many activities. The app is heavily protected and asks for a lot of concerning permissions."
 lead: ""
-date: 2025-04-01
-lastmod: 2025-04-05
+date: 2025-03-31
+lastmod: 2025-03-31
 draft: false
 weight: 50
 toc: true

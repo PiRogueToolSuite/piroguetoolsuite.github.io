@@ -74,11 +74,11 @@ This application requests the following permissions:
 - `com.google.android.c2dm.permission.RECEIVE`: Allows an application to receive push notifications from cloud.
 - `com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE`: A custom permission defined by Google.
 - `com.google.android.gms.permission.AD_ID`: This app uses a Google advertising ID and can possibly serve advertisements.
+- `android.permission.AUDIO_CAPTURE`: used to grant permissions for the WebRTC API
+- `android.permission.VIDEO_CAPTURE`: used to grant permissions for the WebRTC API
 
 #### Unknown permissions
 
-- `android.permission.AUDIO_CAPTURE`
-- `android.permission.VIDEO_CAPTURE`
 - `com.tr.gov.ibb.istanbulsenin.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION`
 - `com.tr.gov.ibb.istanbulsenin.permission.PROCESS_PUSH_MSG`
 - `com.tr.gov.ibb.istanbulsenin.permission.PUSH_PROVIDER`
@@ -125,33 +125,33 @@ However, we could observe that the app comunicates with the following domains:
 
 ### Tracking domains:
 
-- o1052226.ingest.sentry.io
+- o1052226.ingest.sentry[.]io
 
 ### Kobil server
 
 These domains are part of the Kobil SDKs, a kobil app is always connected to a dedicated server.
 
-- ibb03.api.ibb-prod.istanbulsenin.kobil.com
-- telemetry.ibb-prod.istanbulsenin.kobil.com
-- smartscreen.ibb-prod.istanbulsenin.kobil.com
-- icerik-web.miniapp-prod.istanbulsenin.kobil.com
+- ibb03.api.ibb-prod.istanbulsenin.kobil[.]com
+- telemetry.ibb-prod.istanbulsenin.kobil[.]com
+- smartscreen.ibb-prod.istanbulsenin.kobil[.]com
+- icerik-web.miniapp-prod.istanbulsenin.kobil[.]com
 
 ### Istanbul services
 
 These domains are contacted when we open the "mini-apps" on the application. These "mini-apps" are basically webviews that opens inside the Istanbul Senin app, providing various services, from air quality levels, to trees locations, where to get water, and much more.
 This list is only a few domains contacted, there are a lot more, but it wouldn't make much sense copying them all here.
 
-- hamidiyesu.istanbulsenin.istanbul
-- icerik.istanbulsenin.istanbul
-- anitagac.istanbul
+- hamidiyesu.istanbulsenin[.]istanbul
+- icerik.istanbulsenin[.]istanbul
+- anitagac[.]istanbul
 - ...
 
 ### Governement services:
 
 In the middle of all the domains contacted, a few of them belongs to the Turkish government.
 
-- services.ibb.gov.tr
-- haritaservis.ibb.gov.tr
+- services.ibb.gov[.]tr
+- haritaservis.ibb.gov[.]tr
 
 ## Conclusion
 

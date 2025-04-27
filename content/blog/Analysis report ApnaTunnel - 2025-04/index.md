@@ -129,7 +129,7 @@ You will find in the Annex section a Python script used to replace the obfuscate
 
 The APK embeds several shared libraries, all of them were checked on VirusTotal, none of them raising any issues. 
 
-```
+```sh
 7ebb29f727ec227baed056697ce37834  libovpn3.so
 5194c64639938b1fc3282060c4c62d92  libpdnsd.so
 1c00aabf7512d36850cde80d8b3ba504  libprinsipe.so
@@ -143,7 +143,7 @@ c19920ebe4a630935fd434e9fd6c6755  libxray.so
 
 The application writes files to the file system, containing the openvpn configuration it uses. 
 
-```
+```sh
 client
 dev tun
 remote 0.0.0.0 1194
@@ -281,7 +281,7 @@ This data when decoded does not appear to be something intelligible, it's entrop
 This request is the exact same of the one that is made when clicking the "Update online" button in the "Config Updater" of the application.
 
 
-When connecting to the various VPN servers, we encounter various behahviors. Some connections are initiated with a websocket to a random subdomain of `frogflyer[.]xyz`, some other don't. Many of the connections we tried were not working. Some other connections instantly sent continuous data over the VPN but we couldn't figure out what it was. Another initiated a connection to `econet.zigssh[.]com`.
+When connecting to the various VPN servers, we encounter various behaviors. Some connections are initiated with a websocket to a random subdomain of `frogflyer[.]xyz`, some other don't. Many of the connections we tried were not working. Some other connections instantly sent continuous data over the VPN but we couldn't figure out what it was. Another initiated a connection to `econet.zigssh[.]com`.
 
 
 ## Conclusion
@@ -290,7 +290,7 @@ The analysis of **APNA Tunnel Lite v27** reveals a simple application that provi
 
 The permissions requested seems acceptable for such an application, except maybe for `android.permission.USE_CREDENTIALS` which may raise some questions. This permission is the older version of the `android.permission.ACCOUNT_MANAGER`, but it has been removed from Android since version `6.0`. On these versions, it would allow access to the [Account Manager](https://developer.android.com/reference/android/accounts/AccountManager) class.
 
-Apart from this permission and the weird server management and connction, the application seems to be doing its job of providing free VPN access to users in countries with restricted internet.
+Apart from this permission and the weird server management and connection, the application seems to be doing its job of providing free VPN access to users in countries with restricted internet.
 
 ### Annex
 

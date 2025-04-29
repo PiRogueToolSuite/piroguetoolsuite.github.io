@@ -19,7 +19,7 @@ This guide explains how to install PiRogue on a Raspberry Pi. To learn how to in
 
 The PiRogue is an open hardware device based on a Raspberry Pi operating as a network router (like any ISP router) analyzing network traffic in real time.
 
-It can operate in different modes: 
+It can operate in different modes:
 - an on-the-field mode
   - for emergency response (active spying, device tampering, ...) useful for responders in repressive environment
   - conduct forensics analysis and network detection using a pre-installed set of tools
@@ -27,13 +27,13 @@ It can operate in different modes:
 - an expert mode for technical people to:
   - determine the list of collected data
   - assess regulatory compliance
-  - conduct penetration testing 
+  - conduct penetration testing
   - analyze malware's behavior
   - ensure reproducible analysis
   - generate comprehensive reports
 
 ## The hardware you need
-In addition to a computer and an Internet connection, you will need, at least, a Raspberry Pi (+ its power supply), a micro SD-card and an ethernet cable. 
+In addition to a computer and an Internet connection, you will need, at least, a Raspberry Pi (+ its power supply), a micro SD-card and an ethernet cable.
 
 ### Pick a Raspberry Pi
 
@@ -52,7 +52,7 @@ First, you need a Raspberry Pi. We support the following versions of Raspberry P
 <sup>2</sup> We are actively developing Raspberry Pi 5 support. Download the experimental PiRogue OS version for Raspberry Pi 5 from our download page.
 </small>
 
-If you want to buy a Raspberry Pi, visit [the rpilocator website](https://rpilocator.com/?cat=PI4) to check for availability. 
+If you want to buy a Raspberry Pi, visit [the rpilocator website](https://rpilocator.com/?cat=PI4) to check for availability.
 
 {{< callout context="caution" title="Power supply" icon="alert-triangle" >}}
 Be sure to have an appropriate power supply for your PiRogue. If you don't know what to choose, pick the official Raspberry Pi power supply.
@@ -91,7 +91,7 @@ If you don't feel comfortable with building the case or the hat, feel free to bu
 ## Install PiRogue OS
 
 ### Get PiRogue OS
-PiRogue OS is periodically released. The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema 
+PiRogue OS is periodically released. The OS is pre-configured so you just need to flash it on a micro SD-card. The image (the binary file to be flashed on the SD-card) is compressed. The file you have to download on your computer has a name following this schema
 `PiRogue-OS-<Debian major version>-<supported hardware>-<year>-<month>-<day>.img.xz`.
 
 [Download the latest version of PiRogue OS →](https://github.com/PiRogueToolSuite/pirogue-images/releases/latest)
@@ -169,7 +169,7 @@ Once connected, you have to finalize the installation of your PiRogue by running
 During the installation, if prompted, you will have to answer:
 * `No` to save firewall rules for IP v4
 * `No` to save firewall rules for IP v6
-* `Yes` to allow non-root users to capture network traffic 
+* `Yes` to allow non-root users to capture network traffic
 
 {{< img src="img/install-1.png" alt="Allow non-root users to capture network traffic" class="d-block mx-auto shadow" >}}
 
@@ -194,16 +194,17 @@ ii  pirogue-base    2.0.2    all    Install all PiRogue packages
 {{< tabs "wifi-and-dashboard-configuration" >}}
 {{< tab "PiRogue version 2.x" >}}
 
-In this version of PiRogue, the passphrase of the WiFi access-point and the password of the dashboard are randomly generated during the installation. 
+In this version of PiRogue, the passphrase of the WiFi access-point and the password of the dashboard are randomly generated during the installation.
 
 On your PiRogue
 * the command `pirogue-admin-client wifi get-configuration` will give you the passphrase of the WiFi
 * the command `pirogue-admin-client dashboard get-configuration` will give you the password of the dashboard for the user `admin`
 
-The dashboard is accessible on `http://pirogue.local/dashboard`.  
+The dashboard is accessible on `https://pirogue.local/dashboard`.
+You have to [trust the default self-signed certificate](/cookbooks/pirogue-trust-self-signed-certificate/).
+
 If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_2.x/configuration/).
 
----
 
 {{< /tab >}}
 {{< tab "PiRogue version 1.x" >}}
@@ -213,13 +214,13 @@ In this version of PiRogue:
 * the default passphrase of the WiFi is `superlongkey`
 * the default password of the dashboard for the user `admin` is `PiRogue`
 
-The dashboard is accessible on `http://pirogue.local:3000`.  
+The dashboard is accessible on `http://pirogue.local:3000`.
 If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_1.x/configuration/).
-
----
 
 {{< /tab >}}
 {{< /tabs >}}
+
+---
 
 It will take around 4 minutes before network flows start appearing in the dashboard. At the first start of your PiRogue the dashboard will look empty or broken. Don't worry, connect a device to the PiRogue's WiFi network, wait 5 minutes and refresh the dashboard by pressing `F5` key on your keyboard.
 
@@ -259,7 +260,7 @@ The results of the PiRogue's automatic analysis can be visualized in the dashboa
 
 ## The dashboard
 {{< callout context="caution" title="Data retention" icon="alert-triangle" >}}
-The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted. 
+The PiRogue keeps 5 days of history, data older than 5 days is automatically deleted.
 {{< /callout >}}
 
 The default dashboard is composed of different panels, we will go through the main ones.

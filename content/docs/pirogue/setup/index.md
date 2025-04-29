@@ -26,7 +26,9 @@ On your PiRogue
 * the command `pirogue-admin-client wifi get-configuration` will give you the passphrase of the WiFi
 * the command `pirogue-admin-client dashboard get-configuration` will give you the password of the dashboard for the user `admin`
 
-The dashboard is accessible on `http://pirogue.local/dashboard`.
+The dashboard is accessible on `https://pirogue.local/dashboard`.
+You have to [trust the default self-signed certificate](/cookbooks/pirogue-trust-self-signed-certificate/).
+
 If you want to change the passwords, please refer to the [configuration documentation](/docs/pirogue/version_2.x/configuration/).
 
 {{< /tab >}}
@@ -118,8 +120,10 @@ Important variables:
  - `DASHBOARD_PASSWORD` is the password for the dashboard, generated during the install.
  - `WIFI_PASSPHRASE` is the passphrase used for the Wi-Fi network, when
    operating in “access point” mode, also generated during the install.
- - `EXTERNAL_ADDRESS` is where the dashboard is exposed, it's accessible at
-   `http://$EXTERNAL_ADDRESS/dashboard`.
+ - `EXTERNAL_ADDRESS` and `SYSTEM_HOSTNAME` is where the dashboard is exposed,\
+   it's accessible at **https://`EXTERNAL_ADDRESS`/dashboard**\
+   or **https://`SYSTEM_HOSTNAME`.local/dashboard**.\
+   In both cases, unless you [enable public external access](/docs/pirogue/version_2.x/configuration/#make-the-pirogue-accessible-from-the-internet), you have to [trust the default self-signed certificate](/cookbooks/pirogue-trust-self-signed-certificate/).
 
 See [Configuration](/docs/pirogue/version_2.x/configuration/) for instructions
 on how to change those generated secrets.

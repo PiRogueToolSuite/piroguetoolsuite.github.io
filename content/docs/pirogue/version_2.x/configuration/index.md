@@ -135,7 +135,8 @@ The password of the dashboard can be changed with:
 pirogue-admin-client dashboard set-configuration --password 'mySuperSecretPassword!'
 ```
 
-The dashboard is accessible on `http://<PiRogue IP address>/dashboard` when the PiRogue is running in the modes access-point or appliance.
+The dashboard is accessible on `https://<PiRogue IP address>/dashboard` when the PiRogue is running in the modes access-point or appliance.
+You have to [trust the default self-signed certificate](/cookbooks/pirogue-trust-self-signed-certificate/).
 
 ### Network ports management
 By default, the PiRogue blocks most of the network traffic coming from the isolated network except the traffic on the Internet.

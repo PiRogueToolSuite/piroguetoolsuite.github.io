@@ -42,12 +42,16 @@ if (window.localStorage) {
 
 allTabs.forEach((currTab) => {
   let tabInstance = new Tab(currTab);
-  currTab.addEventListener('click', (event, noMoreCascade) => {
+  currTab.addEventListener('shown.bs.tab', (event) => {
     let toggleTabValue = currTab.getAttribute('data-toggle-tab');
     if (!toggleTabValue) return;
 
     // Save tab preference
     tabPreference(currTab, toggleTabValue);
+  });
+  currTab.addEventListener('click', (event) => {
+    let toggleTabValue = currTab.getAttribute('data-toggle-tab');
+    if (!toggleTabValue) return;
 
     // Try to switch all 'same' tab at the same time on the current page
     let otherTabs = document.querySelectorAll('[data-toggle-tab=' + toggleTabValue + ']');

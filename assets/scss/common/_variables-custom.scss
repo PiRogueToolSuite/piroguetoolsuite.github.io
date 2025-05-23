@@ -5,7 +5,17 @@ $font-family-sans-serif:      "Open Sans Light", arial, "Noto Sans", sans-serif,
 $font-family-monospace:       "JetBrains Mono Light", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif !default;
 $font-family-code:            $font-family-monospace !default;
-$font-size-base:              0.98rem; // Assumes the browser default, typically `16px`
+$font-size-root: 14px;
+$font-size-base: 1rem;
+
+$font-weight-lighter:         300;
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-medium:          400;
+$font-weight-semibold:        500;
+$font-weight-bold:            500;
+$font-weight-bolder:          600;
+
 $font-size-xl:                $font-size-base * 1.375;
 $font-size-lg:                $font-size-base * 1.25;
 $font-size-md:                $font-size-base * 1.125;
@@ -16,23 +26,27 @@ $purple:   #7122dc;
 $brown:    #aa9c84;
 $purple-300:#a88dce;
 $primary: $purple;
+$secondary: $purple-300;
 
 // Links
 $link-color:                $primary;
 $link-decoration:           none;
-$link-color-dark:           $purple-300;
+$link-color-dark:           $secondary;
+
+// Cards
+$card-title-color: $secondary;
 
 // Link icons
 $icon-link-icon-size: inherit;
 $icon-link-icon-transform: translate3d(.5em, 0, 0) !default;
 
 // Buttons
-$button-color-dark:         $link-color-dark;
-$focus-color-dark:          lighten($link-color-dark, 2.5%);
+$button-color-dark:         $secondary;
+$focus-color-dark:          lighten($secondary, 2.5%);
 
 // Navbar
-$navbar-dark-hover-color:   $link-color-dark;
-$navbar-dark-active-color:  $link-color-dark;
+$navbar-dark-hover-color:   $secondary;
+$navbar-dark-active-color:  $secondary;
 
 // Shadows
 $box-shadow:                0 .5rem 1rem rgba($purple, .15);
@@ -43,13 +57,17 @@ $box-shadow-inset:          inset 0 1px 2px rgba($purple, .075);
 $spacers: (
   0: 0,
   1: $spacer * .25,
-  2: $spacer * .5, 
+  2: $spacer * .5,
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 4,
   7: $spacer * 5
 ) !default;
+
+html {
+  letter-spacing: 0.025rem;
+}
 
 img {
   margin-bottom: $spacer;
@@ -93,7 +111,7 @@ figcaption {
 }
 
 .blink {
-  animation: blink 0.75s infinite; 
+  animation: blink 0.75s infinite;
 }
 
 .custom-terminal {

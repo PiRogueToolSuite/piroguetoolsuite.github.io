@@ -157,16 +157,20 @@ ssh pi@pirogue.local
 
 Type `raspberry` which is the default password of the user `pi` and press `Enter`.
 
-Once connected, you have to finalize the installation of your PiRogue by running the following commands, copy each line separately one by one:
+Once connected, you have to finalize the installation of your PiRogue.
 
-| Command Line                       | Function                                                                  |
+Firsly, you'll be asked to change the Unix password, the new password you've set replaces the default one. Once you have change the Unix, you must reconnect to your PiRogue with SSH.
+
+Secondly, you have to install PiRogue packages and features. To do so, you need to run the following commands on your PiRogue. Copy and execute each command separately one by one:
+
+| Command Line                       | Description                                                               |
 |------------------------------------|---------------------------------------------------------------------------|
 | `sudo apt update`                  | Gets the latest versions of the available packages                        |
 | `sudo apt dist-upgrade -y`         | Upgrade the entire operating system and all additional installed software |
-| `sudo apt install pirogue-base -y` | Install the PiRogue packages/features                                     |
+| `sudo apt install pirogue-base -y` | Install the PiRogue packages and features                                 |
 | `sudo reboot`                      | Reboot the PiRogue                                                        |
 
-During the installation, if prompted, you will have to answer:
+During the installation, if asked, you will have to answer:
 * `No` to save firewall rules for IP v4
 * `No` to save firewall rules for IP v6
 * `Yes` to allow non-root users to capture network traffic

@@ -15,7 +15,6 @@ categories: ["analysis reports"]
 **Botim** is an instant messaging and VoIP application developped by Algento. The company is branded as an american company with subsidiaries in Dubai on [Botim's website](https://botim.me/about/), but only Dubai is mentioned on [algento's website](https://algento.com/). The application looks like a common instant messaging app, but also have an "Explore" tab which seems to offer other functionalities, such as 
 an online Quran, an AI chatbot, and a way to request a visa for the United Arab Emirates.
 
-
 ## Android Sample
 
 We’ve analyzed the following version of the app `im.thebot.messenger`:
@@ -311,7 +310,6 @@ Next is another request to the same domain, but this time it appears to be encry
   }
 ]
 ```
-
 
 ### requests to smnvc[.]com
 

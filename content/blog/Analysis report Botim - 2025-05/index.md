@@ -1,10 +1,10 @@
 ---
 title: Analysis of Botim v3.38.1
-summary: "Botim [...]"
+summary: "Botim is an instant messaging and VoIP application that asks for a lot of permissions and embeds a lot of trackers."
 lead: ""
 date: 2025-05-29
 lastmod: 2025-05-31
-draft: true
+draft: false
 weight: 50
 toc: true
 contributors: ["Emy Canton"]
@@ -12,8 +12,8 @@ images: []
 categories: ["analysis reports"]
 ---
 
-**Botim** is an Android application that [...]
-
+**Botim** is an instant messaging and VoIP application developped by Algento. The company is branded as an american company with subsidiaries in Dubai on [Botim's website](https://botim.me/about/), but only Dubai is mentioned on [algento's website](https://algento.com/). The application looks like a common instant messaging app, but also have an "Explore" tab which seems to offer other functionalities, such as 
+an online Quran, an AI chatbot, and a way to request a visa for the United Arab Emirates.
 
 ## Android Sample
 
@@ -75,7 +75,7 @@ This time we're not going to list all the permissions the application requests, 
 
 ### Tracker SDKs
 
-The application uses the following trackers SDKs:
+The application uses the following trackers SDKs, as reported by [Exodus Privacy](https://reports.exodus-privacy.eu.org/en/reports/607104/)
 
 #### Profiling, Identification and location trackers
 
@@ -171,9 +171,13 @@ a539b2eac80ecae8c3bd2f4cede06f62  libvideoconvert.so
 
 ## Traffic analysis
 
+Given the number of trackers detected by Exodus Privacy, we would have expected a lot of outbound traffic, but there was surprisingly not that many requests. However, due to difficulties during the testing of the app, we couldn't get an in-depth exploration of the various functionalities, which may explain why that is.
 
-POST to fp-aen.astratech[.]ae
+That being said, we observed some interesting outgoing traffic, aiming at two main domains: fp-aen.astratech[.]ae and smnvc[.]com
 
+### requests to fp-aen.astratech[.]ae
+
+This request is being send regularly, and contain multiple technical informations about the device and it's network state, as we can see here, it sends the device's kernel version, local IP, mac address, wifi SSID, the router's mac adress, etc... Though some of this information might have a legitimate interest for setting up VoIP calls, we did not make a VoIP call during testing. 
 
 ```json
 {
@@ -279,7 +283,7 @@ POST to fp-aen.astratech[.]ae
 }
 ```
 
-Encrypted data "default" (entropy is 7.949)
+Next is another request to the same domain, but this time it appears to be encrypted: the "default" parameter after being base64 decoded presents and entropy of 7.949, which is caracteristic of encrypted data. We couldn't decrypt it during the analysis.
 
 ```json
 [
@@ -289,7 +293,9 @@ Encrypted data "default" (entropy is 7.949)
         "apdid": "I3CIkigMUn2MDHifQETxziVk1IzSAgqpQ4mB1e+6wW9tD2jn3xRteLKa",
         "dataMap": {
           "wbType": "1",
-          "default": "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",
+          "default": "pUDYUGRjHbJfrsE+A+Hm9W0V/9xUdnmGL4jaez1wcta+xkyh9V6yuRwELV3JIz0j28EOLikjqHwRFkrxWNsCuKjPVKh0PEolDwNAg1h6yDR/iGKSXgIynU38P3m/WlUfILTaJkLvi9T
+          [...]
+          +aNSc9kBNQMjpPAORY5DfXaQYRHx7ugTldD46iUYPyJE0D0h1e5FfEwI8nA==",
           "bizData": "AQAB_BEFORHjjxjdxAAAAUAAhAAAAAAAG/2wmlwEAAIJscszxkiimCIB60y0arJisz7KdyJ/KPY2ykUL2GASddAEqw+AKKgeWBePffl16PN6MoD3650tly6wdhmuF724RPL03BPFIw8OMZfTqAIGuAdnfxNS0Z77wO+dJtVPTnWW64HLHFPHxRCmMJh1o+SaI"
         },
         "dynamicKey": "VZNZNbdi2hsr97SqTKjPTpf5b35Qyw1yyqRpjtWJvbWVoEGqHjy3wvIcbCaXAQAA",
@@ -305,7 +311,9 @@ Encrypted data "default" (entropy is 7.949)
 ]
 ```
 
-POST to ping.smnvc[.]com
+### requests to smnvc[.]com
+
+We have a request ping.smnvc[.]com, sending information about the device model and brand, along with Botim's version and an uid.
 
 ```json
 {
@@ -322,7 +330,42 @@ POST to ping.smnvc[.]com
 }
 ```
 
+Another request is sent to record.smnvc[.]com, with a huge data chunk presenting high entropy, meaning it is probably compressed or encrypted.
+
+### requests to fundingchoicesmessages.google[.]com
+
+POST to fundingchoicesmessages.google[.]com
+
+```json
+{
+  "admob_app_id": "ca-app-pub-7071340978991784~8964103268",
+  "device_info": {
+    "os_type": "ANDROID",
+    "model": "SM-G965F",
+    "android_api_level": 29
+  },
+  "language_code": "en-US",
+  "tag_for_under_age_of_consent": false,
+  "screen_info": {
+    "width": 411,
+    "height": 773,
+    "density": 3.5
+  },
+  "app_info": {
+    "package_name": "im.thebot.messenger",
+    "publisher_display_name": "Botim",
+    "version": "3403"
+  },
+  "sdk_info": {
+    "version": "2.2.0"
+  }
+}
+```
+
 ## Conclusion
 
-The analysis of **Botim v3.38.1** reveals a
+The analysis of **Botim v3.38.1** reveals an application embedding a lot of trackers and asking for **a lot** of permissions, most of which can be pretty dangerous if used in a malicious way. The network traffic of the application while suprisingly not as bad as we expected still exports technical information to the UAE. 
 
+The scary part really is about the permissions. Accessing location, activity, being able to record audio and video, manage contacts, and writing and reading to the file system is already too much. But it gets worse with the added permission to requests packages installation. Even though the application in itself might not be malicious, it seem like a good target for attacks, because gaining a first foothole through this apps allows for a lot of options to escalate the attack.
+
+It is important to remind ourself that the app offers the possibility to ask for a Visa, implying the user will have to upload their passport. Dealing with this kind of sensitive information while being this lax on the permissions requested does not inspire trust.

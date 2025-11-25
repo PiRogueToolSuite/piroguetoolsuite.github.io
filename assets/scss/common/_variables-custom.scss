@@ -1,11 +1,12 @@
-@import "common/fonts_open_sans";
+@import "common/fonts_lato";
 @import "common/fonts_jetbrains_mono";
+//@import "common/fonts_open_sans";
 
-$font-family-sans-serif:      "Open Sans Light", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-sans-serif:      "Lato",proxima-nova,"Helvetica Neue",Arial,sans-serif;
 $font-family-monospace:       "JetBrains Mono Light", menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace;
 $font-family-base:            $font-family-sans-serif !default;
 $font-family-code:            $font-family-monospace !default;
-$font-size-root: 14px;
+$font-size-root: 16px;
 $font-size-base: 1rem;
 
 $font-weight-lighter:         300;
@@ -16,9 +17,9 @@ $font-weight-semibold:        500;
 $font-weight-bold:            500;
 $font-weight-bolder:          600;
 
-$font-size-xl:                $font-size-base * 1.375;
-$font-size-lg:                $font-size-base * 1.25;
-$font-size-md:                $font-size-base * 1.125;
+$font-size-xl:                $font-size-base * 1.12;
+$font-size-lg:                $font-size-base * 1.12;
+$font-size-md:                1rem;
 $font-size-sm:                $font-size-base * 0.875;
 $font-size-xs:                $font-size-base * 0.75;
 
@@ -66,7 +67,11 @@ $spacers: (
 ) !default;
 
 html {
-  letter-spacing: 0.025rem;
+  //letter-spacing: 0.025rem;
+}
+
+body {
+  color: #404040 !important;
 }
 
 img {

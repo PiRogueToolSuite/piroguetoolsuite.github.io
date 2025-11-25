@@ -9,12 +9,12 @@ weight: 570
 toc: true
 ---
 
-Colander allows you to retrieve information from 3rd-party services such as VirusTotal and OTX Alien Vault. To do so, Colander relies on [Threatr](https://github.com/PiRogueToolSuite/threatr) which operates as a bridge and translator between Colander an the external services. 
+Colander allows you to retrieve information from 3rd-party services such as VirusTotal, MISP and OTX Alien Vault. To do so, Colander relies on [Threatr](https://github.com/PiRogueToolSuite/threatr) which operates as a bridge and translator between Colander and the external services.
 
 The main purpose of Threatr is to transform the entities available on external services to knowledge graph following the same codification as Colander. The workspace *Investigate* is the main entry point in Colander to request information to external services.
 
 ## Threatr
-Even if it is designed to operate along with Colander, Threatr can be used standalone and users can interact with it via [its REST API](/docs/colander/rest-api/#threatr).
+Even if it is designed to operate along with Colander, Threatr can be used standalone and users can interact with it via [its REST API](/docs/threatr/rest-api).
 
 By now, Threatr supports requests on the following types of observables:
 
@@ -24,10 +24,13 @@ By now, Threatr supports requests on the following types of observables:
 * `MD5`
 * `SHA1`
 * `SHA256`
+* `EMAIL`
 
 And can return various types of information such as threats, VirusTotal detection score or reports.
 
 Threatr propagates user’s requests to the different configured 3rd-parties and returns the aggregated entities along with the knowledge graph linking the different found entities with the requested one. Threatr stores the results in its internal database and will always return the data already stored unless the checkbox *Update results from vendors.* is checked. By forcing the refresh of the data, Threatr will propagate the user’s request to all the different 3rd-party configured.
+
+Check Threatr documentation to learn more about [available integrations](/docs/threatr/integrations).
 
 ## User interface
 
@@ -88,7 +91,7 @@ Your knowledge graph now contains the events you just imported.
 
   {{< figure src="img/import-4.png" alt="Knowledge graph containing the imported events" caption="Knowledge graph containing the imported events" class="d-block mx-auto shadow" >}}
 
-Now, in the details on the `sharefilesonline.live` observables, you will find the list of the related entities and the timeline containing all the information you imported.
+Now, in the details of the `sharefilesonline.live` observable, you will find the list of the related entities and the timeline containing the information you imported.
 
   {{< figure src="img/details.png" alt="Details of the observable" caption="Details of the observable" class="d-block mx-auto shadow" >}}
 

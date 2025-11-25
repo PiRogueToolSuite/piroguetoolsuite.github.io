@@ -27,7 +27,7 @@ For the rest of this guide:
 You must run the commands starting with `ansible` on your laptop.
 
 # Deployment procedure
-The first step is to clone this repository on your laptop, not on the server. 
+The first step is to clone this repository on your laptop, not on the server.
 ```shell {title="💻 Clone our playbooks on your laptop"}
 git clone https://github.com/PiRogueToolSuite/colander-ansible.git
 ```
@@ -38,8 +38,8 @@ git pull origin main
 ```
 
 
-## Set up your server 
-The latest version Debian must have been installed on your server before you start the deployment. 
+## Set up your server
+The latest version Debian must have been installed on your server before you start the deployment.
 
 Before running Ansible playbooks to install Colander, you must create a user `colander` on your server. Run the following commands on your server:
 ```shell {title="📦 Create a user colander on your server"}
@@ -50,14 +50,14 @@ passwd colander
 
 
 ## Set up your laptop
-To make things easier, we recommend copying the SSH key of the user `colander` on your server. 
+To make things easier, we recommend copying the SSH key of the user `colander` on your server.
 
 On your laptop, run the command to copy it:
 ```shell {title="💻 Copy colander's SSH key on the server"}
 ssh-copy-id -i ~/.ssh/my-key colander@[IP address of your server]
 ```
 
-Then, on your laptop, create a Python 3 virtual environment and install the dependencies with the commands: 
+Then, on your laptop, create a Python 3 virtual environment and install the dependencies with the commands:
 ```shell {title="💻 Set up the Ansible environment"}
 python3 -m venv .venv
 source .venv/bin/activate
@@ -114,7 +114,7 @@ To generate the configuration, run the command on your laptop:
 ansible-playbook -i production.yml playbooks/generate-configuration.yml
 ```
 
-The playbook will ask you to enter the root domain corresponding to your Colander server. Alternatively, you can pass it directly to the command line with: 
+The playbook will ask you to enter the root domain corresponding to your Colander server. Alternatively, you can pass it directly to the command line with:
 ```shell {title="💻 Generate the configuration of Colander"}
 ansible-playbook -i production.yml playbooks/generate-configuration.yml --extra-vars "root_domain=my.domain"
 ```
@@ -148,16 +148,16 @@ colander_vault:
 
   # Domains & sub-domains
   root_domain: "my.domain"
-  colander_base_url: "https://colander.my.domain" 
+  colander_base_url: "https://colander.my.domain"
   colander_django_allowed_hosts: "colander.my.domain"
   colander_fqdn: "colander.my.domain"
-  threatr_base_url: "https://threatr.my.domain" 
+  threatr_base_url: "https://threatr.my.domain"
   threatr_django_allowed_hosts: "threatr.my.domain"
   threatr_fqdn: "threatr.my.domain"
-  cyberchef_base_url: "https://cyberchef.my.domain" 
-  cyberchef_fqdn: "cyberchef.my.domain" 
-  traefik_base_url: "https://traefik.my.domain" 
-  traefik_fqdn: "traefik.my.domain" 
+  cyberchef_base_url: "https://cyberchef.my.domain"
+  cyberchef_fqdn: "cyberchef.my.domain"
+  traefik_base_url: "https://traefik.my.domain"
+  traefik_fqdn: "traefik.my.domain"
 
   # Traefik
   traefik_auth_salt: "randomly generated"
@@ -233,10 +233,10 @@ Note that Colander is designed to update itself, but it doesn't update nor upgra
 ## Logs
 The logs of the Docker containers are redirected to `journald` which is the standard logging service on Debian-based distributions. This allows seamless integration with external tools. As an example, `fail2ban` can be configured to ingest the logs of Colander and automatically block or ban IP addresses after `x` authentication failures.
 
-The logs are tagged in a way that it’s easy to filter or extract them for a specific container, service, or type of service. As an example, the command 
+The logs are tagged in a way that it’s easy to filter or extract them for a specific container, service, or type of service. As an example, the command
 ```
 journalctl -f CONTAINER_NAME=colander-colander-front-1  # 📦
-``` 
+```
 prints the logs of the container `colander-colander-front-1`.
 
 You can use the following variables to filter the logs:
@@ -279,7 +279,7 @@ The backups are stored in `/home/colander/colander/backups/` in a folder named w
 
 You are free to use your favorite backup tool to schedule them according to your backup policies. We only provide the script to create the dumps and archives to be backed up.
 
-Alternatively, you can create an archive of all Docker volumes after shutting down the whole stack. 
+Alternatively, you can create an archive of all Docker volumes after shutting down the whole stack.
 
 
 ## Restore
@@ -289,7 +289,7 @@ The restoration of a backup is manual operation to perform on your server. The b
 /home/colander/colander/scripts/restore "[name of the backup]"  # e.g., ./restore "2025_02_18-13_47_01"
 ```
 
-The name of the backup corresponds to the name of folder named with the date and time of the backup. 
+The name of the backup corresponds to the name of folder named with the date and time of the backup.
 
 Finally, you must restart Colander:
 ```shell {title="💻 Restart Colander"}
@@ -309,14 +309,35 @@ ansible-playbook -J -K -i production.yml playbooks/teardown-colander.yml
 
 The playbook will ask you the password of the user `colander` and the password of your vault.
 
-# Connect Colander to Threatr
-To connect Colander to Threatr, follow these steps:
-* In the Threatr administration panel, create a regular user in the menu *Users* menu and an API key for this user in the menu *Tokens*.
+# Connecting Colander to Threatr
 
-* In the administration panel of Colander, via the menu *Backend credentials*, create a new entry with `threatr` as backend identifier and for the credentials field, set 
-```json
-    {"api_key": "your Threatr API key"}
-```
+## Prerequisites
+- Access to Threatr administration panel
+- Access to Colander administration panel
+
+## Configuration steps
+
+1. Create Threatr User:
+   - Navigate to Threatr administration panel
+   - Go to **Users** menu
+   - Create a new regular user
+
+2. Generate API Key:
+   - Stay in Threatr administration panel
+   - Go to **Tokens** menu
+   - Generate a new API key for the created user
+
+3. Configure Colander:
+   - Navigate to Colander administration panel
+   - Go to **Backend Credentials** menu
+   - Create a new entry with:
+     - Backend identifier: `threatr`
+     - Credentials field:
+     ```json
+     {
+       "api_key": "your Threatr API key"
+     }
+
 
 {{< callout context="note" title="Administration panel URLs" icon="info-circle" >}}
 Note that the administration panels are accessible at random URLs:
@@ -324,40 +345,7 @@ Note that the administration panels are accessible at random URLs:
 * for Threatr: `https://${threatr_base_url}/${threatr_django_admin_url}` with the variables set in your configuration vault
 {{< /callout >}}
 
-## Connect Threatr to 3rd-party vendors
-In the Threatr administration panel, create new entries for the 3rd-party vendors in the *Vendor Credentials* menu.
-
-{{< tabs "api_keys" >}}
-  {{< tab "VirusTotal" >}}
-  Use the vendor identifier `vt` and for the credentials field, set
-  ```json
-  {"api_key": "your API key"}
-  ```
-  {{< /tab >}}
-  {{< tab "OTX Alien Vault" >}}
-  Use the vendor identifier `otx` and for the credentials field, set
-  ```json
-  {"api_key": "your API key"}
-  ```
-  {{< /tab >}}
-  {{< tab "Shodan" >}}
-  Use the vendor identifier `shodan` and for the credentials field, set
-  ```json
-  {"api_key": "your API key"}
-  ```
-  {{< /tab >}}
-  {{< tab "Scarlet Shark" >}}
-  Use the vendor identifier `scarlet_shark` and for the credentials field, set
-  ```json
-  {"api_key": "your API key"}
-  ```
-  {{< /tab >}}
-{{< /tabs >}}
-
-
-{{< callout context="tip" title="Did you know?" icon="rocket" >}}
-You can add multiple API keys for a same vendor, Threatr will do a round-robin on them. To do so, add multiple *Vendor Credentials* for the same vendor identifier.
-{{< /callout >}}
+Check Threatr documentation to learn more about [available integrations](/docs/threatr/integrations).
 
 # Development environment setup
 
@@ -368,9 +356,9 @@ Clone the Colander repository. Build and start the Colander stack using Docker C
 ```bash {title="Setup the development environment"}
 git clone https://github.com/PiRogueToolSuite/colander.git
 cd colander
-docker compose -f local.yml build 
+docker compose -f local.yml build
 docker compose -f local.yml up -d
-docker compose -f local.yml run --rm django python manage.py createsuperuser 
+docker compose -f local.yml run --rm django python manage.py createsuperuser
 docker compose -f local.yml logs -f -n 44 django  # to check the logs
 ```
 Then, you should be able to access Colander at [http://localhost:8080](http://localhost:8080).

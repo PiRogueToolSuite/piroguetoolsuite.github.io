@@ -44,8 +44,9 @@ Note that the administration panels are accessible at random URLs:
 * Threatr: `https://${threatr_base_url}/${threatr_django_admin_url}` with the variables set in your configuration vault
 {{< /callout >}}
 
-## Request
-```bash
+## Request with curl
+
+```bash {title="Request Threatr with curl"}
 curl -X POST --location "[threat URL]" \
   -H "Content-Type: application/json" \
   -H "Authorization: Token [api-key]" \
@@ -53,6 +54,52 @@ curl -X POST --location "[threat URL]" \
     \"type\": \"sha256\", \   # we provide a SHA256 observable
     \"value\": \"854774a198db490a1ae9f06d5da5fe6a1f683bf3d7186e56776516f982d41ad3\", \   # the SHA256
     \"force\": false}"
+```
+
+## Request in Python
+
+```python {title="threatr.py"}
+import requests
+
+def send_request(data):
+    """
+    Send the request to Threatr. If Threatr returns a status code equals to 201,
+    this means the client has to come back later.
+
+    If the status code is equal to 200, we are ready to return the result to the client.
+
+    The data sent to Threatr must follow this structure:
+    {
+        "super_type": the entity super type such as observable or device,
+        "type": the entity type such as IPv4 or server,
+        "value": the actual subject of the search such as 1.1.1.1,
+        "force": indicated to update Threatr cache by querying all vendors
+    }
+
+    :param data: the data to be sent
+    :return: the query results and a boolean telling if the client has to wait and come back later, False otherwise
+    """
+    headers = {'Authorization': f'Token API_KEY'}
+    response = requests.post(
+        'http://127.0.0.1:9080/api/request/',
+        headers=headers,
+        json=data
+    )
+    if response.status_code == 201:
+        return [], True
+    elif response.status_code == 200:
+        return response.json(), False
+    else:
+        return [], False
+
+
+data = {
+    "super_type": "observable",
+    "type": "domain",
+    "value": "google.com",
+    "force": False
+}
+d, come_back_later = send_request(data)
 ```
 
 {{< details "Example of result returned by Threatr" >}}

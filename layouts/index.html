@@ -130,7 +130,7 @@
 
 <!--  Threatr -->
   <div class="row justify-content-center mt-4">
-    <div class="col-lg-8 col-sm-12">
+    <div class="col-lg-12 col-sm-12">
       <h3 class="font-monospace  fw-light">
         <img src="logos/threatr/threatr-logo.png" style="max-height: 50px;" class="mb-0" alt="Threatr logo">
         Threatr: Threat-Intelligence Aggregator
@@ -141,9 +141,6 @@
           <a href="/docs/threatr/overview/" class="btn btn-primary font-monospace  fw-light">Get started >></a>
         </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-sm-6 text-center">
-        <img class="img-fluid mt-5" style="max-height: 260px;" src="images/threatr.png">
     </div>
   </div>
   <div class="row justify-content-center mt-2 mx-3">
@@ -158,6 +155,96 @@
     <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
           <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Historical IoC Intelligence Cache</h5>
           Threatr keeps a persistent cache of all intelligence collected about an Indicator of Compromise. Each lookup enriches and updates the stored data, giving you long-term visibility into how an IoC evolves over time.
+    </div></div></div>
+  </div>
+
+<!--  Colander Data Converter -->
+  <div class="row justify-content-center mt-4">
+    <div class="col-lg-12 col-sm-12">
+      <h3 class="font-monospace  fw-light">
+        <img src="logos/colander-data-converter/colander-data-converter-logo.png" style="max-height: 50px;" class="mb-0" alt="Colander Data Converter logo">
+        Colander Data Converter
+      </h3>
+      <div class="ms-3">
+        <b>Colander Data Converter</b> is a Python library designed to transform, merge, and export structured threat-intelligence data. It natively supports Colander feeds and makes it easy to convert between formats such as MISP, STIX 2, JSON, CSV, Mermaid, Graphviz/dot, and any custom Jinja-based template.
+        <div class="mt-5">
+          <a href="https://pts-project.org/colander-data-converter" class="btn btn-primary font-monospace  fw-light">Get started >></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-2 mx-3">
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Convert Between Multiple Formats</h5>
+          Seamlessly transform Colander data into MISP, STIX2, JSON, CSV, Mermaid, Graphviz/dot, or any user-defined Jinja template—ideal for interoperability and automation.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Merge & Manipulate Feeds</h5>
+          Combine several Colander data sources, normalize structures, and enrich or refine the resulting dataset through Python-friendly operations.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Flexible Python Library</h5>
+          Colander Data Converter integrates smoothly into scripts, pipelines, or larger security platforms. Its modular design lets you extend format handlers or build your own exporters.
+    </div></div></div>
+  </div>
+
+<!--  PCAPNG Converter -->
+  <div class="row justify-content-center mt-4">
+    <div class="col-lg-12 col-sm-12">
+      <h3 class="font-monospace  fw-light">
+        <img src="logos/pcapng-utils/pcapng-utils-logo.png" style="max-height: 50px;" class="mb-0" alt="PCAPNG Converter logo">
+        PCAPNG Converter
+      </h3>
+      <div class="ms-3">
+        <b>PCAPNG Converter</b> transforms captured network traffic into a fully enriched HAR file, including decrypted TLS sessions and optional PiRogue-specific metadata such as socket stacktraces and payload decryption.
+        <div class="mt-5">
+          <a href="https://github.com/PiRogueToolSuite/pcapng-utils" class="btn btn-primary font-monospace  fw-light">Get started >></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-2 mx-3">
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Convert PCAPNG to Decrypted HAR</h5>
+          Provide TLS secrets, inject them into your PCAPNG, and generate a HAR file containing fully decrypted HTTP/S traffic. Perfect for deep network-forensics and debugging workflows.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Stacktrace Identification</h5>
+          When used with PiRogue captures, the converter automatically attaches precise socket-level stacktraces for every request and response. Understand exactly which application operations generated specific network events.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Payload Decryption</h5>
+          If PiRogue captured encryption/decryption metadata, the converter replaces encrypted payloads with cleartext and adds detailed decryption metadata into the HAR. Ideal for analyzing hidden or obfuscated application traffic.
+    </div></div></div>
+  </div>
+
+<!--  Mandolin -->
+  <div class="row justify-content-center mt-4">
+    <div class="col-lg-12 col-sm-12">
+      <h3 class="font-monospace  fw-light">
+        <img src="logos/mandolin/mandolin-logo.png" style="max-height: 50px;" class="mb-0" alt="Mandolin logo">
+        Mandolin
+      </h3>
+      <div class="ms-3">
+        <b>Mandolin</b> is an API-first service that centralizes content extraction with Apache Tika and OCR, applies detection rules for threat detection, and performs image transformations—all accessible through a clean and efficient REST API.
+        <div class="mt-5">
+          <a href="https://github.com/PiRogueToolSuite/mandolin" class="btn btn-primary font-monospace  fw-light">Get started >></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-2 mx-3">
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Content & Metadata Extraction</h5>
+          Mandolin uses Apache Tika and OCR to extract text, metadata, and embedded resources from a wide range of file formats. Ideal for indexing, analysis, and document-processing pipelines.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">YARA-Based Threat Detection</h5>
+          Send any file to Mandolin and automatically run your YARA rules. Mandolin returns structured match results, making it easy to integrate malware scanning into automated workflows.
+    </div></div></div>
+    <div class="col-lg-4 col-sm-12"><div class="card border-1 shadow-sm my-4 h-75 pb-4"><div class="card-body text p-4">
+          <h5 class="card-title mt-0 mb-4 font-monospace  fw-light">Image Transformations</h5>
+          Generate thumbnails, convert image formats, or apply transformations—all through a simple API call. Mandolin is built to power content tooling, previews, and media workflows at scale.
     </div></div></div>
   </div>
 

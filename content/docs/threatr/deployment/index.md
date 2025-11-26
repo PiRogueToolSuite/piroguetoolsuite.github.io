@@ -9,7 +9,7 @@ weight: 606
 toc: true
 ---
 
-{{< callout context="caution" title="Confidentiality" icon="alert-triangle" >}}
+{{< callout context="caution" title="Security" icon="alert-triangle" >}}
 This section describes the procedure to self-host Threatr locally. It must not
 be exposed to the Internet directly.
 {{< /callout >}}

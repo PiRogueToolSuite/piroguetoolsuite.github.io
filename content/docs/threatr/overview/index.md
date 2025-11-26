@@ -9,18 +9,14 @@ weight: 605
 toc: true
 ---
 
-The main purpose of Threatr is to transform the entities from external services such as VirusTotal, MISP and OTX Alien Vault to knowledge graph. The workspace *Investigate* in Colander is the main entry point in Colander to acquire information from external services.
+  {{< figure src="img/1.png" class="d-block mx-auto" >}}
 
-Even if it's designed to operate along with Colander, Threatr can be used standalone and users can interact with it via [its REST API](/docs/threatr/rest-api).
+**Threatr** is a web-based threat-intelligence aggregation platform designed to unify and normalize data collected from multiple external security sources. It centralizes information from services such as **VirusTotal**, **OTX AlienVault**, **Shodan**, **Scarlet Shark**, and **MISP**, and exposes all aggregated intelligence through a simple [**REST API**](/docs/threatr/rest-api).
 
-For now, Threatr supports requests on the following types of observables:
+Threatr’s primary purpose is to simplify and speed up the way security teams access, correlate, and analyze threat indicators. Instead of manually consulting multiple tools, analysts can query Threatr once and retrieve a consolidated, normalized representation of Indicators of Compromise (IoCs), enriched metadata, and contextual relationships from all connected sources.
 
-* `IPV4`
-* `IPV6`
-* `DOMAIN`
-* `MD5`
-* `SHA1`
-* `SHA256`
-* `EMAIL`
+Threatr enforces a [**well-defined, unified data model**](https://pts-project.org/colander-data-converter/data_types/threatr.html) that ensures consistent field names, types, and structures regardless of the originating provider. This unified schema allows seamless integration with SIEM, SOAR, and custom security automation workflows.
 
-And returns various types of information such as threats, VirusTotal detection score or reports.
+Built for extensibility, Threatr supports additional data connectors and scalable deployments. Because it is API-driven, organizations can integrate Threatr directly into existing pipelines, dashboards, and incident response tooling.
+
+The workspace *Investigate* in Colander is the main entry point in Colander to acquire information from external services.

@@ -192,8 +192,9 @@ Before connecting a device to the WiFi access point of the PiRogue or opening th
 run the following command on your PiRogue. The version of your PiRogue corresponds to the version of the package `pirogue-base`.
 ```shell {title="PiRogue version 2.0.2 is installed"}
 $ dpkg -l | grep pirogue-base
-ii  pirogue-base    2.0.2    all    Install all PiRogue packages
 ```
+this command will display: ii  pirogue-base    2.0.2    all    Install all PiRogue packages
+
 
 {{< tabs "wifi-and-dashboard-configuration" >}}
 {{< tab "PiRogue version 2.x" >}}

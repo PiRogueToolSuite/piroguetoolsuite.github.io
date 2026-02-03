@@ -59,7 +59,7 @@ The PiRogue VPN project aims to facilitate the operational effectiveness of orga
 #### This month
 Similarly to the dashboard of PiRogue, network flows and security alerts are now directly accessible from Colander. Users can effortlessly obtain threat intelligence regarding the IP addresses of a network flow by automatically requesting Threatr. It’s also possible to import the selected flow into the Colander case.
  
-<img width="960" alt="Image" src="https://github.com/user-attachments/assets/7d0c892b-4086-4349-b731-b931db12b324" />
+<img width="960" src="https://github.com/user-attachments/assets/7d0c892b-4086-4349-b731-b931db12b324" />
  
 #### Next month
 Nothing, as this task is now complete.
@@ -70,19 +70,19 @@ Nothing, as this task is now complete.
 ##### PiRogue Device Enrollment
 PiRogue owners can now seamlessly enroll both physical and virtual instances into Colander, centralizing fleet management.
  
-<img width="1137" height="909" alt="Image" src="https://github.com/user-attachments/assets/99d4a788-92f0-42ea-a405-e28614951093" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/99d4a788-92f0-42ea-a405-e28614951093" />
  
-<img width="1132" height="342" alt="Image" src="https://github.com/user-attachments/assets/7dcd39b3-9fa7-4cab-ac3d-cf01820b1fa8" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/7dcd39b3-9fa7-4cab-ac3d-cf01820b1fa8" />
  
 ##### Telemetry & Monitoring
 Colander now implements automated status collection, maintaining a historical log of device health and operational metrics for improved diagnostics.
  
-<img width="764" height="152" alt="Image" src="https://github.com/user-attachments/assets/9da5d777-9d65-4d78-b612-da3a6cdd2325" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/9da5d777-9d65-4d78-b612-da3a6cdd2325" />
  
 ##### Granular Remote Authorization
 We have introduced a remote authorization framework. PiRogue administrators can now issue and manage scoped user-level tokens, ensuring the principle of least privilege is applied to remote access.
  
-<img width="661" height="701" alt="Image" src="https://github.com/user-attachments/assets/0bf8ad12-3a2c-42b3-b729-75047a0d131a" />
+<img width="960" alt="Image" src="https://github.com/user-attachments/assets/0bf8ad12-3a2c-42b3-b729-75047a0d131a" />
  
 ##### Remote Configuration Capabilities
 Users are now empowered to perform remote device provisioning, allowing for the modification of PiRogue settings directly through the Colander interface without requiring direct physical access.

@@ -131,7 +131,7 @@ We will start reorganizing the documentation.
 We manufacture PiRogues to supply organizations, while taking care of its maintenance. We will include OS upgrades, improvement of the documentation and fixing bugs. Regarding Colander and Threatr, we maintain the public Colander server, upgrade dependencies, improve the documentation and fix bugs.
  
 #### This month
-The `pirogue-admin project structure has been reworked to comply with [pypi](https://pypi.org/) CI publication security restrictions:
+The `pirogue-admin` project structure has been reworked to comply with [pypi](https://pypi.org/) CI publication security restrictions:
 - [pirogue-admin-api](https://github.com/PiRogueToolSuite/pirogue-admin-api) and [pirogue-admin-client](https://github.com/PiRogueToolSuite/pirogue-admin-client) now have their own Github repository
 - [pirogue-admin-api](https://pypi.org/project/pirogue-admin-api/) and [pirogue-admin-client](https://pypi.org/project/pirogue-admin-client/) are now published to **pypi** 🎉
 - the refactoring now allows any Python project to use **PiRogueAdminClient** as library

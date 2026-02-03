@@ -2,7 +2,7 @@
 title: Monthly report n⁰45 - 2026-01
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: "PiRogue owners can enroll now both physical and virtual instances into Colander, with automated network events collection, and remote configuration capabilities. Network flows and Suricata security alerts from PiRogue are now displayed directly in Colander."
+summary: "We completed the PiRogue VPN user story this month, so organizations can now enroll both physical and virtual PiRogue instances into Colander, manage their fleet from one place, see network flows in real time, and configure devices remotely. We developed Mongoose, a Python library handling network event collection and transmission to make all this work. On the maintenance side, We restructured pirogue-admin into separate packages now published on PyPI. Ragheb Ghandour joined the team as Product Manager, and we presented PTS at FOSDEM 2026. Next up is reorganizing the documentation and sending out a survey to our community."
 date: 2026-01-31
 lastmod: 2026-01-31
 draft: false

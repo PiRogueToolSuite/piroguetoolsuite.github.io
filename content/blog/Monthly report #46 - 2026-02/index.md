@@ -11,7 +11,7 @@ type: blog
 outputs:
    - 'html'
    - 'email'
-contributors: ["Esther Onfroy, Ragheb GHANDOUR"]
+contributors: ["Esther Onfroy"]
 categories: ['activity reports']
 toc_enabled: true
 toc_start_level: 2

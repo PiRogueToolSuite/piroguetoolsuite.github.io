@@ -2,7 +2,7 @@
 title: Monthly report n⁰46 - 2026-02
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: ""
+summary: "Real-time threat intelligence is now live in Colander, with network flows and Suricata alerts streaming directly from PiRogue devices, plus Threatr queries and flow imports straight into cases. We also enabled PiRogue as an emergency VPN server for supporting at-risk individuals without physical device access. On the maintenance side, we tightened up the UX across the board, better status monitoring, quick system version checks, simpler team access management, and a leaner device monitoring workflow."
 date: 2026-02-28
 lastmod: 2026-02-28
 draft: false

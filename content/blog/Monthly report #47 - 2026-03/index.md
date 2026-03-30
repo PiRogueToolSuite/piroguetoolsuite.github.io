@@ -1,8 +1,8 @@
 ---
 title: Monthly report n⁰47 - 2026-03
-description: "This month's activities across the PiRogue Tool Suite project cover documentation improvements for Mongoose, new PiRogue Admin scheduling features, MongooseVueJS integration for unified network traffic monitoring, and IP66-based geoip enrichment. On the governance side, a new proposal was submitted to OTF's Internet Freedom Fund. The team also held its monthly community meeting and is preparing a user survey for April. The next community call is scheduled for April 24, 2026."
+description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: ""
+summary: "This month's activities across the PiRogue Tool Suite project cover documentation improvements for Mongoose, new PiRogue Admin scheduling features, MongooseVueJS integration for unified network traffic monitoring, and IP66-based geoip enrichment. On the governance side, a new proposal was submitted to OTF's Internet Freedom Fund. The team also held its monthly community meeting and is preparing a user survey for April. The next community call is scheduled for April 24, 2026."
 date: 2026-03-30
 lastmod: 2026-03-30
 draft: false

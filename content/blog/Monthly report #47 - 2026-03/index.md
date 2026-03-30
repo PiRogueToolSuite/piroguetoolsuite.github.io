@@ -35,11 +35,9 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 🗳️ Expect to receive a survey from us this month, we are looking forward to hearing from you.
 
 # 🎉 Impacts and results
-- We are reorganizing how we explain their tools, making them easier to understand and use. Soon, the guides will look different and be publicly available online.
-- Status monitoring functionality, you can now see more clearly whether a PiRogue device is working or expired, so you know right away if something needs attention.
-- Version checking, a PiRogue owner can quickly see if their device is up to date, without digging around.
-- Access sharing, it's now easier to give your colleagues access to a PiRogue through Colander, which saves time when setting up team investigations.
-- Simpler monitoring startup, starting a device monitoring session now requires fewer steps and less configuration, which means less friction when you need to move fast
+- Collandar now have better Network DPI and Alerts browsing, where users can more easily view device monitoring results from PiRogues.
+- PiRogue Admin now includes a set of easy tools for scheduling your device monitoring, with or without device-focused filtering. These enhancements are available via the PiRogue Admin API and are already made to be simply integrated into Colander.
+- We have added the support of IP66 to enrich network events with geoip information. The IP66 API integration makes the geo information of IPs richer and smoother for your own observations within our toolset.
 
 # 📒 Activity report
 

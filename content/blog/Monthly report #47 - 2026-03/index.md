@@ -35,7 +35,7 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 🗳️ Expect to receive a survey from us this month, we are looking forward to hearing from you.
 
 # 🎉 Impacts and results
-- Collandar now have better Network DPI and Alerts browsing, where users can more easily view device monitoring results from PiRogues.
+- Colander now have better Network DPI and Alerts browsing, where users can more easily view device monitoring results from PiRogues.
 - PiRogue Admin now includes a set of easy tools for scheduling your device monitoring, with or without device-focused filtering. These enhancements are available via the PiRogue Admin API and are already made to be simply integrated into Colander.
 - We have added the support of IP66 to enrich network events with geoip information. The IP66 API integration makes the geo information of IPs richer and smoother for your own observations within our toolset.
 

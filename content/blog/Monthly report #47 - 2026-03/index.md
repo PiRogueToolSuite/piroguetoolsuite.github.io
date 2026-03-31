@@ -89,7 +89,7 @@ We organize monthly calls open to all members of the community to share project 
 
 #### This month
 
-- We had our monthly community meeting this month, to which some participants raised some questions. We are always committed to receive your questions, concerns and even if you are facing any technical difficulties. We also have reach out to some of our community folks to start sensing and gathering information about what they would like to see in our next updates. Do not hesitate subscribing to our mailing list on [pts-for-ngo@googlegroups.com](mailto:pts-for-ngo@googlegroups.com)
+- We had our monthly community meeting this month, to which some participants raised some questions. We are always committed to receive your questions, concerns and even if you are facing any technical difficulties. We also have reach out to some of our community folks to start sensing and gathering information about what they would like to see in our next updates. Do not hesitate subscribing to our mailing list on [pts-for-ngo@googlegroups.com](mailto:pts-for-ngo@googlegroups.com).
 - The next PTS community meeting will happen on April, 24th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
 
 #### Next month

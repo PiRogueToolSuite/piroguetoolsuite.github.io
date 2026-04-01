@@ -117,8 +117,8 @@ We will continue with our recurring activities.
 
 #### This month
 
-- We have conducted some meeting and discussion points with [Impact & Engagement Lab](https://github.com/PiRogueToolSuite/project-management/issues/www.opentech.fund/labs/impact-engagement-lab/) . Our goal is to facilitate how you interact with our PiRogue Dashboard, make the information better accessible and UI/UI aligned. 
-- A new time of documentation is available for you for our Mongoose tool. We have added Data Models documentation for better understanding how our Grafana dashboard works and what service is making the magic in the backscene. You can find it over here [Mongoose Data Models](https://pts-project.org/mongoose/data_models.htm).
+- We have conducted some meeting and discussion points with [Impact & Engagement Lab](https://github.com/PiRogueToolSuite/project-management/issues/www.opentech.fund/labs/impact-engagement-lab/) . Our goal is to facilitate how you interact with our PiRogue Dashboard, make the information better accessible and UX/UI aligned. 
+- A new documentation is available for you for the Mongoose tool. We have added Data Models documentation for better understanding how our Grafana dashboard works and what service is making the magic in the backscene. You can find it over here [Mongoose Data Models](https://pts-project.org/mongoose/data_models.htm).
 - PTS documentation restructuring and redefinition, still working on it. We are experimenting with a better Documentation methods to make information more easily accessible and a better documentation flow.
 
 #### Next month

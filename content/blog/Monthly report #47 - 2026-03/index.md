@@ -49,7 +49,8 @@ You can find more details about the different activities in the [project roadmap
 Documenting the project is key in its usability. We are continuously documenting the different tools and features we develop and build new learning materials to facilitate skills development.
 
 #### This month
-![](https://github.com/PiRogueToolSuite/mongoose/raw/main/docs/_static/diagram.png)
+<img width="1080" alt="Image" src="https://github.com/PiRogueToolSuite/mongoose/raw/main/docs/_static/diagram.png" />
+
 We have improved the documentation of [mongoose](https://pts-project.org/mongoose/) to reflect latest improvements.
 
 #### Next month
@@ -65,10 +66,10 @@ We manufacture PiRogues to supply organizations, while taking care of its mainte
 ##### Better Network DPI and Alerts browsing
 Based on our integration of [our new library MongooseVueJS](PiRogueToolSuite/mongoose-vuejs), users can now easily view device monitoring results. 
 
-<img width="1387" height="921" alt="Image" src="https://github.com/user-attachments/assets/7d7f358b-cfca-4beb-817b-d7a37fe5ddc4" />
+<img width="1080" alt="Image" src="https://github.com/user-attachments/assets/7d7f358b-cfca-4beb-817b-d7a37fe5ddc4" />
 
-**MongooseVueJS** combinnes network traffic and related alerts in a single location.
-<img width="1390" height="936" alt="Image" src="https://github.com/user-attachments/assets/f7d51e7e-8784-4857-b1c1-f4fdba81189a" />
+**MongooseVueJS** combines network traffic and related alerts in a single location.
+<img width="1080" alt="Image" src="https://github.com/user-attachments/assets/f7d51e7e-8784-4857-b1c1-f4fdba81189a" />
 
 ##### Additional PiRogue Admin features
 **PiRogue Admin** now includes ease of use tools for scheduling device monitoring, with or without device-focused filtering. These enhancements are available via the PiRogue Admin API and used seamlessly by **Colander**.

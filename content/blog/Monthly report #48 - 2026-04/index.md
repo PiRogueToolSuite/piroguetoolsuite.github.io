@@ -1,8 +1,8 @@
 ---
 title: Monthly report n⁰48 - 2026-05  
-description: "This month's activities across the PiRogue Tool Suite project cover the migration of documentation to Docusaurus for improved accessibility, pirogue-admin-client improvements including connected client listing via Mongoose and a new profile-based access feature, and major updates to Octopus, the dynamic analysis framework for Android apps. On the governance side, a new proposal was submitted to OTF's Free and Open Source Software Sustainability Fund. The team held its monthly community meeting and is launching a community survey this month. The next community call is scheduled for May 28, 2026."  
+description: "Monthly report of the activities on the PiRogue Tool Suite project"  
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."  
-summary: ""  
+summary: "This month's activities across the PiRogue Tool Suite project cover the migration of documentation to Docusaurus for improved accessibility, pirogue-admin-client improvements including connected client listing via Mongoose and a new profile-based access feature, and major updates to Octopus, the dynamic analysis framework for Android apps. On the governance side, a new proposal was submitted to OTF's Free and Open Source Software Sustainability Fund. The team held its monthly community meeting and is launching a community survey this month. The next community call is scheduled for May 28, 2026."  
 date: 2026-05-11  
 lastmod: 2026-05-11  
 draft: false  

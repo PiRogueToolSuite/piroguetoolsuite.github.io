@@ -100,10 +100,7 @@ We have submitted a new proposal to the [OTF Free and Open Source Software Susta
 
 PiRogue Tool Suite is free, open-source, and built entirely around one goal: giving frontline defenders the tools to detect and document surveillance against the people they protect.  
 
-We don't charge for access. We don't sell data. We rely on the community we serve.  
-Right now, that community is what keeps us going. We're actively pursuing grants and partnerships, but funding timelines are long and uncertain, and we can't wait to find out. If PTS has ever helped you investigate a threat, protect a source, or document an attack, this is the moment to give something back.  
-Every contribution, large or small, directly funds development, maintenance, and the ongoing work that keeps PTS reliable for practitioners in high-risk environments around the world.  
-[If PTS matters to your work, please support it.](https://opencollective.com/pts)
+We don't charge for access. We don't sell data. We rely on the community we serve. Right now, that community is what keeps us going. We're actively pursuing grants and partnerships, but funding timelines are long and uncertain, and we can't wait to find out. If PTS has ever helped you investigate a threat, protect a source, or document an attack, this is the moment to give something back.  Every contribution, large or small, directly funds development, maintenance, and the ongoing work that keeps PTS reliable for practitioners in high-risk environments around the world. [If PTS matters to your work, please support it.](https://opencollective.com/pts)
 
 #### Next month
 

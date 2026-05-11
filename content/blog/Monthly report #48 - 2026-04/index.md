@@ -11,12 +11,12 @@ type: blog
 outputs:
    - 'html'
    - 'email'  
-contributors: \["Esther Onfroy"\]  
-categories: \['activity reports'\]  
-toc\_enabled: true  
-toc\_start\_level: 2  
-toc\_end\_level: 2  
-toc\_ordered: false
+contributors: ["Esther Onfroy"]  
+categories: ['activity reports']  
+toc_enabled: true  
+toc_start_level: 2  
+toc_end_level: 2  
+toc_ordered: false
 ---
 
 # Project overview

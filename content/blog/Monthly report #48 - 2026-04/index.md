@@ -90,7 +90,7 @@ The next PTS community meeting will happen on May 28th, 2026 at 2pm CET, [join u
 
 #### Next month
 
-*   We will continue with our recurring activities.
+We will continue with our recurring activities.
 
 ## 📦 US103 - Governance
 

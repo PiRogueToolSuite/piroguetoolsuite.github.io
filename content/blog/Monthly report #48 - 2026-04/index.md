@@ -9,15 +9,14 @@ draft: false
 weight: 50  
 type: blog  
 outputs:
-
-*   'html'
-*   'email'  
-    contributors: \["Esther Onfroy"\]  
-    categories: \['activity reports'\]  
-    toc\_enabled: true  
-    toc\_start\_level: 2  
-    toc\_end\_level: 2  
-    toc\_ordered: false
+   - 'html'
+   - 'email'  
+contributors: \["Esther Onfroy"\]  
+categories: \['activity reports'\]  
+toc\_enabled: true  
+toc\_start\_level: 2  
+toc\_end\_level: 2  
+toc\_ordered: false
 ---
 
 # Project overview

@@ -35,13 +35,13 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 
 🚀️ PTS Community Meeting on Friday, May 28th · 2:00 – 3:00pm CEST. We are looking forward to hearing from you — [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
 
-🗳️ Expect to receive a survey from us this month, we are looking forward to hearing from you.
-
 # 🎉 Impacts and results
 
-*   pirogue-admin-client now supports connected client listing via Mongoose and introduces a new profile-based access feature, giving operators clearer visibility and control over what each connected device can access.
-*   Major updates have been released for Octopus, our dynamic analysis framework for Android apps, expanding PTS capabilities for malware behavioral analysis.
-*   PTS documentation is being migrated to Docusaurus, making guides and references better organized and easier to navigate for practitioners in the field.
+pirogue-admin-client now supports connected client listing via Mongoose and introduces a new profile-based access feature, giving operators clearer visibility and control over what each connected device can access.
+
+Major updates have been released for Octopus, our dynamic analysis framework for Android apps, expanding PTS capabilities for malware behavioral analysis.
+
+PTS documentation is being migrated to Docusaurus, making guides and references better organized and easier to navigate for practitioners in the field.
 
 # 📒 Activity report
 
@@ -53,7 +53,7 @@ Documenting the project is key in its usability. We are continuously documenting
 
 #### This month
 
-*   We have started implementing a new format for our documentation based on [Docusaurus](https://docusaurus.io/). This step will make PiRogue Tool Suite documentation better sorted, organised and straight to the point where the information you would read would be easily accessible.
+We have started implementing a new format for our documentation based on [Docusaurus](https://docusaurus.io/). This step will make PiRogue Tool Suite documentation better sorted, organised and straight to the point where the information you would read would be easily accessible.
 
 #### Next month
 
@@ -82,10 +82,11 @@ We organize monthly calls open to all members of the community to share project 
 
 #### This month
 
-*   This month we held our community meeting, and as always, the conversation was rich with questions, ideas, and real-world feedback from the field. Whether you have a technical issue, a feature idea, or just want to understand what's coming next, we want to hear from you.  
-    We've also started reaching out directly to community members to get a sense of what you'd like to see in upcoming releases. If you haven't heard from us yet, you might soon.  
-    Want to stay in the loop? Join our mailing list at [pts-for-ngo@googlegroups.com](mailto:pts-for-ngo@googlegroups.com) and be part of the conversation that shapes where PTS goes next.
-*   The next PTS community meeting will happen on May 28th, 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
+This month we held our community meeting, and as always, the conversation was rich with questions, ideas, and real-world feedback from the field. Whether you have a technical issue, a feature idea, or just want to understand what's coming next, we want to hear from you.  
+
+We've also started reaching out directly to community members to get a sense of what you'd like to see in upcoming releases. If you haven't heard from us yet, you might soon.  Want to stay in the loop? Join our mailing list at [pts-for-ngo@googlegroups.com](mailto:pts-for-ngo@googlegroups.com) and be part of the conversation that shapes where PTS goes next.
+
+The next PTS community meeting will happen on May 28th, 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
 
 #### Next month
 
@@ -98,6 +99,7 @@ We organize monthly calls open to all members of the community to share project 
 We have submitted a new proposal to the [OTF Free and Open Source Software Sustainability Fund](https://www.opentech.fund/funds/free-and-open-source-software-sustainability-fund/).
 
 PiRogue Tool Suite is free, open-source, and built entirely around one goal: giving frontline defenders the tools to detect and document surveillance against the people they protect.  
+
 We don't charge for access. We don't sell data. We rely on the community we serve.  
 Right now, that community is what keeps us going. We're actively pursuing grants and partnerships, but funding timelines are long and uncertain, and we can't wait to find out. If PTS has ever helped you investigate a threat, protect a source, or document an attack, this is the moment to give something back.  
 Every contribution, large or small, directly funds development, maintenance, and the ongoing work that keeps PTS reliable for practitioners in high-risk environments around the world.  

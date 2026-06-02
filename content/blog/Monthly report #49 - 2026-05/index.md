@@ -31,7 +31,7 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 
 # 📢 Announcements
 
-OTF UX & Discovery Lab submission accepted — The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
+OTF UX & Discovery Lab submission accepted, The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
 
 Our community survey is live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated.
 

@@ -120,7 +120,7 @@ We will release an initial version of the new **pirogue-admin-vuejs** and **piro
 Documenting the project is key in its usability. We are continuously documenting the different tools and features we develop and build new learning materials to facilitate skills development.
 
 #### This month
-- We have started implementing a new format for our documentation based on [Docusaurus](https://docusaurus.io/). This step will make Pirogue ToolSuite documentation better sorted, organised and straight to the point where the information you would read would be easily accessible.
+We have started implementing a new format for our documentation based on [Docusaurus](https://docusaurus.io/). This step will make Pirogue ToolSuite documentation better sorted, organised and straight to the point where the information you would read would be easily accessible.
 
 #### Next month
 We will continue to improve the project documentation to accurately reflect ongoing changes and updates.

@@ -31,7 +31,7 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 
 # 📢 Announcements
 
-OTF UX & Discovery Lab submission accepted, The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
+OTF UX & Discovery Lab submission accepted — The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
 
 Our community survey is live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated.
 
@@ -120,11 +120,6 @@ We will release an initial version of the new **pirogue-admin-vuejs** and **piro
 Documenting the project is key in its usability. We are continuously documenting the different tools and features we develop and build new learning materials to facilitate skills development.
 
 #### This month
-We have started implementing a new format for our documentation based on [Docusaurus](https://docusaurus.io/). This step will make Pirogue ToolSuite documentation better sorted, organised and straight to the point where the information you would read would be easily accessible.
-
-#### Next month
-We will continue to improve the project documentation to accurately reflect ongoing changes and updates.
-#### This month
 
 We have continued working on the migration of our documentation to Docusaurus. Progress is being made, but the scope of this migration is significantly larger than what can be handled as a side task alongside the rest of the project activities. The documentation work requires dedicated time and focused effort to be done properly, and we will need to plan for that explicitly in the coming months.
 
@@ -142,16 +137,6 @@ We analyze one Android app that has received the community's interest (ex COP28 
 We organize monthly calls open to all members of the community to share project updates and get the community’s feedback.
 
 #### This month
-
-- This month we held our community meeting, and as always, the conversation was rich with questions, ideas, and real-world feedback from the field. Whether you have a technical issue, a feature idea, or just want to understand what's coming next, we want to hear from you.
-We've also started reaching out directly to community members to get a sense of what you'd like to see in upcoming releases. If you haven't heard from us yet, you might soon.
-Want to stay in the loop? Join our mailing list at [pts-for-ngo@googlegroups.com](mailto:pts-for-ngo@googlegroups.com) and be part of the conversation that shapes where PTS goes next.
-- The next PTS community meeting will happen on May, 28th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
-
-#### Next month
-
-- We will continue with our recurring activities.
-#### This month
  
 We held our monthly community meeting on May 28, 2026. 
 
@@ -164,24 +149,8 @@ Our next community meeting is scheduled for Friday, June 26, 2026 at 2pm CET, [j
 We will continue with our recurring activities.
 
 
-
-
-
 ## 📦 US103 - Governance
 
-
-#### This month
-
-We have submitted a new proposal to the [OTF Free and Open Source Software Sustainability Fund](https://www.opentech.fund/funds/free-and-open-source-software-sustainability-fund/).
-
-PiRogue Tool Suite is free, open-source, and built entirely around one goal: giving frontline defenders the tools to detect and document surveillance against the people they protect.
-We don't charge for access. We don't sell data. We rely on the community we serve.
-Right now, that community is what keeps us going. We're actively pursuing grants and partnerships, but funding timelines are long and uncertain, and we can't wait to find out. If PTS has ever helped you investigate a threat, protect a source, or document an attack, this is the moment to give something back.
-Every contribution, large or small, directly funds development, maintenance, and the ongoing work that keeps PTS reliable for practitioners in high-risk environments around the world.
-[If PTS matters to your work, please support it.](https://opencollective.com/pts)
-
-#### Next month
-We will continue with our recurring activities.
 #### This month
  
 Our  submission to OTF's [UX & Discovery Lab](https://www.opentech.fund/labs/uxd-lab/) requesting support for a UX audit was accepted. The Engine Room will interview PTS users in the field, identify where PiRogue and Colander are hardest to use, and propose concrete interface improvements. They will also help us set up a lightweight process to keep collecting user feedback going forward.
@@ -195,25 +164,11 @@ We will follow up on OTF submissions and remain engaged with any review process 
 
 ## 📦 US104 - Product management
 
-
-#### This month
-
-- This month we have focused on submitting a second round of funding support. We have put together Concept Notes, engagement to apply for the FOSS fund and the IFF fund. We believe that these funds would be very helpful to maintain and build a larger ecosystem for our community. 
-- Major updates have been released on for our  dynamic analysis framework for Android apps, octopus.
-- 
-#### Next month
-
-- We will be still  working on the documentation of PTS. Expecting to roll-out the new set of documents in a timeline of a month or two. 
--  We will continue collaborating with  the [Impact & Engagement Lab](https://github.com/PiRogueToolSuite/project-management/issues/www.opentech.fund/labs/impact-engagement-lab/)  from OTF and enforcing this collaboration. 
-
 #### This month
  
-
 We received a proposal from [Vaibhav Bhawsar](https://recombine.net) from the [Impact & Engagement Lab](https://www.opentech.fund/labs/impact-engagement-lab/) with a plan of work covering the PiRogue Grafana dashboard UX taking considerations of the previous survey conducted by TER, and after multiple exchanges on our user's base needs.
 This is a concrete step toward structured UX investment in PTS and we are actively reviewing the proposed scope. On the technical side, major updates have been released for Octopus, our dynamic analysis framework for Android apps, expanding PTS capabilities for mobile malware behavioral analysis.
 
-
- 
 #### Next month
  
 We will continue with our recurring activities.

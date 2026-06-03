@@ -75,7 +75,7 @@ Mandolin is now fully integrated with Colander, every uploaded artifacts are aut
 
 <img width="1024" alt="Image" src="https://github.com/user-attachments/assets/34b336e4-a527-428e-9062-37fff8b669b7" />
 
-<img width="1527" height="695" alt="Image" src="https://github.com/user-attachments/assets/7fe2cf30-67ac-4403-8115-ee3fd4890a4b" />
+<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/7fe2cf30-67ac-4403-8115-ee3fd4890a4b" />
 
 #### Next month
 Nothing, as this task is now complete.

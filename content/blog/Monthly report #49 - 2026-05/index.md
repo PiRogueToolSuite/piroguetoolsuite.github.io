@@ -32,8 +32,9 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 # 📢 Announcements
 
 * OTF UX & Discovery Lab submission accepted — The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
-* Our community survey is live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated.
-* The next PTS community meeting will happen on May, 28th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz). We are very excited to see you and hear from you.
+* Our community survey is accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628), your inputs are appreciated.
+* The next PTS community meeting will happen on May, 28th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz).
+
 
 # 🎉 Impacts and results
 

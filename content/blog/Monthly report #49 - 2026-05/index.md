@@ -2,7 +2,7 @@
 title: Monthly report n⁰49 - 2026-05
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: "This month's activities across the PiRogue Tool Suite project cover the completion and Colander integration of Mandolin, our new standalone service for offline artifact analysis, and the decoupling of PiRogue fleet management into two new dedicated modules. Our submission to OTF's UX & Discovery Lab was accepted, with The Engine Room set to conduct field user research and propose interface improvements for PiRogue and Colander. Major updates were also released for Octopus. The team held its monthly community meeting on May 28 and launched a community survey. The next community call is scheduled for June 26, 2026."
+summary: "This month's activities across the PiRogue Tool Suite project cover the completion and Colander integration of Mandolin, our new standalone service for offline artifact analysis, and the decoupling of PiRogue fleet management into two new dedicated modules. Our submission to OTF's UX & Discovery Lab was accepted, with The Engine Room set to conduct field user research and propose interface improvements for PiRogue and Colander. Major updates were also released for Octopus. The team held its monthly community meeting on May 28, the next community call is scheduled for June 26, 2026."
 date: 2026-05-31
 lastmod: 2026-05-31
 draft: false
@@ -31,17 +31,13 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 
 # 📢 Announcements
 
-OTF UX & Discovery Lab submission accepted — The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
-
-Our community survey is live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated.
-
-The next PTS community meeting will happen on May, 28th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz). We are very excited to see you and hear from you.
+* OTF UX & Discovery Lab submission accepted — The Engine Room will conduct user research and propose interface improvements for PiRogue and Colander.
+* Our community survey is live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated.
+* The next PTS community meeting will happen on May, 28th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz). We are very excited to see you and hear from you.
 
 # 🎉 Impacts and results
 
 Mandolin is complete and fully integrated with Colander for offline artifact analysis (AV, Yara, Tika) now available out of the box.
-
-Major updates were released for Octopus.
 
 
 # 📒 Activity report
@@ -56,8 +52,8 @@ You can find more details about the different activities in the [project roadmap
 To bolster security measures and guarantee a sufficient level of confidentiality, Colander will allow the offline analysis of artifacts using antivirus software and user-defined Yara rules. In the context of forensic analysis, this is crucial to be able to locally analyze extracted files (without relying on 3rd-party services) to ensure case confidentiality.
 
 ### Overview of the different activities
-* 🔁 Offline artifact AV analysis
-* 🔁 Offline artifact analysis with user-defined Yara rules
+* ✅ Offline artifact AV analysis
+* ✅ Offline artifact analysis with user-defined Yara rules
 * ✅ Offline artifact analysis with Apache Tika
 
 

@@ -1,9 +1,9 @@
 ---
-title: Monthly report n⁰50 - 2026-07
+title: Monthly report n⁰50 - 2026-06
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
 summary: "This month PiRogue launched its browser‑based Admin Web UI with token authentication, completed migration of documentation to Docusaurus, held the monthly community meeting (next on July 31, 2026), began the OTF UX audit and applied to the Spyware Accountability Initiative, and refined the admin client and API with a \"My Profile\" feature, client‑listing redesign, and removal of legacy endpoints."
-date: 2026-07-10
+date: 2026-06-30
 lastmod: 2026-07-10
 draft: false
 weight: 50
@@ -64,15 +64,15 @@ Now, the user can manage a **PiRogue** directly from the browser.
 The service is next to the `/dashboard` at the following address: `/admin`.
 
 In order to login to the **PiRogue** administration interface, the user has to provide a valid pirogue-admin token. It supports administrator token or scoped user-access token. Features will be available depending on token associated permissions.
-<img width="1129" height="830" alt="Image" src="https://github.com/user-attachments/assets/c4a6e91b-015f-450c-ad51-a3fe6629b777" />
+<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/c4a6e91b-015f-450c-ad51-a3fe6629b777" />
 
-This **pirogue-admin-vuejs** component is already a well-known tool to **Colander**'s users, this benefit is now extended to PiRogue users as well 😊.
+This **pirogue-admin-vuejs** component is already a well-known tool to **Colander**'s users, this benefit is now extended to PiRogue users as well.
 The major difference and key feature is the ability to customize the experience. As we can see here, **Pirogue Admin Web** adds a feature to manage authentication while **Colander** customizes the `Access` section to manage `Colander teams` association.
-<img width="1130" height="833" alt="Image" src="https://github.com/user-attachments/assets/0cd044fb-87a6-495d-a85e-639f9a5a6ec6" />
+<img width="1024" alt="Image" src="https://github.com/user-attachments/assets/1e2f4b94-466f-4aa5-82ce-89c39f570f93" />
 
 ##### PiRogue deb packages
 * **pirogue-external-exposure** has been extended to allow for modular web-service integration.
-* **pirogue-admin-web** has been published to ppa and uses this new feature to provide its web-service.
+* **pirogue-admin-web** has been published to PPA and uses this new feature to provide its web-service.
 
 #### Next month
 Nothing, as this task is now complete.

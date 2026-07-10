@@ -39,7 +39,7 @@ We are also pleased to announce that SRLabs has started a security audit of Cola
 
 The next PTS community meeting will happen on July, 31th 2026 at 2pm CET, [join us on Google Meet](https://meet.google.com/arx-tpra-euz). We are very excited to see you and hear from you.
 
-Our community survey is still live and can be accessible[here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated, as it will help us better understand your needs and expectations from the PiRogue Tool Suite.
+Our community survey is still live and can be accessible [here](https://framaforms.org/piroguetoolsuite-community-survey-1778245628). Your inputs are appreciated, as it will help us better understand your needs and expectations from the PiRogue Tool Suite.
 
 
 # 🎉 Impacts and results

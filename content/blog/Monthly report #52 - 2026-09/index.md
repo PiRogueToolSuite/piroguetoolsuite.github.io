@@ -2,7 +2,7 @@
 title: Monthly report n⁰52 - 2026-09
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: "This month, PiRogue Tool Suite completed its main OTF extension activities: simplifying Colander deployment, restructuring the documentation around practical use cases, and creating a reusable workshop curriculum covering PiRogue, Colander and Octopus. The team also addressed all Critical and High security issues in Colander, expanded testing, continued maintenance and gathered valuable community feedback through events, meetings and the launch of UX research with The Engine Room."
+summary: "PiRogue Tool Suite completed several key activities under the OTF extension, including simplifying Colander deployment, restructuring the documentation around practical use cases, and creating a reusable workshop curriculum covering PiRogue, Colander and Octopus. The team also addressed all Critical and High security issues in Colander, expanded testing, continued maintenance and gathered valuable community feedback through events, meetings and the launch of UX research with The Engine Room."
 date: 2026-09-28
 lastmod: 2026-09-28
 draft: false
@@ -42,7 +42,6 @@ A complete workshop curriculum covering PiRogue, Colander and Android applicatio
 Finally, The Engine Room has officially started its UX research on PTS and Colander, with support from OTF. The research will help us better understand user needs and identify ways to make the tools easier to adopt and use.
 
 
-# 🎉 Impacts and results
 # 🎉 Impacts and results
 
 This month’s work has made the PiRogue Tool Suite easier to deploy, learn and use.

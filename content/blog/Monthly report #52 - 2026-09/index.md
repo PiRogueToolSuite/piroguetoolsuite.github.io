@@ -31,8 +31,6 @@ PiRogue Tool Suite (PTS) provides a platform combining analysis tools, knowledge
 
 # 📢 Announcements
 
-We are pleased to announce the completion of the main activities planned under the OTF extension of the PiRogue Tool Suite project.
-
 The new Colander quick-deploy package makes it possible to start the full PTS stack, or selected components, with Docker Compose and minimal configuration. Users no longer need to build Docker images locally, and can deploy Colander in rootless Docker environments on physical machines or virtual machines. [Read the quick-deploy instructions](https://pts-project.org/colander-ansible/).
 
 We have also published a complete draft of the restructured PTS documentation. Migrated to Docusaurus and organized around practical use cases, the new documentation is designed to support civil society organizations and practitioners with different levels of technical experience. We invite community members to review the draft and share their feedback: [PTS Documentation](https://github.com/PiRogueToolSuite/docs).

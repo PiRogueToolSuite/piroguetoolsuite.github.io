@@ -2,7 +2,7 @@
 title: Monthly report n⁰53 - 2026-10
 description: "Monthly report of the activities on the PiRogue Tool Suite project"
 lead: "PiRogue tool suite (PTS) is an open-source tool suite that provides a comprehensive mobile forensics and digital investigations platform."
-summary: summary: "In October, we released PiRogue 3.0.0 with support for Debian 13, integrated the new PiRogue dashboard, continued hardening Colander following its security audit, completed the restructuring of the PTS documentation on Docusaurus, and presented PTS at Bread&Net 2026 in Beirut."
+summary: "In October, we released PiRogue 3.0.0 with support for Debian 13, integrated the new PiRogue dashboard, continued hardening Colander following its security audit, completed the restructuring of the PTS documentation on Docusaurus, and presented PTS at Bread&Net 2026 in Beirut."
 date: 2026-10-31
 lastmod: 2026-10-31
 draft: false
@@ -148,7 +148,7 @@ Outdated dependencies carry unpatched vulnerabilities; unmaintained images event
 ### D1-1 maintenance
 #### This month
 
-##### Security 
+##### Security
 Following to the security audit of Colander, we have been improving the security patches in close collaboration with **SRLabs**, who is validating these fixes and helping us optimize our proposed solutions.
 
 ##### UI/UX

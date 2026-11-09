@@ -347,9 +347,34 @@
       "body": "**Description**: This work package addresses a structural gap in the current deployment model. The communities with the greatest need for mobile security tooling are often located in jurisdictions where governments actively filter or disrupt internet access. This workstream implements access mechanisms designed for those environments, with a specific focus on the Eurasia region, so that network-level interference does not become a barrier to PTS adoption or operational use by at-risk groups.",
       "state": "open",
       "has_reports": false,
-      "has_tasks": false,
+      "has_tasks": true,
       "url": "https://github.com/PiRogueToolSuite/project-management/issues/52",
-      "tasks": []
+      "tasks": [
+        {
+          "number": 53,
+          "title": "D2-1 establish redundant distribution mirrors",
+          "body": "**Description**: GitHub as PTS's sole distribution channel is a single point of failure: it can be blocked, rate-limited, or hit by platform actions outside our control. This work package establishes redundant channels so PTS stays installable even if GitHub becomes unavailable.\n\n**Approach**: \n* Set up a secondary APT-compatible package repository (PPA), hosted independently of GitHub, and integrate it into the existing build pipeline so it receives every release automatically.\n* Mirror all active PTS Git repositories to Codeberg, or alternatively to a self-hosted Forgejo/Gitea instance, with automated synchronization triggered on every push to the primary repository.\n* Set up a secondary container registry (e.g., Quay.io or a self-hosted registry) and integrate it into the CI/CD pipeline so every released image is automatically pushed to both registries.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/53"
+        },
+        {
+          "number": 54,
+          "title": "D2-2 PTS services are accessible over Tor",
+          "body": "**Description**: Colander and Threatr typically run on the open internet, exposing availability and users' connections to censorship, precisely the threat model PTS investigates. \n\n**Approach**: Deploy Colander and Threatr as Tor hidden services, so both can be reached directly via .onion addresses. In deployments where Colander connects to a separately-hosted Threatr instance, route that Colander-to-Threatr connection over Tor as well, so no part of the data path depends on the clearnet.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/54"
+        },
+        {
+          "number": 55,
+          "title": "D2-3 censorship resilient deployment",
+          "body": "**Description**: This work package removes dependencies on unrestricted internet access so that installing, updating, and running PTS remains possible even when a user's network is actively censored.\n\n**Approach**: \n* Package the Grafana plugins required by PiRogue into a Debian package, so they are installed directly from PTS's own package repository rather than fetched from Grafana's external plugin registry at install time.\n* Develop an APT transport method that can fall back to established censorship-circumvention tools, such as Outline, Algo, or Xray.\n* Route all internal Colander platform network traffic over a WireGuard VPN, so internal communications are encrypted end-to-end and encapsulated in traffic that is harder to fingerprint or selectively block.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/55"
+        }
+      ]
     },
     {
       "number": 56,
@@ -357,19 +382,77 @@
       "body": "**Description**: This workstream will implement security controls to align with security governance standards, establishing a defensible security posture appropriate for a platform handling sensitive data from civil society partners.",
       "state": "open",
       "has_reports": false,
-      "has_tasks": false,
+      "has_tasks": true,
       "url": "https://github.com/PiRogueToolSuite/project-management/issues/56",
-      "tasks": []
+      "tasks": [
+        {
+          "number": 57,
+          "title": "D3-1 stack monitoring",
+          "body": "**Description**: PTS handles sensitive case data, yet Colander currently lacks the logging and audit trails needed to detect compromise. This work package builds an observability stack around it.\n\n**Approach**: Instrument Colander with a modern observability stack: Sentry for application error tracking, VictoriaMetrics and Grafana Alloy for metrics collection using the OpenMetrics data format, and Loki for centralized log aggregation, with Grafana as the shared visualization and alerting layer across all three.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/57"
+        },
+        {
+          "number": 58,
+          "title": "D3-2 vulnerability scanning",
+          "body": "**Description**: PTS's third-party dependencies are not currently checked against vulnerability databases, and a dependency can become vulnerable the day after it's added. This work package puts continuous vulnerability detection into the build pipeline.\n\n**Approach**: Integrate an automated dependency-scanning tool (e.g. Dependabot, Trivy, or OSV-Scanner) into the CI/CD pipeline so every commit and pull request is checked against known vulnerability databases, with alerts routed to maintainers and, where feasible, automated patch pull requests for flagged dependencies.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/58"
+        },
+        {
+          "number": 59,
+          "title": "D3-3 user authentication & authorization",
+          "body": "**Description**: Colander's access control was built for single-organization deployments, not multi-organization use: authentication uses manual Django accounts, and object-level permissions are inconsistent across data types. This work package rebuilds it on modern, auditable foundations.\n\n**Approach**: \n* Extend Colander's authentication to support signing in via external identity providers (e.g. Google, GitHub, Keycloak) using Django Allauth.\n* Reimplement object-level authorization using Django Guardian or a comparable framework, applying a single, consistent permission model across all Colander object types.\n* Implement automatic detection of repeated failed authentication attempts from the same source, with configurable thresholds that trigger temporary throttling or lockout of the offending source.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/59"
+        },
+        {
+          "number": 60,
+          "title": "D3-4 secrets management",
+          "body": "**Description**: Storing Colander secrets improperly creates a single point of failure, anyone with server read access gains the keys to impersonate the platform or undermine evidence integrity. This work package moves secrets management into hardened infrastructure.\n\n**Approach**: Deploy a PKCS#11-compliant secrets management service (e.g. HashiCorp Vault, or a hardware/software security module exposing a PKCS#11 interface) to generate, store, and serve Colander's cryptographic secrets, so that signing and other sensitive operations are performed through the service rather than by exposing raw key material to the application.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/60"
+        }
+      ]
     },
     {
       "number": 61,
       "title": "US12 - System engineering and administration",
       "body": "**Description**: The continuous infrastructure management keeps production systems stable and available through routine operational tasks, monitoring, and environment integrity checks, improving service reliability for hosted users and enhancing deployment packages for organizations that self-host their PTS stack.",
       "state": "open",
-      "has_reports": false,
-      "has_tasks": false,
+      "has_reports": true,
+      "has_tasks": true,
       "url": "https://github.com/PiRogueToolSuite/project-management/issues/61",
-      "tasks": []
+      "tasks": [
+        {
+          "number": 62,
+          "title": "D4-1 recurring system administration activities",
+          "body": "**Description**: This task includes the following activities:\n* the maintenance of our infrastructure hosting Colander servers\n* the update deployment playbooks and system administration documentation",
+          "state": "open",
+          "has_reports": true,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/62"
+        },
+        {
+          "number": 63,
+          "title": "D4-2 Kubernetes deployment support",
+          "body": "**Description**: Many organizations adopting Colander standardize on Kubernetes, which its current deployment model doesn't support. This work package removes that barrier.\n\n**Approach**: Package Colander and its dependent services (database, task queue, storage, etc.) as Kubernetes-native resources, Helm chart or equivalent manifests, covering configuration, secrets, persistent storage, scaling, and health checks needed for a production-grade deployment.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/63"
+        },
+        {
+          "number": 64,
+          "title": "D4-3 PiRogue isolation",
+          "body": "**Description**: The PiRogue VPN currently runs monolithically on its host, so any compromise or crash can affect the entire service. Containerization limits the blast radius and improves portability.\n\n**Approach**: Package the PiRogue VPN as one or more OCI-compatible containers (e.g. using Podman or Docker), isolating it from the host system and other services while preserving the network access it needs to function as a VPN.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/64"
+        }
+      ]
     },
     {
       "number": 65,
@@ -377,9 +460,26 @@
       "body": "**Description**: Compatibility with formats like STIX 2 and MISP is maintained as a commitment, ensuring that intelligence produced and consumed through PTS remains compatible with the ecosystem of tools and workflows used by organizations. Preserving interoperability reduces friction for adoption and makes the collective capacity for threat sharing stronger.",
       "state": "open",
       "has_reports": false,
-      "has_tasks": false,
+      "has_tasks": true,
       "url": "https://github.com/PiRogueToolSuite/project-management/issues/65",
-      "tasks": []
+      "tasks": [
+        {
+          "number": 66,
+          "title": "D5-1 interoperability with external services",
+          "body": "**Description**: Most PTS users already run ticketing systems and threat intelligence platforms. This work package extends PTS's ability to push data outward and keeps threat intelligence connectors current.\n\n**Approach**: \n* Implement configurable inbound webhook support in Colander, allowing operators to define event triggers (e.g. new case, new artifact, status change) and the external endpoints that should be notified, with payloads structured to integrate cleanly with common ticketing platforms.\n* Review and update Threatr's existing connectors against the current APIs of the services they integrate with, bringing each connector back in line with present-day endpoints, authentication methods, and response formats.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/66"
+        },
+        {
+          "number": 67,
+          "title": "D5-2 data portability",
+          "body": "**Description**: Investigators need to share findings between tools and partners. This work package keeps PTS's support for the two dominant open standards conformant.\n\n**Approach**: Establish a validation process (including automated test fixtures covering representative case data) to verify that STIX 2 and MISP import/export in PTS remain conformant with the current versions of both standards, and correct any discrepancies found.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/67"
+        }
+      ]
     },
     {
       "number": 36,
@@ -396,10 +496,51 @@
       "title": "US101 - Software maintenance",
       "body": "**Description**: Outdated dependencies carry unpatched vulnerabilities; unmaintained images eventually stop working. This work package encompasses support of core PTS components through timely updates, bug resolution, and dependency management, with particular emphasis on security updates.",
       "state": "open",
-      "has_reports": false,
-      "has_tasks": false,
+      "has_reports": true,
+      "has_tasks": true,
       "url": "https://github.com/PiRogueToolSuite/project-management/issues/37",
-      "tasks": []
+      "tasks": [
+        {
+          "number": 47,
+          "title": "D1-1 maintenance",
+          "body": "**Description**: This task includes the following activities:\n* the reduction of the technical debt\n* the update of the Debian packages\n* the update the Debian OS image",
+          "state": "open",
+          "has_reports": true,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/47"
+        },
+        {
+          "number": 48,
+          "title": "D1-2 support Debian 13",
+          "body": "**Description**: Rebase PiRogue OS onto Debian 13 (Trixie), updating package dependencies, configuration, and build processes as needed to ensure full compatibility, and validate the resulting image across supported PiRogue hardware.",
+          "state": "open",
+          "has_reports": true,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/48"
+        },
+        {
+          "number": 49,
+          "title": "D1-3 support Debian 14",
+          "body": "**Description**: Rebase PiRogue OS onto Debian 14 (Forky), updating package dependencies, configuration, and build processes as needed to ensure full compatibility, and validate the resulting image across supported PiRogue hardware.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/49"
+        },
+        {
+          "number": 50,
+          "title": "D1-4 testing and qualification setup",
+          "body": "**Description**: PiRogue's three deployment modes (Appliance, Access Point, VPN) each require a separate build, and validating a single feature currently involves a long sequence of manual steps per mode. This work package automates that pipeline.\n\n**Approach**: Create a build toolset (e.g. Makefile-based) that orchestrates virtualization tools like QEMU to automate the full validation pipeline, compiling dependencies, packaging artifacts, provisioning the correct target-specific VM for each deployment mode, and running functional tests, replacing the current sequence of manual steps with a single, repeatable, automated workflow.",
+          "state": "open",
+          "has_reports": true,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/50"
+        },
+        {
+          "number": 51,
+          "title": "D1-5 support Web extension Manifest v3",
+          "body": "**Description**: Browsers are phasing out Manifest V2, but Colander Companion still runs on it. This work package migrates it ahead of a browser-side deadline outside PTS's control.\n\n**Approach**: Migrate Colander Companion to Manifest V3, updating its background script model (service workers instead of persistent background pages), permissions handling, and any APIs affected by the V2-to-V3 transition, while preserving existing functionality.",
+          "state": "open",
+          "has_reports": false,
+          "url": "https://github.com/PiRogueToolSuite/project-management/issues/51"
+        }
+      ]
     },
     {
       "number": 38,
